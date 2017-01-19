@@ -1,0 +1,31 @@
+/*---------------module---------------*/
+
+:root {
+    --ii-module {
+        /*flex:1;*/
+        padding: var(--large);
+
+        p {
+            margin-bottom: var(--medium);
+        }
+    }
+}
+
+.nak-module {}
+
+.nak-module--neutral {
+    @apply --ii-module;
+
+    border: 1px solid var(--border-color-box);
+    background: var(--background-color-box);
+}
+
+.nak-is-symmetric {
+    flex: 1;
+}
+
+.nak-module__title {
+    color: var(--color);
+    text-transform: inherit;
+    font-weight: bold;
+}

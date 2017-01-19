@@ -1,0 +1,233 @@
+/*---------------spacing---------------*/
+/* spacing helpers
+p,m = padding,margin
+a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
+s,m,l,n = small(5px),medium(var(--medium)),large(var(--large)),none(var(--none))
+*/
+
+.nak-ptn,
+.nak-pvn,
+.nak-pan {
+  padding-top: var(--none) !important;
+}
+
+.nak-pts,
+.nak-pvs,
+.nak-pas {
+  padding-top:var(--small) !important;
+}
+
+.nak-ptm,
+.nak-pvm,
+.nak-pam {
+  padding-top: var(--medium) !important;
+}
+
+.nak-ptl,
+.nak-pvl,
+.nak-pal {
+  padding-top: var(--large) !important;
+}
+
+.nak-ptx,
+.nak-pvx,
+.nak-pax {
+  padding-top: var(--xlarge) !important;
+}
+
+.nak-ptxx,
+.nak-pvxx,
+.nak-paxx {
+  padding-top: 8var(--none) !important;
+}
+
+.nak-prn,
+.nak-phn,
+.nak-pan {
+  padding-right: var(--none) !important;
+}
+
+.nak-prs,
+.nak-phs,
+.nak-pas {
+  padding-right:var(--small) !important;
+}
+
+.nak-prm,
+.nak-phm,
+.nak-pam {
+  padding-right: var(--medium) !important;
+}
+
+.nak-prl,
+.nak-phl,
+.nak-pal {
+  padding-right: var(--large) !important;
+}
+
+.nak-pbn,
+.nak-pvn,
+.nak-pan {
+  padding-bottom: var(--none) !important;
+}
+
+.nak-pbs,
+.nak-pvs,
+.nak-pas {
+  padding-bottom:var(--small) !important;
+}
+
+.nak-pbm,
+.nak-pvm,
+.nak-pam {
+  padding-bottom: var(--medium) !important;
+}
+
+.nak-pbl,
+.nak-pvl,
+.nak-pal {
+  padding-bottom: var(--large) !important;
+}
+
+.nak-pln,
+.nak-phn,
+.nak-pan {
+  padding-left: var(--none) !important;
+}
+
+.nak-pls,
+.nak-phs,
+.nak-pas {
+  padding-left:var(--small) !important;
+}
+
+.nak-plm,
+.nak-phm,
+.nak-pam {
+  padding-left: var(--medium) !important;
+}
+
+.nak-pll,
+.nak-phl,
+.nak-pal {
+  padding-left: var(--large) !important;
+}
+
+.nak-mtn,
+.nak-mvn,
+.nak-man {
+  margin-top: var(--none) !important;
+}
+
+.nak-mts,
+.nak-mvs,
+.nak-mas {
+  margin-top:var(--small) !important;
+}
+
+.nak-mtm,
+.nak-mvm,
+.nak-mam {
+  margin-top: var(--medium) !important;
+}
+
+.nak-mtl,
+.nak-mvl,
+.nak-mal {
+  margin-top: var(--large) !important;
+}
+
+.nak-mtx,
+.nak-mvx,
+.nak-max {
+  margin-top: var(--xlarge) !important;
+}
+
+.nak-mrn,
+.nak-mhn,
+.nak-man {
+  margin-right: var(--none) !important;
+}
+
+.nak-mrs,
+.nak-mhs,
+.nak-mas,
+ul.nak-mrs li {
+  margin-right:var(--small) !important;
+}
+
+.nak-mrm,
+.nak-mhm,
+.nak-mam {
+  margin-right: var(--medium) !important;
+}
+
+.nak-mrl,
+.nak-mhl,
+.nak-mal,
+ul.nak-mrl li {
+  margin-right: var(--large) !important;
+}
+
+.nak-mbn,
+.nak-mvn,
+.nak-man {
+  margin-bottom: var(--none) !important;
+}
+
+.nak-mbs,
+.nak-mvs,
+.nak-mas {
+  margin-bottom:var(--small) !important;
+}
+
+.nak-mbm,
+.nak-mvm,
+.nak-mam {
+  margin-bottom: var(--medium) !important;
+}
+
+.nak-mbl,
+.nak-mvl,
+.nak-mal {
+  margin-bottom: var(--large) !important;
+}
+.nak-mbx,
+.nak-mvx,
+.nak-max {
+  margin-bottom: var(--xlarge) !important;
+}
+
+.nak-mln,
+.nak-mhn,
+.nak-man {
+  margin-left: var(--none) !important;
+}
+
+.nak-mls,
+.nak-mhs,
+.nak-mas {
+  margin-left:var(--small) !important;
+}
+
+.nak-mlm,
+.nak-mhm,
+.nak-mam {
+  margin-left: var(--medium) !important;
+}
+
+.nak-mll,
+.nak-mhl,
+.nak-mal {
+  margin-left: var(--large) !important;
+}
+
+.nak-mtxl,
+.nak-maxl {
+  margin-top: var(--xlarge) !important;
+}
+
+.nak-mtxxl,
+.nak-maxxl {
+  margin-top: 8var(--none) !important;
+}

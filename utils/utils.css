@@ -1,0 +1,222 @@
+.clearboth {
+    clear: both;
+}
+
+.clearboth-line {
+    clear: both;
+    border-bottom: var(--bare) 1px solid;
+}
+
+.clearboth-10 {
+    clear: both;
+    height: 5px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.nak-block {
+    display: block;
+}
+
+a.link-print {
+    display: none;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.small-text {
+    color: var(--text-color);
+    font-size: .9em;
+}
+
+.nak-text-size--small {
+    font-size: .9em;
+}
+
+.nak-text-size--large {
+    font-size: 1.2em;
+}
+
+.nak-text-size--huge {
+    font-size: 3em;
+}
+
+.text {
+    font-size: 16px;
+}
+
+.nak-display--inline {
+    display: inline;
+}
+
+.nak-float-right {
+    float: right;
+}
+
+.nak-float-left {
+    float: left;
+}
+
+.nak-text-color {
+    color: var(--color);
+}
+
+.nak-text-color--secondary {
+    color: var(--torch-red);
+}
+
+.nak-text-color--third {
+    color: var(--steel-blue);
+}
+
+.nak-text-color--neutral {
+    color: var(--neutral);
+}
+
+.nak-text--strong {
+    color: var(--black);
+    font-weight: bold;
+}
+
+.nak-is-active {}
+
+.nak-is-hidden {
+    display: none !important;
+}
+
+.nak-is-hidden--min-medium {
+    @media (--min-medium-viewport) {
+        display: none !important;
+    }
+}
+
+.nak-is-hidden--min-small {
+    @media (--min-small-viewport) {
+        display: none !important;
+    }
+}
+
+.nak-align--right {
+    display: flex; 
+    justify-content: flex-end;
+    text-align: right;
+
+    &.nak-form-element__row, &.nak-form-element--inline {
+        justify-content: flex-end;
+    }
+}
+
+.nak-align--center {
+    justify-content: center;
+    text-align: center;
+
+    @media (--small-viewport) {
+        align-items: center;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+.nak-is-stacable--small {
+    @media (--small-viewport) {
+        flex-direction: column;
+        align-items: flex-start;
+        height: inherit;
+
+        &.nak-grid {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.nak-is-stacable--medium {
+    @media (--medium-viewport) {
+        flex-direction: column;
+        align-items: flex-start;
+        height: inherit;
+
+        &.nak-grid {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.nak-is-wrappable--medium {
+    @media (--medium-viewport) {
+        flex-wrap: wrap;
+    }
+}
+
+.nak-has-select {
+    &:before {
+        position: absolute;
+        right: 10px;
+        bottom: 15px;
+        color: var(--color);
+        content: "\e904";
+    }
+    &:hover {
+        &:before {
+            color: var(--second-color);
+        }
+    }
+}
+
+.nak-image-mask--gradient {
+    mask-image: linear-gradient(0, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
+    mask-repeat: space;
+}
+
+.nak-has-bg-image--gradient {
+    background: linear-gradient(45deg, rgba(235, 235, 235, 1) 44%, rgba(235, 235, 235, 0) 100%), url(http://localhost-axabienestar:8888/skin/frontend/rwd/default/images/specialty/odontologia.jpg);
+    background-position: right top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &.nak-image1 {
+        background: linear-gradient(45deg, rgba(235, 235, 235, 1) 44%, rgba(235, 235, 235, 0) 100%), url(var(--img-banner1)) no-repeat;
+        background-position: right top;
+        background-size: cover;
+    }
+    &.nak-image2 {
+        background: linear-gradient(45deg, rgba(235, 235, 235, 1) 44%, rgba(235, 235, 235, 0) 100%), url(var(--img-banner2)) no-repeat;
+        background-position: right top;
+        background-size: cover;
+    }
+    &.nak-image3 {
+        background: linear-gradient(45deg, rgba(235, 235, 235, 1) 44%, rgba(235, 235, 235, 0) 100%), url(var(--img-banner3)) no-repeat;
+        background-position: right top;
+        background-size: cover;
+    }
+}
+
+.nak-has-bg-image {}
+
+.std:empty {
+    display: none;
+}
+
+
+/*---------------background colors---------------*/
+
+.nak-bg-color--neutral {
+    background: var(--background-color);
+}
+
+
+/*---------------widths---------------*/
+
+.nak-width-input--inline {
+    width: var(--width-input--inline);
+}
+.nak-obj-fit--contain{
+  object-fit: contain;
+  width: 100%;
+}

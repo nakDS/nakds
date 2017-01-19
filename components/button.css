@@ -1,0 +1,32 @@
+/*---------------button---------------*/
+
+
+
+
+/*-------------------------------------*/
+
+.nak-button {
+    @apply --button;
+
+
+}
+
+.nak-button--neutral {
+    @apply --button--neutral;
+}
+
+.nak-button--narrow {
+    @apply --button;
+
+    max-width: 150px;
+    height: 30px;
+    background: var(--background-color-button--theme);
+
+    @media (--small-viewport) {
+        max-width: inherit;
+    }
+}
+
+.nak-button--naked {
+    @apply --button--naked;
+}

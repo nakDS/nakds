@@ -1,0 +1,7 @@
+/*---------------default---------------*/
+
+body {
+    color: var(--text-color);
+    font-size: 1em;
+    font-family: var(--base-font);
+}

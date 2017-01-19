@@ -1,0 +1,23 @@
+/*---------------table---------------*/
+
+
+/*------------------------------------*/
+
+.nak-table--neutral {
+    width: 100%;
+    border: 1px solid var(--color-table-border);
+    background: var(--color-table-bg);
+
+    th {
+        color: var(--color);
+        font-weight: bold;
+    }
+    td {
+        padding: var(--medium);
+        border: 1px solid var(--color-td-border);
+
+        &[colspan="3"] {
+            background: var(--color-colspan-bg);
+        }
+    }
+}

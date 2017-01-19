@@ -1,0 +1,33 @@
+/*---------------nav---------------*/
+
+.nak-navigation-list--vertical {
+    padding: var(--medium);
+    border: 10px solid var(--bare);
+
+    h2 {
+        margin: 0;
+        padding-bottom: 10px;
+        border-bottom: 5px solid var(--bare);
+    }
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+
+        a {
+            color: var(--text-color);
+            text-decoration: none;
+
+            &:hover{
+              color:var(--color);
+            }
+        }
+        span:before {
+            color:var(--color);
+            content: "\e902";
+        }
+    }
+    strong{
+      color:var(--color);
+    }
+}

@@ -1,0 +1,16 @@
+/*---------------typography---------------*/
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family:'Lato-light', sans-serif;
+    src: url("../fonts/Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: 'Lato-black';
+    src: url("../fonts/Lato-Black.ttf");
+}

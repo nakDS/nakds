@@ -1,0 +1,276 @@
+:root {
+    --form-element: {
+        @mixin medium-spacing;
+
+        max-width: var(--width-form-element);
+        width: 100%;
+
+        @media (--small-viewport) {
+            flex-direction: column;
+            align-items: flex-start;
+            height: inherit;
+        }
+    }
+    ;
+    --form-element--inline: {
+        @mixin medium-spacing;
+
+        position: relative;
+        display: flex;
+        align-items: center;
+        max-width: var(--width-form-element);
+        width: 100%;
+
+        @media (--small-viewport) {
+            height: inherit;
+        }
+    }
+    ;
+    --label: {
+        display: flex;
+        flex: 0 1 auto;
+        align-items: center;
+        padding: 0 10px;
+        width: 100%;
+        height: var(--input-height);
+        border-radius: 0;
+        background: var(--background-color-label);
+        font-weight: 100;
+        font-style: italic;
+        font-size: 16px;
+        font-family: var(--base-font);
+
+        @media (--small-viewport) {
+            flex: 1;
+            padding: 0;
+            height: inherit;
+            background: none;
+
+            .nak-is-stacable--small & {
+                width: 100%;
+            }
+        }
+    }
+    ;
+    --input: {
+        position: relative;
+        width: 100%;
+        height: var(--input-height);
+        border: 0;
+        border-radius: 0;
+        background: var(--background-color-input);
+        font-weight: 100;
+        font-style: italic;
+        font-size: 18px;
+        font-family: var(--base-font);
+        -webkit-appearance: none;
+
+        @media (--small-viewport) {
+            max-width: inherit;
+        }
+
+        &[readonly] {
+            color: var(--text-color--light);
+        }
+        &.validation-failed {
+            position: relative;
+            box-shadow: inset 0px -1px 0px var(--error-color);
+        }
+    }
+    ;
+    --select: {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+        width: 100%;
+        height: var(--input-height);
+        border: 0;
+        border-radius: 0;
+        background: var(--background-color-input);
+        font-weight: 100;
+        font-size: 18px;
+        font-family: var(--base-font);
+
+        @media (--small-viewport) {
+            max-width: inherit;
+        }
+    }
+    ;
+    --button: {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 100px;
+        height: var(--button-height);
+        border: 0;
+        background: var(--background-color-button);
+        color: var(--white);
+        text-decoration: none !important;
+        text-transform: inherit;
+        font-size: 18px;
+        font-family: var(--base-font);
+
+        @media (--small-viewport) {
+            @mixin medium-spacing;
+
+            width: 100%;
+        }
+
+        &:hover {
+            background: var(--background-color-button--hover);
+            color: var(--white);
+            text-decoration: none;
+
+            /*opacity: .8;*/
+        }
+        &.action, &.nak-button--action {
+            background: var(--second-color);
+
+            @media (--small-viewport) {
+                order: 0;
+            }
+
+            &:hover {
+                background: var(--torch-red300);
+            }
+        }
+        &:focus {
+            background: var(--color);
+            color: var(--white);
+        }
+        +.button {
+            margin: 0;
+        }
+    }
+    ;
+    --button--naked: {
+        padding: 5px 10px;
+        height: 30px;
+        border: 1px solid var(--border-color-button--naked);
+        color: var(--text-color--light);
+        text-decoration: none;
+        text-transform: inherit;
+        font-size: 14px;
+
+        &:hover {
+            background: var(--background-color-button--naked--hover);
+        }
+    }
+    ;
+    --button--neutral: {
+        background: var(--barer);
+        color: var(--text-color);
+
+        @media (--small-viewport) {
+            order: 1;
+        }
+
+        &:hover {
+            background: var(--color);
+            color: var(--white);
+
+            span {
+                &:before {
+                    color: var(--white);
+                }
+            }
+        }
+    }
+    ;
+    --page-title: {
+        margin: var(--spacing-medium) 0;
+        border: 0;
+        color: var(--color);
+        text-transform: none;
+        font-weight: 300;
+        font-size: 28px;
+
+        @media (--medium-viewport) {
+            text-align: center;
+            font-size: 22px;
+        }
+    }
+    ;
+    --section-title: {
+        margin-bottom: var(--spacing-large);
+        border-bottom: 1px dotted var(--color);
+        color: var(--color);
+        text-transform: inherit;
+        font-weight: 500;
+        font-size: 24px;
+
+        @media (--small-viewport) {
+            text-align: center;
+        }
+    }
+    ;
+    --text-title: {
+        color: var(--color);
+        font-weight: bold;
+        font-size: 20px;
+    }
+    ;
+    --row--expanded {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    ;
+    --row--centered {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    ;
+    --spacing-page {
+        margin: 0 auto;
+        max-width: var(--page-width);
+        width: 100%;
+
+        @media (--page-viewport--spacing) {
+            padding: 0 var(--spacing-xx-large);
+        }
+        @media (--medium-viewport) {
+            padding: 0;
+        }
+    }
+    ;
+    --spacing-vertical--medium {
+        margin-top: var(--spacing-medium);
+        margin-bottom: var(--spacing-medium);
+    }
+    ;
+    --spacing-vertical--small {
+        margin-top: var(--spacing-small);
+        margin-bottom: var(--spacing-small);
+    }
+    ;
+    --wizard-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    ;
+    --wizard-item {
+        position: relative;
+        flex: 1;
+
+        &.is-active, &.nak-is-active {
+            a {
+                color: var(--color)
+            }
+            &:before {
+                background: var(--color);
+            }
+        }
+        &:before {
+            position: absolute;
+            bottom: 13px;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: var(--pale);
+            content: "";
+        }
+    }
+}

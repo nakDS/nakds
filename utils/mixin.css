@@ -1,0 +1,69 @@
+@define-mixin button {
+    padding: 12px 50px;
+    border: 0;
+    background: var(--color);
+    color: var(--white);
+    text-transform: inherit;
+    font-size: 16px;
+    font-family: var(--base-font);
+}
+
+@define-mixin small-spacing {
+    margin-top: var(--small);
+    margin-bottom: var(--small);
+}
+
+@define-mixin medium-spacing {
+    margin-top: var(--medium);
+    margin-bottom: var(--medium);
+}
+
+@define-mixin large-spacing {
+    margin-top: var(--large);
+    margin-bottom: var(--large);
+}
+
+@define-mixin large-heading-spacing {
+    margin-top: var(--large);
+    margin-bottom: var(--xlarge);
+}
+
+@define-mixin medium-heading-spacing {
+    margin-top: var(--large);
+    margin-bottom: var(--large);
+}
+/*---*/
+@define-mixin flex-direction($values) { 
+	-webkit-flex-direction: $values;
+	flex-direction: $values;
+}
+
+@define-mixin flex-flow($values) {
+	-webkit-flex-flow: $values;
+	flex-flow: $values;
+}
+
+@define-mixin align-items($values) {
+	-webkit-align-items: $values;
+	align-items: $values;
+}
+
+@define-mixin justify-content($values) {
+	-webkit-justify-content: $values;
+	justify-content: $values;
+}
+
+@define-mixin flex($values) {
+	-webkit-flex: $values;
+	flex: $values;
+}
+
+@define-mixin display-flex() {
+	display: -webkit-flex;
+	display: flex;
+}
+
+@define-mixin display-inline-flex() {
+	display: -webkit-inline-flex;
+	display: inline-flex;
+}

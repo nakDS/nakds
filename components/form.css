@@ -1,0 +1,95 @@
+/*---------------form---------------*/
+
+
+/*---------------form---------------*/
+
+.nak-form {
+    @mixin large-spacing;
+}
+
+.nak-form--search {
+    background: var(--background-color);
+    .nak-form-element__row {
+        max-width: inherit;
+    }
+}
+
+.nak-form-element {
+    @apply --form-element;
+}
+
+.nak-form-element--inline {
+    @apply --form-element--inline;
+    @media (--min-small-viewport) {
+        .nak-form-element__label {
+            width: var(--width-label--inline);
+        }
+        .nak-input, .nak-select {
+            width: var(--width-input--inline);
+        }
+    }
+}
+
+.nak-form-element__group {}
+
+.nak-form-element__row {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    max-width: var(--width-form-element);
+    @media (--small-viewport) {
+        flex-direction: column;
+    }
+}
+
+.nak-form-element__row--extended {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nak-form-element__row--left {
+    justify-content: flex-start;
+}
+
+.nak-form-element--center {
+    justify-content: center;
+    text-align: center;
+}
+
+.nak-form-element__row--top {
+    align-items: flex-start;
+}
+
+.nak-form--compound {
+    padding: var(--large);
+    @media (--min-medium-viewport) {
+        .nak-form-element+.nak-form-element, .nak-form-element--inline+.nak-form-element--inline, {
+            padding-left: var(--large);
+        }
+    }
+}
+
+.nak-form-element__label {
+    @apply --label;
+    .nak-form-element--inline & {
+        padding: 0 10px;
+        @media (--small-viewport) {
+            padding: 0;
+        }
+    }
+    .nak-is-stacable--medium & {
+        align-self: flex-start;
+        width: 60%;
+    }
+    &.nak-has-bgcolor {
+        background: var(--neutral);
+        @media (--small-viewport) {
+            background: none;
+        }
+    }
+}
+
+.nak-input--naked {
+    border: 0;
+    background: none;
+}

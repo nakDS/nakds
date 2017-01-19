@@ -1,0 +1,45 @@
+/*---------------headings---------------*/
+
+
+.nak-text-title {
+    @apply --text-title;
+}
+
+.nak-text-title--large {
+    @apply --text-title;
+
+    font-size: 1.2em !important;
+}
+
+.nak-text-title--neutral {
+    @apply --text-title;
+
+    color: var(--text-color--light);
+}
+
+.nak-text-title--dark {
+    @apply --text-title;
+
+    color: var(--text-color--dark);
+}
+
+.nak-text-title--little {
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+.nak-text-title--large {
+    @apply --text-title;
+
+    font-size: 1.2em;
+}
+
+.nak-text-title--has-icon {}
+
+.nak-page-title{
+    @apply --page-title;
+}
+
+.nak-section-title{
+    @apply --section-title;
+}
