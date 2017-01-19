@@ -49,14 +49,12 @@
     --background-color-heading: var(--wildsand);
     --background-color-toolbar: var(--wildsand);
     --background-color-box: var(--wildsand);
-
     --background-color-button: var(--color);
     --background-color-button--theme: var(--azure);
     --background-color-button--hover: var(--steel-blue);
     --background-color-label: var(--gallery);
     --background-color-input: var(--wildsand);
     --background-color-button--naked--hover: var(--gallery);
-
     /*---------------Links---------------*/
     --link-color:var(--barberry);
     /*---------------Tooltip theme---------------*/

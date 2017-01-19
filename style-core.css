@@ -36,7 +36,7 @@
 @import "components/icon";
 @import "components/module";
 @import "components/search";
-@import "components/form";
+@import "components/form"; 
 @import "components/link";
 @import "components/list";
 @import "components/paginate";
@@ -56,12 +56,3 @@
 @import "layout/grid";
 
 /*===============pages===============*/
-
-
-/*===============theme===============*/
-
-@import "theme/theme-randomMatches";
-
-/*===============extra===============*/
-
-@import "extra/icon";
