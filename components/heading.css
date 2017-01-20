@@ -1,45 +1,65 @@
-/*---------------headings---------------*/
+/*----------------Custom variables---------------------*/
 
+
+:root {
+    --page-title__color: var(--theme-color);
+    --page-title__font-size: 2.5em;
+    --page-title__background:  var(--wildsand);
+    --section-title__color: var(--azure);
+    --section-title__font-size: 2em;
+    --section-title__background:  var(--wildsand);
+    --text-title__color: var(--azure);
+    --text-title__font-size: 1.5em;
+    --text-title__background:  var(--wildsand);
+}
+
+/*----------------@mixin---------------------*/
+
+
+@define-mixin nak-page-title $color:var(--page-title__color), $font-size:var(--page-title__font-size) {
+    color: var(--page-title__color);
+    font-weight: bold;
+    font-size: var(--page-title__font-size);
+
+    a {
+        color: var(--page-title__color);
+    }
+}
+@define-mixin nak-section-title $color:var(--section-title__color), $font-size:var(--section-title__font-size) {
+    color: var(--section-title__color);
+    font-weight: bold;
+    font-size: var(--section-title__font-size);
+
+    a {
+        color: var(--section-title__color);
+    }
+}
+
+@define-mixin nak-text-title $color:var(--text-title__color), $font-size:var(--text-title__font-size) {
+    color: var(--text-title__color);
+    font-weight: bold;
+    font-size: var(--text-title__font-size);
+
+    a {
+        color: var(--text-title__color);
+    }
+}
+
+/*----------------If you need OOCSS---------------------*/
 
 .nak-text-title {
-    @apply --text-title;
-}
-
-.nak-text-title--large {
-    @apply --text-title;
-
-    font-size: 1.2em !important;
-}
-
-.nak-text-title--neutral {
-    @apply --text-title;
-
-    color: var(--text-color--light);
-}
-
-.nak-text-title--dark {
-    @apply --text-title;
-
-    color: var(--text-color--dark);
-}
-
-.nak-text-title--little {
-    text-transform: uppercase;
-    font-size: .8em;
-}
-
-.nak-text-title--large {
-    @apply --text-title;
-
-    font-size: 1.2em;
+    @mixin nak-text-title;
 }
 
 .nak-text-title--has-icon {}
 
-.nak-page-title{
-    @apply --page-title;
+.nak-page-title {
+    @mixin nak-page-title;
 }
 
-.nak-section-title{
-    @apply --section-title;
+.nak-section-title {
+    @mixin nak-section-title;
 }
+
+
+/*-------------------------------------*/
