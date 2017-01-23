@@ -17,7 +17,7 @@
     @apply --ii-module;
 
     border: 1px solid var(--border-color-box);
-    background: var(--background-color-box);
+    background: ;
 }
 
 .nak-is-symmetric {
@@ -25,7 +25,7 @@
 }
 
 .nak-module__title {
-    color: var(--color);
+    color: var(--theme-color);
     text-transform: inherit;
     font-weight: bold;
 }

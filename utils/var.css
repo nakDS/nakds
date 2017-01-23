@@ -34,14 +34,14 @@
     --border-color-button--naked: var(--color-gallery);
     --border-color-box: var(--color-gallery);
     /*---------------heading links---------------*/
-    --heading-text-color-link: var(--color-text-color);
-    --heading-text-color-link--hover: var(--color-third-color);
-    --heading-border-color-link: var(--color-text-color);
-    --heading-border-color-link--hover: var(--color-third-color);
+    --heading-text-color-link: var(--text-color);
+    --heading-text-color-link--hover: var(--theme-third-color);
+    --heading-border-color-link: var(--text-color);
+    --heading-border-color-link--hover: var(--theme-third-color);
     /*---------------links---------------*/
     --color-link--icon: var(--color-mine-shaft);
     --color-link--negativo: var(--color-wildsand);
-    --color-link--negativo-hover: var(--color-third-color);
+    --color-link--negativo-hover: var(--theme-third-color);
     /*---------------tables---------------*/
     --color-table-border: var(--color-gallery);
     --color-table-bg: var(--color-wildsand);

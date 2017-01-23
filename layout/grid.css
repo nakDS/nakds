@@ -12,6 +12,7 @@
 .nak-grid--has-spaces {
     display: flex;
     justify-content: space-between;
+
     @media (--medium-viewport) {
         .nak-is-stacable--medium {
             .nak-box {
@@ -28,6 +29,7 @@
             }
         }
     }
+
     &.nak-grid--wrapped {
         >* {
             margin-bottom: var(--large);
@@ -51,6 +53,7 @@
 /*Automatic cols*/
 .nak-grid__item{
   flex: 1 1 auto;
+
 img{
   width: 100%;
 }
@@ -65,6 +68,7 @@ img{
     display: flex;
     align-items: center;
     height: 100%;
+
     &.nak-has-column {
         display: flex;
         flex-direction: column;

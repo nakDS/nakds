@@ -1,32 +1,61 @@
 /*---------------button---------------*/
 
 
+/*----------------Custom variables---------------------*/
+
+:root {
+    /*--default*/
+    --button__min-width: 500px;
+    --button__height: var(--spacing-medium);
+    --button__border: 2px solid var(--theme-color);
+    --button__background: 2px solid var(--theme-color);
+    --button__color: var(--text-color--light);
+    --button__font-size: var(--medium);
+    --button__font: var(--base-font);
+    /*--hover*/
+    --button__background--hover: ;
+    --button__color--hover: ;
+}
+
+/*TODO*/
+ 
+/*Resolve color functions with postCSS*/
+
+/*Use this in hover modifiers*/
+
+/*----------------@mixin---------------------*/
+
+@define-mixin nak-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: var(--button__min-width);
+    height: var(--button__height);
+    border: var(--button__border);
+    background: var(--button__background);
+    color: var(--button__color);
+    text-decoration: none !important;
+    text-transform: inherit;
+    font-size: var(--button__font-size);
+    font-family: var(--button__font);
+
+    @media (--small-viewport) {
+        width: 100%;
+    }
+
+    &:hover {
+        background: var(--button__background--hover);
+        color: var(--button__color--hover);
+    }
+    &:focus {
+        background: var(--theme-color);
+        color: var(--color-white);
+    }
+}
 
 
 /*-------------------------------------*/
 
 .nak-button {
-    @apply --button;
-
-
-}
-
-.nak-button--neutral {
-    @apply --button--neutral;
-}
-
-.nak-button--narrow {
-    @apply --button;
-
-    max-width: 150px;
-    height: 30px;
-    background: var(--background-color-button--theme);
-
-    @media (--small-viewport) {
-        max-width: inherit;
-    }
-}
-
-.nak-button--naked {
-    @apply --button--naked;
+    @mixin nak-button;
 }

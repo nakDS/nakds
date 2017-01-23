@@ -4,7 +4,7 @@
 
 .clearboth-line {
     clear: both;
-    border-bottom: var(--bare) 1px solid;
+    border-bottom: var(--color-bare) 1px solid;
 }
 
 .clearboth-10 {
@@ -62,23 +62,23 @@ a.link-print {
 }
 
 .nak-text-color {
-    color: var(--color);
+    color: var(--theme-color);
 }
 
 .nak-text-color--secondary {
-    color: var(--torch-red);
+    color: var(--color-torch-red);
 }
 
 .nak-text-color--third {
-    color: var(--steel-blue);
+    color: var(--color-steel-blue);
 }
 
 .nak-text-color--neutral {
-    color: var(--neutral);
+    color: var(--color-neutral);
 }
 
 .nak-text--strong {
-    color: var(--black);
+    color: var(--color-black);
     font-weight: bold;
 }
 
@@ -101,7 +101,7 @@ a.link-print {
 }
 
 .nak-align--right {
-    display: flex; 
+    display: flex;
     justify-content: flex-end;
     text-align: right;
 
@@ -159,12 +159,12 @@ a.link-print {
         position: absolute;
         right: 10px;
         bottom: 15px;
-        color: var(--color);
+        color: var(--theme-color);
         content: "\e904";
     }
     &:hover {
         &:before {
-            color: var(--second-color);
+            color: var(--theme-second-color);
         }
     }
 }
@@ -180,21 +180,6 @@ a.link-print {
     background-size: cover;
     background-repeat: no-repeat;
 
-    &.nak-image1 {
-        background: linear-gradient(45deg, rgba(235, 235, 235, 1) 44%, rgba(235, 235, 235, 0) 100%), url(var(--img-banner1)) no-repeat;
-        background-position: right top;
-        background-size: cover;
-    }
-    &.nak-image2 {
-        background: linear-gradient(45deg, rgba(235, 235, 235, 1) 44%, rgba(235, 235, 235, 0) 100%), url(var(--img-banner2)) no-repeat;
-        background-position: right top;
-        background-size: cover;
-    }
-    &.nak-image3 {
-        background: linear-gradient(45deg, rgba(235, 235, 235, 1) 44%, rgba(235, 235, 235, 0) 100%), url(var(--img-banner3)) no-repeat;
-        background-position: right top;
-        background-size: cover;
-    }
 }
 
 .nak-has-bg-image {}
@@ -217,6 +202,6 @@ a.link-print {
     width: var(--width-input--inline);
 }
 .nak-obj-fit--contain{
-  object-fit: contain;
   width: 100%;
+  object-fit: contain;
 }

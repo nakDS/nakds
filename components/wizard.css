@@ -10,13 +10,14 @@
 .nak-wizard-list {
     display: flex;
     justify-content: space-between;
+
     @media (--medium-viewport) {
         margin-bottom: var(--large);
     }
 }
 
 .nak-wizard-item {
-    @apply --wizard-item;
+    /*@apply --wizard-item;*/
 }
 
 .nak-wizard-marker {
@@ -28,21 +29,23 @@
     width: 36px;
     height: 36px;
     border-radius: 500rem;
-    background: var(--pale);
+    background: var(--color-pale);
+
     .fa {
         position: absolute;
-        color: var(--white);
+        color: var(--color-white);
         font-size: 1.2em;
     }
     .is-active &, .nak-is-active & {
-        background: var(--color);
+        background: var(--theme-color);
     }
 }
 
 .nak-wizard-label {
     display: block;
     margin-bottom: -6px;
-    margin-left: var(--xxlarge);
+    margin-left: var(--xx-large);
+
     @media (--medium-viewport) {
         display: none;
         margin: 0;
@@ -52,6 +55,7 @@
 form {
     .has-wizard & {
         display: none;
+
         &.is-active {
             display: block;
         }

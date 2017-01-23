@@ -42,12 +42,12 @@
   margin-left: var(--large);
 }}*/
 
-.nak-size--xxlarge {
-    width: var(--xxlarge) !important;
+.nak-size {
+    width: var(--xx-large) !important;
 }
 
 .nak-size--xlarge {
-    width: var(--xlarge) !important;
+    width: var(--x-large) !important;
 }
 
 .nak-size-mobile--full {

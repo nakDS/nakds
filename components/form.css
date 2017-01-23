@@ -15,11 +15,11 @@
 }
 
 .nak-form-element {
-    @apply --form-element;
+    /*@apply --form-element;*/
 }
 
 .nak-form-element--inline {
-    @apply --form-element--inline;
+    /*@apply --form-element--inline;*/
     @media (--min-small-viewport) {
         .nak-form-element__label {
             width: var(--width-label--inline);
@@ -70,7 +70,7 @@
 }
 
 .nak-form-element__label {
-    @apply --label;
+    /*@apply --label;*/
     .nak-form-element--inline & {
         padding: 0 10px;
         @media (--small-viewport) {
@@ -82,7 +82,7 @@
         width: 60%;
     }
     &.nak-has-bgcolor {
-        background: var(--neutral);
+        background: var(--color-neutral);
         @media (--small-viewport) {
             background: none;
         }

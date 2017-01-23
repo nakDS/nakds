@@ -4,13 +4,13 @@
 :root {
     --page-title__color: var(--theme-color);
     --page-title__font-size: 2.5em;
-    --page-title__background:  var(--wildsand);
-    --section-title__color: var(--azure);
+    --page-title__background:  var(--color-wildsand);
+    --section-title__color: var(--color-azure);
     --section-title__font-size: 2em;
-    --section-title__background:  var(--wildsand);
-    --text-title__color: var(--azure);
+    --section-title__background:  var(--color-wildsand);
+    --text-title__color: var(--color-azure);
     --text-title__font-size: 1.5em;
-    --text-title__background:  var(--wildsand);
+    --text-title__background:  var(--color-wildsand);
 }
 
 /*----------------@mixin---------------------*/
