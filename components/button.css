@@ -5,23 +5,27 @@
 
 :root {
     /*--default*/
-    --button__min-width: 500px;
-    --button__height: var(--spacing-medium);
+    --button__min-width: 100px;
+    --button__height: var(--spacing-large);
     --button__border: 2px solid var(--theme-color);
-    --button__background: 2px solid var(--theme-color);
-    --button__color: var(--text-color--light);
-    --button__font-size: var(--medium);
+    --button__background:var(--theme-color);
+    --button__color: var(--text-color);
+    --button__font-size: var(--large);
     --button__font: var(--base-font);
+    --button__border-radius: var(--x-small);
     /*--hover*/
     --button__background--hover: ;
     --button__color--hover: ;
 }
 
 /*TODO*/
- 
+
 /*Resolve color functions with postCSS*/
 
 /*Use this in hover modifiers*/
+
+/*TODO*/
+/*Crear un gulp para exportar el CSS y que se muestre en la aplicación*/
 
 /*----------------@mixin---------------------*/
 
@@ -32,12 +36,14 @@
     min-width: var(--button__min-width);
     height: var(--button__height);
     border: var(--button__border);
+    border-radius:var(--button__border-radius);
     background: var(--button__background);
     color: var(--button__color);
     text-decoration: none !important;
     text-transform: inherit;
     font-size: var(--button__font-size);
     font-family: var(--button__font);
+  cursor: pointer;
 
     @media (--small-viewport) {
         width: 100%;
