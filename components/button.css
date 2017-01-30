@@ -1,5 +1,6 @@
-/*---------------button---------------*/
+/*! ---------------button---------------*/
 
+@import "../utils/required-utils";
 
 /*----------------Custom variables---------------------*/
 
@@ -7,8 +8,10 @@
     /*--default*/
     --button__min-width: 100px;
     --button__height: var(--spacing-large);
-    --button__border: 2px solid var(--theme-color);
-    --button__background:var(--theme-color);
+    --button__border-width:5px;
+    --button__border-style: solid;
+    --button__border-color: var(--theme-color);
+    --button__background: var(--theme-color);
     --button__color: var(--text-color);
     --button__font-size: var(--large);
     --button__font: var(--base-font);
@@ -16,16 +19,23 @@
     /*--hover*/
     --button__background--hover: ;
     --button__color--hover: ;
+    /*--neutral*/
+    --button__color--neutral: var(--text-color);
+    --button__background--neutral: var(--color-pale);
+    --button__border-width: 2px;
+    --button__border-style: solid;
+    --button__border-color: var(--color-neutral);
 }
 
+ 
 /*TODO*/
+
 
 /*Resolve color functions with postCSS*/
 
+
 /*Use this in hover modifiers*/
 
-/*TODO*/
-/*Crear un gulp para exportar el CSS y que se muestre en la aplicación*/
 
 /*----------------@mixin---------------------*/
 
@@ -35,15 +45,15 @@
     justify-content: center;
     min-width: var(--button__min-width);
     height: var(--button__height);
-    border: var(--button__border);
-    border-radius:var(--button__border-radius);
+    border: var(--button__border-width) var(--button__border-style) var(--button__border-color);
+    border-radius: var(--button__border-radius);
     background: var(--button__background);
     color: var(--button__color);
     text-decoration: none !important;
     text-transform: inherit;
     font-size: var(--button__font-size);
     font-family: var(--button__font);
-  cursor: pointer;
+    cursor: pointer;
 
     @media (--small-viewport) {
         width: 100%;
@@ -60,8 +70,21 @@
 }
 
 
+/*text*/
+
+
 /*-------------------------------------*/
 
 .nak-button {
     @mixin nak-button;
 }
+
+.nak-button--neutral {
+    @mixin nak-button;
+
+    background: var(--button__background--neutral);
+    color: var(--button__color--neutral);
+}
+
+
+/*!*/

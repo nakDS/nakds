@@ -1,4 +1,5 @@
 /*---------------nav---------------*/
+@import "../utils/required-utils";
 
 .nak-navigation-list--vertical {
     padding: var(--medium);

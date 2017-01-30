@@ -1,9 +1,10 @@
 /*---------------header---------------*/
+@import "../utils/required-utils";
 
 .nak-header {
-    padding: var(--margin-header);
     display: flex;
     align-items: center;
+    padding: var(--margin-header);
 }
 
 .nak-logo {
@@ -13,6 +14,6 @@
 
 .nak-logo__svg {
     margin-right: var(--small);
-    width: var(--width-logo);
-    max-width: 100%
+    max-width: 100%;
+    width: var(--width-logo)
 }

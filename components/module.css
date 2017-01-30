@@ -1,4 +1,5 @@
 /*---------------module---------------*/
+@import "../utils/required-utils";
 
 :root {
     --ii-module {

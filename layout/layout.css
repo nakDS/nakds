@@ -7,7 +7,7 @@
 }
 
 .nak-site-header {
-    position: fixed;
+    position: fixed; 
     top: 0;
     z-index: 8000;
     display: flex;

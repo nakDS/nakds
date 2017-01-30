@@ -1,3 +1,5 @@
+/*---------------tab---------------*/
+@import "../utils/required-utils";
 .nak-tab-list {
     display: flex;
 }

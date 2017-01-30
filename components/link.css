@@ -1,4 +1,5 @@
 /*---------------link---------------*/
+@import "../utils/required-utils";
 
 a {
     color: var(--link-color);
@@ -64,7 +65,7 @@ a {
         text-decoration: none;
 
         [class*="ii-icon"] {
-            color: var(--theme-third-color);  
+            color: var(--theme-third-color);
         }
     }
     [class*="ii-icon"] {

@@ -9,7 +9,7 @@
     flex-wrap: wrap;
 }
 
-.nak-grid--has-spaces {
+.nak-grid--has-spaces { 
     display: flex;
     justify-content: space-between;
 
