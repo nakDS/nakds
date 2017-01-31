@@ -1,5 +1,5 @@
 /*---------------header---------------*/
-@import "../utils/required-utils";
+@import "../variables/required-utils";
 
 .nak-header {
     display: flex;

@@ -1,5 +1,5 @@
 /*---------------wizard---------------*/
-@import "../utils/required-utils";
+@import "../variables/required-utils";
 
 .nak-wizard {
     a {

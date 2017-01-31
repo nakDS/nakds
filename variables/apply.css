@@ -1,3 +1,4 @@
+@import "../variables/required-utils";
 :root {
     --form-element: {
         @mixin medium-spacing;

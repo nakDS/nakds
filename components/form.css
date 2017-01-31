@@ -1,5 +1,5 @@
 /*---------------form---------------*/
-@import "../utils/required-utils";
+@import "../variables/required-utils";
 
 .nak-form {
     /*@mixin large-spacing;*/

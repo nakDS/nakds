@@ -1,3 +1,5 @@
+@import "../variables/required-utils";
+/*---------------utils---------------*/
 .clearboth {
     clear: both;
 }
@@ -111,6 +113,7 @@ a.link-print {
 }
 
 .nak-align--center {
+    display: flex;
     justify-content: center;
     text-align: center;
 
@@ -179,7 +182,6 @@ a.link-print {
     background-position: right top;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .nak-has-bg-image {}
@@ -201,7 +203,8 @@ a.link-print {
 .nak-width-input--inline {
     width: var(--width-input--inline);
 }
-.nak-obj-fit--contain{
-  width: 100%;
-  object-fit: contain;
+
+.nak-obj-fit--contain {
+    width: 100%;
+    object-fit: contain;
 }

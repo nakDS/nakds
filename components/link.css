@@ -1,5 +1,5 @@
 /*---------------link---------------*/
-@import "../utils/required-utils";
+@import "../variables/required-utils";
 
 a {
     color: var(--link-color);
