@@ -70,5 +70,8 @@
 .nak-heading-1{
   font-size:var(--heading-1__font-size) ;
 }
+.nak-heading-2{
+  font-size:var(--heading-2__font-size) ;
+}
 
 /*-------------------------------------*/

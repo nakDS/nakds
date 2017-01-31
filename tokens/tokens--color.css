@@ -1,13 +1,9 @@
 :root {
-    /*---------------fonts---------------*/
-    --base-font: 'Lato', sans-serif;
-    --input-font: 'MyriadPro', sans-serif;
-    --code-font: 'MyriadPro', sans-serif;
     /*---------------brand tokens---------------*/
-    --theme-color: var(--color-barberry);
-    --theme-second-color: #ff1821;
-    --theme-third-color: #5c91c0;
-    --theme-fourth-color: #7a9f34;
+    --color-theme: #765435; 
+    --color-theme-second: #ff1821;
+    --color-theme-third: #5c91c0;
+    --color-theme-fourth: #7a9f34;
     /*---------------tokens---------------*/
     --color-gallery: #EBEBEB;
     --color-mercury: #e5e5e5;

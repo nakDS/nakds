@@ -9,7 +9,7 @@
     background: var(--color-table-bg);
 
     th {
-        color: var(--theme-color);
+        color: var(--color-theme);
         font-weight: bold;
     }
     td {

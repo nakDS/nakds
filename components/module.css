@@ -26,7 +26,7 @@
 }
 
 .nak-module__title {
-    color: var(--theme-color);
+    color: var(--color-theme);
     text-transform: inherit;
     font-weight: bold;
 }

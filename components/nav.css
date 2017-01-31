@@ -20,15 +20,15 @@
             text-decoration: none;
 
             &:hover{
-              color:var(--theme-color);
+              color:var(--color-theme);
             }
         }
         span:before {
-            color:var(--theme-color);
+            color:var(--color-theme);
             content: "\e902";
         }
     }
     strong{
-      color:var(--theme-color);
+      color:var(--color-theme);
     }
 }

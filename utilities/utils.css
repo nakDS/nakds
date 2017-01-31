@@ -64,7 +64,7 @@ a.link-print {
 }
 
 .nak-text-color {
-    color: var(--theme-color);
+    color: var(--color-theme);
 }
 
 .nak-text-color--secondary {
@@ -162,12 +162,12 @@ a.link-print {
         position: absolute;
         right: 10px;
         bottom: 15px;
-        color: var(--theme-color);
+        color: var(--color-theme);
         content: "\e904";
     }
     &:hover {
         &:before {
-            color: var(--theme-second-color);
+            color: var(--color-theme-second);
         }
     }
 }

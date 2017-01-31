@@ -18,6 +18,7 @@
 @import "utilities/utils";
 @import "utilities/sizing";
 @import "utilities/spacing";
+@import "utilities/grid";
 
 
 /*===============components===============*/
@@ -55,6 +56,6 @@
 /*===============layout===============*/
 
 @import "layout/layout";
-@import "layout/grid";
+
 
 /*===============pages===============*/

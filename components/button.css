@@ -10,14 +10,14 @@
     --button__height: var(--spacing-large);
     --button__border-width: 1px;
     --button__border-style: solid;
-    --button__border-color: var(--theme-color);
-    --button__background: var(--theme-color);
+    --button__border-color: var(--color-theme);
+    --button__background: var(--color-theme);
     --button__color: var(--text-color);
     --button__font-size: var(--large);
     --button__font: var(--base-font);
     --button__border-radius: var(--x-small);
     /*--hover*/
-    --button__background--hover: ;
+    --button__background--hover: ; 
     --button__color--hover: ;
     /*--neutral*/
     --button__color--neutral: var(--text-color);
@@ -50,7 +50,6 @@
     background: var(--button__background);
     color: var(--button__color);
     text-decoration: none !important;
-    text-transform: inherit;
     font-size: var(--button__font-size);
     font-family: var(--button__font);
     cursor: pointer;
@@ -64,7 +63,7 @@
         color: var(--button__color--hover);
     }
     &:focus {
-        background: var(--theme-color);
+        background: var(--color-theme);
         color: var(--color-white);
     }
 }
