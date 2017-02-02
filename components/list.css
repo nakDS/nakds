@@ -8,5 +8,13 @@
 
 /*----------------If you need OOCSS---------------------*/
 
-
+.nak-l-list{}
+.nak-l-list--dotted{
+  list-style: inherit;
+  list-style-position: inside;
+}
+.nak-l-list--horizontal{
+  display: flex;
+}
+.nak-l-list--board{}
 /*-------------------------------------*/
