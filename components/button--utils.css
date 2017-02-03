@@ -1,0 +1,87 @@
+/*! ---------------button---------------*/
+
+@import "../variables/required-utils";
+
+/*----------------Custom variables---------------------*/
+
+:root {
+    /*--default*/
+    --button__min-width: 100px;
+    --button__height: var(--spacing-large);
+    --button__border-width: 1px;
+    --button__border-style: solid;
+    --button__border-color: var(--color-theme);
+    --button__background: var(--color-theme);
+    --button__color: var(--text-color);
+    --button__font-size: var(--large);
+    --button__font: var(--base-font);
+    --button__border-radius: var(--x-small);
+    /*--hover*/
+    --button__background--hover: ;
+    --button__color--hover: ;
+    /*--neutral*/
+    --button__color--neutral: var(--text-color);
+    --button__background--neutral: var(--color-pale);
+    --button__border-width--neutral: 1px;
+    --button__border-style--neutral: solid;
+    --button__border-color--neutral: var(--color-neutral);
+    /*--negative*/
+    --button__color--negative: var(--text-color--light);
+    --button__background--negative: var(--color-cod-gray);
+    --button__border-width--negative: 1px;
+    --button__border-style--negative: solid;
+    --button__border-color--negative: var(--color-mine-shaft);
+
+    /*icon*/
+    /*----------------@apply---------------------*/
+    --nak-button: {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: var(--button__min-width);
+        height: var(--button__height);
+        border: var(--button__border-width) var(--button__border-style) var(--button__border-color);
+        border-radius: var(--button__border-radius);
+        background: var(--button__background);
+        color: var(--button__color);
+        text-decoration: none !important;
+        font-size: var(--button__font-size);
+        font-family: var(--button__font);
+        cursor: pointer;
+
+        @media (--small-viewport) {
+            width: 100%;
+        }
+
+        &:hover {
+            background: var(--button__background--hover);
+            color: var(--button__color--hover);
+        }
+        &:focus {
+            background: var(--color-theme);
+            color: var(--color-white);
+        }
+    };
+    --nak-button--neutral: {
+        border: var(--button__border-width--neutral) var(--button__border-style--neutral) var(--button__border-color--neutral);
+        border-color: var(--button__border-color--neutral);
+        background: var(--button__background--neutral);
+    };
+    --nak-button--negative: {
+        border: var(--button__border-width--negative) var(--button__border-style--negative) var(--button__border-color--negative);
+        border-color: var(--button__border-color--negative);
+        background: var(--button__background--negative);
+    };
+    --nak-button--disabled: {}
+    --nak-button--big: {
+        padding: var(--medium);
+        height: inherit;
+    };
+    --nak-button--icon-left: {
+        img {
+            margin-right: 10px;
+            width: 30px;
+            color: red;
+        }
+    }
+}

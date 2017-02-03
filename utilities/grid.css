@@ -1,6 +1,19 @@
 @import "../variables/required-utils";
 /*---------------grid---------------*/
+:root{
+  --grid-item-top-space:var(--x-small);
+  --grid-item-bottom-space:var(--x-small);
+}
+/*----------------Custom variables---------------------*/
 
+
+/*----------------@mixin---------------------*/
+
+
+/*----------------If you need OOCSS---------------------*/
+
+
+/*-------------------------------------*/
 
 .nak-grid {
     display: flex;
@@ -50,7 +63,17 @@
         }
     }
 }
-
+.nak-grid--has-v-space{
+  >*{
+    margin-top: var(--grid-item-top-space);
+    margin-bottom: var(--grid-item-bottom-space);
+  }
+}
+.nak-has-col--2{
+  >*{
+    width: 50%;
+  }
+}
 
 /*Automatic cols*/
 .nak-grid__item{
