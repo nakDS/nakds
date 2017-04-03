@@ -1,118 +1,57 @@
+/*----------------Generic Custom variables---------------------*/
+
 :root {
     /*---------------fonts---------------*/
     --base-font: 'Lato', sans-serif;
     --input-font: 'MyriadPro', sans-serif;
     --code-font: 'MyriadPro', sans-serif;
-    /*---------------state colors---------------*/
-    --color-positive: var(--fourth-color);
-    /*---------------tokens---------------*/
-    --gallery: #EBEBEB;
-    --mercury: #e5e5e5;
-    --wildsand: #F5F5F5;
-    --torch-red900: #330406;
-    --torch-red800: #66090d;
-    --torch-red700: #990e13;
-    --torch-red600: #cc131a;
-    --torch-red: #FF1821;
-    --torch-red400: #ff464d;
-    --torch-red300: #ff7479;
-    --torch-red200: #ffa2a6;
-    --torch-red100: #ffd0d2;
-    --barberry: #D6D41B;
-    /*---------------greyscale tokens---------------*/
-    --black: black;
-    --cod-gray: #111;
-    --mine-shaft: #222;
-    --opaque: #6f6f6f;
-    --dark: #b0b0b0;
-    --neutral: #d6d6d6;
-    --pale: #e5e5e5;
-    --barer: #eeeeee;
-    --bare: #f5f5f5;
-    --white: #ffffff;
-    --white-rgb: 255,255,255;
-    /*---------------brand tokens---------------*/
-    --color: #103184;
-    --second-color: #ff1821;
-    --third-color: #5c91c0;
-    --steel-blue: #5c91c0;
-    --azure: #1762a5;
-    --fourth-color: #7a9f34;
-    --text-color: #6f6f6f;
-    --text-color--theme: var(--azure);
+    /*---------------text---------------*/
+    --text-color: var(--color-opaque);
+    --text-color--ok: var(--color-positive);
+    --text-color--ko: var(--color-error);
     --text-color--light: #b0b0b0;
-    --text-color--dark: var(--cod-gray);
+    --text-color--dark: var(--color-cod-gray);
     /*---------------states---------------*/
-    --error-color: var(--torch-red200);
+    --color-positive: var(--theme-fourth-color);
+    --color-error: var(--color-torch-red200);
     /*---------------color backgrounds---------------*/
-    --background-color: var(--gallery);
-    --background-color-heading: var(--wildsand);
-    --background-color-toolbar: var(--wildsand);
-    --background-color-box: var(--wildsand);
-    --background-color-button: var(--color);
-    --background-color-button--theme: var(--azure);
-    --background-color-button--hover: var(--steel-blue);
-    --background-color-label: var(--gallery);
-    --background-color-input: var(--wildsand);
-    --background-color-button--naked--hover: var(--gallery);
+    --background-color: var(--color-gallery);
+    --background-color-button: var(--theme-color);
+    --background-color-button--theme: var(--color-azure);
+    --background-color-button--hover: var(--color-steel-blue);
+    --background-color-label: var(--color-gallery);
+    --background-color-input: var(--color-wildsand);
+    --background-color-button--naked--hover: var(--color-gallery);
     /*---------------Links---------------*/
-    --link-color:var(--barberry);
+    --link-color: var(--color-barberry);
     /*---------------Tooltip theme---------------*/
-    --background-color-tooltip: var(--white-rgb);
-    --opacity-background-tooltip:1;
-    --animation-time:.2s;
+    --background-color-tooltip: var(--color-white-rgb);
+    --opacity-background-tooltip: 1;
+    --animation-time: .2s;
     /*---------------color border---------------*/
-    --border-color: var(--gallery);
-    --border-color--naked: var(--gallery);
-    --border-color-button--naked: var(--gallery);
-    --border-color-box: var(--gallery);
+    --border-color: var(--color-gallery);
+    --border-color--naked: var(--color-gallery);
+    --border-color-button--naked: var(--color-gallery);
+    --border-color-box: var(--color-gallery);
     /*---------------heading links---------------*/
-    --heading-text-color-link: var(--text-color);
-    --heading-text-color-link--hover: var(--third-color);
-    --heading-border-color-link: var(--text-color);
-    --heading-border-color-link--hover: var(--third-color);
+    --heading-text-color-link: var(--color-text-color);
+    --heading-text-color-link--hover: var(--color-third-color);
+    --heading-border-color-link: var(--color-text-color);
+    --heading-border-color-link--hover: var(--color-third-color);
     /*---------------links---------------*/
-    --color-link--icon: var(--mine-shaft);
-    --color-link--negativo: var(--wildsand);
-    --color-link--negativo-hover: var(--third-color);
+    --color-link--icon: var(--color-mine-shaft);
+    --color-link--negativo: var(--color-wildsand);
+    --color-link--negativo-hover: var(--color-third-color);
     /*---------------tables---------------*/
-    --color-table-border: var(--gallery);
-    --color-table-bg: var(--wildsand);
-    --color-tr-border: var(--gallery);
-    --color-tr-bg: var(--gallery);
-    --color-th-border: var(--gallery);
-    --color-th-bg: var(--gallery);
-    --color-colspan-bg: var(--gallery);
-    --color-td-border: var(--gallery);
-    --color-td-bg: var(--wildsand);
-    /*---------------sizes---------------*/
-    --small: 5px;
-    --medium: 10px;
-    --large: 20px;
-    --xlarge: 40px;
-    --xxlarge: 60px;
-    --none: 0;
-    --page-width: 1170px;
-    --button-height: 45px;
-    --input-height: 45px;
-    --small-viewport-page-padding: 10px;
-    /*---------------font-sizes---------------*/
-    /*10px*/
-    --font-size-x-small: 0.625rem;
-    /* 12px*/
-    --font-size-small: 0.75rem;
-    /*13px*/
-    --font-size-medium: 0.8125rem;
-    /* 14px*/
-    --font-size-medium-a: 0.875rem;
-    /*16px*/
-    --font-size-large: 1rem;
-    /*20px*/
-    --font-size-x-large: 1.25rem;
-    /*25.12px*/
-    --font-size-x-large-a: 1.57rem;
-    /*28px*/
-    --font-size-xx-large: 1.75rem;
+    --color-table-border: var(--color-gallery);
+    --color-table-bg: var(--color-wildsand);
+    --color-tr-border: var(--color-gallery);
+    --color-tr-bg: var(--color-gallery);
+    --color-th-border: var(--color-gallery);
+    --color-th-bg: var(--color-gallery);
+    --color-colspan-bg: var(--color-gallery);
+    --color-td-border: var(--color-gallery);
+    --color-td-bg: var(--color-wildsand);
     /*---------------lenghts---------------*/
     --width-form-element: 600px;
     --width-label--inline: 40%;
@@ -120,39 +59,13 @@
     --width-select--inline: 60%;
     --height-heading-box: 150px;
     /*---------------logo---------------*/
-    --width-logo:250px;
-    --height-logo:;
+    --width-logo: 250px;
+    --height-logo: ;
     /*---------------Spacing---------------*/
-    --margin-header:var(--spacing-large);
+    --margin-header: var(--spacing-large);
     /*-------------------------------------*/
     --border-width-thin: 1px;
     --border-width-thick: 2px;
-    --spacing-none: 0;
-    /*2px;*/
-    --spacing-xxx-small: 0.125rem;
-    /*4px*/
-    --spacing-xx-small: 0.25rem;
-    /*8px*/
-    --spacing-x-small: 0.5rem;
-    /*12px*/
-    --spacing-small: 0.75rem;
-    /*16px*/
-    --spacing-medium: 1rem;
-    /*24px*/
-    --spacing-large: 1.5rem;
-    /*32px*/
-    --spacing-x-large: 2rem;
-    /*48px*/
-    --spacing-xx-large: 3rem;
-    /*---------------breakpoints tokens---------------*/
-    --bp-small: 500px;
-    --bp-medium: 800px;
-    --bp-large: 1170px;
-    --bp-page: 1170px;
-/*-------------banners bg images---------------*/
-    --img-banner1:../images/trainido.jpg;
-    --img-banner2:../images/aomm.jpg;
-    --img-banner3:../images/terapia.jpg;
 }
 
 

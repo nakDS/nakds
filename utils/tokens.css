@@ -1,0 +1,81 @@
+:root {
+    /*---------------fonts---------------*/
+    --base-font: 'Lato', sans-serif;
+    --input-font: 'MyriadPro', sans-serif;
+    --code-font: 'MyriadPro', sans-serif;
+    /*---------------brand tokens---------------*/
+    --theme-color: var(--barberry);
+    --theme-second-color: #ff1821;
+    --theme-third-color: #5c91c0;
+    --theme-fourth-color: #7a9f34;
+    /*---------------tokens---------------*/
+    --color-gallery: #EBEBEB;
+    --color-mercury: #e5e5e5;
+    --color-wildsand: #F5F5F5;
+    --color-steel-blue: #5c91c0;
+    --color-torch-red900: #330406;
+    --color-torch-red800: #66090d;
+    --color-torch-red700: #990e13;
+    --color-torch-red600: #cc131a;
+    --color-torch-red: #FF1821;
+    --color-torch-red400: #ff464d;
+    --color-torch-red300: #ff7479;
+    --color-torch-red200: #ffa2a6;
+    --color-torch-red100: #ffd0d2;
+    --color-barberry: #D6D41B;
+    /*---------------greyscale tokens---------------*/
+    --color-black: black;
+    --color-cod-gray: #111;
+    --color-mine-shaft: #222;
+    --color-opaque: #6f6f6f;
+    --color-dark: #b0b0b0;
+    --color-neutral: #d6d6d6;
+    --color-pale: #e5e5e5;
+    --color-barer: #eeeeee;
+    --color-bare: #f5f5f5;
+    --color-white: #ffffff;
+    --color-white-rgb: 255,255,255;
+    /*---------------sizes---------------*/
+    --page-width: 1170px;
+    /*----*/
+    --none: 0;
+    /*2px;*/
+    --xxx-small: 0.125rem;
+    /*4px*/
+    --xx-small: 0.25rem;
+    /*8px*/
+    --x-small: 0.5rem;
+    /*12px*/
+    --small: 0.75rem;
+    /*16px*/
+    --medium: 1rem;
+    /*20px*/
+    --large: 1.25rem;
+    /*24px*/
+    --x-large: 1.5rem;
+    /*28px*/
+    --xx-large: 1.75rem;
+    /*32px*/
+    --xxx-large: 2rem;
+    /*48px*/
+    --xxxx-large: 3rem;
+    /*---------------breakpoints tokens---------------*/
+    --bp-small: 500px;
+    --bp-medium: 800px;
+    --bp-large: 1170px;
+    --bp-page: 1170px;
+
+}
+
+
+/*---------------breakpoints---------------*/
+
+@custom-media --small-viewport (max-width: 500px);
+@custom-media --min-small-viewport (min-width: 500px);
+@custom-media --medium-viewport (max-width: 800px);
+@custom-media --min-medium-viewport (min-width: 800px);
+@custom-media --page-viewport (max-width: 1170px);
+@custom-media --page-viewport--spacing (max-width: 1266px);
+@custom-media --min-page-viewport (min-width: 1170px);
+@custom-media --large-viewport (max-width: 1170px);
+@custom-media --min-large-viewport (min-width: 1170px);

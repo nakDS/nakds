@@ -3,5 +3,5 @@
 body {
     color: var(--text-color);
     font-size: 1em;
-    font-family: var(--base-font);
+    font-family: var(--base-font); 
 }

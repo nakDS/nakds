@@ -11,7 +11,8 @@
 /*===============utils===============*/
 
 @import "utils/var";
-@import "utils/mixin";
+@import "utils/tokens";
+
 @import "utils/apply";
 @import "utils/utils";
 @import "utils/sizing";
@@ -36,7 +37,7 @@
 @import "components/icon";
 @import "components/module";
 @import "components/search";
-@import "components/form"; 
+@import "components/form";
 @import "components/link";
 @import "components/list";
 @import "components/paginate";
@@ -56,3 +57,4 @@
 @import "layout/grid";
 
 /*===============pages===============*/
+@import "utils/mixin";
