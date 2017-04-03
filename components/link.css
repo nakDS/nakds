@@ -1,11 +1,13 @@
 /*---------------link---------------*/
+@import "../variables/required-utils";
 
 a {
     color: var(--link-color);
     text-decoration: underline;
     cursor: pointer;
+
     &:hover {
-        color: var(--color);
+        color: var(--color-theme);
     }
 }
 
@@ -13,6 +15,7 @@ a {
 
 .nak-link--naked {
     text-decoration: none;
+
     &:hover {
         text-decoration: none;
     }
@@ -21,6 +24,7 @@ a {
 .nak-link--neutral {
     color: var(--text-color);
     text-decoration: none;
+
     span {
         color: currentColor;
     }
@@ -31,6 +35,7 @@ a {
 
 .nak-link--negative {
     color: var(--color-link--negativo);
+
     &:hover {
         color: var(--color-link--negativo-hover);
     }
@@ -40,34 +45,38 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+
     [class*="ii-icon"] {
         margin-right: 5px;
-        color: var(--dark);
+        color: var(--color-dark);
     }
     &:hover {
         [class*="ii-icon"] {
-            color: var(--opaque);
+            color: var(--color-opaque);
         }
     }
 }
 
 .nak-menu-link--color {
-    color: var(--color);
+    color: var(--color-theme);
     text-decoration: none;
+
     &:hover {
         text-decoration: none;
+
         [class*="ii-icon"] {
-            color: var(--third-color);
+            color: var(--color-theme-third);
         }
     }
     [class*="ii-icon"] {
-        color: var(--color);
+        color: var(--color-theme);
     }
 }
 
 .icon-position-center {
     display: flex;
     align-items: center;
+
     span {
         margin-left: var(--medium);
         text-decoration: none;

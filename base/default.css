@@ -1,7 +1,14 @@
 /*---------------default---------------*/
-
+:root{
+    font-size: 16px;
+}
 body {
     color: var(--text-color);
+<<<<<<< HEAD
     font-size: 1em;
     font-family: var(--base-font); 
+=======
+    font-family: var(--base-font);
+>>>>>>> 5071e6fd6142ac13d308258a6438254c49a508fd
 }
+ 

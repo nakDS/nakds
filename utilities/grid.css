@@ -1,4 +1,19 @@
-/*===============grid===============*/
+@import "../variables/required-utils";
+/*---------------grid---------------*/
+:root{
+  --grid-item-top-space:var(--x-small);
+  --grid-item-bottom-space:var(--x-small);
+}
+/*----------------Custom variables---------------------*/
+
+
+/*----------------@mixin---------------------*/
+
+
+/*----------------If you need OOCSS---------------------*/
+
+
+/*-------------------------------------*/
 
 .nak-grid {
     display: flex;
@@ -12,6 +27,7 @@
 .nak-grid--has-spaces {
     display: flex;
     justify-content: space-between;
+
     @media (--medium-viewport) {
         .nak-is-stacable--medium {
             .nak-box {
@@ -28,6 +44,7 @@
             }
         }
     }
+
     &.nak-grid--wrapped {
         >* {
             margin-bottom: var(--large);
@@ -46,11 +63,22 @@
         }
     }
 }
-
+.nak-grid--has-v-space{
+  >*{
+    margin-top: var(--grid-item-top-space);
+    margin-bottom: var(--grid-item-bottom-space);
+  }
+}
+.nak-has-col--2{
+  >*{
+    width: 50%;
+  }
+}
 
 /*Automatic cols*/
 .nak-grid__item{
   flex: 1 1 auto;
+
 img{
   width: 100%;
 }
@@ -65,6 +93,7 @@ img{
     display: flex;
     align-items: center;
     height: 100%;
+
     &.nak-has-column {
         display: flex;
         flex-direction: column;

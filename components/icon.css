@@ -1,8 +1,9 @@
 /*---------------icon---------------*/
+@import "../variables/required-utils";
 
 .nak-has-border{
   padding: 5px;
-  border:3px solid var(--third-color);
+  border:3px solid var(--color-theme-third);
   border-radius: 500rem;
 }
 .nak-has-icon--right{

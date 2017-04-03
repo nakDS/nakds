@@ -1,5 +1,5 @@
 /*---------------table---------------*/
-
+@import "../variables/required-utils";
 
 /*------------------------------------*/
 
@@ -9,7 +9,7 @@
     background: var(--color-table-bg);
 
     th {
-        color: var(--color);
+        color: var(--color-theme);
         font-weight: bold;
     }
     td {

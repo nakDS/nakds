@@ -1,4 +1,6 @@
 /*---------------layout---------------*/
+@import "../variables/required-utils";
+
 
 .nak-page-wrapper {
     display: flex;
@@ -43,7 +45,7 @@
 
 }
 .nak-page-container {
-    @apply --spacing-page;
+    /*@apply --spacing-page;*/
 }
 
 .nak-row {
@@ -56,11 +58,11 @@
 }
 
 .nak-row--expanded {
-    @apply --row--expanded;
+    /*@apply --row--expanded;*/
 }
 
 .nak-row--centered {
-    @apply --row--centered;
+    /*@apply --row--centered;*/
 }
 
 .nak-display--column {

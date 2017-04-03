@@ -1,3 +1,7 @@
+<<<<<<< HEAD:utils/mixin.css
+=======
+
+>>>>>>> 5071e6fd6142ac13d308258a6438254c49a508fd:variables/mixin.css
 /*----------------@mixin---------------------*/
 
 
@@ -6,6 +10,7 @@
 
 
 /*----------------Button---------------------*/
+<<<<<<< HEAD:utils/mixin.css
 @define mixin nak-button {
     display: flex;
     align-items: center;
@@ -96,6 +101,10 @@
     font-size: 16px;
     font-family: var(--base-font);
 }*/
+=======
+
+
+>>>>>>> 5071e6fd6142ac13d308258a6438254c49a508fd:variables/mixin.css
 
 @define-mixin small-spacing {
     margin-top: var(--small);
@@ -114,7 +123,7 @@
 
 @define-mixin large-heading-spacing {
     margin-top: var(--large);
-    margin-bottom: var(--xlarge);
+    margin-bottom: var(--x-large);
 }
 
 @define-mixin medium-heading-spacing {

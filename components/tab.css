@@ -1,3 +1,5 @@
+/*---------------tab---------------*/
+@import "../variables/required-utils";
 .nak-tab-list {
     display: flex;
 }
@@ -5,7 +7,7 @@
 .nak-tab-item {
   + .nak-tab-item{
       &:hover {
-        box-shadow:  -1px 0px 0px var(--dark);
+        box-shadow:  -1px 0px 0px var(--color-dark);
     }
   }
 }
@@ -22,7 +24,7 @@
 
     .nak-is-active &, &:hover {
         background: var(--background-color);
-        box-shadow: 0px -3px 0px var(--color);
+        box-shadow: 0px -3px 0px var(--color-theme);
         color: var(--text-color);
         text-decoration: none;
     }

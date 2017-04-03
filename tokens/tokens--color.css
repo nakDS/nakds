@@ -1,0 +1,38 @@
+:root {
+    /*---------------brand tokens---------------*/
+    --color-theme: #9fcad2;
+    --color-theme-second: #ff1821;
+    --color-theme-third: #5c91c0;
+    --color-theme-fourth: #7a9f34;
+    /*---------------tokens---------------*/
+    --color-gallery: #EBEBEB;
+    --color-mercury: #e5e5e5;
+    --color-wildsand: #F5F5F5;
+    --color-steel-blue: #5c91c0;
+    --color-torch-red900: #330406;
+    --color-torch-red800: #66090d;
+    --color-torch-red700: #990e13;
+    --color-torch-red600: #cc131a;
+    --color-torch-red: #FF1821;
+    --color-torch-red400: #ff464d;
+    --color-torch-red300: #ff7479;
+    --color-torch-red200: #ffa2a6;
+    --color-torch-red100: #ffd0d2;
+    --color-barberry: #D6D41B;
+    --color-azure: #5c91c0;
+    /*---------------greyscale tokens---------------*/
+    --color-black: #000000;
+    --color-cod-gray: #111;
+    --color-mine-shaft: #222;
+    --color-opaque: #6f6f6f;
+    --color-dark: #b0b0b0;
+    --color-neutral: #d6d6d6;
+    --color-pale: #e5e5e5;
+    --color-barer: #eeeeee;
+    --color-bare: #f5f5f5;
+    --color-white: #ffffff;
+    --color-white-rgb: #ffffff;
+    --color-test: #521486;
+    --color-test2: #852178;
+
+  }

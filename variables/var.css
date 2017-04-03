@@ -1,0 +1,82 @@
+/*----------------Generic Custom variables---------------------*/
+
+:root {
+    /*---------------fonts---------------*/
+    --base-font: 'Lato', sans-serif;
+    --input-font: 'MyriadPro', sans-serif;
+    --code-font: 'MyriadPro', sans-serif;
+    /*---------------text---------------*/
+    --text-color: var(--color-opaque);
+    --text-color--ok: var(--color-positive);
+    --text-color--ko: var(--color-error);
+    --text-color--light: #b0b0b0;
+    --text-color--dark: var(--color-cod-gray);
+    /*---------------states---------------*/
+    --color-positive: var(--color-theme-fourth);
+    --color-error: var(--color-torch-red200);
+    /*---------------color backgrounds---------------*/
+    --background-color: var(--color-gallery);
+    --background-color-button: var(--color-theme);
+    --background-color-button--theme: var(--color-azure);
+    --background-color-button--hover: var(--color-steel-blue);
+    --background-color-label: var(--color-gallery);
+    --background-color-input: var(--color-wildsand);
+    --background-color-button--naked--hover: var(--color-gallery);
+    /*---------------Links---------------*/
+    --link-color: var(--color-barberry);
+    /*---------------Tooltip theme---------------*/
+    --background-color-tooltip: var(--color-white-rgb);
+    --opacity-background-tooltip: 1;
+    --animation-time: .2s;
+    /*---------------color border---------------*/
+    --border-color: var(--color-gallery);
+    --border-color--naked: var(--color-gallery);
+    --border-color-button--naked: var(--color-gallery);
+    --border-color-box: var(--color-gallery);
+    /*---------------heading links---------------*/
+    --heading-text-color-link: var(--text-color);
+    --heading-text-color-link--hover: var(--color-theme-third);
+    --heading-border-color-link: var(--text-color);
+    --heading-border-color-link--hover: var(--color-theme-third);
+    /*---------------links---------------*/
+    --color-link--icon: var(--color-mine-shaft);
+    --color-link--negativo: var(--color-wildsand);
+    --color-link--negativo-hover: var(--color-theme-third);
+    /*---------------tables---------------*/
+    --color-table-border: var(--color-gallery);
+    --color-table-bg: var(--color-wildsand);
+    --color-tr-border: var(--color-gallery);
+    --color-tr-bg: var(--color-gallery);
+    --color-th-border: var(--color-gallery);
+    --color-th-bg: var(--color-gallery);
+    --color-colspan-bg: var(--color-gallery);
+    --color-td-border: var(--color-gallery);
+    --color-td-bg: var(--color-wildsand);
+    /*---------------lenghts---------------*/
+    --width-form-element: 600px;
+    --width-label--inline: 40%;
+    --width-input--inline: 60%;
+    --width-select--inline: 60%;
+    --height-heading-box: 150px;
+    /*---------------logo---------------*/
+    --width-logo: 250px;
+    --height-logo: ;
+    /*---------------Spacing---------------*/
+    --margin-header: var(--spacing-large);
+    /*-------------------------------------*/
+    --border-width-thin: 1px;
+    --border-width-thick: 2px;
+}
+
+
+/*---------------breakpoints---------------*/
+
+@custom-media --small-viewport (max-width: 500px);
+@custom-media --min-small-viewport (min-width: 500px);
+@custom-media --medium-viewport (max-width: 800px);
+@custom-media --min-medium-viewport (min-width: 800px);
+@custom-media --page-viewport (max-width: 1170px);
+@custom-media --page-viewport--spacing (max-width: 1266px);
+@custom-media --min-page-viewport (min-width: 1170px);
+@custom-media --large-viewport (max-width: 1170px);
+@custom-media --min-large-viewport (min-width: 1170px);

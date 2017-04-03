@@ -1,6 +1,9 @@
 /*nakDS-core by @nabaroa*/
 /*This CSS uses postCSS (http://postcss.org/) and is compiled by the root gulpfile*/
 
+/*===============variables root ===============*/
+@import "variables/required-utils";
+/*@import "variables/apply";*/
 /*===============base===============*/
 
 @import "base/reset";
@@ -9,6 +12,7 @@
 
 
 /*===============utils===============*/
+
 
 @import "utils/var";
 @import "utils/tokens";
@@ -19,6 +23,12 @@
 @import "utils/spacing";
 
 
+
+
+@import "utilities/grid";
+
+
+
 /*===============components===============*/
 
 @import "components/address";
@@ -26,6 +36,7 @@
 @import "components/header";
 @import "components/header-menu";
 @import "components/heading";
+@import "components/card";
 @import "components/cms";
 @import "components/login";
 @import "components/box";
@@ -41,7 +52,6 @@
 @import "components/link";
 @import "components/list";
 @import "components/paginate";
-@import "components/cart";
 @import "components/toolbar";
 @import "components/footer";
 @import "components/banner";
@@ -54,7 +64,7 @@
 /*===============layout===============*/
 
 @import "layout/layout";
-@import "layout/grid";
+
 
 /*===============pages===============*/
 @import "utils/mixin";

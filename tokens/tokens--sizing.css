@@ -1,0 +1,14 @@
+  /*!---------------sizing tokens---------------*/
+  :root {
+  --none: 0;
+  --xxx-small: 0.125rem;  /*!2px;*/
+  --xx-small: 0.25rem;    /*!4px*/
+  --x-small: 0.5rem;    /*!8px*/
+  --small: 0.75rem;    /*!12px*/
+  --medium: 1rem;    /*!240px*/
+  --large: 1.25rem;    /*!20px*/
+  --x-large: 1.5rem;    /*!24px*/
+  --xx-large: 1.75rem;    /*!28px*/
+  --xxx-large: 2rem;    /*!32px*/
+  --xxxx-large: 3rem;    /*!48px*/
+  }

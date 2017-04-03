@@ -1,3 +1,4 @@
+@import "../variables/required-utils";
 /*---------------spacing---------------*/
 /* spacing helpers
 p,m = padding,margin
@@ -32,7 +33,7 @@ s,m,l,n = small(5px),medium(var(--medium)),large(var(--large)),none(var(--none))
 .nak-ptx,
 .nak-pvx,
 .nak-pax {
-  padding-top: var(--xlarge) !important;
+  padding-top: var(--x-large) !important;
 }
 
 .nak-ptxx,
@@ -140,7 +141,7 @@ s,m,l,n = small(5px),medium(var(--medium)),large(var(--large)),none(var(--none))
 .nak-mtx,
 .nak-mvx,
 .nak-max {
-  margin-top: var(--xlarge) !important;
+  margin-top: var(--x-large) !important;
 }
 
 .nak-mrn,
@@ -195,7 +196,7 @@ ul.nak-mrl li {
 .nak-mbx,
 .nak-mvx,
 .nak-max {
-  margin-bottom: var(--xlarge) !important;
+  margin-bottom: var(--x-large) !important;
 }
 
 .nak-mln,
@@ -224,7 +225,7 @@ ul.nak-mrl li {
 
 .nak-mtxl,
 .nak-maxl {
-  margin-top: var(--xlarge) !important;
+  margin-top: var(--x-large) !important;
 }
 
 .nak-mtxxl,

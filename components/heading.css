@@ -1,4 +1,5 @@
 /*----------------Custom variables---------------------*/
+<<<<<<< HEAD
 
 
 :root {
@@ -11,6 +12,27 @@
     --text-title__color: var(--azure);
     --text-title__font-size: 1.5em;
     --text-title__background:  var(--wildsand);
+=======
+@import "../variables/required-utils";
+
+
+:root {
+    --page-title__color: var(--color-opaque);
+    --page-title__font-size: 3em;
+    --page-title__background:  var(--color-wildsand);
+    --section-title__color: var(--color-azure);
+    --section-title__font-size: 2em;
+    --section-title__background:  var(--color-wildsand);
+    --text-title__color: var(--color-azure);
+    --text-title__font-size: 1.5em;
+    --text-title__background:  var(--color-wildsand);
+    --heading-1__font-size:  3rem;
+    --heading-2__font-size: 2.5rem;
+    --heading-3__font-size: 2.2rem;
+    --heading-4__font-size: 1.8rem;
+    --heading-5__font-size: 1.6rem;
+    --heading-6__font-size: 1.4rem;
+>>>>>>> 5071e6fd6142ac13d308258a6438254c49a508fd
 }
 
 /*----------------@mixin---------------------*/
@@ -59,7 +81,17 @@
 
 .nak-section-title {
     @mixin nak-section-title;
+<<<<<<< HEAD
 }
 
+=======
+}
+.nak-heading-1{
+  font-size:var(--heading-1__font-size) ;
+}
+.nak-heading-2{
+  font-size:var(--heading-2__font-size) ;
+}
+>>>>>>> 5071e6fd6142ac13d308258a6438254c49a508fd
 
 /*-------------------------------------*/

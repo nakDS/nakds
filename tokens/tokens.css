@@ -1,0 +1,38 @@
+@import "tokens--color";
+@import "tokens--sizing";
+@import "tokens--font-size";
+:root {
+    /*---------------fonts---------------*/
+    --base-font: 'Lato', sans-serif;
+    --input-font: 'MyriadPro', sans-serif;
+    --code-font: 'MyriadPro', sans-serif;
+    /*---------------spacing tokens---------------*/
+    /*10px*/
+    --spacing-small: 0.70rem;
+    /*20px*/
+    --spacing-medium: 1.25rem;
+    /*40px*/
+    --spacing-large: 2.5rem;
+    /*60px*/
+    --spacing-x-large: 3.75rem;
+    /*---------------breakpoints tokens---------------*/
+    --bp-small: 500px;
+    --bp-medium: 800px;
+    --bp-large: 1170px;
+    --bp-page: 1170px;
+  --page-width: 1170px;
+}
+
+
+/*---------------breakpoints---------------*/
+
+@custom-media --small-viewport (max-width: 500px);
+@custom-media --min-small-viewport (min-width: 500px);
+@custom-media --medium-viewport (max-width: 800px);
+@custom-media --min-medium-viewport (min-width: 800px);
+@custom-media --page-viewport (max-width: 1170px);
+@custom-media --page-viewport--spacing (max-width: 1266px);
+@custom-media --min-page-viewport (min-width: 1170px);
+@custom-media --large-viewport (max-width: 1170px);
+@custom-media --min-large-viewport (min-width: 1170px);
+@custom-media --min-x-large-viewport (min-width: 1400px);
