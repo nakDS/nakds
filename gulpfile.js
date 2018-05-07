@@ -35,12 +35,12 @@ gulp.task('css', function() {
         },
         safe: true
     };
-    return gulp.src('./src/**/*.css')
+    return gulp.src('./src/nakDS.css')
         .pipe(postcss(processors))
         .pipe(nano(configNano))
         .pipe(gulp.dest('./dist/'))
         .pipe(notify({
-            message: 'Your nakDS-core CSS is ready ♡'
+            message: 'Your nakDS CSS is ready ♡'
         }));
 });
 
