@@ -1,0 +1,32 @@
+/*---------------module---------------*/
+@import "../variables/required-utils";
+
+:root {
+
+  --ii-module {
+    /*flex:1;*/
+    padding: var(--large);
+
+    p {
+      margin-bottom: var(--medium);
+    }
+  }
+}
+
+.nak-module {}
+
+.nak-module--neutral {
+  @apply --ii-module;
+  background: ;
+  border: 1px solid var(--border-color-box);
+}
+
+.nak-is-symmetric {
+  flex: 1;
+}
+
+.nak-module__title {
+  font-weight: bold;
+  color: var(--color-theme);
+  text-transform: inherit;
+}

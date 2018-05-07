@@ -1,0 +1,40 @@
+{
+  "name": "nakDS-core",
+  "version": "1.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "cssnano": "^3.6.2",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-inject-string": "^1.1.0",
+    "gulp-insert": "0.5.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-string-replace": "^0.4.0",
+    "postcss-apply": "^0.4.0",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-custom-properties": "^5.0.1",
+    "postcss-import": "^8.1.0",
+    "postcss-media-variables": "^2.0.0",
+    "postcss-mixins": "^4.0.1",
+    "postcss-nested": "^1.0.0",
+    "stylelint": "^9.2.0",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^0.8.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nabaroa/nakDS-core"
+  },
+  "homepage": "",
+  "description": ""
+}

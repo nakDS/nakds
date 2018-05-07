@@ -1,0 +1,57 @@
+/*---------------box---------------*/
+
+@import "../variables/required-utils";
+
+/*----------------Custom variables---------------------*/
+
+:root {
+  --box__min-width: 100px;
+  --box__padding: var(--spacing-small) var(--spacing-medium);
+  --box__height: var(--spacing-large);
+  --box__border-width: 1px;
+  --box__border-style: solid;
+  --box__border-color: var(--color-barer);
+  --box__background: var(--color-bare);
+  --box__color: var(--text-color);
+  --box__font-size: var(--large);
+  --box__font: var(--base-font);
+  --box__border-radius: var(--xxx-small);
+}
+
+
+/*----------------@mixin---------------------*/
+
+@define-mixin nak-box {
+  display: flex;
+  min-width: var(--box__min-width);
+  height: var(--box__height);
+  padding: var(--box__padding);
+  font-family: var(--box__font);
+  font-size: var(--box__font-size);
+  color: var(--box__color);
+  background: var(--box__background);
+  border: var(--box__border-width) var(--box__border-style) var(--box__border-color);
+  border-radius: var(--box__border-radius);
+}
+
+
+/*----------------If you need OOCSS---------------------*/
+
+.nak-box {
+  @mixin nak-box;
+}
+
+.nak-box--center {
+  @mixin nak-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.nak-box--right {
+  @mixin nak-box;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+/*-------------------------------------*/

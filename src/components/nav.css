@@ -1,0 +1,37 @@
+/*---------------nav---------------*/
+@import "../variables/required-utils";
+
+.nak-navigation-list--vertical {
+  padding: var(--medium);
+  border: 10px solid var(--color-bare);
+
+  h2 {
+    padding-bottom: 10px;
+    margin: 0;
+    border-bottom: 5px solid var(--color-bare);
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+
+    a {
+      color: var(--text-color);
+      text-decoration: none;
+
+      &:hover{
+        color:var(--color-theme);
+      }
+    }
+
+    span:before {
+      color:var(--color-theme);
+      content: "\e902";
+    }
+  }
+
+  strong{
+    color:var(--color-theme);
+  }
+}

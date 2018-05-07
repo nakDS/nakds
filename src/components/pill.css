@@ -1,0 +1,24 @@
+/*---------------pill---------------*/
+@import "../variables/required-utils";
+
+.nak-pill_container {
+  margin: var(--medium) 0;
+}
+
+.nak-pill {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  min-height: 1.625rem;
+  padding: 3px 5px;
+  background-color: #fff;
+  border: 1px solid #d8dde6;
+  border-radius: .25rem;
+
+  a{
+    color:var(--text-color);
+    text-decoration: none
+  }
+}

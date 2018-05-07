@@ -1,0 +1,67 @@
+/*---------------wizard---------------*/
+@import "../variables/required-utils";
+
+.nak-wizard {
+
+  a {
+    color: var(--text-color--light);
+    text-decoration: none
+  }
+}
+
+.nak-wizard-list {
+  display: flex;
+  justify-content: space-between;
+
+  @media (--medium-viewport) {
+    margin-bottom: var(--large);
+  }
+}
+
+.nak-wizard-item {
+  /*@apply --wizard-item;*/
+}
+
+.nak-wizard-marker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-left: -1px;
+  background: var(--color-pale);
+  border-radius: 500rem;
+
+  .fa {
+    position: absolute;
+    font-size: 1.2em;
+    color: var(--color-white);
+  }
+
+  .is-active &, .nak-is-active & {
+    background: var(--color-theme);
+  }
+}
+
+.nak-wizard-label {
+  display: block;
+  margin-bottom: -6px;
+  margin-left: var(--xx-large);
+
+  @media (--medium-viewport) {
+    display: none;
+    margin: 0;
+  }
+}
+
+form {
+
+  .has-wizard & {
+    display: none;
+
+    &.is-active {
+      display: block;
+    }
+  }
+}

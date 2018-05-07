@@ -1,0 +1,34 @@
+/*---------------tab---------------*/
+@import "../variables/required-utils";
+
+.nak-tab-list {
+  display: flex;
+}
+
+.nak-tab-item {
+
+  + .nak-tab-item{
+
+    &:hover {
+      box-shadow:  -1px 0 0 var(--color-dark);
+    }
+  }
+}
+
+.nak-tab-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  color: var(--text-color--light);
+  text-decoration: none;
+
+  .nak-is-active &, &:hover {
+    color: var(--text-color);
+    text-decoration: none;
+    background: var(--background-color);
+    box-shadow: 0 -3px 0 var(--color-theme);
+  }
+}

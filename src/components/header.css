@@ -1,0 +1,19 @@
+/*---------------header---------------*/
+@import "../variables/required-utils";
+
+.nak-header {
+  display: flex;
+  align-items: center;
+  padding: var(--margin-header);
+}
+
+.nak-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nak-logo__svg {
+  width: var(--width-logo);
+  max-width: 100%;
+  margin-right: var(--small)
+}

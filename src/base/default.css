@@ -1,0 +1,11 @@
+/*---------------default---------------*/
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--base-font);
+  font-size: 1em;
+  color: var(--text-color);
+}
