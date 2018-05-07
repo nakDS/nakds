@@ -1,5 +1,5 @@
 {
-  "name": "nakDS-core",
+  "name": "nakds-core",
   "version": "1.0.1",
   "main": "index.js",
   "scripts": {
