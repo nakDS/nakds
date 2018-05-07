@@ -1,33 +1,27 @@
-/*nakDS-core by @nabaroa*/
-/*This CSS uses postCSS (http://postcss.org/) and is compiled by the root gulpfile*/
+/*nakDS by @nabaroa. 2018*/
+
+/*This CSS uses postCSS (http://postcss.org/)*/
 
 /*===============variables root ===============*/
 @import "variables/required-utils";
-/*@import "variables/apply";*/
+@import "variables/apply";
+
 /*===============base===============*/
 
 @import "base/reset";
 @import "base/typography";
 @import "base/default";
 
-
 /*===============utils===============*/
-
 
 @import "utils/var";
 @import "utils/tokens";
 
-@import "utils/apply";
 @import "utils/utils";
 @import "utils/sizing";
 @import "utils/spacing";
 
-
-
-
 @import "utilities/grid";
-
-
 
 /*===============components===============*/
 
@@ -64,7 +58,6 @@
 /*===============layout===============*/
 
 @import "layout/layout";
-
 
 /*===============pages===============*/
 @import "utils/mixin";
