@@ -12,7 +12,9 @@ This is the core of the Design System.
 ![alt tag](https://raw.githubusercontent.com/nabaroa/nakDS/88fae463bcd747147683a296211fb212dc1d9f63/images/nakds-desktop.jpg)
 nakDS is work in progress yet. Use it carefully.
 
-This project is based on [Jekyll](https://jekyllrb.com/). [For further information](https://jekyllrb.com/docs/installation/) about the instalation
 
-###Credits:
+##Credits:
 [Icon attribution](https://thenounproject.com/search/?q=connect&i=139022)
+
+## License
+[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
