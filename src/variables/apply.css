@@ -277,7 +277,7 @@
       }
     }
 
-    &:before {
+    &::before {
       position: absolute;
       bottom: 13px;
       left: 0;
