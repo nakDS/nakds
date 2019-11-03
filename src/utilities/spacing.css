@@ -101,7 +101,7 @@ s,m,l,n = small(5px),medium(var(--medium)),large(var(--large)),none(var(--none))
 .nak-pls,
 .nak-phs,
 .nak-pas {
-  padding-left:var(--small) !important;
+  padding-left: var(--small) !important;
 }
 
 .nak-plm,

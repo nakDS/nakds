@@ -1,55 +1,41 @@
 /*nakDS-core by @nabaroa*/
 
-var gulp = require('gulp'),
-    postcss = require('gulp-postcss'),
-    autoprefixer = require('autoprefixer'),
-    cssimport = require('postcss-import'),
-    customproperties = require('postcss-custom-properties'),
-    apply = require('postcss-apply'),
-    mixins = require('postcss-mixins'),
-    nested = require('postcss-nested'),
-    customMedia = require("postcss-custom-media")
-    nano = require('gulp-cssnano'),
-    notify = require('gulp-notify'),
-    rename = require('gulp-rename'),
-    inject = require('gulp-inject-string'),
-    replace = require('gulp-string-replace'),
-    insert = require('gulp-insert');
-// Core
-gulp.task('css', function() {
-    var processors = [
-        cssimport,
-        autoprefixer,
-        customproperties,
-        apply,
-        mixins,
-        nested,
-        customMedia
-    ];
-    var configNano = {
-        autoprefixer: {
-            browsers: 'last 2 versions'
-        },
-        discardComments: {
-            removeAll: true
-        },
-        safe: true
-    };
-    return gulp.src('./src/nakDS.css')
-        .pipe(postcss(processors))
-        .pipe(nano(configNano))
-        .pipe(gulp.dest('./dist/'))
-        .pipe(notify({
-            message: 'Your nakDS CSS is ready ♡'
-        }));
-});
+const gulp = require('gulp');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const postcssPresetEnv = require('postcss-preset-env');
+const cssImport = require('postcss-import');
+const customProperties = require('postcss-custom-properties');
+const apply = require('postcss-apply');
+const mixins = require('postcss-mixins');
+const nested = require('postcss-nested');
+const customMedia = require('postcss-custom-media');
+const cssnano = require('cssnano');
+const notify = require('gulp-notify');
+const rename = require('gulp-rename');
+const inject = require('gulp-inject-string');
+const replace = require('gulp-string-replace');
+const insert = require('gulp-insert');
 
-// Watch
-gulp.task('watch', function() {
-    gulp.watch('./src/**/*.css', ['css']);
+function css() {
+  return gulp
+    .src("./src/nakDS.css")
+    .pipe(postcss([cssImport(),postcssPresetEnv(),autoprefixer()]))
+    .pipe(gulp.dest("./dist/css/"))
+    .pipe(postcss([cssnano()]))
+    .pipe(rename({ suffix: ".min" }))
+    .pipe(gulp.dest("./dist/css/"))
+    .pipe(notify({
+      message: 'Your nakDS CSS is ready ♡'
+    }));
+  }
 
+function watch() {
+  gulp.watch("./src/css/**/*.css", css);
+}
 
-});
+const build = gulp.series(css, watch);
 
-// Default
-gulp.task('default', ['css', 'watch']);
+exports.css = css;
+exports.watch = watch;
+exports.default = build;
