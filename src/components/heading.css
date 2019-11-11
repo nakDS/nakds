@@ -1,5 +1,5 @@
 /*----------------Custom variables---------------------*/
-@import "../variables/required-utils";
+@import "../variables/core-utils";
 
 :root {
   --page-title__color: var(--theme-color);

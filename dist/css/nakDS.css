@@ -1,7 +1,3 @@
-/*nakDS by @nabaroa. 2019*/
-
-/*This CSS uses postCSS (http://postcss.org/)*/
-
 :root {
   /*---------------brand tokens---------------*/
   --color-theme: #9fcad2;
@@ -42,9 +38,7 @@
   --color-test2: #852178;
 
 }
-
 /*!---------------sizing tokens---------------*/
-
 :root {
   --none: 0;
   --xxx-small: .125rem;  /*!2px;*/
@@ -58,9 +52,7 @@
   --xxx-large: 2rem;    /*!32px*/
   --xxxx-large: 3rem;    /*!48px*/
 }
-
 /*!---------------Font size tokens---------------*/
-
 :root {
   --font-size--x-small: .5rem;    /*!8px*/
   --font-size--small: .75rem;    /*!12px*/
@@ -71,7 +63,6 @@
   --font-size--xxx-large: 2rem;    /*!32px*/
   --font-size--xxxx-large: 3rem;    /*!48px*/
 }
-
 :root {
   /*---------------fonts---------------*/
   --base-font: "Lato", sans-serif;
@@ -99,31 +90,18 @@
   --bp-page: 1170px;
   --page-width: 1170px;
 }
-
 /*---------------breakpoints---------------*/
-
 @custom-media --small-viewport (max-width: 500px);
-
 @custom-media --min-small-viewport (min-width: 500px);
-
 @custom-media --medium-viewport (max-width: 800px);
-
 @custom-media --min-medium-viewport (min-width: 800px);
-
 @custom-media --page-viewport (max-width: 1170px);
-
 @custom-media --page-viewport--spacing (max-width: 1266px);
-
 @custom-media --min-page-viewport (min-width: 1170px);
-
 @custom-media --large-viewport (max-width: 1170px);
-
 @custom-media --min-large-viewport (min-width: 1170px);
-
 @custom-media --min-x-large-viewport (min-width: 1400px);
-
 /*----------------Generic Custom variables---------------------*/
-
 :root {
   /*---------------fonts---------------*/
   --base-font: "Lato", sans-serif;
@@ -203,27 +181,16 @@
   --border-width-thin: 1px;
   --border-width-thick: 2px;
 }
-
 /*---------------breakpoints---------------*/
-
 @custom-media --small-viewport (max-width: 500px);
-
 @custom-media --min-small-viewport (min-width: 500px);
-
 @custom-media --medium-viewport (max-width: 800px);
-
 @custom-media --min-medium-viewport (min-width: 800px);
-
 @custom-media --page-viewport (max-width: 1170px);
-
 @custom-media --page-viewport--spacing (max-width: 1266px);
-
 @custom-media --min-page-viewport (min-width: 1170px);
-
 @custom-media --large-viewport (max-width: 1170px);
-
 @custom-media --min-large-viewport (min-width: 1170px);
-
 @define mixin nak-button {
   display: -webkit-box;
   display: flex;
@@ -285,7 +252,6 @@
     margin: 0;
   }
 }
-
 /*--button--naked: {
     padding: 5px 10px;
     height: 30px;
@@ -320,7 +286,6 @@
     }
 }
 ;*/
-
 /*@define-mixin button {
     padding: 12px 50px;
     border: 0;
@@ -330,79 +295,66 @@
     font-size: 16px;
     font-family: var(--base-font);
 }*/
-
 @define-mixin small-spacing {
   margin-top: .75rem;
   margin-top: var(--small);
   margin-bottom: .75rem;
   margin-bottom: var(--small);
 }
-
 @define-mixin medium-spacing {
   margin-top: 1rem;
   margin-top: var(--medium);
   margin-bottom: 1rem;
   margin-bottom: var(--medium);
 }
-
 @define-mixin large-spacing {
   margin-top: 1.25rem;
   margin-top: var(--large);
   margin-bottom: 1.25rem;
   margin-bottom: var(--large);
 }
-
 @define-mixin large-heading-spacing {
   margin-top: 1.25rem;
   margin-top: var(--large);
   margin-bottom: 1.5rem;
   margin-bottom: var(--x-large);
 }
-
 @define-mixin medium-heading-spacing {
   margin-top: 1.25rem;
   margin-top: var(--large);
   margin-bottom: 1.25rem;
   margin-bottom: var(--large);
 }
-
 @define-mixin flex-direction($values) {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: $values;
 }
-
 @define-mixin flex-flow($values) {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-flow: $values;
 }
-
 @define-mixin align-items($values) {
   -webkit-box-align: $values;
           align-items: $values;
 }
-
 @define-mixin justify-content($values) {
   -webkit-box-pack: $values;
           justify-content: $values;
 }
-
 @define-mixin flex($values) {
   -webkit-box-flex: $values;
           flex: $values;
 }
-
 @define-mixin display-flex() {
   display: -webkit-box;
   display: flex;
 }
-
 @define-mixin display-inline-flex() {
   display: -webkit-inline-box;
   display: inline-flex;
 }
-
 :root {
   --form-element: {
     @mixin medium-spacing;
@@ -537,7 +489,7 @@
     color: var(--white);
     text-decoration: none !important;
     text-transform: inherit;
-    background: var(--barberry);
+    background: #9fcad2;
     background: var(--background-color-button);
     border: 0;
 
@@ -740,12 +692,10 @@
     }
   }
 }
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -766,68 +716,52 @@ time, mark, audio, video {
   vertical-align: baseline;
   border: 0;
 }
-
 /* HTML5 display-role reset for older browsers */
-
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
-
 body {
   line-height: 1;
 }
-
 ol, ul {
   list-style: none;
 }
-
 blockquote, q {
   quotes: none;
 }
-
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: "";
   content: none;
 }
-
 table {
   border-spacing: 0;
   border-collapse: collapse;
 }
-
 * {
   box-sizing: border-box;
 }
-
 h1,h2,h3,h4,h5,h6{
   font-size: 1rem;
 }
-
 /*---------------typography---------------*/
-
 @font-face {
   font-family: "Lato", sans-serif;
   src: url("../fonts/Lato-Regular.ttf");
 }
-
 @font-face {
   font-family:"Lato-light", sans-serif;
   src: url("../fonts/Lato-Light.ttf");
 }
-
 @font-face {
   font-family: "Lato-black";
   src: url("../fonts/Lato-Black.ttf");
 }
-
 /*---------------default---------------*/
-
 :root {
   font-size: 16px;
 }
-
 body {
   font-family: "Lato", sans-serif;
   font-family: var(--base-font);
@@ -835,326 +769,92 @@ body {
   color: #6f6f6f;
   color: var(--text-color);
 }
-
-/*----------------Generic Custom variables---------------------*/
-
-:root {
-  /*---------------fonts---------------*/
-  --base-font: "Lato", sans-serif;
-  --input-font: "MyriadPro", sans-serif;
-  --code-font: "MyriadPro", sans-serif;
-
-  /*---------------text---------------*/
-  --text-color: var(--color-opaque);
-  --text-color--ok: var(--color-positive);
-  --text-color--ko: var(--color-error);
-  --text-color--light: #b0b0b0;
-  --text-color--dark: var(--color-cod-gray);
-
-  /*---------------states---------------*/
-  --color-positive: var(--theme-fourth-color);
-  --color-error: var(--color-torch-red200);
-
-  /*---------------color backgrounds---------------*/
-  --background-color: var(--color-gallery);
-  --background-color-button: var(--theme-color);
-  --background-color-button--theme: var(--color-azure);
-  --background-color-button--hover: var(--color-steel-blue);
-  --background-color-label: var(--color-gallery);
-  --background-color-input: var(--color-wildsand);
-  --background-color-button--naked--hover: var(--color-gallery);
-
-  /*---------------Links---------------*/
-  --link-color: var(--color-barberry);
-
-  /*---------------Tooltip theme---------------*/
-  --background-color-tooltip: var(--color-white-rgb);
-  --opacity-background-tooltip: 1;
-  --animation-time: .2s;
-
-  /*---------------color border---------------*/
-  --border-color: var(--color-gallery);
-  --border-color--naked: var(--color-gallery);
-  --border-color-button--naked: var(--color-gallery);
-  --border-color-box: var(--color-gallery);
-
-  /*---------------heading links---------------*/
-  --heading-text-color-link: var(--color-text-color);
-  --heading-text-color-link--hover: var(--color-third-color);
-  --heading-border-color-link: var(--color-text-color);
-  --heading-border-color-link--hover: var(--color-third-color);
-
-  /*---------------links---------------*/
-  --color-link--icon: var(--color-mine-shaft);
-  --color-link--negativo: var(--color-wildsand);
-  --color-link--negativo-hover: var(--color-third-color);
-
-  /*---------------tables---------------*/
-  --color-table-border: var(--color-gallery);
-  --color-table-bg: var(--color-wildsand);
-  --color-tr-border: var(--color-gallery);
-  --color-tr-bg: var(--color-gallery);
-  --color-th-border: var(--color-gallery);
-  --color-th-bg: var(--color-gallery);
-  --color-colspan-bg: var(--color-gallery);
-  --color-td-border: var(--color-gallery);
-  --color-td-bg: var(--color-wildsand);
-
-  /*---------------lenghts---------------*/
-  --width-form-element: 600px;
-  --width-label--inline: 40%;
-  --width-input--inline: 60%;
-  --width-select--inline: 60%;
-  --height-heading-box: 150px;
-
-  /*---------------logo---------------*/
-  --width-logo: 250px;
-  --height-logo: ;
-
-  /*---------------Spacing---------------*/
-  --margin-header: var(--spacing-large);
-
-  /*-------------------------------------*/
-  --border-width-thin: 1px;
-  --border-width-thick: 2px;
-}
-
-/*---------------breakpoints---------------*/
-
-@custom-media --small-viewport (max-width: 500px);
-
-@custom-media --min-small-viewport (min-width: 500px);
-
-@custom-media --medium-viewport (max-width: 800px);
-
-@custom-media --min-medium-viewport (min-width: 800px);
-
-@custom-media --page-viewport (max-width: 1170px);
-
-@custom-media --page-viewport--spacing (max-width: 1266px);
-
-@custom-media --min-page-viewport (min-width: 1170px);
-
-@custom-media --large-viewport (max-width: 1170px);
-
-@custom-media --min-large-viewport (min-width: 1170px);
-
-:root {
-  /*---------------fonts---------------*/
-  --base-font: "Lato", sans-serif;
-  --input-font: "MyriadPro", sans-serif;
-  --code-font: "MyriadPro", sans-serif;
-
-  /*---------------brand tokens---------------*/
-  --theme-color: var(--barberry);
-  --theme-second-color: #ff1821;
-  --theme-third-color: #5c91c0;
-  --theme-fourth-color: #7a9f34;
-
-  /*---------------tokens---------------*/
-  --color-gallery: #ebebeb;
-  --color-mercury: #e5e5e5;
-  --color-wildsand: #f5f5f5;
-  --color-steel-blue: #5c91c0;
-  --color-torch-red900: #330406;
-  --color-torch-red800: #66090d;
-  --color-torch-red700: #990e13;
-  --color-torch-red600: #cc131a;
-  --color-torch-red: #ff1821;
-  --color-torch-red400: #ff464d;
-  --color-torch-red300: #ff7479;
-  --color-torch-red200: #ffa2a6;
-  --color-torch-red100: #ffd0d2;
-  --color-barberry: #d6d41b;
-
-  /*---------------greyscale tokens---------------*/
-  --color-black: black;
-  --color-cod-gray: #111;
-  --color-mine-shaft: #222;
-  --color-opaque: #6f6f6f;
-  --color-dark: #b0b0b0;
-  --color-neutral: #d6d6d6;
-  --color-pale: #e5e5e5;
-  --color-barer: #eee;
-  --color-bare: #f5f5f5;
-  --color-white: #fff;
-  --color-white-rgb: 255,255,255;
-
-  /*---------------sizes---------------*/
-  --page-width: 1170px;
-
-  /*----*/
-  --none: 0;
-
-  /*2px;*/
-  --xxx-small: .125rem;
-
-  /*4px*/
-  --xx-small: .25rem;
-
-  /*8px*/
-  --x-small: .5rem;
-
-  /*12px*/
-  --small: .75rem;
-
-  /*16px*/
-  --medium: 1rem;
-
-  /*20px*/
-  --large: 1.25rem;
-
-  /*24px*/
-  --x-large: 1.5rem;
-
-  /*28px*/
-  --xx-large: 1.75rem;
-
-  /*32px*/
-  --xxx-large: 2rem;
-
-  /*48px*/
-  --xxxx-large: 3rem;
-
-  /*---------------breakpoints tokens---------------*/
-  --bp-small: 500px;
-  --bp-medium: 800px;
-  --bp-large: 1170px;
-  --bp-page: 1170px;
-
-}
-
-/*---------------breakpoints---------------*/
-
-@custom-media --small-viewport (max-width: 500px);
-
-@custom-media --min-small-viewport (min-width: 500px);
-
-@custom-media --medium-viewport (max-width: 800px);
-
-@custom-media --min-medium-viewport (min-width: 800px);
-
-@custom-media --page-viewport (max-width: 1170px);
-
-@custom-media --page-viewport--spacing (max-width: 1266px);
-
-@custom-media --min-page-viewport (min-width: 1170px);
-
-@custom-media --large-viewport (max-width: 1170px);
-
-@custom-media --min-large-viewport (min-width: 1170px);
-
 /*---------------utils---------------*/
-
 .clearboth {
   clear: both;
 }
-
 .clearboth-line {
   clear: both;
   border-bottom: #f5f5f5 1px solid;
   border-bottom: var(--color-bare) 1px solid;
 }
-
 .clearboth-10 {
   height: 5px;
   clear: both;
 }
-
 .hidden {
   display: none !important;
 }
-
 .nak-block {
   display: block;
 }
-
 a.link-print {
   display: none;
 }
-
 .align-right {
   text-align: right;
 }
-
 .small-text {
   font-size: .9em;
   color: #6f6f6f;
   color: var(--text-color);
 }
-
 .nak-text-size--small {
   font-size: .9em;
 }
-
 .nak-text-size--large {
   font-size: 1.2em;
 }
-
 .nak-text-size--huge {
   font-size: 3em;
 }
-
 .text {
   font-size: 16px;
 }
-
 .nak-display--inline {
   display: inline;
 }
-
 .nak-float-right {
   float: right;
 }
-
 .nak-float-left {
   float: left;
 }
-
 .nak-text-color {
   color: #9fcad2;
   color: var(--color-theme);
 }
-
 .nak-text-color--secondary {
   color: #ff1821;
   color: var(--color-torch-red);
 }
-
 .nak-text-color--third {
   color: #5c91c0;
   color: var(--color-steel-blue);
 }
-
 .nak-text-color--neutral {
   color: #d6d6d6;
   color: var(--color-neutral);
 }
-
 .nak-text--strong {
   font-weight: bold;
-  color: black;
+  color: #000;
   color: var(--color-black);
 }
-
 .nak-is-active {}
-
 .nak-is-hidden {
   display: none !important;
 }
-
 .nak-is-hidden--min-medium {
   @media (--min-medium-viewport) {
     display: none !important;
   }
 }
-
 .nak-is-hidden--min-small {
   @media (--min-small-viewport) {
     display: none !important;
   }
 }
-
 .nak-align--right {
   display: -webkit-box;
   display: flex;
@@ -1167,7 +867,6 @@ a.link-print {
             justify-content: flex-end;
   }
 }
-
 .nak-align--center {
   display: -webkit-box;
   display: flex;
@@ -1185,7 +884,6 @@ a.link-print {
     text-align: center;
   }
 }
-
 .nak-is-stacable--small {
   @media (--small-viewport) {
     -webkit-box-orient: vertical;
@@ -1200,7 +898,6 @@ a.link-print {
     }
   }
 }
-
 .nak-is-stacable--medium {
   @media (--medium-viewport) {
     -webkit-box-orient: vertical;
@@ -1215,13 +912,11 @@ a.link-print {
     }
   }
 }
-
 .nak-is-wrappable--medium {
   @media (--medium-viewport) {
     flex-wrap: wrap;
   }
 }
-
 .nak-has-select {
 
   &:before {
@@ -1241,7 +936,6 @@ a.link-print {
     }
   }
 }
-
 .nak-image-mask--gradient {
   -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(40%, rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
   -webkit-mask-image: linear-gradient(0, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
@@ -1250,99 +944,76 @@ a.link-print {
   -webkit-mask-repeat: space;
           mask-repeat: space;
 }
-
 .nak-has-bg-image--gradient {
   background: linear-gradient(45deg, rgba(235, 235, 235, 1) 44%, rgba(235, 235, 235, 0) 100%), url(http://localhost-axabienestar:8888/skin/frontend/rwd/default/images/specialty/odontologia.jpg);
   background-repeat: no-repeat;
   background-position: right top;
   background-size: cover;
 }
-
 .nak-has-bg-image {}
-
 .std:empty {
   display: none;
 }
-
 /*---------------background colors---------------*/
-
 .nak-bg-color--neutral {
   background: #ebebeb;
   background: var(--background-color);
 }
-
 /*---------------widths---------------*/
-
 .nak-width-input--inline {
   width: 60%;
   width: var(--width-input--inline);
 }
-
 .nak-obj-fit--contain {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-
 /*---------------sizing---------------*/
-
 .nak-size--inherit {
   width: inherit !important;
 }
-
 .nak-size--1-of-1 {
   width: 100%;
 }
-
 .nak-size--1-of-2 {
   width: 50%;
 }
-
 .nak-size--1-of-3 {
   width: 33.3333333333%;
 }
-
 .nak-size--2-of-3 {
   width: 66.6666666667%;
 }
-
 .nak-size--3-of-3 {
   width: 100%;
 }
-
 .nak-size--1-of-4 {
   width: 25%;
 }
-
 .nak-size--2-of-4 {
   width: 50%;
 }
-
 .nak-size--3-of-4 {
   width: 75%;
 }
-
 /*.nak-grid--has-spaces{
 .nak-size--1-of-2 + .nak-size--1-of-2{
   margin-left: var(--large);
 }}*/
-
 .nak-size {
   width: 1.75rem !important;
   width: var(--xx-large) !important;
 }
-
 .nak-size--xlarge {
   width: 1.5rem !important;
   width: var(--x-large) !important;
 }
-
 .nak-size-mobile--full {
   @media (--small-viewport) {
     width: 100%;
   }
 }
-
 .nak-size--stacable {
   @media (--small-viewport) {
     width: 100%;
@@ -1352,9 +1023,7 @@ a.link-print {
     }
   }
 }
-
 /* small viewport*/
-
 @media (--small-viewport) {
 
   .nak-small-size--1-of-1 {
@@ -1381,9 +1050,7 @@ a.link-print {
     width: 75%;
   }
 }
-
 /* medium viewport*/
-
 @media (--medium-viewport) {
 
   .nak-medium-size--1-of-1 {
@@ -1410,7 +1077,6 @@ a.link-print {
     width: 75%;
   }
 }
-
 @media (--large-viewport) {
 
   .nak-large-size--1-of-1 {
@@ -1437,182 +1103,155 @@ a.link-print {
     width: 75%;
   }
 }
-
 /*---------------spacing---------------*/
-
 /* spacing helpers
 p,m = padding,margin
 a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
 s,m,l,n = small(5px),medium(var(--medium)),large(var(--large)),none(var(--none))
 */
-
 .nak-ptn,
 .nak-pvn,
 .nak-pan {
   padding-top: 0 !important;
   padding-top: var(--none) !important;
 }
-
 .nak-pts,
 .nak-pvs,
 .nak-pas {
   padding-top:.75rem !important;
   padding-top:var(--small) !important;
 }
-
 .nak-ptm,
 .nak-pvm,
 .nak-pam {
   padding-top: 1rem !important;
   padding-top: var(--medium) !important;
 }
-
 .nak-ptl,
 .nak-pvl,
 .nak-pal {
   padding-top: 1.25rem !important;
   padding-top: var(--large) !important;
 }
-
 .nak-ptx,
 .nak-pvx,
 .nak-pax {
   padding-top: 1.5rem !important;
   padding-top: var(--x-large) !important;
 }
-
 .nak-ptxx,
 .nak-pvxx,
 .nak-paxx {
   padding-top: 8var(--none) !important;
 }
-
 .nak-prn,
 .nak-phn,
 .nak-pan {
   padding-right: 0 !important;
   padding-right: var(--none) !important;
 }
-
 .nak-prs,
 .nak-phs,
 .nak-pas {
   padding-right:.75rem !important;
   padding-right:var(--small) !important;
 }
-
 .nak-prm,
 .nak-phm,
 .nak-pam {
   padding-right: 1rem !important;
   padding-right: var(--medium) !important;
 }
-
 .nak-prl,
 .nak-phl,
 .nak-pal {
   padding-right: 1.25rem !important;
   padding-right: var(--large) !important;
 }
-
 .nak-pbn,
 .nak-pvn,
 .nak-pan {
   padding-bottom: 0 !important;
   padding-bottom: var(--none) !important;
 }
-
 .nak-pbs,
 .nak-pvs,
 .nak-pas {
   padding-bottom:.75rem !important;
   padding-bottom:var(--small) !important;
 }
-
 .nak-pbm,
 .nak-pvm,
 .nak-pam {
   padding-bottom: 1rem !important;
   padding-bottom: var(--medium) !important;
 }
-
 .nak-pbl,
 .nak-pvl,
 .nak-pal {
   padding-bottom: 1.25rem !important;
   padding-bottom: var(--large) !important;
 }
-
 .nak-pln,
 .nak-phn,
 .nak-pan {
   padding-left: 0 !important;
   padding-left: var(--none) !important;
 }
-
 .nak-pls,
 .nak-phs,
 .nak-pas {
   padding-left: .75rem !important;
   padding-left: var(--small) !important;
 }
-
 .nak-plm,
 .nak-phm,
 .nak-pam {
   padding-left: 1rem !important;
   padding-left: var(--medium) !important;
 }
-
 .nak-pll,
 .nak-phl,
 .nak-pal {
   padding-left: 1.25rem !important;
   padding-left: var(--large) !important;
 }
-
 .nak-mtn,
 .nak-mvn,
 .nak-man {
   margin-top: 0 !important;
   margin-top: var(--none) !important;
 }
-
 .nak-mts,
 .nak-mvs,
 .nak-mas {
   margin-top:.75rem !important;
   margin-top:var(--small) !important;
 }
-
 .nak-mtm,
 .nak-mvm,
 .nak-mam {
   margin-top: 1rem !important;
   margin-top: var(--medium) !important;
 }
-
 .nak-mtl,
 .nak-mvl,
 .nak-mal {
   margin-top: 1.25rem !important;
   margin-top: var(--large) !important;
 }
-
 .nak-mtx,
 .nak-mvx,
 .nak-max {
   margin-top: 1.5rem !important;
   margin-top: var(--x-large) !important;
 }
-
 .nak-mrn,
 .nak-mhn,
 .nak-man {
   margin-right: 0 !important;
   margin-right: var(--none) !important;
 }
-
 .nak-mrs,
 .nak-mhs,
 .nak-mas,
@@ -1620,14 +1259,12 @@ ul.nak-mrs li {
   margin-right:.75rem !important;
   margin-right:var(--small) !important;
 }
-
 .nak-mrm,
 .nak-mhm,
 .nak-mam {
   margin-right: 1rem !important;
   margin-right: var(--medium) !important;
 }
-
 .nak-mrl,
 .nak-mhl,
 .nak-mal,
@@ -1635,111 +1272,87 @@ ul.nak-mrl li {
   margin-right: 1.25rem !important;
   margin-right: var(--large) !important;
 }
-
 .nak-mbn,
 .nak-mvn,
 .nak-man {
   margin-bottom: 0 !important;
   margin-bottom: var(--none) !important;
 }
-
 .nak-mbs,
 .nak-mvs,
 .nak-mas {
   margin-bottom:.75rem !important;
   margin-bottom:var(--small) !important;
 }
-
 .nak-mbm,
 .nak-mvm,
 .nak-mam {
   margin-bottom: 1rem !important;
   margin-bottom: var(--medium) !important;
 }
-
 .nak-mbl,
 .nak-mvl,
 .nak-mal {
   margin-bottom: 1.25rem !important;
   margin-bottom: var(--large) !important;
 }
-
 .nak-mbx,
 .nak-mvx,
 .nak-max {
   margin-bottom: 1.5rem !important;
   margin-bottom: var(--x-large) !important;
 }
-
 .nak-mln,
 .nak-mhn,
 .nak-man {
   margin-left: 0 !important;
   margin-left: var(--none) !important;
 }
-
 .nak-mls,
 .nak-mhs,
 .nak-mas {
   margin-left:.75rem !important;
   margin-left:var(--small) !important;
 }
-
 .nak-mlm,
 .nak-mhm,
 .nak-mam {
   margin-left: 1rem !important;
   margin-left: var(--medium) !important;
 }
-
 .nak-mll,
 .nak-mhl,
 .nak-mal {
   margin-left: 1.25rem !important;
   margin-left: var(--large) !important;
 }
-
 .nak-mtxl,
 .nak-maxl {
   margin-top: 1.5rem !important;
   margin-top: var(--x-large) !important;
 }
-
 .nak-mtxxl,
 .nak-maxxl {
   margin-top: 8var(--none) !important;
 }
-
-.nak {
-  color: test; 
-}
-
 /*---------------grid---------------*/
-
 :root{
   --grid-item-top-space:var(--x-small);
   --grid-item-bottom-space:var(--x-small);
 }
-
 /*----------------Custom variables---------------------*/
-
 /*----------------@mixin---------------------*/
-
 /*----------------If you need OOCSS---------------------*/
-
 /*-------------------------------------*/
-
 .nak-grid {
   display: -webkit-box;
   display: flex;
 }
-
 .nak-grid--wrapped {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
 }
-
 .nak-grid--has-spaces {
   display: -webkit-box;
   display: flex;
@@ -1795,7 +1408,6 @@ ul.nak-mrl li {
     }
   }
 }
-
 .nak-grid--has-v-space{
 
   >*{
@@ -1805,16 +1417,13 @@ ul.nak-mrl li {
     margin-bottom: var(--grid-item-bottom-space);
   }
 }
-
 .nak-has-col--2{
 
   >*{
     width: 50%;
   }
 }
-
 /*Automatic cols*/
-
 .nak-grid__item{
   -webkit-box-flex: 1;
           flex: 1 1 auto;
@@ -1823,13 +1432,11 @@ ul.nak-mrl li {
     width: 100%;
   }
 }
-
 .nak-col {
   -webkit-box-flex: 1;
           flex: 1 1 auto;
   width: 100%;
 }
-
 .nak-box {
   /*min-height: 190px;*/
   display: -webkit-box;
@@ -1859,44 +1466,29 @@ ul.nak-mrl li {
     justify-content: space-around;
   }
 }
-
 .nak-box--small {
   padding: .7rem;
   padding: var(--spacing-small);
 }
-
 .nak-box--medium {
   padding: 1.25rem;
   padding: var(--spacing-medium);
 }
-
 .nak-box--large {
   padding: 2.5rem;
   padding: var(--spacing-large);
 }
-
 /*---------------address---------------*/
-
 /*----------------Custom variables---------------------*/
-
 /*----------------Custom variables---------------------*/
-
 /*----------------@mixin---------------------*/
-
 /*----------------If you need OOCSS---------------------*/
-
 /*----------------@mixin---------------------*/
-
 /*----------------If you need OOCSS---------------------*/
-
 /*-------------------------------------*/
-
 /*! ---------------button---------------*/
-
 /*! ---------------button---------------*/
-
 /*----------------Custom variables---------------------*/
-
 :root {
   /*--default*/
   --button__min-width: 100px;
@@ -2006,37 +1598,28 @@ ul.nak-mrl li {
     }
   }
 }
-
 /*-------------------------------------*/
-
 .nak-button {
   @apply --nak-button;
 }
-
 .nak-button--neutral {
   @apply --nak-button;
   @apply --nak-button--neutral;
 }
-
 .nak-button--disabled {}
-
 .nak-button--negative {
   @apply --nak-button;
   @apply --nak-button--negative;
 }
-
 .nak-button--big {
   @apply --nak-button;
   @apply --nak-button--big;
 }
-
 .nak-button--icon-left {
   @apply --nak-button;
   @apply --nak-button--icon-left;
 }
-
 /*---------------header---------------*/
-
 .nak-header {
   display: -webkit-box;
   display: flex;
@@ -2045,14 +1628,12 @@ ul.nak-mrl li {
   padding: 2.5rem;
   padding: var(--margin-header);
 }
-
 .nak-logo {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
           align-items: center;
 }
-
 .nak-logo__svg {
   width: 250px;
   width: var(--width-logo);
@@ -2060,11 +1641,8 @@ ul.nak-mrl li {
   margin-right: .75rem;
   margin-right: var(--small)
 }
-
 /*---------------header-menu---------------*/
-
 /*----------------Custom variables---------------------*/
-
 :root {
   --page-title__color: var(--theme-color);
   --page-title__font-size: 2.5em;
@@ -2091,9 +1669,7 @@ ul.nak-mrl li {
   --heading-5__font-size: 1.6rem;
   --heading-6__font-size: 1.4rem;
 }
-
 /*----------------@mixin---------------------*/
-
 @define-mixin nak-page-title $color:var(--page-title__color), $font-size:var(--page-title__font-size) {
   font-size: 3em;
   font-size: var(--page-title__font-size);
@@ -2106,7 +1682,6 @@ ul.nak-mrl li {
     color: var(--page-title__color);
   }
 }
-
 @define-mixin nak-section-title $color:var(--section-title__color), $font-size:var(--section-title__font-size) {
   font-size: 2em;
   font-size: var(--section-title__font-size);
@@ -2119,7 +1694,6 @@ ul.nak-mrl li {
     color: var(--section-title__color);
   }
 }
-
 @define-mixin nak-text-title $color:var(--text-title__color), $font-size:var(--text-title__font-size) {
   font-size: 1.5em;
   font-size: var(--text-title__font-size);
@@ -2132,53 +1706,35 @@ ul.nak-mrl li {
     color: var(--text-title__color);
   }
 }
-
 /*----------------If you need OOCSS---------------------*/
-
 .nak-text-title {
   @mixin nak-text-title;
 }
-
 .nak-text-title--has-icon {}
-
 .nak-page-title {
   @mixin nak-page-title;
 }
-
 .nak-section-title {
   @mixin nak-section-title;
 }
-
 .nak-heading-1 {
   font-size: 3rem;
   font-size: var(--heading-1__font-size);
 }
-
 .nak-heading-2 {
   font-size: 2.5rem;
   font-size: var(--heading-2__font-size);
 }
-
 /*-------------------------------------*/
-
 /*---------------card---------------*/
-
 /*----------------Custom variables---------------------*/
-
 /*----------------@mixin---------------------*/
-
 /*----------------If you need OOCSS---------------------*/
-
 /*-------------------------------------*/
-
 /*---------------CMS---------------*/
-
 /*---------------login---------------*/
-
 /*---------------box---------------*/
-
 /*----------------Custom variables---------------------*/
-
 :root {
   --box__min-width: 100px;
   --box__padding: var(--spacing-small) var(--spacing-medium);
@@ -2192,9 +1748,7 @@ ul.nak-mrl li {
   --box__font: var(--base-font);
   --box__border-radius: var(--xxx-small);
 }
-
 /*----------------@mixin---------------------*/
-
 @define-mixin nak-box {
   display: -webkit-box;
   display: flex;
@@ -2217,13 +1771,10 @@ ul.nak-mrl li {
   border-radius: .125rem;
   border-radius: var(--box__border-radius);
 }
-
 /*----------------If you need OOCSS---------------------*/
-
 .nak-box {
   @mixin nak-box;
 }
-
 .nak-box--center {
   @mixin nak-box;
   -webkit-box-align: center;
@@ -2231,7 +1782,6 @@ ul.nak-mrl li {
   -webkit-box-pack: center;
           justify-content: center;
 }
-
 .nak-box--right {
   @mixin nak-box;
   -webkit-box-align: center;
@@ -2239,11 +1789,8 @@ ul.nak-mrl li {
   -webkit-box-pack: end;
           justify-content: flex-end;
 }
-
 /*-------------------------------------*/
-
 /*---------------nav---------------*/
-
 .nak-navigation-list--vertical {
   padding: 1rem;
   padding: var(--medium);
@@ -2287,26 +1834,18 @@ ul.nak-mrl li {
     color:var(--color-theme);
   }
 }
-
 /*---------------breadcrumbs---------------*/
-
 /*---------------loading---------------*/
-
 /*---------------modal---------------*/
-
 .nak-modal{
 
 }
-
 .nak-modal--right{}
-
 /*---------------pill---------------*/
-
 .nak-pill_container {
   margin: 1rem 0;
   margin: var(--medium) 0;
 }
-
 .nak-pill {
   position: relative;
   display: -webkit-inline-box;
@@ -2328,16 +1867,13 @@ ul.nak-mrl li {
     text-decoration: none
   }
 }
-
 /*---------------icon---------------*/
-
 .nak-has-border{
   padding: 5px;
   border:3px solid #5c91c0;
   border:3px solid var(--color-theme-third);
   border-radius: 500rem;
 }
-
 .nak-has-icon--right{
   display: -webkit-box;
   display: flex;
@@ -2346,9 +1882,7 @@ ul.nak-mrl li {
   -webkit-box-pack: justify;
           justify-content: space-between;
 }
-
 /*---------------module---------------*/
-
 :root {
 
   --ii-module {
@@ -2362,36 +1896,28 @@ ul.nak-mrl li {
     }
   }
 }
-
 .nak-module {}
-
 .nak-module--neutral {
   @apply --ii-module;
   background: ;
   border: 1px solid #ebebeb;
   border: 1px solid var(--border-color-box);
 }
-
 .nak-is-symmetric {
   -webkit-box-flex: 1;
           flex: 1;
 }
-
 .nak-module__title {
   font-weight: bold;
   color: #9fcad2;
   color: var(--color-theme);
   text-transform: inherit;
 }
-
 /*---------------search---------------*/
-
 /*---------------form---------------*/
-
 .nak-form {
   /*@mixin large-spacing;*/
 }
-
 .nak-form--search {
   background: #ebebeb;
   background: var(--background-color);
@@ -2400,11 +1926,9 @@ ul.nak-mrl li {
     max-width: inherit;
   }
 }
-
 .nak-form-element {
   /*@apply --form-element;*/
 }
-
 .nak-form-element--inline {
   /*@apply --form-element--inline;*/
   @media (--min-small-viewport) {
@@ -2420,9 +1944,7 @@ ul.nak-mrl li {
     }
   }
 }
-
 .nak-form-element__group {}
-
 .nak-form-element__row {
   display: -webkit-box;
   display: flex;
@@ -2438,30 +1960,25 @@ ul.nak-mrl li {
             flex-direction: column;
   }
 }
-
 .nak-form-element__row--extended {
   -webkit-box-align: center;
           align-items: center;
   -webkit-box-pack: justify;
           justify-content: space-between;
 }
-
 .nak-form-element__row--left {
   -webkit-box-pack: start;
           justify-content: flex-start;
 }
-
 .nak-form-element--center {
   -webkit-box-pack: center;
           justify-content: center;
   text-align: center;
 }
-
 .nak-form-element__row--top {
   -webkit-box-align: start;
           align-items: flex-start;
 }
-
 .nak-form--compound {
   padding: 1.25rem;
   padding: var(--large);
@@ -2474,7 +1991,6 @@ ul.nak-mrl li {
     }
   }
 }
-
 .nak-form-element__label {
   /*@apply --label;*/
 
@@ -2500,14 +2016,11 @@ ul.nak-mrl li {
     }
   }
 }
-
 .nak-input--naked {
   background: none;
   border: 0;
 }
-
 /*---------------link---------------*/
-
 a {
   color: #d6d41b;
   color: var(--link-color);
@@ -2519,9 +2032,7 @@ a {
     color: var(--color-theme);
   }
 }
-
 .nak-link {}
-
 .nak-link--naked {
   text-decoration: none;
 
@@ -2529,7 +2040,6 @@ a {
     text-decoration: none;
   }
 }
-
 .nak-link--neutral {
   color: #6f6f6f;
   color: var(--text-color);
@@ -2543,17 +2053,15 @@ a {
     text-decoration: none;
   }
 }
-
 .nak-link--negative {
   color: #f5f5f5;
   color: var(--color-link--negativo);
 
   &:hover {
-    color: var(--color-third-color);
+    color: #5c91c0;
     color: var(--color-link--negativo-hover);
   }
 }
-
 .nak-has-icon {
   display: -webkit-box;
   display: flex;
@@ -2576,7 +2084,6 @@ a {
     }
   }
 }
-
 .nak-menu-link--color {
   color: #9fcad2;
   color: var(--color-theme);
@@ -2596,7 +2103,6 @@ a {
     color: var(--color-theme);
   }
 }
-
 .icon-position-center {
   display: -webkit-box;
   display: flex;
@@ -2609,45 +2115,28 @@ a {
     text-decoration: none;
   }
 }
-
 /*---------------list---------------*/
-
 /*----------------Custom variables---------------------*/
-
 /*----------------@mixin---------------------*/
-
 /*----------------If you need OOCSS---------------------*/
-
 .nak-l-list{}
-
 .nak-l-list--dotted{
   list-style: inherit;
   list-style-position: inside;
 }
-
 .nak-l-list--horizontal{
   display: -webkit-box;
   display: flex;
 }
-
 .nak-l-list--board{}
-
 /*-------------------------------------*/
-
 /*---------------paginate---------------*/
-
 /*---------------toolbar---------------*/
-
 /*---------------footer---------------*/
-
 /*---------------banner---------------*/
-
 /*---------------slider---------------*/
-
 /*---------------table---------------*/
-
 /*------------------------------------*/
-
 .nak-table--neutral {
   width: 100%;
   background: #f5f5f5;
@@ -2673,9 +2162,7 @@ a {
     }
   }
 }
-
 /*---------------toolbar---------------*/
-
 .nak-tooltip {
   /*display: none;*/
   position: absolute;
@@ -2693,7 +2180,7 @@ a {
   line-height: 1.5em;
 
   /*theme*/
-  background: rgba(255,255,255, 1);
+  background: rgba(#fff, 1);
   background: rgba(var(--background-color-tooltip), var(--opacity-background-tooltip));
   -webkit-transition: .2s;
   transition: .2s;
@@ -2704,9 +2191,7 @@ a {
 
 
 }
-
 .nak-tooltip__text {}
-
 .nak-has-tooltip {
   position: relative;
   overflow: hidden;
@@ -2721,14 +2206,11 @@ a {
     }
   }
 }
-
 /*---------------tab---------------*/
-
 .nak-tab-list {
   display: -webkit-box;
   display: flex;
 }
-
 .nak-tab-item {
 
   + .nak-tab-item{
@@ -2739,7 +2221,6 @@ a {
     }
   }
 }
-
 .nak-tab-link {
   display: -webkit-box;
   display: flex;
@@ -2764,9 +2245,7 @@ a {
     box-shadow: 0 -3px 0 var(--color-theme);
   }
 }
-
 /*---------------wizard---------------*/
-
 .nak-wizard {
 
   a {
@@ -2775,7 +2254,6 @@ a {
     text-decoration: none
   }
 }
-
 .nak-wizard-list {
   display: -webkit-box;
   display: flex;
@@ -2787,11 +2265,9 @@ a {
     margin-bottom: var(--large);
   }
 }
-
 .nak-wizard-item {
   /*@apply --wizard-item;*/
 }
-
 .nak-wizard-marker {
   position: relative;
   display: -webkit-box;
@@ -2819,7 +2295,6 @@ a {
     background: var(--color-theme);
   }
 }
-
 .nak-wizard-label {
   display: block;
   margin-bottom: -6px;
@@ -2831,7 +2306,6 @@ a {
     margin: 0;
   }
 }
-
 form {
 
   .has-wizard & {
@@ -2842,9 +2316,7 @@ form {
     }
   }
 }
-
 /*---------------layout---------------*/
-
 .nak-page-wrapper {
   display: -webkit-box;
   display: flex;
@@ -2853,7 +2325,6 @@ form {
           flex-direction: column;
   min-height: 100vh;
 }
-
 .nak-site-header {
   position: fixed;
   top: 0;
@@ -2868,16 +2339,13 @@ form {
   height: 6rem;
 
 }
-
 .nak-site-main {
   -webkit-box-flex: 1;
           flex: 1 1 auto;
   min-height: 100vh;
   margin-left: 15rem;
 }
-
 .nak-site-navigation {}
-
 .nak-site-navigation--fixed {
   position: fixed;
   top: 6rem;
@@ -2886,38 +2354,30 @@ form {
   padding-top: 0;
   background: pink;
 }
-
 .nak-site-footer {}
-
 .nak-site-content{
   min-height: calc(100vh - 6rem);
 
 }
-
 .nak-page-container {
   /*@apply --spacing-page;*/
 }
-
 .nak-row {
   display: -webkit-box;
   display: flex;
 }
-
 .nak-row--center {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
           justify-content: center;
 }
-
 .nak-row--expanded {
   /*@apply --row--expanded;*/
 }
-
 .nak-row--centered {
   /*@apply --row--centered;*/
 }
-
 .nak-display--column {
   display: -webkit-box;
   display: flex;

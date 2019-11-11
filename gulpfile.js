@@ -1,5 +1,3 @@
-/*nakDS-core by @nabaroa*/
-
 const gulp = require('gulp');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
@@ -30,12 +28,26 @@ function css() {
     }));
   }
 
+  function utils() {
+    return gulp
+      .src("./src/variables/core-utils.css")
+      .pipe(postcss([cssImport(),postcssPresetEnv(),autoprefixer()]))
+      .pipe(gulp.dest("./dist/css/"))
+      .pipe(postcss([cssnano()]))
+      .pipe(rename({ suffix: ".min" }))
+      .pipe(gulp.dest("./dist/css/"))
+      .pipe(notify({
+        message: 'Your utils are ready ♡'
+      }));
+    }
+
 function watch() {
   gulp.watch("./src/css/**/*.css", css);
 }
 
-const build = gulp.series(css, watch);
+const build = gulp.series(css, utils, watch);
 
 exports.css = css;
+exports.utils = utils;
 exports.watch = watch;
 exports.default = build;

@@ -1,16 +1,11 @@
-/*nakDS by @nabaroa. 2019*/
-
-/*This CSS uses postCSS (http://postcss.org/)*/
-
-@import "variables/required-utils";
+@import "tokens/tokens";
+@import "variables/variables";
+@import "variables/mixin";
 @import "variables/apply";
 
 @import "base/reset";
 @import "base/typography";
 @import "base/default";
-
-@import "utils/var";
-@import "utils/tokens";
 
 @import "utilities/utils";
 @import "utilities/sizing";

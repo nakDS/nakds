@@ -1,5 +1,5 @@
 /*---------------pill---------------*/
-@import "../variables/required-utils";
+@import "../variables/core-utils";
 
 .nak-pill_container {
   margin: var(--medium) 0;

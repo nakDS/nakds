@@ -1,4 +1,4 @@
-@import "../variables/required-utils";
+@import "../variables/core-utils";
 
 
  is used in each component in order to have an independet output in Jekyll and have an automatic CSS.
