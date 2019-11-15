@@ -1,3 +1,6 @@
+## [1.3.1] 
+- Add heading to docs
+
 ## [1.3.0] 
 - Add circleCI
 
