@@ -1,4 +1,5 @@
 @import "../tokens/tokens";
-@import "variables";
+@import "custom-properties";
+@import "custom-media";
 @import "mixin";
 @import "apply";
