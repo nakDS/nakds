@@ -103,11 +103,19 @@
 @custom-media --min-x-large-viewport (min-width: 1400px);
 :root {
 
+  /*---------------layout---------------*/
+  --container: 1100px;  
+  --container--text: 580px;  
+
   /*---------------fonts---------------*/
 
   --base-font: "Lato", sans-serif;
   --input-font: "MyriadPro", sans-serif;
   --code-font: "MyriadPro", sans-serif;
+
+  --font-size--small: .8em;
+  --font-size--medium: 1em;
+  --font-size--big: 1.5em;
 
   /*---------------text---------------*/
 
@@ -149,7 +157,14 @@
   --border-color-button--naked: var(--color-gallery);
   --border-color-box: var(--color-gallery);
 
-  /*---------------heading links---------------*/
+  /*---------------heading---------------*/
+
+  --heading-1__font-size: 3rem;
+  --heading-2__font-size: 2.5rem;
+  --heading-3__font-size: 2.2rem;
+  --heading-4__font-size: 1.8rem;
+  --heading-5__font-size: 1.6rem;
+  --heading-6__font-size: 1.4rem;
 
   --heading-text-color-link: var(--text-color);
   --heading-text-color-link--hover: var(--color-theme-third);
@@ -1654,81 +1669,6 @@ ul.nak-mrl li {
   margin-right: var(--small)
 }
 /*---------------header-menu---------------*/
-/*----------------Custom variables---------------------*/
-:root {
-  --page-title__color: var(--theme-color);
-  --page-title__font-size: 2.5em;
-  --page-title__background: var(--wildsand);
-  --section-title__color: var(--azure);
-  --section-title__font-size: 2em;
-  --section-title__background: var(--wildsand);
-  --text-title__color: var(--azure);
-  --text-title__font-size: 1.5em;
-  --text-title__background: var(--wildsand);
-  --page-title__color: var(--color-opaque);
-  --page-title__font-size: 3em;
-  --page-title__background: var(--color-wildsand);
-  --section-title__color: var(--color-azure);
-  --section-title__font-size: 2em;
-  --section-title__background: var(--color-wildsand);
-  --text-title__color: var(--color-azure);
-  --text-title__font-size: 1.5em;
-  --text-title__background: var(--color-wildsand);
-  --heading-1__font-size: 3rem;
-  --heading-2__font-size: 2.5rem;
-  --heading-3__font-size: 2.2rem;
-  --heading-4__font-size: 1.8rem;
-  --heading-5__font-size: 1.6rem;
-  --heading-6__font-size: 1.4rem;
-}
-/*----------------@mixin---------------------*/
-@define-mixin nak-page-title $color:var(--page-title__color), $font-size:var(--page-title__font-size) {
-  font-size: 3em;
-  font-size: var(--page-title__font-size);
-  font-weight: bold;
-  color: #6f6f6f;
-  color: var(--page-title__color);
-
-  a {
-    color: #6f6f6f;
-    color: var(--page-title__color);
-  }
-}
-@define-mixin nak-section-title $color:var(--section-title__color), $font-size:var(--section-title__font-size) {
-  font-size: 2em;
-  font-size: var(--section-title__font-size);
-  font-weight: bold;
-  color: #5c91c0;
-  color: var(--section-title__color);
-
-  a {
-    color: #5c91c0;
-    color: var(--section-title__color);
-  }
-}
-@define-mixin nak-text-title $color:var(--text-title__color), $font-size:var(--text-title__font-size) {
-  font-size: 1.5em;
-  font-size: var(--text-title__font-size);
-  font-weight: bold;
-  color: #5c91c0;
-  color: var(--text-title__color);
-
-  a {
-    color: #5c91c0;
-    color: var(--text-title__color);
-  }
-}
-/*----------------If you need OOCSS---------------------*/
-.nak-text-title {
-  @mixin nak-text-title;
-}
-.nak-text-title--has-icon {}
-.nak-page-title {
-  @mixin nak-page-title;
-}
-.nak-section-title {
-  @mixin nak-section-title;
-}
 .nak-heading-1 {
   font-size: 3rem;
   font-size: var(--heading-1__font-size);
@@ -1737,7 +1677,22 @@ ul.nak-mrl li {
   font-size: 2.5rem;
   font-size: var(--heading-2__font-size);
 }
-/*-------------------------------------*/
+.nak-heading-3 {
+  font-size: 2.2rem;
+  font-size: var(--heading-3__font-size);
+}
+.nak-heading-4 {
+  font-size: 1.8rem;
+  font-size: var(--heading-4__font-size);
+}
+.nak-heading-5 {
+  font-size: 1.6rem;
+  font-size: var(--heading-5__font-size);
+}
+.nak-heading-6 {
+  font-size: 1.4rem;
+  font-size: var(--heading-6__font-size);
+}
 /*---------------card---------------*/
 /*----------------Custom variables---------------------*/
 /*----------------@mixin---------------------*/
@@ -2328,7 +2283,16 @@ form {
     }
   }
 }
-/*---------------layout---------------*/
+.nak-container {
+  max-width: 1100px;
+  max-width: var(--container);
+  margin: auto;
+}
+.nak-container--text {
+  max-width: 580px;
+  max-width: var(--container--text);
+  margin: auto;
+}
 .nak-page-wrapper {
   display: -webkit-box;
   display: flex;

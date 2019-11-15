@@ -1,6 +1,14 @@
-/*---------------layout---------------*/
 @import "../variables/core-utils";
 
+.nak-container {
+  max-width: var(--container);
+  margin: auto;
+}
+
+.nak-container--text {
+  max-width: var(--container--text);
+  margin: auto;
+}
 
 .nak-page-wrapper {
   display: flex;

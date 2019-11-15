@@ -1,10 +1,18 @@
 :root {
 
+  /*---------------layout---------------*/
+  --container: 1100px;  
+  --container--text: 580px;  
+
   /*---------------fonts---------------*/
 
   --base-font: "Lato", sans-serif;
   --input-font: "MyriadPro", sans-serif;
   --code-font: "MyriadPro", sans-serif;
+
+  --font-size--small: .8em;
+  --font-size--medium: 1em;
+  --font-size--big: 1.5em;
 
   /*---------------text---------------*/
 
@@ -46,7 +54,14 @@
   --border-color-button--naked: var(--color-gallery);
   --border-color-box: var(--color-gallery);
 
-  /*---------------heading links---------------*/
+  /*---------------heading---------------*/
+
+  --heading-1__font-size: 3rem;
+  --heading-2__font-size: 2.5rem;
+  --heading-3__font-size: 2.2rem;
+  --heading-4__font-size: 1.8rem;
+  --heading-5__font-size: 1.6rem;
+  --heading-6__font-size: 1.4rem;
 
   --heading-text-color-link: var(--text-color);
   --heading-text-color-link--hover: var(--color-theme-third);

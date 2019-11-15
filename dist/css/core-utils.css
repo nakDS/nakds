@@ -103,6 +103,9 @@
 @custom-media --min-x-large-viewport (min-width: 1400px);
 :root {
 
+  /*---------------layout---------------*/
+  --container: 1100px; 
+
   /*---------------fonts---------------*/
 
   --base-font: "Lato", sans-serif;
