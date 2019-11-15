@@ -42,7 +42,7 @@ function css() {
     }
 
 function watch() {
-  gulp.watch("./src/css/**/*.css", css);
+  gulp.watch("./src/**/*.css", css);
 }
 
 const build = gulp.series(css, utils, watch);
