@@ -1,3 +1,6 @@
+## [1.3.0] 
+- Add circleCI
+
 ## [1.2.0] 
 - Fix watch path
 - Add docs

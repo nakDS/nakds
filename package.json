@@ -1,9 +1,10 @@
 {
   "name": "nakds",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "release-it"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +28,7 @@
     "postcss-mixins": "^6.2.3",
     "postcss-nested": "^4.1.2",
     "postcss-preset-env": "^6.7.0",
+    "release-it": "^12.4.3",
     "stylelint": "^11.1.1",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-standard": "^19.0.0",
