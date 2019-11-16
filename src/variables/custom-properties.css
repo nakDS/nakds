@@ -1,19 +1,11 @@
 :root {
 
   /*---------------layout---------------*/
-  --container: 1100px;  
-  --container--text: 580px;  
+ 
 
   /*---------------fonts---------------*/
 
-  --base-font: "Lato", sans-serif;
-  --input-font: "MyriadPro", sans-serif;
-  --code-font: "MyriadPro", sans-serif;
 
-  --font-size--small: .8em;
-  --font-size--medium: 1em;
-  --font-size--large: 1.2em;
-  --font-size--xlarge: 1.4em;
 
   /*---------------text---------------*/
 

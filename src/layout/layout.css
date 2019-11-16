@@ -3,6 +3,7 @@
 .nak-container {
   max-width: var(--container);
   margin: auto;
+  padding: 0 calc(var(--spacer) * 5); 
 }
 
 .nak-container--text {

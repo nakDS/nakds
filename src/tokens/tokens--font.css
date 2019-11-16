@@ -1,6 +1,8 @@
-/*!---------------Font size tokens---------------*/
-
 :root {
+  --base-font: "Lato", sans-serif;
+  --input-font: "MyriadPro", sans-serif;
+  --code-font: "MyriadPro", sans-serif;
+
   --font-size--x-small: .5rem;    /*!8px*/
   --font-size--small: .75rem;    /*!12px*/
   --font-size--medium: 1rem;    /*!16px*/
