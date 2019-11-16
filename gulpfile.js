@@ -41,13 +41,20 @@ function css() {
       }));
     }
 
+  function fonts() {
+    return gulp
+    .src("./assets/fonts/*.*")
+    .pipe(gulp.dest("./dist/assets/fonts/"))
+  }
+
 function watch() {
   gulp.watch("./src/**/*.css", css);
 }
 
-const build = gulp.series(css, utils, watch);
+const build = gulp.series(css, utils, fonts, watch);
 
 exports.css = css;
 exports.utils = utils;
+exports.fonts = fonts;
 exports.watch = watch;
 exports.default = build;
