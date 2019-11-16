@@ -1,3 +1,9 @@
+## [1.4.1] 
+- Update container and box components
+- Remove address component
+- Arrange tokens
+- Adjust body font-size
+
 ## [1.3.2] 
 - Update README and TODO list
 

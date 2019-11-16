@@ -1,15 +1,35 @@
 @import "../variables/core-utils";
 
-.nak-container {
-  max-width: var(--container);
-  margin: auto;
+:root {
+  --container--content: 1100px;  
+  --container--text: 680px; 
+}
+
+@define-mixin nak-container {
   padding: 0 calc(var(--spacer) * 5); 
+  margin: auto;
+}
+
+.nak-container {
+  @mixin nak-container;
+}
+
+.nak-container--content {
+  @mixin nak-container;
+  max-width: var(--container--content);
 }
 
 .nak-container--text {
+  @mixin nak-container;
   max-width: var(--container--text);
-  margin: auto;
 }
+
+
+
+.nak-d-flex {
+  display: flex;
+}
+
 
 .nak-page-wrapper {
   display: flex;

@@ -301,69 +301,12 @@
     font-size: 16px;
     font-family: var(--base-font);
 }*/
-@define-mixin small-spacing {
-  margin-top: .75rem;
-  margin-top: var(--small);
-  margin-bottom: .75rem;
-  margin-bottom: var(--small);
-}
-@define-mixin medium-spacing {
-  margin-top: 1rem;
-  margin-top: var(--medium);
-  margin-bottom: 1rem;
-  margin-bottom: var(--medium);
-}
-@define-mixin large-spacing {
-  margin-top: 1.25rem;
-  margin-top: var(--large);
-  margin-bottom: 1.25rem;
-  margin-bottom: var(--large);
-}
-@define-mixin large-heading-spacing {
-  margin-top: 1.25rem;
-  margin-top: var(--large);
-  margin-bottom: 1.5rem;
-  margin-bottom: var(--x-large);
-}
-@define-mixin medium-heading-spacing {
-  margin-top: 1.25rem;
-  margin-top: var(--large);
-  margin-bottom: 1.25rem;
-  margin-bottom: var(--large);
-}
-@define-mixin flex-direction($values) {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: $values;
-}
-@define-mixin flex-flow($values) {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-flow: $values;
-}
-@define-mixin align-items($values) {
-  -webkit-box-align: $values;
-          align-items: $values;
-}
-@define-mixin justify-content($values) {
-  -webkit-box-pack: $values;
-          justify-content: $values;
-}
-@define-mixin flex($values) {
-  -webkit-box-flex: $values;
-          flex: $values;
-}
-@define-mixin display-flex() {
-  display: -webkit-box;
-  display: flex;
-}
-@define-mixin display-inline-flex() {
-  display: -webkit-inline-box;
-  display: inline-flex;
-}
 :root {
   --form-element: {
-    @mixin medium-spacing;
+    margin-top: 1rem;
+    margin-top: var(--medium);
+    margin-bottom: 1rem;
+    margin-bottom: var(--medium);
     width: 100%;
     max-width: 600px;
     max-width: var(--width-form-element);
@@ -379,7 +322,10 @@
   }
     ;
   --form-element--inline: {
-    @mixin medium-spacing;
+    margin-top: 1rem;
+    margin-top: var(--medium);
+    margin-bottom: 1rem;
+    margin-bottom: var(--medium);
     position: relative;
     display: -webkit-box;
     display: flex;
@@ -500,7 +446,10 @@
     border: 0;
 
     @media (--small-viewport) {
-      @mixin medium-spacing;
+      margin-top: 1rem;
+      margin-top: var(--medium);
+      margin-bottom: 1rem;
+      margin-bottom: var(--medium);
       width: 100%;
     }
 
