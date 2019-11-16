@@ -18,7 +18,7 @@ const insert = require('gulp-insert');
 function css() {
   return gulp
     .src("./src/nakDS.css")
-    .pipe(postcss([cssImport(),postcssPresetEnv(),autoprefixer()]))
+    .pipe(postcss([cssImport(),mixins(),postcssPresetEnv(),autoprefixer()]))
     .pipe(gulp.dest("./dist/css/"))
     .pipe(postcss([cssnano()]))
     .pipe(rename({ suffix: ".min" }))
@@ -31,7 +31,7 @@ function css() {
   function utils() {
     return gulp
       .src("./src/variables/core-utils.css")
-      .pipe(postcss([cssImport(),postcssPresetEnv(),autoprefixer()]))
+      .pipe(postcss([cssImport(),mixins(),postcssPresetEnv(),autoprefixer()]))
       .pipe(gulp.dest("./dist/css/"))
       .pipe(postcss([cssnano()]))
       .pipe(rename({ suffix: ".min" }))

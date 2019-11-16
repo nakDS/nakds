@@ -47,10 +47,6 @@
   --xx-large: 1.75rem;    /*!28px*/
   --xxx-large: 2rem;    /*!32px*/
   --xxxx-large: 3rem;    /*!48px*/
-
-  --container: 1100px;  
-  --container--text: 580px; 
-
   --spacer: calc(1em / 2);
 }
 :root {
@@ -306,69 +302,12 @@
     font-size: 16px;
     font-family: var(--base-font);
 }*/
-@define-mixin small-spacing {
-  margin-top: .75rem;
-  margin-top: var(--small);
-  margin-bottom: .75rem;
-  margin-bottom: var(--small);
-}
-@define-mixin medium-spacing {
-  margin-top: 1rem;
-  margin-top: var(--medium);
-  margin-bottom: 1rem;
-  margin-bottom: var(--medium);
-}
-@define-mixin large-spacing {
-  margin-top: 1.25rem;
-  margin-top: var(--large);
-  margin-bottom: 1.25rem;
-  margin-bottom: var(--large);
-}
-@define-mixin large-heading-spacing {
-  margin-top: 1.25rem;
-  margin-top: var(--large);
-  margin-bottom: 1.5rem;
-  margin-bottom: var(--x-large);
-}
-@define-mixin medium-heading-spacing {
-  margin-top: 1.25rem;
-  margin-top: var(--large);
-  margin-bottom: 1.25rem;
-  margin-bottom: var(--large);
-}
-@define-mixin flex-direction($values) {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: $values;
-}
-@define-mixin flex-flow($values) {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-flow: $values;
-}
-@define-mixin align-items($values) {
-  -webkit-box-align: $values;
-          align-items: $values;
-}
-@define-mixin justify-content($values) {
-  -webkit-box-pack: $values;
-          justify-content: $values;
-}
-@define-mixin flex($values) {
-  -webkit-box-flex: $values;
-          flex: $values;
-}
-@define-mixin display-flex() {
-  display: -webkit-box;
-  display: flex;
-}
-@define-mixin display-inline-flex() {
-  display: -webkit-inline-box;
-  display: inline-flex;
-}
 :root {
   --form-element: {
-    @mixin medium-spacing;
+    margin-top: 1rem;
+    margin-top: var(--medium);
+    margin-bottom: 1rem;
+    margin-bottom: var(--medium);
     width: 100%;
     max-width: 600px;
     max-width: var(--width-form-element);
@@ -384,7 +323,10 @@
   }
     ;
   --form-element--inline: {
-    @mixin medium-spacing;
+    margin-top: 1rem;
+    margin-top: var(--medium);
+    margin-bottom: 1rem;
+    margin-bottom: var(--medium);
     position: relative;
     display: -webkit-box;
     display: flex;
@@ -505,7 +447,10 @@
     border: 0;
 
     @media (--small-viewport) {
-      @mixin medium-spacing;
+      margin-top: 1rem;
+      margin-top: var(--medium);
+      margin-bottom: 1rem;
+      margin-bottom: var(--medium);
       width: 100%;
     }
 
@@ -1673,8 +1618,6 @@ ul.nak-mrl li {
 /*-------------------------------------*/
 /*---------------CMS---------------*/
 /*---------------login---------------*/
-/*---------------box---------------*/
-/*----------------Custom variables---------------------*/
 :root {
   --box__min-width: 100px;
   --box__padding: var(--spacing-small) var(--spacing-medium);
@@ -1688,14 +1631,13 @@ ul.nak-mrl li {
   --box__font: var(--base-font);
   --box__border-radius: var(--xxx-small);
 }
-/*----------------@mixin---------------------*/
-@define-mixin nak-box {
+.nak-box {
   display: -webkit-box;
   display: flex;
   min-width: 100px;
   min-width: var(--box__min-width);
-  height: 2.5rem;
-  height: var(--box__height);
+  min-height: 2.5rem;
+  min-height: var(--box__height);
   padding: .7rem 1.25rem;
   padding: var(--box__padding);
   font-family: "Lato", sans-serif;
@@ -1711,25 +1653,58 @@ ul.nak-mrl li {
   border-radius: .125rem;
   border-radius: var(--box__border-radius);
 }
-/*----------------If you need OOCSS---------------------*/
-.nak-box {
-  @mixin nak-box;
-}
 .nak-box--center {
-  @mixin nak-box;
+  display: -webkit-box;
+  display: flex;
+  min-width: 100px;
+  min-width: var(--box__min-width);
+  min-height: 2.5rem;
+  min-height: var(--box__height);
+  padding: .7rem 1.25rem;
+  padding: var(--box__padding);
+  font-family: "Lato", sans-serif;
+  font-family: var(--box__font);
+  font-size: 1.25rem;
+  font-size: var(--box__font-size);
+  color: #6f6f6f;
+  color: var(--box__color);
+  background: #f5f5f5;
+  background: var(--box__background);
+  border: 1px solid #eee;
+  border: var(--box__border-width) var(--box__border-style) var(--box__border-color);
+  border-radius: .125rem;
+  border-radius: var(--box__border-radius);
   -webkit-box-align: center;
           align-items: center;
   -webkit-box-pack: center;
           justify-content: center;
 }
 .nak-box--right {
-  @mixin nak-box;
+  display: -webkit-box;
+  display: flex;
+  min-width: 100px;
+  min-width: var(--box__min-width);
+  min-height: 2.5rem;
+  min-height: var(--box__height);
+  padding: .7rem 1.25rem;
+  padding: var(--box__padding);
+  font-family: "Lato", sans-serif;
+  font-family: var(--box__font);
+  font-size: 1.25rem;
+  font-size: var(--box__font-size);
+  color: #6f6f6f;
+  color: var(--box__color);
+  background: #f5f5f5;
+  background: var(--box__background);
+  border: 1px solid #eee;
+  border: var(--box__border-width) var(--box__border-style) var(--box__border-color);
+  border-radius: .125rem;
+  border-radius: var(--box__border-radius);
   -webkit-box-align: center;
           align-items: center;
   -webkit-box-pack: end;
           justify-content: flex-end;
 }
-/*-------------------------------------*/
 /*---------------nav---------------*/
 .nak-navigation-list--vertical {
   padding: 1rem;
@@ -2073,7 +2048,6 @@ a {
 /*---------------paginate---------------*/
 /*---------------toolbar---------------*/
 /*---------------footer---------------*/
-/*---------------banner---------------*/
 /*---------------slider---------------*/
 /*---------------table---------------*/
 /*------------------------------------*/
@@ -2256,17 +2230,32 @@ form {
     }
   }
 }
+:root {
+  --container--content: 1100px;  
+  --container--text: 680px; 
+}
 .nak-container {
-  max-width: 1100px;
-  max-width: var(--container);
-  margin: auto;
   padding: 0 calc(calc(1em / 2) * 5);
-  padding: 0 calc(var(--spacer) * 5); 
+  padding: 0 calc(var(--spacer) * 5);
+  margin: auto;
+}
+.nak-container--content {
+  padding: 0 calc(calc(1em / 2) * 5);
+  padding: 0 calc(var(--spacer) * 5);
+  margin: auto;
+  max-width: 1100px;
+  max-width: var(--container--content);
 }
 .nak-container--text {
-  max-width: 580px;
-  max-width: var(--container--text);
+  padding: 0 calc(calc(1em / 2) * 5);
+  padding: 0 calc(var(--spacer) * 5);
   margin: auto;
+  max-width: 680px;
+  max-width: var(--container--text);
+}
+.nak-d-flex {
+  display: -webkit-box;
+  display: flex;
 }
 .nak-page-wrapper {
   display: -webkit-box;

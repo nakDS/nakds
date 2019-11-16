@@ -1,8 +1,4 @@
-/*---------------box---------------*/
-
 @import "../variables/core-utils";
-
-/*----------------Custom variables---------------------*/
 
 :root {
   --box__min-width: 100px;
@@ -18,13 +14,10 @@
   --box__border-radius: var(--xxx-small);
 }
 
-
-/*----------------@mixin---------------------*/
-
 @define-mixin nak-box {
   display: flex;
   min-width: var(--box__min-width);
-  height: var(--box__height);
+  min-height: var(--box__height);
   padding: var(--box__padding);
   font-family: var(--box__font);
   font-size: var(--box__font-size);
@@ -33,9 +26,6 @@
   border: var(--box__border-width) var(--box__border-style) var(--box__border-color);
   border-radius: var(--box__border-radius);
 }
-
-
-/*----------------If you need OOCSS---------------------*/
 
 .nak-box {
   @mixin nak-box;
@@ -52,6 +42,3 @@
   align-items: center;
   justify-content: flex-end;
 }
-
-
-/*-------------------------------------*/
