@@ -1,3 +1,8 @@
+## [1.5.0] 
+- Work on components
+- Update TODO list
+- Distribute fonts
+
 ## [1.4.1] 
 - Update container and box components
 - Remove address component
