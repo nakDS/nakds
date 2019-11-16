@@ -58,15 +58,20 @@ function fonts() {
   return gulp.src("./assets/fonts/*.*").pipe(gulp.dest("./dist/assets/fonts/"));
 }
 
+function svg() {
+  return gulp.src("./assets/svg/*.*").pipe(gulp.dest("./dist/assets/svg/"));
+}
+
 function watch() {
   gulp.watch("./src/**/*.css", css);
 }
 
-const build = gulp.series(css, utils, components, fonts, watch);
+const build = gulp.series(css, utils, components, fonts, svg, watch);
 
 exports.css = css;
 exports.utils = utils;
 exports.components = components;
 exports.fonts = fonts;
+exports.svg = svg;
 exports.watch = watch;
 exports.default = build;

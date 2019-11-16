@@ -1,5 +1,12 @@
-/*---------------icon---------------*/
 @import "../variables/core-utils";
+
+.nk-icon {
+  width: 32px;
+}
+
+.nk-icon--large {
+  width: 48px;
+}
 
 .nk-has-border{
   padding: 5px;
@@ -11,4 +18,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.nk-theme--dark [class^="nk-icon"] {
+  fill: #ffffff;
 }

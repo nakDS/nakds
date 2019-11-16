@@ -13,16 +13,24 @@
   display: grid;
 }
 
-.nk-grid-1-1 {
+.nk-grid-2 {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.nk-grid-1-1-1 {
+.nk-grid-3 {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.nk-grid-1-1-1-1 {
+.nk-grid-4 {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.nk-grid-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.nk-grid-6 {
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .nk-gap {

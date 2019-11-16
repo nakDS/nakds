@@ -13,9 +13,7 @@
 <body>
 
   <section id="nakds" class="nk-smooth-scroll">
-
     <header class="nk-header nk-height-fullpage nk-text-align--center">
-
       <h1 class="nk-logo">
         <svg class="nk-logo__svg" xmlns="http://www.w3.org/2000/svg" width="342.444" height="358.141">
           <path
@@ -23,10 +21,16 @@
         </svg>
       </h1>
       <button id="nk-theme-change" class="nk-button nk-button--color nk-mtx">Switch theme</button>
+      <div class="nk-mtx">
+        <svg class="nk-icon--large nk-text-align--center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 62.5">
+          <path 
+            d="M1.5 14.8c4.7 2.6 8.3 6.6 12.1 10.2l12 11.7c.9.9 2.9 0 3.6-.7 6.3-7 12.6-14.1 18.9-21.1 1.1-1.2-2.8-.9-3.6 0-6.3 7-12.6 14.1-18.9 21.1 1.2-.2 2.4-.5 3.6-.7C21.5 27.8 14 18.2 4.5 13c-1-.6-4.6.9-3 1.8z" />
+        </svg>
+      </div>
     </header>
     <main>
       <nav class="nk-container--content nk-position--sticky nk-bg--opaque nk-pvl">
-        <ul class="nk-grid nk-grid-1-1-1-1">
+        <ul class="nk-grid nk-grid-5">
           <li>Core
             <ul>
               <li><a href="#typograpy">Typography</a></li>
@@ -46,10 +50,16 @@
               <li><a href="#box">Box</a></li>
             </ul>
           </li>
+
           <li>Forms
-              <ul>
-                  <li><a href="#button">Button</a></li>
-                </ul>
+            <ul>
+              <li><a href="#button">Button</a></li>
+            </ul>
+          </li>
+          <li>assets
+            <ul>
+              <li><a href="#icons">Icons</a></li>
+            </ul>
           </li>
         </ul>
       </nav>
@@ -78,10 +88,10 @@
       <article id="heading" class="nk-container--content">
         <h1 class="nk-heading-1">.nk-heading-1</h1>
         <h2 class="nk-heading-2">.nk-heading-2</h1>
-        <h3 class="nk-heading-3">.nk-heading-3</h1>
-        <h4 class="nk-heading-4">.nk-heading-4</h1>
-        <h5 class="nk-heading-5">.nk-heading-5</h1>
-        <h6 class="nk-heading-6">.nk-heading-6</h1>
+          <h3 class="nk-heading-3">.nk-heading-3</h1>
+            <h4 class="nk-heading-4">.nk-heading-4</h1>
+              <h5 class="nk-heading-5">.nk-heading-5</h1>
+                <h6 class="nk-heading-6">.nk-heading-6</h1>
       </article>
       <article id="container" class="nk-section nk-height-fullpage">
         <div class="nk-container nk-doc-bg">
@@ -211,11 +221,25 @@
           </div>
         </div>
       </article>
-      <article id="button" class="nk-container">
-          <h2 class="nk-heading-2">.nk-button</h2>
-          <button class="nk-button">Button</button>
-          <button class="nk-button nk-button--color">Button</button>
-          <button class="nk-button nk-button--disabled">Button</button>
+      <article id="button" class="nk-container nk-section">
+        <h2 class="nk-heading-2">.nk-button</h2>
+        <button class="nk-button">Button</button>
+        <button class="nk-button nk-button--color">Button</button>
+        <button class="nk-button nk-button--disabled">Button</button>
+      </article>
+      <article id="icons" class="nk-container nk-section">
+        <h2 class="nk-heading-2">.nk-icon</h2>
+        <h3 class="nk-heading-3">Handwritten</h3>
+        <a href="https://thenounproject.com/dashboard/uploads/" class="nk-d-block nk-mbx">Published at TheNounProject.com</a>
+
+        <svg class="nk-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 62.5">
+          <path
+            d="M7.061 10.688c11.654-1.822 23.457.164 35.166-1 2.968-.295 4.698-3.943.701-3.546-11.712 1.164-23.49-.825-35.166 1-2.901.453-4.682 4.169-.701 3.546zM6.106 25.999c7.635.141 15.129-1.374 22.745-1.534 4.658-.098 9.73.559 14.279-.81 1.131-.34 2.521-.994 2.476-2.351l-.006-.165c-.044-1.313-2.486-1.266-4.187-.429-4.141.949-8.845.097-13.016.319-6.713.358-13.358 1.592-20.096 1.467-2.32-.042-6.122 3.43-2.195 3.503zM41.549 37.726c-4.651 2.286-10.269 2.103-15.327 1.842-6.049-.312-12.073-.74-18.052-1.742-2.831-.474-5.9 3.527-2.016 4.178 7.162 1.199 14.527 1.806 21.791 1.88 5.508.057 11.144-.314 16.161-2.78 3.558-1.75.37-4.817-2.557-3.378z" />
+        </svg>
+        <svg class="nk-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 62.5">
+          <path
+            d="M1.5 14.8c4.7 2.6 8.3 6.6 12.1 10.2l12 11.7c.9.9 2.9 0 3.6-.7 6.3-7 12.6-14.1 18.9-21.1 1.1-1.2-2.8-.9-3.6 0-6.3 7-12.6 14.1-18.9 21.1 1.2-.2 2.4-.5 3.6-.7C21.5 27.8 14 18.2 4.5 13c-1-.6-4.6.9-3 1.8z" />
+        </svg>
       </article>
     </main>
     <footer class="nk-footer">

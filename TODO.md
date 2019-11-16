@@ -8,3 +8,4 @@
 - Control what variables imports each component. How can I avoid repetitions?
 - Add browsersync
 - Add property sorter
+- Add stylelint on commit
