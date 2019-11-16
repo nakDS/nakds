@@ -15,7 +15,7 @@
 .nk-position--sticky {
   position: -webkit-sticky;
   position: sticky;
-  top:0px;
+  top: 0px;
 }
 
 .nk-text-align--left {
@@ -67,17 +67,24 @@
 .nk-text--strong {
   font-weight: bold;
   color: var(--color-black);
+
+  .nk-theme--dark & {
+    color: white;
+  }
 }
 
 .nk-bg--opaque {
   background: white;
+  
+  .nk-theme--dark & {
+    background-color: var(--color-mine-shaft);
+  }
 }
 
-.nk-theme--dark .nk-bg--opaque {
-  background-color: var(--color-mine-shaft);
-}
 
-.nk-is-active {}
+
+.nk-is-active {
+}
 
 .nk-is-hidden {
   display: none !important;
@@ -100,7 +107,8 @@
   justify-content: flex-end;
   text-align: right;
 
-  &.nk-form-element__row, &.nk-form-element--inline {
+  &.nk-form-element__row,
+  &.nk-form-element--inline {
     justify-content: flex-end;
   }
 }
@@ -151,7 +159,6 @@
 }
 
 .nk-has-select {
-
   &:before {
     position: absolute;
     right: 10px;
@@ -161,7 +168,6 @@
   }
 
   &:hover {
-
     &:before {
       color: var(--color-secondary);
     }
@@ -174,25 +180,29 @@
 }
 
 .nk-has-bg-image--gradient {
-  background: linear-gradient(45deg, rgba(235, 235, 235, 1) 44%, rgba(235, 235, 235, 0) 100%), url(http://localhost-axabienestar:8888/skin/frontend/rwd/default/images/specialty/odontologia.jpg);
+  background: linear-gradient(
+      45deg,
+      rgba(235, 235, 235, 1) 44%,
+      rgba(235, 235, 235, 0) 100%
+    ),
+    url(http://localhost-axabienestar:8888/skin/frontend/rwd/default/images/specialty/odontologia.jpg);
   background-repeat: no-repeat;
   background-position: right top;
   background-size: cover;
 }
 
-.nk-has-bg-image {}
+.nk-has-bg-image {
+}
 
 .std:empty {
   display: none;
 }
-
 
 /*---------------background colors---------------*/
 
 .nk-bg-color--neutral {
   background: var(--background-color);
 }
-
 
 /*---------------widths---------------*/
 

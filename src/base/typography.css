@@ -13,6 +13,17 @@
   src: url("../assets/fonts/Lato-Black.ttf");
 }
 
+@font-face {
+  font-family: "montserrat";
+  src: url("../assets/fonts/Montserrat-VF.ttf");
+}
+
+
+
+.nk-font--montserrat {
+  font-family: montserrat, sans-serif;
+}
+
 .nk-font--light {
   font-family: lato-light, sans-serif;
 }

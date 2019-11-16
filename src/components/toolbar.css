@@ -1,2 +1,6 @@
-/*---------------toolbar---------------*/
 @import "../variables/core-utils";
+
+.nk-toolbar {
+  display: flex;
+  justify-content: flex-end;
+}

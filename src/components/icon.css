@@ -1,11 +1,18 @@
 @import "../variables/core-utils";
 
+.nk-icon--small {
+  width: 24px;
+  fill: var(--text-color);
+}
+
 .nk-icon {
   width: 32px;
+  fill: var(--text-color);
 }
 
 .nk-icon--large {
   width: 48px;
+  fill: var(--text-color);
 }
 
 .nk-has-border{

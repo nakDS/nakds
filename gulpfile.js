@@ -21,6 +21,7 @@ function css() {
     .pipe(postcss([cssImport(), mixins(), nested(), postcssPresetEnv(), autoprefixer()]))
     .pipe(postcss([cssnano()]))
     .pipe(gulp.dest("./dist/css/"))
+    .pipe(gulp.dest("./docs/css/"))
     .pipe(
       notify({
         message: "Your nakDS CSS is ready ♡"
@@ -55,11 +56,15 @@ function components() {
 }
 
 function fonts() {
-  return gulp.src("./assets/fonts/*.*").pipe(gulp.dest("./dist/assets/fonts/"));
+  return gulp.src("./assets/fonts/*.*")
+  .pipe(gulp.dest("./dist/assets/fonts/"))
+  .pipe(gulp.dest("./docs/assets/fonts/"));
 }
 
 function svg() {
-  return gulp.src("./assets/svg/*.*").pipe(gulp.dest("./dist/assets/svg/"));
+  return gulp.src("./assets/svg/*.*")
+  .pipe(gulp.dest("./dist/assets/svg/"))
+  .pipe(gulp.dest("./docs/assets/svg/"));
 }
 
 function watch() {

@@ -4,7 +4,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-family: lato;
+  font-family: "lato";
   font-size: var(--button__font-size);
   color: var(--color);
   text-decoration: none !important;
@@ -17,6 +17,7 @@
   &:hover {
     color: var(--color-bare);
     background: var(--color);
+    transition: 0.5s;
   }
 }
 
@@ -36,5 +37,20 @@
 
   &:hover {
     background: var(--color--neutral);
+  }
+}
+
+.nk-button--icon {
+  border: 0;
+  background: none;
+  border-radius: 500rem;
+  width: 48px;
+  height: 48px;
+  padding: var(--spacer-smal);
+
+  &:hover {
+    & [class^="nk-icon"] {
+      fill: white;
+    }
   }
 }
