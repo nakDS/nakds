@@ -8,6 +8,16 @@
   display: block;
 }
 
+.nk-display--inline {
+  display: inline;
+}
+
+.nk-position--sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top:0px;
+}
+
 .nk-text-align--left {
   text-align: left;
 }
@@ -28,10 +38,6 @@
 
 .nk-height-fullpage {
   min-height: 100vh;
-}
-
-.nk-display--inline {
-  display: inline;
 }
 
 .nk-float-right {
@@ -61,6 +67,10 @@
 .nk-text--strong {
   font-weight: bold;
   color: var(--color-black);
+}
+
+.nk-bg--light {
+  background: white;
 }
 
 .nk-is-active {}
