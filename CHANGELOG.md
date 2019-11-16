@@ -1,3 +1,7 @@
+## [1.10.0] 
+- Added content
+- Impreve grid docs
+
 ## [1.9.0] 
 - Add icons
 - Add buttons
