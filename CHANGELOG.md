@@ -1,3 +1,6 @@
+## [1.3.2] 
+- Update README and TODO list
+
 ## [1.3.1] 
 - Add heading to docs
 
