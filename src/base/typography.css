@@ -14,3 +14,19 @@
   font-family: "Lato-black";
   src: url("../fonts/Lato-Black.ttf");
 }
+
+.nak-text--small {
+  font-size: .9em;
+}
+
+.nak-text-size--large {
+  font-size: 1.2em;
+}
+
+.nak-text-size--huge {
+  font-size: 3em;
+}
+
+.text {
+  font-size: 16px;
+}

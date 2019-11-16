@@ -15,7 +15,6 @@
 }
 
 @define-mixin nak-box {
-  display: flex;
   min-width: var(--box__min-width);
   min-height: var(--box__height);
   padding: var(--box__padding);

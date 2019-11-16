@@ -1,0 +1,9 @@
+@import "../../src/variables/core-utils";
+
+.nak-doc-logo {
+  width: 100px;
+}
+
+.nak-doc-bg {
+  background: var(--background-color);
+}

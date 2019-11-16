@@ -2,18 +2,10 @@
 @import "../variables/core-utils";
 
 .nak-header {
-  display: flex;
-  align-items: center;
-  padding: var(--margin-header);
-}
-
-.nak-logo {
-  display: flex;
-  align-items: center;
+  padding: var(--spacing-large);
 }
 
 .nak-logo__svg {
-  width: var(--width-logo);
+  width: 100px;
   max-width: 100%;
-  margin-right: var(--small)
 }

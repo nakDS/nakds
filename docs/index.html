@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>nakDS</title>
     <link rel="stylesheet" href="../dist/css/nakDS.min.css" />
+    <link rel="stylesheet" href="./css/nak-docs.css" />
   </head>
   <body>
-    <header>
-      <h1 class="nak-heading-1">nakDS</h1>
+    <header class="nak-header">
+      <h1 class="nak-logo nak-text-align--center"><img class="nak-logo__svg" src="assets/img/logo-nakDS.svg" alt="NakDS"></h1>
       <nav class="nak-container--content">
         <ul>
           <li><a href="#container">Container</a></li>
-          <li>Box</li>
+          <li><a href="#box">Box</a></li>
           <li></li>
           <li></li>
           <li></li>
@@ -26,7 +27,7 @@
       </nav>
     </header>
     <article id="container">
-      <div class="nak-container">
+      <div class="nak-container nak-pvl nak-doc-bg">
         <h2 class="nak-heading-2">.nak-container</h2>
         <p>
           p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
@@ -40,7 +41,7 @@
           voluptatum ut, ipsa nihil. Ipsum ea porro, totam ipsam officia fugit
         </p>
       </div>
-      <div class="nak-container--content">
+      <div class="nak-container--content nak-mvl">
         <h2 class="nak-heading-2">.nak-container--content</h2>
         <p>
           p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
@@ -54,7 +55,7 @@
           voluptatum ut, ipsa nihil. Ipsum ea porro, totam ipsam officia fugit
         </p>
       </div>
-      <div class="nak-container--text">
+      <div class="nak-container--text nak-mvl">
         <h2 class="nak-heading-2">.nak-container--text</h2>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
         reprehenderit vero iste explicabo? Dolorum dolores a architecto iure
@@ -65,28 +66,11 @@
         recusandae corrupti odio ad, velit laboriosam exercitationem. Expedita
       </div>
     </article>
-    <article>
+    <article class="nak-container">
         <h3 class="nak-heading-2">Box</h3>
         <div class="nak-d-flex">
           <div class="nak-box">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
-              dolorem debitis soluta vero cum! Tenetur voluptas fugit rem
-              corporis ut dolores, itaque ea fuga minus facere deleniti.
-              Recusandae, quis natus explicabo laboriosam earum officia in
-              veritatis dignissimos exercitationem ab perspiciatis!
-            </p>
-          </div>
-          <div class="nak-box">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
-              dolorem debitis soluta vero cum! Tenetur voluptas fugit rem
-              corporis ut dolores, itaque ea fuga minus facere deleniti.
-              Recusandae, quis natus explicabo laboriosam earum officia in
-              veritatis dignissimos exercitationem ab perspiciatis!
-            </p>
-          </div>
-          <div class="nak-box">
+            <h4 class="nak-heading-2">.nax-box</h4>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
               dolorem debitis soluta vero cum! Tenetur voluptas fugit rem
@@ -97,5 +81,8 @@
           </div>
         </div>
     </article>
+    <div class="nak-footer">
+      Footer
+    </div>
   </body>
 </html>

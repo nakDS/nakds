@@ -1,57 +1,26 @@
 @import "../variables/core-utils";
 
-/*---------------utils---------------*/
-
-.clearboth {
-  clear: both;
-}
-
-.clearboth-line {
-  clear: both;
-  border-bottom: var(--color-bare) 1px solid;
-}
-
-.clearboth-10 {
-  height: 5px;
-  clear: both;
-}
-
-.hidden {
+.nak-hidden {
   display: none !important;
 }
 
-.nak-block {
+.nak-d-block {
   display: block;
 }
 
-a.link-print {
-  display: none;
+.nak-text-align--left {
+  text-align: left;
 }
 
-.align-right {
+.nak-text-align--right {
   text-align: right;
 }
 
-.small-text {
-  font-size: .9em;
-  color: var(--text-color);
+.nak-text-align--center {
+  text-align: center;
 }
 
-.nak-text-size--small {
-  font-size: .9em;
-}
 
-.nak-text-size--large {
-  font-size: 1.2em;
-}
-
-.nak-text-size--huge {
-  font-size: 3em;
-}
-
-.text {
-  font-size: 16px;
-}
 
 .nak-display--inline {
   display: inline;

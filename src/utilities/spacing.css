@@ -5,7 +5,7 @@
 /* spacing helpers
 p,m = padding,margin
 a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
-s,m,l,n = small(5px),medium(var(--medium)),large(var(--large)),none(var(--none))
+s,m,l,n = small(var(--small)),medium(var(--medium)),large(var(--large)),none(var(--none))
 */
 
 .nak-ptn,
@@ -41,7 +41,7 @@ s,m,l,n = small(5px),medium(var(--medium)),large(var(--large)),none(var(--none))
 .nak-ptxx,
 .nak-pvxx,
 .nak-paxx {
-  padding-top: 8var(--none) !important;
+  padding-top: var(--none) !important;
 }
 
 .nak-prn,

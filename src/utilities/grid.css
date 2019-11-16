@@ -106,8 +106,7 @@
   width: 100%;
 }
 
-.nak-box {
-  /*min-height: 190px;*/
+/* .nak-box {
   display: flex;
   align-items: center;
   height: 100%;
@@ -124,7 +123,7 @@
     align-items: flex-start;
     justify-content: space-around;
   }
-}
+} */
 
 .nak-box--small {
   padding: var(--spacing-small);

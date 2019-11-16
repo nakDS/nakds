@@ -3,7 +3,6 @@
 @import "tokens--font";
 
 :root {
-
   /*---------------spacing tokens---------------*/
 
   /*10px*/
@@ -17,7 +16,5 @@
 
   /*60px*/
   --spacing-x-large: 3.75rem;
-
-  /*---------------breakpoints tokens---------------*/
 
 }
