@@ -18,7 +18,7 @@ const insert = require("gulp-insert");
 function css() {
   return gulp
     .src("./src/nakDS.css")
-    .pipe(postcss([cssImport(), mixins(), postcssPresetEnv(), autoprefixer()]))
+    .pipe(postcss([cssImport(), mixins(), nested(), postcssPresetEnv(), autoprefixer()]))
     .pipe(postcss([cssnano()]))
     .pipe(gulp.dest("./dist/css/"))
     .pipe(
@@ -31,7 +31,7 @@ function css() {
 function utils() {
   return gulp
     .src("./src/variables/core-utils.css")
-    .pipe(postcss([cssImport(), mixins(), postcssPresetEnv(), autoprefixer()]))
+    .pipe(postcss([cssImport(), mixins(), nested(), postcssPresetEnv(), autoprefixer()]))
     .pipe(postcss([cssnano()]))
     .pipe(gulp.dest("./dist/css/"))
     .pipe(
@@ -44,7 +44,7 @@ function utils() {
 function components() {
   return gulp
     .src("./src/components/**.css")
-    .pipe(postcss([cssImport(), mixins(), postcssPresetEnv(), autoprefixer()]))
+    .pipe(postcss([cssImport(), mixins(), nested(), postcssPresetEnv(), autoprefixer()]))
     .pipe(postcss([cssnano()]))
     .pipe(gulp.dest("./dist/css/components/"))
     .pipe(
