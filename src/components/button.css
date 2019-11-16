@@ -5,28 +5,28 @@
 
 /*-------------------------------------*/
 
-.nak-button {
-  @apply --nak-button;
+.nk-button {
+  @apply --nk-button;
 }
 
-.nak-button--neutral {
-  @apply --nak-button;
-  @apply --nak-button--neutral;
+.nk-button--neutral {
+  @apply --nk-button;
+  @apply --nk-button--neutral;
 }
 
-.nak-button--disabled {}
+.nk-button--disabled {}
 
-.nak-button--negative {
-  @apply --nak-button;
-  @apply --nak-button--negative;
+.nk-button--negative {
+  @apply --nk-button;
+  @apply --nk-button--negative;
 }
 
-.nak-button--big {
-  @apply --nak-button;
-  @apply --nak-button--big;
+.nk-button--big {
+  @apply --nk-button;
+  @apply --nk-button--big;
 }
 
-.nak-button--icon-left {
-  @apply --nak-button;
-  @apply --nak-button--icon-left;
+.nk-button--icon-left {
+  @apply --nk-button;
+  @apply --nk-button--icon-left;
 }

@@ -5,32 +5,32 @@
   --heading-border-color-link--hover: var(--color-third);
 } */
 
-.nak-heading-1 {
+.nk-heading-1 {
   font-size: 3em;
   line-height: 3em;
 }
 
-.nak-heading-2 {
+.nk-heading-2 {
   font-size: 2.5em;
   font-size: 2.5em;
 }
 
-.nak-heading-3 {
+.nk-heading-3 {
   font-size: 2.2em;
   line-height: 2.2em;
 }
 
-.nak-heading-4 {
+.nk-heading-4 {
   font-size: 1.8em;
   line-height: 1.8em;
 }
 
-.nak-heading-5 {
+.nk-heading-5 {
   font-size: 1.6em;
   line-height: 1.6em;
 }
 
-.nak-heading-6 {
+.nk-heading-6 {
   font-size: 1.4em;
   line-height: 1.4em;
 }

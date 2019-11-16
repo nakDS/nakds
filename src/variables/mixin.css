@@ -1,5 +1,5 @@
 
-@define mixin nak-button {
+@define mixin nk-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,7 +26,7 @@
     /*opacity: .8;*/
   }
 
-  &.action, &.nak-button--action {
+  &.action, &.nk-button--action {
     background: var(--color-secondary-color);
 
     @media (--small-viewport) {

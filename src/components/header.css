@@ -1,11 +1,11 @@
 /*---------------header---------------*/
 @import "../variables/core-utils";
 
-.nak-header {
+.nk-header {
   padding: var(--spacer-large);
 }
 
-.nak-logo__svg {
+.nk-logo__svg {
   width: 100px;
   max-width: 100%;
 }

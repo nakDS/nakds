@@ -5,7 +5,7 @@
 - Add full height utility
 - Add smooth scrolling
 - Distribute components inidividually
-- Add nak-section
+- Add nk-section
 - Font face and arrange vatiables
 
 ## [1.5.0] 

@@ -15,24 +15,24 @@
 }
 
 
-.nak-box {
+.nk-box {
   min-width: var(--box__min-width);
   min-height: var(--box__height);
   background: var(--box__background);
 }
 
-.nak-box__image {
+.nk-box__image {
   width: 100%;
   height: 30%;
   object-fit: cover;
   
 }
 
-.nak-box__body {
+.nk-box__body {
 padding: var(--spacer-medium);
 }
 
-.nak-box--center {
+.nk-box--center {
    min-width: var(--box__min-width);
   min-height: var(--box__height);
   padding: var(--box__padding);
@@ -45,7 +45,7 @@ padding: var(--spacer-medium);
   justify-content: center;
 }
 
-.nak-box--right {
+.nk-box--right {
    min-width: var(--box__min-width);
   min-height: var(--box__height);
   padding: var(--box__padding);

@@ -1,97 +1,97 @@
 @import "../variables/core-utils";
 
-.nak-hidden {
+.nk-hidden {
   display: none !important;
 }
 
-.nak-d-block {
+.nk-d-block {
   display: block;
 }
 
-.nak-text-align--left {
+.nk-text-align--left {
   text-align: left;
 }
 
-.nak-text-align--right {
+.nk-text-align--right {
   text-align: right;
 }
 
-.nak-text-align--center {
+.nk-text-align--center {
   text-align: center;
 }
 
-.nak-smooth-scroll {
+.nk-smooth-scroll {
   scroll-behavior: smooth;
   overflow-y: scroll;
   height: 100vh;
 }
 
-.nak-height-fullpage {
+.nk-height-fullpage {
   min-height: 100vh;
 }
 
-.nak-display--inline {
+.nk-display--inline {
   display: inline;
 }
 
-.nak-float-right {
+.nk-float-right {
   float: right;
 }
 
-.nak-float-left {
+.nk-float-left {
   float: left;
 }
 
-.nak-text-color {
+.nk-text-color {
   color: var(--color);
 }
 
-.nak-text-color--secondary {
+.nk-text-color--secondary {
   color: var(--color-torch-red);
 }
 
-.nak-text-color--third {
+.nk-text-color--third {
   color: var(--color-steel-blue);
 }
 
-.nak-text-color--neutral {
+.nk-text-color--neutral {
   color: var(--color-neutral);
 }
 
-.nak-text--strong {
+.nk-text--strong {
   font-weight: bold;
   color: var(--color-black);
 }
 
-.nak-is-active {}
+.nk-is-active {}
 
-.nak-is-hidden {
+.nk-is-hidden {
   display: none !important;
 }
 
-.nak-is-hidden--min-medium {
+.nk-is-hidden--min-medium {
   @media (--min-medium-viewport) {
     display: none !important;
   }
 }
 
-.nak-is-hidden--min-small {
+.nk-is-hidden--min-small {
   @media (--min-small-viewport) {
     display: none !important;
   }
 }
 
-.nak-align--right {
+.nk-align--right {
   display: flex;
   justify-content: flex-end;
   text-align: right;
 
-  &.nak-form-element__row, &.nak-form-element--inline {
+  &.nk-form-element__row, &.nk-form-element--inline {
     justify-content: flex-end;
   }
 }
 
-.nak-align--center {
+.nk-align--center {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -106,37 +106,37 @@
   }
 }
 
-.nak-is-stacable--small {
+.nk-is-stacable--small {
   @media (--small-viewport) {
     flex-direction: column;
     align-items: flex-start;
     height: inherit;
 
-    &.nak-grid {
+    &.nk-grid {
       flex-wrap: wrap;
     }
   }
 }
 
-.nak-is-stacable--medium {
+.nk-is-stacable--medium {
   @media (--medium-viewport) {
     flex-direction: column;
     align-items: flex-start;
     height: inherit;
 
-    &.nak-grid {
+    &.nk-grid {
       flex-wrap: wrap;
     }
   }
 }
 
-.nak-is-wrappable--medium {
+.nk-is-wrappable--medium {
   @media (--medium-viewport) {
     flex-wrap: wrap;
   }
 }
 
-.nak-has-select {
+.nk-has-select {
 
   &:before {
     position: absolute;
@@ -154,19 +154,19 @@
   }
 }
 
-.nak-image-mask--gradient {
+.nk-image-mask--gradient {
   mask-image: linear-gradient(0, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
   mask-repeat: space;
 }
 
-.nak-has-bg-image--gradient {
+.nk-has-bg-image--gradient {
   background: linear-gradient(45deg, rgba(235, 235, 235, 1) 44%, rgba(235, 235, 235, 0) 100%), url(http://localhost-axabienestar:8888/skin/frontend/rwd/default/images/specialty/odontologia.jpg);
   background-repeat: no-repeat;
   background-position: right top;
   background-size: cover;
 }
 
-.nak-has-bg-image {}
+.nk-has-bg-image {}
 
 .std:empty {
   display: none;
@@ -175,18 +175,18 @@
 
 /*---------------background colors---------------*/
 
-.nak-bg-color--neutral {
+.nk-bg-color--neutral {
   background: var(--background-color);
 }
 
 
 /*---------------widths---------------*/
 
-.nak-width-input--inline {
+.nk-width-input--inline {
   width: var(--width-input--inline);
 }
 
-.nak-obj-fit--contain {
+.nk-obj-fit--contain {
   width: 100%;
   object-fit: contain;
 }

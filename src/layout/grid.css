@@ -9,41 +9,41 @@
 
 
 
-.nak-grid {
+.nk-grid {
   display: grid;
 }
 
-.nak-grid-1-1 {
+.nk-grid-1-1 {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.nak-grid-1-1-1 {
+.nk-grid-1-1-1 {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.nak-grid-1-1-1-1 {
+.nk-grid-1-1-1-1 {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.nak-gap {
+.nk-gap {
   column-gap: var(--spacer-medium);
   row-gap: var(--spacer-medium);
 }
 
-.nak-grid--wrapped {
+.nk-grid--wrapped {
   display: flex;
   flex-wrap: wrap;
 }
 
-.nak-grid--has-spaces {
+.nk-grid--has-spaces {
   display: flex;
   justify-content: space-between;
 
   @media (--medium-viewport) {
 
-    .nak-is-stacable--medium {
+    .nk-is-stacable--medium {
 
-      .nak-box {
+      .nk-box {
         margin-right: 0;
         margin-bottom: var(--large);
       }
@@ -51,40 +51,40 @@
   }
   @media (--small-viewport) {
 
-    .nak-is-stacable--small {
+    .nk-is-stacable--small {
 
-      .nak-box {
+      .nk-box {
         margin-right: 0;
         margin-bottom: var(--large);
       }
     }
   }
 
-  &.nak-grid--wrapped {
+  &.nk-grid--wrapped {
 
     >* {
       margin-bottom: var(--large);
     }
   }
 
-  .nak-size--1-of-2 {
+  .nk-size--1-of-2 {
     width: 49%;
   }
 
-  .nak-box {
+  .nk-box {
     margin-right: var(--large);
     margin-bottom: var(--large);
   }
 
-  .nak-col:last-child {
+  .nk-col:last-child {
 
-    .nak-box {
+    .nk-box {
       margin-right: 0;
     }
   }
 }
 
-.nak-grid--has-v-space{
+.nk-grid--has-v-space{
 
   >*{
     margin-top: var(--grid-item-top-space);
@@ -92,7 +92,7 @@
   }
 }
 
-.nak-has-col--2{
+.nk-has-col--2{
 
   >*{
     width: 50%;
@@ -101,7 +101,7 @@
 
 /*Automatic cols*/
 
-.nak-grid__item{
+.nk-grid__item{
   flex: 1 1 auto;
 
   img{
@@ -109,23 +109,23 @@
   }
 }
 
-.nak-col {
+.nk-col {
   flex: 1 1 auto;
   width: 100%;
 }
 
-/* .nak-box {
+/* .nk-box {
   display: flex;
   align-items: center;
   height: 100%;
 
-  &.nak-has-column {
+  &.nk-has-column {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
 
-  &.nak-has-column--stretch {
+  &.nk-has-column--stretch {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -133,14 +133,14 @@
   }
 } */
 
-.nak-box--small {
+.nk-box--small {
   padding: var(--spacer-small);
 }
 
-.nak-box--medium {
+.nk-box--medium {
   padding: var(--spacer-medium);
 }
 
-.nak-box--large {
+.nk-box--large {
   padding: var(--spacer-large);
 }

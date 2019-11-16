@@ -1,39 +1,39 @@
 /*---------------form---------------*/
 @import "../variables/core-utils";
 
-.nak-form {
+.nk-form {
   /*@mixin large-spacing;*/
 }
 
-.nak-form--search {
+.nk-form--search {
   background: var(--background-color);
 
-  .nak-form-element__row {
+  .nk-form-element__row {
     max-width: inherit;
   }
 }
 
-.nak-form-element {
+.nk-form-element {
   /*@apply --form-element;*/
 }
 
-.nak-form-element--inline {
+.nk-form-element--inline {
   /*@apply --form-element--inline;*/
   @media (--min-small-viewport) {
 
-    .nak-form-element__label {
+    .nk-form-element__label {
       width: var(--width-label--inline);
     }
 
-    .nak-input, .nak-select {
+    .nk-input, .nk-select {
       width: var(--width-input--inline);
     }
   }
 }
 
-.nak-form-element__group {}
+.nk-form-element__group {}
 
-.nak-form-element__row {
+.nk-form-element__row {
   display: flex;
   align-items: center;
   max-width: var(--width-form-element);
@@ -44,39 +44,39 @@
   }
 }
 
-.nak-form-element__row--extended {
+.nk-form-element__row--extended {
   align-items: center;
   justify-content: space-between;
 }
 
-.nak-form-element__row--left {
+.nk-form-element__row--left {
   justify-content: flex-start;
 }
 
-.nak-form-element--center {
+.nk-form-element--center {
   justify-content: center;
   text-align: center;
 }
 
-.nak-form-element__row--top {
+.nk-form-element__row--top {
   align-items: flex-start;
 }
 
-.nak-form--compound {
+.nk-form--compound {
   padding: var(--large);
 
   @media (--min-medium-viewport) {
 
-    .nak-form-element+.nak-form-element, .nak-form-element--inline+.nak-form-element--inline, {
+    .nk-form-element+.nk-form-element, .nk-form-element--inline+.nk-form-element--inline, {
       padding-left: var(--large);
     }
   }
 }
 
-.nak-form-element__label {
+.nk-form-element__label {
   /*@apply --label;*/
 
-  .nak-form-element--inline & {
+  .nk-form-element--inline & {
     padding: 0 10px;
 
     @media (--small-viewport) {
@@ -84,12 +84,12 @@
     }
   }
 
-  .nak-is-stacable--medium & {
+  .nk-is-stacable--medium & {
     align-self: flex-start;
     width: 60%;
   }
 
-  &.nak-has-bgcolor {
+  &.nk-has-bgcolor {
     background: var(--color-neutral);
 
     @media (--small-viewport) {
@@ -98,7 +98,7 @@
   }
 }
 
-.nak-input--naked {
+.nk-input--naked {
   background: none;
   border: 0;
 }

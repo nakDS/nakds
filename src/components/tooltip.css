@@ -1,7 +1,7 @@
 /*---------------toolbar---------------*/
 @import "../variables/core-utils";
 
-.nak-tooltip {
+.nk-tooltip {
   /*display: none;*/
   position: absolute;
   bottom:0;
@@ -21,15 +21,15 @@
 
 }
 
-.nak-tooltip__text {}
+.nk-tooltip__text {}
 
-.nak-has-tooltip {
+.nk-has-tooltip {
   position: relative;
   overflow: hidden;
 
   &:hover {
 
-    .nak-tooltip {
+    .nk-tooltip {
       display: flex;
       transform:translate(0 0);
     }

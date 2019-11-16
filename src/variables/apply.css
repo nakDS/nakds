@@ -46,7 +46,7 @@
       padding: 0;
       background: none;
 
-      .nak-is-stacable--small & {
+      .nk-is-stacable--small & {
         width: 100%;
       }
     }
@@ -125,7 +125,7 @@
       /*opacity: .8;*/
     }
 
-    &.action, &.nak-button--action {
+    &.action, &.nk-button--action {
       background: var(--second-color);
 
       @media (--small-viewport) {
@@ -266,7 +266,7 @@
     position: relative;
     flex: 1;
 
-    &.is-active, &.nak-is-active {
+    &.is-active, &.nk-is-active {
 
       a {
         color: var(--color);

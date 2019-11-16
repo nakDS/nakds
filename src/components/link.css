@@ -11,9 +11,9 @@ a {
   }
 }
 
-.nak-link {}
+.nk-link {}
 
-.nak-link--naked {
+.nk-link--naked {
   text-decoration: none;
 
   &:hover {
@@ -21,7 +21,7 @@ a {
   }
 }
 
-.nak-link--neutral {
+.nk-link--neutral {
   color: var(--text-color);
   text-decoration: none;
 
@@ -34,7 +34,7 @@ a {
   }
 }
 
-.nak-link--negative {
+.nk-link--negative {
   color: var(--color-link--negativo);
 
   &:hover {
@@ -42,7 +42,7 @@ a {
   }
 }
 
-.nak-has-icon {
+.nk-has-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,7 +60,7 @@ a {
   }
 }
 
-.nak-menu-link--color {
+.nk-menu-link--color {
   color: var(--color);
   text-decoration: none;
 

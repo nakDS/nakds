@@ -13,19 +13,19 @@
   }
 }
 
-.nak-module {}
+.nk-module {}
 
-.nak-module--neutral {
+.nk-module--neutral {
   @apply --ii-module;
   background: ;
   border: 1px solid var(--border-color-box);
 }
 
-.nak-is-symmetric {
+.nk-is-symmetric {
   flex: 1;
 }
 
-.nak-module__title {
+.nk-module__title {
   font-weight: bold;
   color: var(--color);
   text-transform: inherit;

@@ -8,230 +8,230 @@ a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
 s,m,l,n = small(var(--small)),medium(var(--medium)),large(var(--large)),none(var(--none))
 */
 
-.nak-ptn,
-.nak-pvn,
-.nak-pan {
+.nk-ptn,
+.nk-pvn,
+.nk-pan {
   padding-top: var(--none) !important;
 }
 
-.nak-pts,
-.nak-pvs,
-.nak-pas {
+.nk-pts,
+.nk-pvs,
+.nk-pas {
   padding-top:var(--small) !important;
 }
 
-.nak-ptm,
-.nak-pvm,
-.nak-pam {
+.nk-ptm,
+.nk-pvm,
+.nk-pam {
   padding-top: var(--medium) !important;
 }
 
-.nak-ptl,
-.nak-pvl,
-.nak-pal {
+.nk-ptl,
+.nk-pvl,
+.nk-pal {
   padding-top: var(--large) !important;
 }
 
-.nak-ptx,
-.nak-pvx,
-.nak-pax {
+.nk-ptx,
+.nk-pvx,
+.nk-pax {
   padding-top: var(--x-large) !important;
 }
 
-.nak-ptxx,
-.nak-pvxx,
-.nak-paxx {
+.nk-ptxx,
+.nk-pvxx,
+.nk-paxx {
   padding-top: var(--none) !important;
 }
 
-.nak-prn,
-.nak-phn,
-.nak-pan {
+.nk-prn,
+.nk-phn,
+.nk-pan {
   padding-right: var(--none) !important;
 }
 
-.nak-prs,
-.nak-phs,
-.nak-pas {
+.nk-prs,
+.nk-phs,
+.nk-pas {
   padding-right:var(--small) !important;
 }
 
-.nak-prm,
-.nak-phm,
-.nak-pam {
+.nk-prm,
+.nk-phm,
+.nk-pam {
   padding-right: var(--medium) !important;
 }
 
-.nak-prl,
-.nak-phl,
-.nak-pal {
+.nk-prl,
+.nk-phl,
+.nk-pal {
   padding-right: var(--large) !important;
 }
 
-.nak-pbn,
-.nak-pvn,
-.nak-pan {
+.nk-pbn,
+.nk-pvn,
+.nk-pan {
   padding-bottom: var(--none) !important;
 }
 
-.nak-pbs,
-.nak-pvs,
-.nak-pas {
+.nk-pbs,
+.nk-pvs,
+.nk-pas {
   padding-bottom:var(--small) !important;
 }
 
-.nak-pbm,
-.nak-pvm,
-.nak-pam {
+.nk-pbm,
+.nk-pvm,
+.nk-pam {
   padding-bottom: var(--medium) !important;
 }
 
-.nak-pbl,
-.nak-pvl,
-.nak-pal {
+.nk-pbl,
+.nk-pvl,
+.nk-pal {
   padding-bottom: var(--large) !important;
 }
 
-.nak-pln,
-.nak-phn,
-.nak-pan {
+.nk-pln,
+.nk-phn,
+.nk-pan {
   padding-left: var(--none) !important;
 }
 
-.nak-pls,
-.nak-phs,
-.nak-pas {
+.nk-pls,
+.nk-phs,
+.nk-pas {
   padding-left: var(--small) !important;
 }
 
-.nak-plm,
-.nak-phm,
-.nak-pam {
+.nk-plm,
+.nk-phm,
+.nk-pam {
   padding-left: var(--medium) !important;
 }
 
-.nak-pll,
-.nak-phl,
-.nak-pal {
+.nk-pll,
+.nk-phl,
+.nk-pal {
   padding-left: var(--large) !important;
 }
 
-.nak-mtn,
-.nak-mvn,
-.nak-man {
+.nk-mtn,
+.nk-mvn,
+.nk-man {
   margin-top: var(--none) !important;
 }
 
-.nak-mts,
-.nak-mvs,
-.nak-mas {
+.nk-mts,
+.nk-mvs,
+.nk-mas {
   margin-top:var(--small) !important;
 }
 
-.nak-mtm,
-.nak-mvm,
-.nak-mam {
+.nk-mtm,
+.nk-mvm,
+.nk-mam {
   margin-top: var(--medium) !important;
 }
 
-.nak-mtl,
-.nak-mvl,
-.nak-mal {
+.nk-mtl,
+.nk-mvl,
+.nk-mal {
   margin-top: var(--large) !important;
 }
 
-.nak-mtx,
-.nak-mvx,
-.nak-max {
+.nk-mtx,
+.nk-mvx,
+.nk-max {
   margin-top: var(--x-large) !important;
 }
 
-.nak-mrn,
-.nak-mhn,
-.nak-man {
+.nk-mrn,
+.nk-mhn,
+.nk-man {
   margin-right: var(--none) !important;
 }
 
-.nak-mrs,
-.nak-mhs,
-.nak-mas,
-ul.nak-mrs li {
+.nk-mrs,
+.nk-mhs,
+.nk-mas,
+ul.nk-mrs li {
   margin-right:var(--small) !important;
 }
 
-.nak-mrm,
-.nak-mhm,
-.nak-mam {
+.nk-mrm,
+.nk-mhm,
+.nk-mam {
   margin-right: var(--medium) !important;
 }
 
-.nak-mrl,
-.nak-mhl,
-.nak-mal,
-ul.nak-mrl li {
+.nk-mrl,
+.nk-mhl,
+.nk-mal,
+ul.nk-mrl li {
   margin-right: var(--large) !important;
 }
 
-.nak-mbn,
-.nak-mvn,
-.nak-man {
+.nk-mbn,
+.nk-mvn,
+.nk-man {
   margin-bottom: var(--none) !important;
 }
 
-.nak-mbs,
-.nak-mvs,
-.nak-mas {
+.nk-mbs,
+.nk-mvs,
+.nk-mas {
   margin-bottom:var(--small) !important;
 }
 
-.nak-mbm,
-.nak-mvm,
-.nak-mam {
+.nk-mbm,
+.nk-mvm,
+.nk-mam {
   margin-bottom: var(--medium) !important;
 }
 
-.nak-mbl,
-.nak-mvl,
-.nak-mal {
+.nk-mbl,
+.nk-mvl,
+.nk-mal {
   margin-bottom: var(--large) !important;
 }
 
-.nak-mbx,
-.nak-mvx,
-.nak-max {
+.nk-mbx,
+.nk-mvx,
+.nk-max {
   margin-bottom: var(--x-large) !important;
 }
 
-.nak-mln,
-.nak-mhn,
-.nak-man {
+.nk-mln,
+.nk-mhn,
+.nk-man {
   margin-left: var(--none) !important;
 }
 
-.nak-mls,
-.nak-mhs,
-.nak-mas {
+.nk-mls,
+.nk-mhs,
+.nk-mas {
   margin-left:var(--small) !important;
 }
 
-.nak-mlm,
-.nak-mhm,
-.nak-mam {
+.nk-mlm,
+.nk-mhm,
+.nk-mam {
   margin-left: var(--medium) !important;
 }
 
-.nak-mll,
-.nak-mhl,
-.nak-mal {
+.nk-mll,
+.nk-mhl,
+.nk-mal {
   margin-left: var(--large) !important;
 }
 
-.nak-mtxl,
-.nak-maxl {
+.nk-mtxl,
+.nk-maxl {
   margin-top: var(--x-large) !important;
 }
 
-.nak-mtxxl,
-.nak-maxxl {
+.nk-mtxxl,
+.nk-maxxl {
   margin-top: 8var(--none) !important;
 }

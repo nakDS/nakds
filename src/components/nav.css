@@ -1,7 +1,7 @@
 /*---------------nav---------------*/
 @import "../variables/core-utils";
 
-.nak-navigation-list--vertical {
+.nk-navigation-list--vertical {
   padding: var(--medium);
   border: 10px solid var(--color-bare);
 

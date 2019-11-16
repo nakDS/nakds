@@ -1,11 +1,11 @@
 /*---------------pill---------------*/
 @import "../variables/core-utils";
 
-.nak-pill_container {
+.nk-pill_container {
   margin: var(--medium) 0;
 }
 
-.nak-pill {
+.nk-pill {
   position: relative;
   display: inline-flex;
   align-items: center;

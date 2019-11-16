@@ -38,7 +38,7 @@
   /*icon*/
 
   /*----------------@apply---------------------*/
-  --nak-button: {
+  --nk-button: {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,22 +67,22 @@
       background: var(--color);
     }
   };
-  --nak-button--neutral: {
+  --nk-button--neutral: {
     background: var(--button__background--neutral);
     border: var(--button__border-width--neutral) var(--button__border-style--neutral) var(--button__border-color--neutral);
     border-color: var(--button__border-color--neutral);
   };
-  --nak-button--negative: {
+  --nk-button--negative: {
     background: var(--button__background--negative);
     border: var(--button__border-width--negative) var(--button__border-style--negative) var(--button__border-color--negative);
     border-color: var(--button__border-color--negative);
   };
-  --nak-button--disabled: {}
-  --nak-button--big: {
+  --nk-button--disabled: {}
+  --nk-button--big: {
     height: inherit;
     padding: var(--medium);
   };
-  --nak-button--icon-left: {
+  --nk-button--icon-left: {
 
     img {
       width: 30px;

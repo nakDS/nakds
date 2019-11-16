@@ -13,27 +13,27 @@
   src: url("../assets/fonts/Lato-Black.ttf");
 }
 
-.nak-font--light {
+.nk-font--light {
   font-family: lato-light, sans-serif;
 }
 
-.nak-font--regular {
+.nk-font--regular {
   font-family: lato, sans-serif;
 }
 
-.nak-font--bold {
+.nk-font--bold {
   font-family: lato-black, sans-serif;
 }
 
-.nak-text--small {
+.nk-text--small {
   font-size: 0.9em;
 }
 
-.nak-text-size--large {
+.nk-text-size--large {
   font-size: 1.2em;
 }
 
-.nak-text-size--huge {
+.nk-text-size--huge {
   font-size: 3em;
 }
 

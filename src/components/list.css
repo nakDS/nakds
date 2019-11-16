@@ -9,17 +9,17 @@
 
 /*----------------If you need OOCSS---------------------*/
 
-.nak-l-list{}
+.nk-l-list{}
 
-.nak-l-list--dotted{
+.nk-l-list--dotted{
   list-style: inherit;
   list-style-position: inside;
 }
 
-.nak-l-list--horizontal{
+.nk-l-list--horizontal{
   display: flex;
 }
 
-.nak-l-list--board{}
+.nk-l-list--board{}
 
 /*-------------------------------------*/

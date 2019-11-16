@@ -1,18 +1,18 @@
 @import "../../src/variables/core-utils";
 
-.nak-doc-logo {
+.nk-doc-logo {
   width: 100px;
 }
 
-.nak-doc-bg {
+.nk-doc-bg {
   background: var(--background-color);
 }
 
-.nak-doc-border {
+.nk-doc-border {
   border: 1px dashed var(--color-neutral);
 }
 
-.nak-bg--image {
+.nk-bg--image {
   background: url(../assets/img/randomMatches_142.jpg);
   background-size: cover;
 }

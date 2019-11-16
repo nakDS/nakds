@@ -1,7 +1,7 @@
 /*---------------wizard---------------*/
 @import "../variables/core-utils";
 
-.nak-wizard {
+.nk-wizard {
 
   a {
     color: var(--text-color--light);
@@ -9,7 +9,7 @@
   }
 }
 
-.nak-wizard-list {
+.nk-wizard-list {
   display: flex;
   justify-content: space-between;
 
@@ -18,11 +18,11 @@
   }
 }
 
-.nak-wizard-item {
+.nk-wizard-item {
   /*@apply --wizard-item;*/
 }
 
-.nak-wizard-marker {
+.nk-wizard-marker {
   position: relative;
   display: flex;
   align-items: center;
@@ -39,12 +39,12 @@
     color: var(--color-white);
   }
 
-  .is-active &, .nak-is-active & {
+  .is-active &, .nk-is-active & {
     background: var(--color);
   }
 }
 
-.nak-wizard-label {
+.nk-wizard-label {
   display: block;
   margin-bottom: -6px;
   margin-left: var(--xx-large);
