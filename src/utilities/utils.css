@@ -20,7 +20,11 @@
   text-align: center;
 }
 
-
+.nak-smooth-scroll {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  height: 100vh;
+}
 
 .nak-display--inline {
   display: inline;
