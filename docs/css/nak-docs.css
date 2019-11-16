@@ -13,6 +13,6 @@
 }
 
 .nk-bg--image {
-  background: url(../assets/img/randomMatches_142.jpg);
+  background-image: url(../assets/img/randomMatches_142.jpg);
   background-size: cover;
 }

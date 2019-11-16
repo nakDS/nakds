@@ -38,6 +38,7 @@
 @import "components/table";
 @import "components/tooltip";
 @import "components/tab";
+@import "components/theme";
 @import "components/wizard";
 
 @import "layout/layout";
