@@ -21,17 +21,17 @@
       text-decoration: none;
 
       &:hover{
-        color:var(--color-theme);
+        color:var(--color);
       }
     }
 
     span:before {
-      color:var(--color-theme);
+      color:var(--color);
       content: "\e902";
     }
   }
 
   strong{
-    color:var(--color-theme);
+    color:var(--color);
   }
 }

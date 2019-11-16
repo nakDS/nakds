@@ -1,9 +1,9 @@
 :root {
   /*---------------brand tokens---------------*/
-  --color-theme: #9fcad2;
-  --color-theme-second: #ff1821;
-  --color-theme-third: #5c91c0;
-  --color-theme-fourth: #7a9f34;
+  --color: #cd2682;
+  --color-secondary: #ff1821;
+  --color-third: #5c91c0;
+  --color-fourth: #7a9f34;
 
   /*---------------tokens---------------*/
   --color-gallery: #ebebeb;

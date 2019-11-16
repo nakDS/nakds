@@ -17,13 +17,13 @@
 
   /*---------------states---------------*/
 
-  --color-positive: var(--color-theme-fourth);
+  --color-positive: var(--color-fourth);
   --color-error: var(--color-torch-red200);
 
   /*---------------color backgrounds---------------*/
 
   --background-color: var(--color-gallery);
-  --background-color-button: var(--color-theme);
+  --background-color-button: var(--color);
   --background-color-button--theme: var(--color-azure);
   --background-color-button--hover: var(--color-steel-blue);
   --background-color-label: var(--color-gallery);
@@ -32,7 +32,7 @@
 
   /*---------------Links---------------*/
 
-  --link-color: var(--color-barberry);
+  --link-color: var(--color);
 
   /*---------------Tooltip theme---------------*/
 
@@ -57,15 +57,15 @@
   --heading-6__font-size: 1.4rem;
 
   --heading-text-color-link: var(--text-color);
-  --heading-text-color-link--hover: var(--color-theme-third);
+  --heading-text-color-link--hover: var(--color-third);
   --heading-border-color-link: var(--text-color);
-  --heading-border-color-link--hover: var(--color-theme-third);
+  --heading-border-color-link--hover: var(--color-third);
 
   /*---------------links---------------*/
 
   --color-link--icon: var(--color-mine-shaft);
   --color-link--negativo: var(--color-wildsand);
-  --color-link--negativo-hover: var(--color-theme-third);
+  --color-link--negativo-hover: var(--color-third);
 
   /*---------------tables---------------*/
 

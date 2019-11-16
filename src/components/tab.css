@@ -29,6 +29,6 @@
     color: var(--text-color);
     text-decoration: none;
     background: var(--background-color);
-    box-shadow: 0 -3px 0 var(--color-theme);
+    box-shadow: 0 -3px 0 var(--color);
   }
 }

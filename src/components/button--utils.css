@@ -10,8 +10,8 @@
   --button__height: var(--spacing-large);
   --button__border-width: 1px;
   --button__border-style: solid;
-  --button__border-color: var(--color-theme);
-  --button__background: var(--color-theme);
+  --button__border-color: var(--color);
+  --button__background: var(--color);
   --button__color: var(--text-color);
   --button__font-size: var(--large);
   --button__font: var(--base-font);
@@ -64,7 +64,7 @@
 
     &:focus {
       color: var(--color-white);
-      background: var(--color-theme);
+      background: var(--color);
     }
   };
   --nak-button--neutral: {

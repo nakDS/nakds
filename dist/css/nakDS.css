@@ -1,9 +1,9 @@
 :root {
   /*---------------brand tokens---------------*/
-  --color-theme: #9fcad2;
-  --color-theme-second: #ff1821;
-  --color-theme-third: #5c91c0;
-  --color-theme-fourth: #7a9f34;
+  --color: #cd2682;
+  --color-secondary: #ff1821;
+  --color-third: #5c91c0;
+  --color-fourth: #7a9f34;
 
   /*---------------tokens---------------*/
   --color-gallery: #ebebeb;
@@ -100,13 +100,13 @@
 
   /*---------------states---------------*/
 
-  --color-positive: var(--color-theme-fourth);
+  --color-positive: var(--color-fourth);
   --color-error: var(--color-torch-red200);
 
   /*---------------color backgrounds---------------*/
 
   --background-color: var(--color-gallery);
-  --background-color-button: var(--color-theme);
+  --background-color-button: var(--color);
   --background-color-button--theme: var(--color-azure);
   --background-color-button--hover: var(--color-steel-blue);
   --background-color-label: var(--color-gallery);
@@ -115,7 +115,7 @@
 
   /*---------------Links---------------*/
 
-  --link-color: var(--color-barberry);
+  --link-color: var(--color);
 
   /*---------------Tooltip theme---------------*/
 
@@ -140,15 +140,15 @@
   --heading-6__font-size: 1.4rem;
 
   --heading-text-color-link: var(--text-color);
-  --heading-text-color-link--hover: var(--color-theme-third);
+  --heading-text-color-link--hover: var(--color-third);
   --heading-border-color-link: var(--text-color);
-  --heading-border-color-link--hover: var(--color-theme-third);
+  --heading-border-color-link--hover: var(--color-third);
 
   /*---------------links---------------*/
 
   --color-link--icon: var(--color-mine-shaft);
   --color-link--negativo: var(--color-wildsand);
-  --color-link--negativo-hover: var(--color-theme-third);
+  --color-link--negativo-hover: var(--color-third);
 
   /*---------------tables---------------*/
 
@@ -215,7 +215,7 @@
   color: var(--button_color);
   text-decoration: none !important;
   text-transform: inherit;
-  background: #9fcad2;
+  background: #cd2682;
   background: var(--button__background);
   border: var(--button__border);
 
@@ -235,7 +235,7 @@
   }
 
   &.action, &.nak-button--action {
-    background: var(--color-second-color);
+    background: var(--color-secondary-color);
 
     @media (--small-viewport) {
       -webkit-box-ordinal-group: 1;
@@ -441,7 +441,7 @@
     color: var(--white);
     text-decoration: none !important;
     text-transform: inherit;
-    background: #9fcad2;
+    background: #cd2682;
     background: var(--background-color-button);
     border: 0;
 
@@ -477,6 +477,7 @@
 
     &:focus {
       color: var(--white);
+      background: #cd2682;
       background: var(--color);
     }
 
@@ -514,6 +515,7 @@
 
     &:hover {
       color: var(--white);
+      background: #cd2682;
       background: var(--color);
 
       span {
@@ -530,6 +532,7 @@
     margin: var(--spacing-medium) 0;
     font-size: 28px;
     font-weight: 300;
+    color: #cd2682;
     color: var(--color);
     text-transform: none;
     border: 0;
@@ -545,8 +548,10 @@
     margin-bottom: var(--spacing-large);
     font-size: 24px;
     font-weight: 500;
+    color: #cd2682;
     color: var(--color);
     text-transform: inherit;
+    border-bottom: 1px dotted #cd2682;
     border-bottom: 1px dotted var(--color);
 
     @media (--small-viewport) {
@@ -557,6 +562,7 @@
   --text-title: {
     font-size: 20px;
     font-weight: bold;
+    color: #cd2682;
     color: var(--color);
   }
     ;
@@ -627,10 +633,12 @@
     &.is-active, &.nak-is-active {
 
       a {
+        color: #cd2682;
         color: var(--color);
       }
 
       &::before {
+        background: #cd2682;
         background: var(--color);
       }
     }
@@ -699,21 +707,29 @@ table {
 h1,h2,h3,h4,h5,h6{
   font-size: 1rem;
 }
-/*---------------typography---------------*/
 @font-face {
-  font-family: "Lato", sans-serif;
-  src: url("../fonts/Lato-Regular.ttf");
+  font-family: "lato";
+  src: url("../assets/fonts/Lato-Regular.ttf");
 }
 @font-face {
-  font-family:"Lato-light", sans-serif;
-  src: url("../fonts/Lato-Light.ttf");
+  font-family: "lato-light";
+  src: url("../assets/fonts/Lato-Light.ttf");
 }
 @font-face {
-  font-family: "Lato-black";
-  src: url("../fonts/Lato-Black.ttf");
+  font-family: "lato-black";
+  src: url("../assets/fonts/Lato-Black.ttf");
+}
+.nak-font--light {
+  font-family: lato-light, sans-serif;
+}
+.nak-font--regular {
+  font-family: lato, sans-serif;
+}
+.nak-font--bold {
+  font-family: lato-black, sans-serif;
 }
 .nak-text--small {
-  font-size: .9em;
+  font-size: 0.9em;
 }
 .nak-text-size--large {
   font-size: 1.2em;
@@ -758,8 +774,8 @@ body {
   float: left;
 }
 .nak-text-color {
-  color: #9fcad2;
-  color: var(--color-theme);
+  color: #cd2682;
+  color: var(--color);
 }
 .nak-text-color--secondary {
   color: #ff1821;
@@ -860,8 +876,8 @@ body {
     position: absolute;
     right: 10px;
     bottom: 15px;
-    color: #9fcad2;
-    color: var(--color-theme);
+    color: #cd2682;
+    color: var(--color);
     content: "\e904";
   }
 
@@ -869,7 +885,7 @@ body {
 
     &:before {
       color: #ff1821;
-      color: var(--color-theme-second);
+      color: var(--color-secondary);
     }
   }
 }
@@ -1414,8 +1430,8 @@ ul.nak-mrl li {
   --button__height: var(--spacing-large);
   --button__border-width: 1px;
   --button__border-style: solid;
-  --button__border-color: var(--color-theme);
-  --button__background: var(--color-theme);
+  --button__border-color: var(--color);
+  --button__background: var(--color);
   --button__color: var(--text-color);
   --button__font-size: var(--large);
   --button__font: var(--base-font);
@@ -1461,9 +1477,9 @@ ul.nak-mrl li {
     color: var(--button__color);
     text-decoration: none !important;
     cursor: pointer;
-    background: #9fcad2;
+    background: #cd2682;
     background: var(--button__background);
-    border: 1px solid #9fcad2;
+    border: 1px solid #cd2682;
     border: var(--button__border-width) var(--button__border-style) var(--button__border-color);
     border-radius: .5rem;
     border-radius: var(--button__border-radius);
@@ -1482,8 +1498,8 @@ ul.nak-mrl li {
     &:focus {
       color: #fff;
       color: var(--color-white);
-      background: #9fcad2;
-      background: var(--color-theme);
+      background: #cd2682;
+      background: var(--color);
     }
   };
   --nak-button--neutral: {
@@ -1599,8 +1615,6 @@ ul.nak-mrl li {
   min-height: var(--box__height);
   padding: .7rem 1.25rem;
   padding: var(--box__padding);
-  font-family: "Lato", sans-serif;
-  font-family: var(--box__font);
   font-size: 1.25rem;
   font-size: var(--box__font-size);
   color: #6f6f6f;
@@ -1619,8 +1633,6 @@ ul.nak-mrl li {
   min-height: var(--box__height);
   padding: .7rem 1.25rem;
   padding: var(--box__padding);
-  font-family: "Lato", sans-serif;
-  font-family: var(--box__font);
   font-size: 1.25rem;
   font-size: var(--box__font-size);
   color: #6f6f6f;
@@ -1643,8 +1655,6 @@ ul.nak-mrl li {
   min-height: var(--box__height);
   padding: .7rem 1.25rem;
   padding: var(--box__padding);
-  font-family: "Lato", sans-serif;
-  font-family: var(--box__font);
   font-size: 1.25rem;
   font-size: var(--box__font-size);
   color: #6f6f6f;
@@ -1687,21 +1697,21 @@ ul.nak-mrl li {
       text-decoration: none;
 
       &:hover{
-        color:#9fcad2;
-        color:var(--color-theme);
+        color:#cd2682;
+        color:var(--color);
       }
     }
 
     span:before {
-      color:#9fcad2;
-      color:var(--color-theme);
+      color:#cd2682;
+      color:var(--color);
       content: "\e902";
     }
   }
 
   strong{
-    color:#9fcad2;
-    color:var(--color-theme);
+    color:#cd2682;
+    color:var(--color);
   }
 }
 /*---------------breadcrumbs---------------*/
@@ -1741,7 +1751,7 @@ ul.nak-mrl li {
 .nak-has-border{
   padding: 5px;
   border:3px solid #5c91c0;
-  border:3px solid var(--color-theme-third);
+  border:3px solid var(--color-third);
   border-radius: 500rem;
 }
 .nak-has-icon--right{
@@ -1779,8 +1789,8 @@ ul.nak-mrl li {
 }
 .nak-module__title {
   font-weight: bold;
-  color: #9fcad2;
-  color: var(--color-theme);
+  color: #cd2682;
+  color: var(--color);
   text-transform: inherit;
 }
 /*---------------search---------------*/
@@ -1892,14 +1902,14 @@ ul.nak-mrl li {
 }
 /*---------------link---------------*/
 a {
-  color: #d6d41b;
+  color: #cd2682;
   color: var(--link-color);
   text-decoration: underline;
   cursor: pointer;
 
   &:hover {
-    color: #9fcad2;
-    color: var(--color-theme);
+    color: #cd2682;
+    color: var(--color);
   }
 }
 .nak-link {}
@@ -1955,8 +1965,8 @@ a {
   }
 }
 .nak-menu-link--color {
-  color: #9fcad2;
-  color: var(--color-theme);
+  color: #cd2682;
+  color: var(--color);
   text-decoration: none;
 
   &:hover {
@@ -1964,13 +1974,13 @@ a {
 
     [class*="ii-icon"] {
       color: #5c91c0;
-      color: var(--color-theme-third);
+      color: var(--color-third);
     }
   }
 
   [class*="ii-icon"] {
-    color: #9fcad2;
-    color: var(--color-theme);
+    color: #cd2682;
+    color: var(--color);
   }
 }
 .icon-position-center {
@@ -2018,8 +2028,8 @@ a {
 
   th {
     font-weight: bold;
-    color: #9fcad2;
-    color: var(--color-theme);
+    color: #cd2682;
+    color: var(--color);
   }
 
   td {
@@ -2113,8 +2123,8 @@ a {
     text-decoration: none;
     background: #ebebeb;
     background: var(--background-color);
-    box-shadow: 0 -3px 0 #9fcad2;
-    box-shadow: 0 -3px 0 var(--color-theme);
+    box-shadow: 0 -3px 0 #cd2682;
+    box-shadow: 0 -3px 0 var(--color);
   }
 }
 /*---------------wizard---------------*/
@@ -2163,8 +2173,8 @@ a {
   }
 
   .is-active &, .nak-is-active & {
-    background: #9fcad2;
-    background: var(--color-theme);
+    background: #cd2682;
+    background: var(--color);
   }
 }
 .nak-wizard-label {

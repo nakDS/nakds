@@ -35,7 +35,7 @@
 }
 
 .nak-text-color {
-  color: var(--color-theme);
+  color: var(--color);
 }
 
 .nak-text-color--secondary {
@@ -134,14 +134,14 @@
     position: absolute;
     right: 10px;
     bottom: 15px;
-    color: var(--color-theme);
+    color: var(--color);
     content: "\e904";
   }
 
   &:hover {
 
     &:before {
-      color: var(--color-theme-second);
+      color: var(--color-secondary);
     }
   }
 }

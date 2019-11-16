@@ -1,22 +1,32 @@
-/*---------------typography---------------*/
-
 @font-face {
-  font-family: "Lato", sans-serif;
-  src: url("../fonts/Lato-Regular.ttf");
+  font-family: "lato";
+  src: url("../assets/fonts/Lato-Regular.ttf");
 }
 
 @font-face {
-  font-family:"Lato-light", sans-serif;
-  src: url("../fonts/Lato-Light.ttf");
+  font-family: "lato-light";
+  src: url("../assets/fonts/Lato-Light.ttf");
 }
 
 @font-face {
-  font-family: "Lato-black";
-  src: url("../fonts/Lato-Black.ttf");
+  font-family: "lato-black";
+  src: url("../assets/fonts/Lato-Black.ttf");
+}
+
+.nak-font--light {
+  font-family: lato-light, sans-serif;
+}
+
+.nak-font--regular {
+  font-family: lato, sans-serif;
+}
+
+.nak-font--bold {
+  font-family: lato-black, sans-serif;
 }
 
 .nak-text--small {
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
 .nak-text-size--large {

@@ -10,7 +10,7 @@
 
   th {
     font-weight: bold;
-    color: var(--color-theme);
+    color: var(--color);
   }
 
   td {

@@ -27,7 +27,7 @@
   }
 
   &.action, &.nak-button--action {
-    background: var(--color-second-color);
+    background: var(--color-secondary-color);
 
     @media (--small-viewport) {
       order: 0;

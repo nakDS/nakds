@@ -18,7 +18,6 @@
   min-width: var(--box__min-width);
   min-height: var(--box__height);
   padding: var(--box__padding);
-  font-family: var(--box__font);
   font-size: var(--box__font-size);
   color: var(--box__color);
   background: var(--box__background);

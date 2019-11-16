@@ -7,7 +7,7 @@ a {
   cursor: pointer;
 
   &:hover {
-    color: var(--color-theme);
+    color: var(--color);
   }
 }
 
@@ -61,19 +61,19 @@ a {
 }
 
 .nak-menu-link--color {
-  color: var(--color-theme);
+  color: var(--color);
   text-decoration: none;
 
   &:hover {
     text-decoration: none;
 
     [class*="ii-icon"] {
-      color: var(--color-theme-third);
+      color: var(--color-third);
     }
   }
 
   [class*="ii-icon"] {
-    color: var(--color-theme);
+    color: var(--color);
   }
 }
 
