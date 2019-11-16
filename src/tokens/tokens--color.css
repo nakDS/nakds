@@ -1,6 +1,7 @@
 :root {
   /*---------------brand tokens---------------*/
   --color: #cd2682;
+  --color--hover: #a31563;
   --color-secondary: #ff1821;
   --color-third: #5c91c0;
   --color-fourth: #7a9f34;

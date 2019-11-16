@@ -1,17 +1,40 @@
 @import "../variables/core-utils";
 
-
 .nk-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   font-family: lato;
   font-size: var(--button__font-size);
-  color: var(--color-bare);
+  color: var(--color);
   text-decoration: none !important;
+  background: transparent;
   cursor: pointer;
-  background: var(--color);
   border-radius: 3px;
-  border:0;
+  border: 1px solid var(--color);
   padding: var(--spacer-small) var(--spacer-medium);
+
+  &:hover {
+    color: var(--color-bare);
+    background: var(--color);
+  }
+}
+
+.nk-button--color {
+  color: var(--color-bare);
+  background: var(--color);
+
+  &:hover {
+    background: var(--color--hover);
+  }
+}
+
+.nk-button--disabled {
+  color: var(--color-neutral);
+  border: 1px solid var(--color-neutral);
+  cursor: default;
+
+  &:hover {
+    background: var(--color--neutral);
+  }
 }

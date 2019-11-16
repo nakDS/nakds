@@ -69,8 +69,12 @@
   color: var(--color-black);
 }
 
-.nk-bg--light {
+.nk-bg--opaque {
   background: white;
+}
+
+.nk-theme--dark .nk-bg--opaque {
+  background-color: var(--color-mine-shaft);
 }
 
 .nk-is-active {}

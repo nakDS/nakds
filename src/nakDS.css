@@ -4,7 +4,6 @@
 @import "variables/custom-properties";
 @import "variables/custom-media";
 @import "variables/mixin";
-@import "variables/apply";
 
 @import "base/typography";
 @import "base/default";
