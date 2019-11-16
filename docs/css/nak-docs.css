@@ -7,3 +7,12 @@
 .nak-doc-bg {
   background: var(--background-color);
 }
+
+.nak-doc-border {
+  border: 1px dashed var(--color-neutral);
+}
+
+.nak-bg--image {
+  background: url(../assets/img/randomMatches_142.jpg);
+  background-size: cover;
+}

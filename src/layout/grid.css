@@ -7,19 +7,27 @@
   --grid-item-bottom-space:var(--x-small);
 }
 
-/*----------------Custom variables---------------------*/
 
-
-/*----------------@mixin---------------------*/
-
-
-/*----------------If you need OOCSS---------------------*/
-
-
-/*-------------------------------------*/
 
 .nak-grid {
-  display: flex;
+  display: grid;
+}
+
+.nak-grid-1-1 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.nak-grid-1-1-1 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.nak-grid-1-1-1-1 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.nak-gap {
+  column-gap: var(--spacer-medium);
+  row-gap: var(--spacer-medium);
 }
 
 .nak-grid--wrapped {

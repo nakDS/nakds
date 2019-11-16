@@ -14,8 +14,26 @@
   --box__border-radius: var(--xxx-small);
 }
 
-@define-mixin nak-box {
+
+.nak-box {
   min-width: var(--box__min-width);
+  min-height: var(--box__height);
+  background: var(--box__background);
+}
+
+.nak-box__image {
+  width: 100%;
+  height: 30%;
+  object-fit: cover;
+  
+}
+
+.nak-box__body {
+padding: var(--spacer-medium);
+}
+
+.nak-box--center {
+   min-width: var(--box__min-width);
   min-height: var(--box__height);
   padding: var(--box__padding);
   font-size: var(--box__font-size);
@@ -23,20 +41,19 @@
   background: var(--box__background);
   border: var(--box__border-width) var(--box__border-style) var(--box__border-color);
   border-radius: var(--box__border-radius);
-}
-
-.nak-box {
-  @mixin nak-box;
-}
-
-.nak-box--center {
-  @mixin nak-box;
   align-items: center;
   justify-content: center;
 }
 
 .nak-box--right {
-  @mixin nak-box;
+   min-width: var(--box__min-width);
+  min-height: var(--box__height);
+  padding: var(--box__padding);
+  font-size: var(--box__font-size);
+  color: var(--box__color);
+  background: var(--box__background);
+  border: var(--box__border-width) var(--box__border-style) var(--box__border-color);
+  border-radius: var(--box__border-radius);
   align-items: center;
   justify-content: flex-end;
 }

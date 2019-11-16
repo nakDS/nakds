@@ -1,25 +1,36 @@
-@import "../variables/core-utils";
+/* :root {
+  --heading-text-color-link: var(--text-color);
+  --heading-text-color-link--hover: var(--color-third);
+  --heading-border-color-link: var(--text-color);
+  --heading-border-color-link--hover: var(--color-third);
+} */
 
 .nak-heading-1 {
-  font-size: var(--heading-1__font-size);
+  font-size: 3em;
+  line-height: 3em;
 }
 
 .nak-heading-2 {
-  font-size: var(--heading-2__font-size);
+  font-size: 2.5em;
+  font-size: 2.5em;
 }
 
 .nak-heading-3 {
-  font-size: var(--heading-3__font-size);
+  font-size: 2.2em;
+  line-height: 2.2em;
 }
 
 .nak-heading-4 {
-  font-size: var(--heading-4__font-size);
+  font-size: 1.8em;
+  line-height: 1.8em;
 }
 
 .nak-heading-5 {
-  font-size: var(--heading-5__font-size);
+  font-size: 1.6em;
+  line-height: 1.6em;
 }
 
 .nak-heading-6 {
-  font-size: var(--heading-6__font-size);
+  font-size: 1.4em;
+  line-height: 1.4em;
 }

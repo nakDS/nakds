@@ -1,107 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>nakDS</title>
-    <link rel="stylesheet" href="../dist/css/nakDS.css" />
-    <link rel="stylesheet" href="./css/nak-docs.css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>nakDS</title>
+  <link rel="stylesheet" href="../dist/css/nakDS.css" />
+  <link rel="stylesheet" href="./css/nak-docs.css" />
+</head>
+
+<body>
+  <section class="nak-smooth-scroll">
     <header class="nak-header">
       <h1 class="nak-logo nak-text-align--center">
-        <img
-          class="nak-logo__svg"
-          src="assets/img/logo-nakDS.svg"
-          alt="NakDS"
-        />
+        <img class="nak-logo__svg" src="assets/img/logo-nakDS.svg" alt="NakDS" />
       </h1>
       <nav class="nak-container--content">
         <ul>
           <li><a href="#container">Container</a></li>
-          <li><a href="#box">Box</a></li>
+          <li><a href="#fullpage">fullpage</a></li>
           <li><a href="#typograpy">Typography</a></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li><a href="#heading">Headings</a></li>
+          <li><a href="#grid">Grid</a></li>
+          <li><a href="#box">Box</a></li>
         </ul>
       </nav>
     </header>
-    <section class="nak-smooth-scroll">
-      <article id="typograpy" class="nak-container--content nak-section nak-height-fullpage">
-        <h2 class="nak-heading-2">Typography</h2>
-        <h3 class="nak-heading-3">.nak-font--light</h3>
-        <p class="nak-font--light">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque animi
-          earum totam similique ex maxime iure, pariatur repudiandae temporibus
-          voluptatem!
-        </p>
-        <h3 class="nak-heading-3">.nak-font--regular</h3>
-        <p class="nak-font--regular">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque animi
-          earum totam similique ex maxime iure, pariatur repudiandae temporibus
-          voluptatem!
-        </p>
-        <h3 class="nak-heading-3">.nak-font--bold</h3>
-        <p class="nak-font--bold">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque animi
-          earum totam similique ex maxime iure, pariatur repudiandae temporibus
-          voluptatem!
-        </p>
-      </article>
-      <article id="container" class="nak-section nak-height-fullpage">
-        <div class="nak-container nak-doc-bg">
-          <h2 class="nak-heading-2">.nak-container</h2>
-          <p>
-            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-            reprehenderit vero iste explicabo? Dolorum dolores a architecto iure
-            officia veritatis cupiditate, recusandae inventore! Explicabo
-            officia rem dolorem, aut quae ipsam excepturi corporis perspiciatis.
-            Incidunt architecto necessitatibus libero atque obcaecati porro
-            alias nihil sint, tenetur repellendus iste enim impedit expedita
-            numquam deleniti ipsam recusandae corrupti odio ad, velit laboriosam
-            exercitationem. Expedita officia quibusdam atque fugit minima nulla
-            quisquam voluptatum ut, ipsa nihil. Ipsum ea porro, totam ipsam
-            officia fugit
-          </p>
-        </div>
-        <div class="nak-container--content nak-mvl">
-          <h2 class="nak-heading-2">.nak-container--content</h2>
-          <p>
-            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-            reprehenderit vero iste explicabo? Dolorum dolores a architecto iure
-            officia veritatis cupiditate, recusandae inventore! Explicabo
-            officia rem dolorem, aut quae ipsam excepturi corporis perspiciatis.
-            Incidunt architecto necessitatibus libero atque obcaecati porro
-            alias nihil sint, tenetur repellendus iste enim impedit expedita
-            numquam deleniti ipsam recusandae corrupti odio ad, velit laboriosam
-            exercitationem. Expedita officia quibusdam atque fugit minima nulla
-            quisquam voluptatum ut, ipsa nihil. Ipsum ea porro, totam ipsam
-            officia fugit
-          </p>
-        </div>
-        <div class="nak-container--text nak-mvl">
-          <h2 class="nak-heading-2">.nak-container--text</h2>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+
+    <article id="Typography" class="nak-container--content nak-section nak-height-fullpage">
+      <h2 class="nak-heading-2">Typography</h2>
+      <h3 class="nak-heading-3">.nak-font--light</h3>
+      <p class="nak-font--light">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque animi
+        earum totam similique ex maxime iure, pariatur repudiandae temporibus
+        voluptatem!
+      </p>
+      <h3 class="nak-heading-3">.nak-font--regular</h3>
+      <p class="nak-font--regular">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque animi
+        earum totam similique ex maxime iure, pariatur repudiandae temporibus
+        voluptatem!
+      </p>
+      <h3 class="nak-heading-3">.nak-font--bold</h3>
+      <p class="nak-font--bold">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque animi
+        earum totam similique ex maxime iure, pariatur repudiandae temporibus
+        voluptatem!
+      </p>
+    </article>
+    <article id="heading" class="nak-container--content">
+      <h1 class="nak-heading-1">.nak-heading-1</h1>
+      <h2 class="nak-heading-2">.nak-heading-2</h1>
+        <h3 class="nak-heading-3">.nak-heading-3</h1>
+          <h4 class="nak-heading-4">.nak-heading-4</h1>
+            <h5 class="nak-heading-5">.nak-heading-5</h1>
+              <h6 class="nak-heading-6">.nak-heading-6</h1>
+    </article>
+    <article id="container" class="nak-section nak-height-fullpage">
+      <div class="nak-container nak-doc-bg">
+        <h2 class="nak-heading-2">.nak-container</h2>
+        <p>
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
           reprehenderit vero iste explicabo? Dolorum dolores a architecto iure
-          officia veritatis cupiditate, recusandae inventore! Explicabo officia
-          rem dolorem, aut quae ipsam excepturi corporis perspiciatis. Incidunt
-          architecto necessitatibus libero atque obcaecati porro alias nihil
-          sint, tenetur repellendus iste enim impedit expedita numquam deleniti
-          ipsam recusandae corrupti odio ad, velit laboriosam exercitationem.
-          Expedita
+          officia veritatis cupiditate, recusandae inventore! Explicabo
+          officia rem dolorem, aut quae ipsam excepturi corporis perspiciatis.
+          Incidunt architecto necessitatibus libero atque obcaecati porro
+          alias nihil sint, tenetur repellendus iste enim impedit expedita
+          numquam deleniti ipsam recusandae corrupti odio ad, velit laboriosam
+          exercitationem. Expedita officia quibusdam atque fugit minima nulla
+          quisquam voluptatum ut, ipsa nihil. Ipsum ea porro, totam ipsam
+          officia fugit
+        </p>
+      </div>
+      <div class="nak-container--content nak-mvl">
+        <h2 class="nak-heading-2">.nak-container--content</h2>
+        <p>
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+          reprehenderit vero iste explicabo? Dolorum dolores a architecto iure
+          officia veritatis cupiditate, recusandae inventore! Explicabo
+          officia rem dolorem, aut quae ipsam excepturi corporis perspiciatis.
+          Incidunt architecto necessitatibus libero atque obcaecati porro
+          alias nihil sint, tenetur repellendus iste enim impedit expedita
+          numquam deleniti ipsam recusandae corrupti odio ad, velit laboriosam
+          exercitationem. Expedita officia quibusdam atque fugit minima nulla
+          quisquam voluptatum ut, ipsa nihil. Ipsum ea porro, totam ipsam
+          officia fugit
+        </p>
+      </div>
+      <div class="nak-container--text nak-mvl">
+        <h2 class="nak-heading-2">.nak-container--text</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+        reprehenderit vero iste explicabo? Dolorum dolores a architecto iure
+        officia veritatis cupiditate, recusandae inventore! Explicabo officia
+        rem dolorem, aut quae ipsam excepturi corporis perspiciatis. Incidunt
+        architecto necessitatibus libero atque obcaecati porro alias nihil
+        sint, tenetur repellendus iste enim impedit expedita numquam deleniti
+        ipsam recusandae corrupti odio ad, velit laboriosam exercitationem.
+        Expedita
+      </div>
+    </article>
+    <article id="fullpage" class="nak-container nak-height-fullpage nak-bg--image">
+      <h2 class="nak-heading-2">.nak-height-fullpage</h2>
+    </article>
+    <article id="grid" class="nak-section nak-container">
+      <h2 class="nak-heading-2">Grid</h2>
+      <div class="nak-mvx">
+        <h3 class="nak-heading-3">.nak-grid .nak-grid-1-1</h3>
+        <div class="nak-grid nak-grid-1-1">
+          <div class="nak-doc-border">Grid item</div>
+          <div class="nak-doc-border">Grid item</div>
+          <div class="nak-doc-border">Grid item</div>
+          <div class="nak-doc-border">Grid item</div>
         </div>
-      </article>
-      <article class="nak-container nak-section nak-height-fullpage" id="box">
-        <h3 class="nak-heading-2">Box</h3>
-        <div class="nak-d-flex">
-          <div class="nak-box">
-            <h4 class="nak-heading-2">.nax-box</h4>
+      </div>
+      <div class="nak-mvx">
+        <h3 class="nak-heading-3">.nak-grid .nak-grid-1-1-1</h3>
+        <div class="nak-grid nak-grid-1-1-1">
+          <div class="nak-doc-border">Grid item</div>
+          <div class="nak-doc-border">Grid item</div>
+          <div class="nak-doc-border">Grid item</div>
+        </div>
+      </div>
+      <div class="nak-mvx">
+        <h3 class="nak-heading-3">.nak-grid .nak-grid-1-1-1-1</h3>
+        <div class="nak-grid nak-grid-1-1-1-1">
+          <div class="nak-doc-border">Grid item</div>
+          <div class="nak-doc-border">Grid item</div>
+          <div class="nak-doc-border">Grid item</div>
+          <div class="nak-doc-border">Grid item</div>
+        </div>
+      </div>
+      <div class="nak-mvx">
+        <h3 class="nak-heading-3">.nak-grid .nak-gap</h3>
+        <div class="nak-grid nak-grid-1-1-1-1 nak-gap">
+          <div class="nak-doc-border">Grid item</div>
+          <div class="nak-doc-border">Grid item</div>
+          <div class="nak-doc-border">Grid item</div>
+          <div class="nak-doc-border">Grid item</div>
+        </div>
+      </div>
+    </article>
+    <article class="nak-container nak-section nak-height-fullpage" id="box">
+      <h3 class="nak-heading-2">Box</h3>
+      <div class="nak-grid nak-grid-1-1-1 nak-gap">
+        <div class="nak-box">
+          <img class="nak-box__image" src="assets/img/randomMatches_142.jpg" alt="">
+          <div class="nak-box__body">
+            <h4 class="nak-heading-4">.nak-box</h4>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
               dolorem debitis soluta vero cum! Tenetur voluptas fugit rem
@@ -111,10 +157,40 @@
             </p>
           </div>
         </div>
-      </article>
-    </section>
-    <div class="nak-footer">
-      Footer
-    </div>
-  </body>
+        <div class="nak-box">
+          <img class="nak-box__image" src="assets/img/randomMatches.jpg" alt="">
+          <div class="nak-box__body">
+            <h4 class="nak-heading-4">.nak-box</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+              dolorem debitis soluta vero cum! Tenetur voluptas fugit rem
+              corporis ut dolores, itaque ea fuga minus facere deleniti.
+              Recusandae, quis natus explicabo laboriosam earum officia in
+              veritatis dignissimos exercitationem ab perspiciatis!
+            </p>
+          </div>
+        </div>
+        <div class="nak-box">
+          <img class="nak-box__image" src="assets/img/randomMatches.jpg" alt="">
+          <div class="nak-box__body">
+            <h4 class="nak-heading-4">.nak-box</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+              dolorem debitis soluta vero cum! Tenetur voluptas fugit rem
+              corporis ut dolores, itaque ea fuga minus facere deleniti.
+              Recusandae, quis natus explicabo laboriosam earum officia in
+              veritatis dignissimos exercitationem ab perspiciatis!
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <footer class="nak-footer">
+        <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="nofollow"><img src="https://camo.githubusercontent.com/60561947585c982aee67ed3e3b25388184cc0aa3/687474703a2f2f6d6972726f72732e6372656174697665636f6d6d6f6e732e6f72672f70726573736b69742f627574746f6e732f38387833312f7376672f63632d7a65726f2e737667" alt="CC0" data-canonical-src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" style="max-width:100%;"></a>
+        <p class="nak-text--small">Created by <a href="https://github.com/nabaroa"> Naiara Abaroa</a></p>
+    </footer>
+  </section>
+</body>
+
 </html>

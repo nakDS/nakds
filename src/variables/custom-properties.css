@@ -49,17 +49,7 @@
 
   /*---------------heading---------------*/
 
-  --heading-1__font-size: 3rem;
-  --heading-2__font-size: 2.5rem;
-  --heading-3__font-size: 2.2rem;
-  --heading-4__font-size: 1.8rem;
-  --heading-5__font-size: 1.6rem;
-  --heading-6__font-size: 1.4rem;
-
-  --heading-text-color-link: var(--text-color);
-  --heading-text-color-link--hover: var(--color-third);
-  --heading-border-color-link: var(--text-color);
-  --heading-border-color-link--hover: var(--color-third);
+ 
 
   /*---------------links---------------*/
 
