@@ -21,15 +21,15 @@
         </svg>
       </h1>
       <button id="nk-theme-change" class="nk-button nk-button--color nk-mtx">Switch theme</button>
-      <div class="nk-mtx">
+      <a class="nk-mtx nk-d-block" href="#nk-nav">
         <svg class="nk-icon--large nk-text-align--center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 62.5">
           <path 
             d="M1.5 14.8c4.7 2.6 8.3 6.6 12.1 10.2l12 11.7c.9.9 2.9 0 3.6-.7 6.3-7 12.6-14.1 18.9-21.1 1.1-1.2-2.8-.9-3.6 0-6.3 7-12.6 14.1-18.9 21.1 1.2-.2 2.4-.5 3.6-.7C21.5 27.8 14 18.2 4.5 13c-1-.6-4.6.9-3 1.8z" />
         </svg>
-      </div>
+      </a>
     </header>
     <main>
-      <nav class="nk-container--content nk-position--sticky nk-bg--opaque nk-pvl">
+      <nav id="nk-nav" class="nk-container nk-position--sticky nk-bg--opaque nk-pvl">
         <ul class="nk-grid nk-grid-5">
           <li>Core
             <ul>
@@ -142,44 +142,71 @@
       <article id="grid" class="nk-section nk-container">
         <h2 class="nk-heading-2">Grid</h2>
         <div class="nk-mvx">
-          <h3 class="nk-heading-3">.nk-grid .nk-grid-1-1</h3>
-          <div class="nk-grid nk-grid-1-1">
-            <div class="nk-doc-border">Grid item</div>
-            <div class="nk-doc-border">Grid item</div>
-            <div class="nk-doc-border">Grid item</div>
-            <div class="nk-doc-border">Grid item</div>
+          <h3 class="nk-heading-3">.nk-grid .nk-grid-2</h3>
+          <div class="nk-grid nk-grid-2">
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
           </div>
         </div>
         <div class="nk-mvx">
-          <h3 class="nk-heading-3">.nk-grid .nk-grid-1-1-1</h3>
-          <div class="nk-grid nk-grid-1-1-1">
-            <div class="nk-doc-border">Grid item</div>
-            <div class="nk-doc-border">Grid item</div>
-            <div class="nk-doc-border">Grid item</div>
+          <h3 class="nk-heading-3">.nk-grid .nk-grid-3</h3>
+          <div class="nk-grid nk-grid-3">
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
           </div>
         </div>
         <div class="nk-mvx">
-          <h3 class="nk-heading-3">.nk-grid .nk-grid-1-1-1-1</h3>
-          <div class="nk-grid nk-grid-1-1-1-1">
-            <div class="nk-doc-border">Grid item</div>
-            <div class="nk-doc-border">Grid item</div>
-            <div class="nk-doc-border">Grid item</div>
-            <div class="nk-doc-border">Grid item</div>
+          <h3 class="nk-heading-3">.nk-grid .nk-grid-4</h3>
+          <div class="nk-grid nk-grid-4">
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
+          </div>
+        </div>
+        <div class="nk-mvx">
+          <h3 class="nk-heading-3">.nk-grid .nk-grid-5</h3>
+          <div class="nk-grid nk-grid-5">
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
+          </div>
+        </div>
+        <div class="nk-mvx">
+          <h3 class="nk-heading-3">.nk-grid .nk-grid-6</h3>
+          <div class="nk-grid nk-grid-6">
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
           </div>
         </div>
         <div class="nk-mvx">
           <h3 class="nk-heading-3">.nk-grid .nk-gap</h3>
-          <div class="nk-grid nk-grid-1-1-1-1 nk-gap">
-            <div class="nk-doc-border">Grid item</div>
-            <div class="nk-doc-border">Grid item</div>
-            <div class="nk-doc-border">Grid item</div>
-            <div class="nk-doc-border">Grid item</div>
+          <div class="nk-grid nk-grid-4 nk-gap">
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
+            <div class="nk-doc-border nk-pal">Grid item</div>
           </div>
         </div>
       </article>
       <article class="nk-container nk-section nk-height-fullpage" id="box">
         <h3 class="nk-heading-2">Box</h3>
-        <div class="nk-grid nk-grid-1-1-1 nk-gap">
+        <div class="nk-grid nk-grid-3 nk-gap">
           <div class="nk-box">
             <img class="nk-box__image" src="assets/img/randomMatches_142.jpg" alt="">
             <div class="nk-box__body">
@@ -220,6 +247,11 @@
             </div>
           </div>
         </div>
+        <code>
+          <pre>
+              code
+          </pre>
+        </code>
       </article>
       <article id="button" class="nk-container nk-section">
         <h2 class="nk-heading-2">.nk-button</h2>
