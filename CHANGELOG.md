@@ -1,3 +1,8 @@
+## [1.8.0] 
+- Make the buttons simple
+- Add switch theme to dark
+- Repace .nak- for .nk
+
 ## [1.7.0] 
 - Work on components: grid & full height page
 
