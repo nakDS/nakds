@@ -1,5 +1,5 @@
 @import "../variables/core-utils"; 
 
 .nak-footer {
-  padding: var(--spacing-large);
+  padding: var(--spacer-large);
 }

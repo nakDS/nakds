@@ -2,7 +2,7 @@
 @import "../variables/core-utils";
 
 .nak-header {
-  padding: var(--spacing-large);
+  padding: var(--spacer-large);
 }
 
 .nak-logo__svg {

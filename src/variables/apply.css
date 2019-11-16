@@ -183,7 +183,7 @@
   }
     ;
   --page-title: {
-    margin: var(--spacing-medium) 0;
+    margin: var(--spacer-medium) 0;
     font-size: 28px;
     font-weight: 300;
     color: var(--color);
@@ -197,7 +197,7 @@
   }
     ;
   --section-title: {
-    margin-bottom: var(--spacing-large);
+    margin-bottom: var(--spacer-large);
     font-size: 24px;
     font-weight: 500;
     color: var(--color);
@@ -245,14 +245,14 @@
     ;
 
   --spacing-vertical--medium {
-    margin-top: var(--spacing-medium);
-    margin-bottom: var(--spacing-medium);
+    margin-top: var(--spacer-medium);
+    margin-bottom: var(--spacer-medium);
   }
     ;
 
   --spacing-vertical--small {
-    margin-top: var(--spacing-small);
-    margin-bottom: var(--spacing-small);
+    margin-top: var(--spacer-small);
+    margin-bottom: var(--spacer-small);
   }
     ;
 

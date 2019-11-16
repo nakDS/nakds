@@ -7,7 +7,7 @@
 :root {
   /*--default*/
   --button__min-width: 100px;
-  --button__height: var(--spacing-large);
+  --button__height: var(--spacer-large);
   --button__border-width: 1px;
   --button__border-style: solid;
   --button__border-color: var(--color);

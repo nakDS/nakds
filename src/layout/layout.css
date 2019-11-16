@@ -24,7 +24,10 @@
   max-width: var(--container--text);
 }
 
-
+.nak-section {
+  padding-top: var(--spacer-xlarge);
+  padding-bottom: var(--spacer-xlarge);
+}
 
 .nak-d-flex {
   display: flex;

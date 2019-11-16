@@ -46,10 +46,6 @@
   --xx-large: 1.75rem;    /*!28px*/
   --xxx-large: 2rem;    /*!32px*/
   --xxxx-large: 3rem;    /*!48px*/
-
-
-
-  --spacer: calc(1em / 2);
 }
 :root {
   --base-font: "Lato", sans-serif;
@@ -66,20 +62,11 @@
   --font-size--xxxx-large: 3rem;    /*!48px*/
 }
 :root {
-  /*---------------spacing tokens---------------*/
-
-  /*10px*/
-  --spacing-small: .7rem;
-
-  /*20px*/
-  --spacing-medium: 1.25rem;
-
-  /*40px*/
-  --spacing-large: 2.5rem;
-
-  /*60px*/
-  --spacing-x-large: 3.75rem;
-
+  --spacer: calc(1em / 2);
+  --spacer-small: .7rem;/*10px*/
+  --spacer-medium: 1.25rem;/*20px*/
+  --spacer-large: 2.5rem; /*40px*/
+  --spacer-xlarge: 3.75rem;/*60px*/
 }
 :root {
 
@@ -176,7 +163,7 @@
 
   /*---------------Spacing---------------*/
 
-  --margin-header: var(--spacing-large);
+  --margin-header: var(--spacer-large);
 
   /*-------------------------------------*/
 
@@ -529,7 +516,7 @@
     ;
   --page-title: {
     margin: 1.25rem 0;
-    margin: var(--spacing-medium) 0;
+    margin: var(--spacer-medium) 0;
     font-size: 28px;
     font-weight: 300;
     color: #cd2682;
@@ -545,7 +532,7 @@
     ;
   --section-title: {
     margin-bottom: 2.5rem;
-    margin-bottom: var(--spacing-large);
+    margin-bottom: var(--spacer-large);
     font-size: 24px;
     font-weight: 500;
     color: #cd2682;
@@ -603,17 +590,17 @@
 
   --spacing-vertical--medium {
     margin-top: 1.25rem;
-    margin-top: var(--spacing-medium);
+    margin-top: var(--spacer-medium);
     margin-bottom: 1.25rem;
-    margin-bottom: var(--spacing-medium);
+    margin-bottom: var(--spacer-medium);
   }
     ;
 
   --spacing-vertical--small {
     margin-top: .7rem;
-    margin-top: var(--spacing-small);
+    margin-top: var(--spacer-small);
     margin-bottom: .7rem;
-    margin-bottom: var(--spacing-small);
+    margin-bottom: var(--spacer-small);
   }
     ;
 
@@ -1411,15 +1398,15 @@ ul.nak-mrl li {
 } */
 .nak-box--small {
   padding: .7rem;
-  padding: var(--spacing-small);
+  padding: var(--spacer-small);
 }
 .nak-box--medium {
   padding: 1.25rem;
-  padding: var(--spacing-medium);
+  padding: var(--spacer-medium);
 }
 .nak-box--large {
   padding: 2.5rem;
-  padding: var(--spacing-large);
+  padding: var(--spacer-large);
 }
 /*! ---------------button---------------*/
 /*! ---------------button---------------*/
@@ -1427,7 +1414,7 @@ ul.nak-mrl li {
 :root {
   /*--default*/
   --button__min-width: 100px;
-  --button__height: var(--spacing-large);
+  --button__height: var(--spacer-large);
   --button__border-width: 1px;
   --button__border-style: solid;
   --button__border-color: var(--color);
@@ -1557,7 +1544,7 @@ ul.nak-mrl li {
 /*---------------header---------------*/
 .nak-header {
   padding: 2.5rem;
-  padding: var(--spacing-large);
+  padding: var(--spacer-large);
 }
 .nak-logo__svg {
   width: 100px;
@@ -1597,8 +1584,8 @@ ul.nak-mrl li {
 /*---------------login---------------*/
 :root {
   --box__min-width: 100px;
-  --box__padding: var(--spacing-small) var(--spacing-medium);
-  --box__height: var(--spacing-large);
+  --box__padding: var(--spacer-small) var(--spacer-medium);
+  --box__height: var(--spacer-large);
   --box__border-width: 1px;
   --box__border-style: solid;
   --box__border-color: var(--color-barer);
@@ -2014,7 +2001,7 @@ a {
 /*---------------toolbar---------------*/
 .nak-footer {
   padding: 2.5rem;
-  padding: var(--spacing-large);
+  padding: var(--spacer-large);
 }
 /*---------------slider---------------*/
 /*---------------table---------------*/
@@ -2220,6 +2207,12 @@ form {
   margin: auto;
   max-width: 680px;
   max-width: var(--container--text);
+}
+.nak-section {
+  padding-top: 3.75rem;
+  padding-top: var(--spacer-xlarge);
+  padding-bottom: 3.75rem;
+  padding-bottom: var(--spacer-xlarge);
 }
 .nak-d-flex {
   display: -webkit-box;

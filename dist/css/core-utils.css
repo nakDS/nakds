@@ -69,16 +69,16 @@
   /*---------------spacing tokens---------------*/
 
   /*10px*/
-  --spacing-small: .7rem;
+  --spacer-small: .7rem;
 
   /*20px*/
-  --spacing-medium: 1.25rem;
+  --spacer-medium: 1.25rem;
 
   /*40px*/
-  --spacing-large: 2.5rem;
+  --spacer-large: 2.5rem;
 
   /*60px*/
-  --spacing-x-large: 3.75rem;
+  --spacer-xlarge: 3.75rem;
 
 }
 :root {
@@ -176,7 +176,7 @@
 
   /*---------------Spacing---------------*/
 
-  --margin-header: var(--spacing-large);
+  --margin-header: var(--spacer-large);
 
   /*-------------------------------------*/
 
@@ -522,7 +522,7 @@
     ;
   --page-title: {
     margin: 1.25rem 0;
-    margin: var(--spacing-medium) 0;
+    margin: var(--spacer-medium) 0;
     font-size: 28px;
     font-weight: 300;
     color: var(--color);
@@ -537,7 +537,7 @@
     ;
   --section-title: {
     margin-bottom: 2.5rem;
-    margin-bottom: var(--spacing-large);
+    margin-bottom: var(--spacer-large);
     font-size: 24px;
     font-weight: 500;
     color: var(--color);
@@ -592,17 +592,17 @@
 
   --spacing-vertical--medium {
     margin-top: 1.25rem;
-    margin-top: var(--spacing-medium);
+    margin-top: var(--spacer-medium);
     margin-bottom: 1.25rem;
-    margin-bottom: var(--spacing-medium);
+    margin-bottom: var(--spacer-medium);
   }
     ;
 
   --spacing-vertical--small {
     margin-top: .7rem;
-    margin-top: var(--spacing-small);
+    margin-top: var(--spacer-small);
     margin-bottom: .7rem;
-    margin-bottom: var(--spacing-small);
+    margin-bottom: var(--spacer-small);
   }
     ;
 

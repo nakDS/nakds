@@ -126,13 +126,13 @@
 } */
 
 .nak-box--small {
-  padding: var(--spacing-small);
+  padding: var(--spacer-small);
 }
 
 .nak-box--medium {
-  padding: var(--spacing-medium);
+  padding: var(--spacer-medium);
 }
 
 .nak-box--large {
-  padding: var(--spacing-large);
+  padding: var(--spacer-large);
 }

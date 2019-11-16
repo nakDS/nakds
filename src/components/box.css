@@ -2,8 +2,8 @@
 
 :root {
   --box__min-width: 100px;
-  --box__padding: var(--spacing-small) var(--spacing-medium);
-  --box__height: var(--spacing-large);
+  --box__padding: var(--spacer-small) var(--spacer-medium);
+  --box__height: var(--spacer-large);
   --box__border-width: 1px;
   --box__border-style: solid;
   --box__border-color: var(--color-barer);

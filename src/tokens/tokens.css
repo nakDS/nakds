@@ -3,18 +3,9 @@
 @import "tokens--font";
 
 :root {
-  /*---------------spacing tokens---------------*/
-
-  /*10px*/
-  --spacing-small: .7rem;
-
-  /*20px*/
-  --spacing-medium: 1.25rem;
-
-  /*40px*/
-  --spacing-large: 2.5rem;
-
-  /*60px*/
-  --spacing-x-large: 3.75rem;
-
+  --spacer: calc(1em / 2);
+  --spacer-small: .7rem;/*10px*/
+  --spacer-medium: 1.25rem;/*20px*/
+  --spacer-large: 2.5rem; /*40px*/
+  --spacer-xlarge: 3.75rem;/*60px*/
 }
