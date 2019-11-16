@@ -26,6 +26,10 @@
   height: 100vh;
 }
 
+.nak-height-fullpage {
+  min-height: 100vh;
+}
+
 .nak-display--inline {
   display: inline;
 }
