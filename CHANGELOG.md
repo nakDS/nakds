@@ -1,10 +1,12 @@
+## [1.7.0] 
+- Work on components: grid & full height page
+
 ## [1.6.0] 
 - Add full height utility
 - Add smooth scrolling
 - Distribute components inidividually
 - Add nak-section
 - Font face and arrange vatiables
-
 
 ## [1.5.0] 
 - Work on components
