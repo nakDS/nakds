@@ -1,7 +1,8 @@
 @import "../../src/variables/core-utils";
 
-.nk-doc-logo {
-  width: 100px;
+.nk-logo__svg {
+  /* width: 100px;
+  height: 100px; */
 }
 
 .nk-doc-bg {

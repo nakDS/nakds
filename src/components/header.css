@@ -1,4 +1,3 @@
-/*---------------header---------------*/
 @import "../variables/core-utils";
 
 .nk-header {
@@ -6,6 +5,9 @@
 }
 
 .nk-logo__svg {
-  width: 100px;
   max-width: 100%;
+}
+
+.nk-theme--dark .nk-logo__svg {
+  fill: #ffffff;
 }

@@ -1,32 +1,17 @@
-/*! ---------------button---------------*/
-
 @import "../variables/core-utils";
-@import "button--utils";
 
-/*-------------------------------------*/
 
 .nk-button {
-  @apply --nk-button;
-}
-
-.nk-button--neutral {
-  @apply --nk-button;
-  @apply --nk-button--neutral;
-}
-
-.nk-button--disabled {}
-
-.nk-button--negative {
-  @apply --nk-button;
-  @apply --nk-button--negative;
-}
-
-.nk-button--big {
-  @apply --nk-button;
-  @apply --nk-button--big;
-}
-
-.nk-button--icon-left {
-  @apply --nk-button;
-  @apply --nk-button--icon-left;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: lato;
+  font-size: var(--button__font-size);
+  color: var(--color-bare);
+  text-decoration: none !important;
+  cursor: pointer;
+  background: var(--color);
+  border-radius: 3px;
+  border:0;
+  padding: var(--spacer-small) var(--spacer-medium);
 }
