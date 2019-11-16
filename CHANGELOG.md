@@ -1,3 +1,10 @@
+## [1.9.0] 
+- Add icons
+- Add buttons
+- Compile nesting
+- Improve navigation
+- Reorder reset
+
 ## [1.8.0] 
 - Make the buttons simple
 - Add switch theme to dark
