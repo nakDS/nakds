@@ -1,3 +1,8 @@
+## [1.11.1] 
+- Update link component and color token syntax
+- Create CONTRIBUTING.md
+- Update issue templates
+
 ## [1.11.0] 
 - Add color palette
 - Add trial to distribute tokens
