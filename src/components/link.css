@@ -1,4 +1,4 @@
-@import "../variables/core-utils";
+@import "../tokens/tokens--color";
 
 a {
   color: var(--color);

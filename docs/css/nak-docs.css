@@ -1,4 +1,4 @@
-@import "../../src/variables/core-utils";
+@import "../../src/tokens/color--tokens";
 
 .nk-logo__svg {
   /* width: 100px;
@@ -6,11 +6,11 @@
 }
 
 .nk-doc-bg {
-  background: var(--background-color);
+  background: var(--color-k-2);
 }
 
 .nk-theme--dark .nk-doc-bg {
-  background: var(--background-opaque);
+  background: var(--color-k-8);
 }
 
 .nk-doc-border {
