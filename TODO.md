@@ -1,11 +1,11 @@
-# TODO list
+# TODO list & ideas
+
+## TODO
 
 - Add circleCI to publish npm
 - Add correct badges. npm version and license
-- Simplify all the components
 - Find a font to use easily with variable fonts
 - Add vue for nk-docs
-- Control what variables imports each component. How can I avoid repetitions? Sure that I can improve the performace.
 - Add browsersync
 - Add property sorter
 - Add stylelint on commit
@@ -14,5 +14,16 @@
 - Add range bar to fonts
 - Mobile view
 - Doc the tokens
+- Add color schema. Themes? Work nice in dark and light.
 - Brand values, pursopes, objetives
 - Tecnical documentation
+- Decide to repeat the classes or use only the modifier. Pros and cons
+- Add instructions to install
+- Rebranding. Create your own reallity. ^^
+- Roudmap. Add it to the readme. Beta on February. March release. 2 months of promotion. Research the tracking. Present it on an event.
+- Use Vue to created docs?
+
+## IDEAS
+- Had to try all the circle to try to understand the concepts. Find challenges, find weak points.
+- Simplify all the components
+- Control what variables imports each component. How can I avoid repetitions? Sure that I can improve the performace. Undertand properly the custom properties.
