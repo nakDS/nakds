@@ -12,6 +12,7 @@
 @import "utilities/sizing";
 @import "utilities/spacing";
 
+@import "components/background";
 @import "components/button";
 @import "components/header";
 @import "components/heading";

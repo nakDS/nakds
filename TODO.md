@@ -30,6 +30,7 @@
 - Add a library to show code
 - Give a solution to the nav
 - Add philosophy: standard, simplicity, flexibility
+- Añadir el dist a un CDN
 
 ## IDEAS
 - Had to try all the circle to try to understand the concepts. Find challenges, find weak points.
