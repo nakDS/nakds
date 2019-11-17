@@ -16,21 +16,21 @@
   --color-k--10: #fff;
 }
 
-.nk-theme-c {
+.nk-theme--c {
   --color--lighter: #6db5ba;
   --color: #5ca9ad;
   --color--darker: #529393;
   --color--complementary: #d5ad26;
 }
 
-.nk-theme-m {
+.nk-theme--m {
   --color--lighter: #d17a9c;
   --color: #c44f7a;
   --color--darker: #bb2a5c;
   --color--complementary: #5ca9ad;
 }
 
-.nk-theme-y {
+.nk-theme--y {
   --color--lighter: #e5cc70;
   --color: #d5ad26;
   --color--darker: #c19a2b;
