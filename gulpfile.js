@@ -58,6 +58,29 @@ function utils() {
     );
 }
 
+function tokens() {
+  return (
+    gulp
+      .src("./src/tokens/**.css")
+      .pipe(
+        postcss([
+          cssImport(),
+          mixins(),
+          nested(),
+          postcssPresetEnv(),
+          autoprefixer()
+        ])
+      )
+      // .pipe(postcss([cssnano()]))
+      .pipe(gulp.dest("./dist/css/tokens"))
+      .pipe(
+        notify({
+          message: "Your tokens are ready ♡"
+        })
+      )
+  );
+}
+
 function components() {
   return gulp
     .src("./src/components/**.css")
@@ -120,6 +143,7 @@ function colorTokens() {
 const build = gulp.series(
   css,
   utils,
+  tokens,
   components,
   colorTokens,
   fonts,
@@ -129,6 +153,7 @@ const build = gulp.series(
 
 exports.css = css;
 exports.utils = utils;
+exports.tokens = tokens;
 exports.components = components;
 exports.fonts = fonts;
 exports.svg = svg;
