@@ -2,7 +2,7 @@
 
   /*---------------text---------------*/
 
-  --text-color: var(--color-opaquer);
+  --text-color: var(--color-k--2);
   --text-color--ok: var(--color-positive);
   --text-color--ko: var(--color-error);
   --text-color--light: #b0b0b0;
@@ -46,7 +46,7 @@
 
   /*---------------links---------------*/
 
-  --color-link--icon: var(--color-mine-shaft);
+  --color-link--icon: var(--color-k--2);
   --color-link--negativo: var(--color-wildsand);
   --color-link--negativo-hover: var(--color-third);
 

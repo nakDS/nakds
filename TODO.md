@@ -5,6 +5,9 @@
 - Add circleCI to publish npm
 - Add correct badges. npm version and license
 - Find a font to use easily with variable fonts
+- Distribute the fonts in independent files to not to import all off them?
+- Add extra themes option. Add a switcher in the DS
+- Add copy option to hex color values
 - Add vue for nk-docs
 - Add browsersync
 - Add property sorter
@@ -22,6 +25,8 @@
 - Rebranding. Create your own reallity. ^^
 - Roudmap. Add it to the readme. Beta on February. March release. 2 months of promotion. Research the tracking. Present it on an event.
 - Use Vue to created docs?
+- Add a library to show code
+- Give a solution to the nav
 
 ## IDEAS
 - Had to try all the circle to try to understand the concepts. Find challenges, find weak points.

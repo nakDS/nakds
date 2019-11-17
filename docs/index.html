@@ -22,7 +22,7 @@
       </h1>
       <h2 class="nk-heading-4"><span class="nk-text--strong">Simple</span> & <span class="nk-text--strong">easy</span>
         design system</h2>
-        <p>26KB</p>
+      <p>26KB</p>
       <button id="nk-theme-change" class="nk-button nk-button--color nk-mtx">Switch theme</button>
       <a class="nk-mtx nk-d-block" href="#nk-nav">
         <svg class="nk-icon--large nk-text-align--center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 62.5">
@@ -32,21 +32,33 @@
       </a>
     </header>
     <main>
-      <nav id="nk-nav" class="nk-container nk-position--sticky nk-bg--opaque nk-pvl">
+      <nav id="nk-nav" class="nk-container nk-bg--opaque nk-pbl">
         <div class="nk-toolbar">
           <button id="nk-js-close" class="nk-button nk-button--icon">
-          <svg class="nk-icon--small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-            <title>Close</title>
-            <path 
-              d="M5.936 9.11c4.01 6.15 9.822 10.435 15.783 14.566 5.788 4.012 14.842 8.7 16.884 15.933.465 1.647 6.252.065 5.795-1.553-1.773-6.283-8.475-10.403-13.527-13.927-6.901-4.812-14.447-9.378-19.139-16.573-1.077-1.649-6.482.503-5.796 1.554z" />
-            <path 
-              d="M37.158 7.358c-5.19 6.268-11.474 11.478-16.922 17.507C14.6 31.103 10.918 38.91 7.281 46.408l5.783-1.185-.167-.667c-.451-1.805-6.255-.285-5.796 1.553l.167.667c.51 2.041 5.201.017 5.783-1.185 3.557-7.332 7.191-14.564 12.535-20.775 5.303-6.163 11.726-11.232 16.921-17.508 1.514-1.825-4.263-1.262-5.349.05z" />
-          </svg>
-        </button>
+            <svg class="nk-icon--small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+              <title>Close</title>
+              <path
+                d="M5.936 9.11c4.01 6.15 9.822 10.435 15.783 14.566 5.788 4.012 14.842 8.7 16.884 15.933.465 1.647 6.252.065 5.795-1.553-1.773-6.283-8.475-10.403-13.527-13.927-6.901-4.812-14.447-9.378-19.139-16.573-1.077-1.649-6.482.503-5.796 1.554z" />
+              <path
+                d="M37.158 7.358c-5.19 6.268-11.474 11.478-16.922 17.507C14.6 31.103 10.918 38.91 7.281 46.408l5.783-1.185-.167-.667c-.451-1.805-6.255-.285-5.796 1.553l.167.667c.51 2.041 5.201.017 5.783-1.185 3.557-7.332 7.191-14.564 12.535-20.775 5.303-6.163 11.726-11.232 16.921-17.508 1.514-1.825-4.263-1.262-5.349.05z" />
+            </svg>
+          </button>
         </div>
         <ul class="nk-grid nk-grid-5">
+          <li>How to use it
+            <ul>
+              <li><a href="#instalation">Instalation</a></li>
+            </ul>
+          </li>
+          <li>Tokens
+            <ul>
+              <li><a href="#color">Color</a></li>
+              <li><a href="#sizing">sizing</a></li>
+            </ul>
+          </li>
           <li>Core
             <ul>
+              <li><a href="#reset">Reset</a></li>
               <li><a href="#typograpy">Typography</a></li>
               <li><a href="#heading">Headings</a></li>
               <li><a href="#fonts">Variable fonts</a></li>
@@ -76,11 +88,130 @@
               <li><a href="#icons">Icons</a></li>
             </ul>
           </li>
+          <li>Utilities
+            <ul>
+              <li><a href="#spacing">Spacing</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
-
+      <article id="instalation" class="nk-section nk-container">
+        <h2 class="nk-heading-2">
+          Instalation
+        </h2>
+        <code>
+          <pre>
+npm i nakds
+          </pre>
+        </code>
+        <a href="https://www.npmjs.com/package/nakds">npm</a>
+      </article>
+      <article id="color" class="nk-container nk-section nk-height-fullpage">
+        <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">Color tokens</h2>
+        <p>Color palettes</p>
+        <h3 class="nk-heading-3">Theme C</h3>
+        <div class="nk-grid nk-grid-4 nk-theme-c">
+          <div class="nk-box">
+            <div class="nk-box__image" style="background: var(--color--lighter)"></div>
+            <div class="nk-box__body">--color--lighter: #6db5ba;</div>
+          </div>
+          <div class="nk-box">
+            <div class="nk-box__image" style="background: var(--color)"></div>
+            <div class="nk-box__body">--color: #5ca9ad;</div>
+          </div>
+          <div class="nk-box">
+            <div class="nk-box__image" style="background: var(--color--darker)"></div>
+            <div class="nk-box__body">--color--darker: #529393;</div>
+          </div>
+          <div class="nk-box">
+            <div class="nk-box__image" style="background: var(--color--complementary)"></div>
+            <div class="nk-box__body">--color--complementary: #d5ad26;</div>
+          </div>
+        </div>
+        <h3 class="nk-heading-3">Theme M</h3>
+        <div class="nk-grid nk-grid-4 nk-theme-m">
+          <div class="nk-box">
+            <div class="nk-box__image" style="background: var(--color--lighter)"></div>
+            <div class="nk-box__body">--color--lighter: #d17a9c;</div>
+          </div>
+          <div class="nk-box">
+            <div class="nk-box__image" style="background: var(--color)"></div>
+            <div class="nk-box__body">--color: #c44f7a;</div>
+          </div>
+          <div class="nk-box">
+            <div class="nk-box__image" style="background: var(--color--darker)"></div>
+            <div class="nk-box__body">--color--darker: #bb2a5c;</div>
+          </div>
+          <div class="nk-box">
+            <div class="nk-box__image" style="background: var(--color--complementary)"></div>
+            <div class="nk-box__body">--color--complementary: #5ca9ad;</div>
+          </div>
+        </div>
+        <h3 class="nk-heading-3">Theme Y</h3>
+        <div class="nk-grid nk-grid-4 nk-theme-y">
+          <div class="nk-box">
+            <div class="nk-box__image" style="background: var(--color--lighter)"></div>
+            <div class="nk-box__body">--color--lighter: #e5cc70;</div>
+          </div>
+          <div class="nk-box">
+            <div class="nk-box__image" style="background: var(--color)"></div>
+            <div class="nk-box__body">--color: #d5ad26;</div>
+          </div>
+          <div class="nk-box">
+            <div class="nk-box__image" style="background: var(--color--darker)"></div>
+            <div class="nk-box__body">--color--darker: #c19a2b;</div>
+          </div>
+          <div class="nk-box">
+            <div class="nk-box__image" style="background: var(--color--complementary)"></div>
+            <div class="nk-box__body">--color--complementary: #5ca9ad;</div>
+          </div>
+        </div>
+        <h3 class="nk-heading-3">Scale k</h3>
+        <div class="nk-grid nk-grid-5">
+          <div class="nk-box">
+            <div class="nk-box__image" style="background: var(--color-k--1)"></div>
+            <div class="nk-box__body">--color-k--1: ;</div>
+          </div>
+          <div class="nk-box">
+            <div class="nk-box__image" style="background: var(--color-k--2)"></div>
+            <div class="nk-box__body">--color-k--2: ;</div>
+          </div>
+          <div class="nk-box">
+            <div class="nk-box__image" style="background: var(--color-k--3)"></div>
+            <div class="nk-box__body">--color-k--3: ;</div>
+          </div>
+          <div class="nk-box">
+            <div class="nk-box__image" style="background: var(--color-k--4)"></div>
+            <div class="nk-box__body">--color-k--4: ;</div>
+          </div>
+          <div class="nk-box">
+            <div class="nk-box__image" style="background: var(--color-k--5)"></div>
+            <div class="nk-box__body">--color-k--5: ;</div>
+          </div>
+          <div class="nk-box">
+            <div class="nk-box__image" style="background: var(--color-k--6)"></div>
+            <div class="nk-box__body">--color-k--6: ;</div>
+          </div>
+          <div class="nk-box">
+            <div class="nk-box__image" style="background: var(--color-k--7)"></div>
+            <div class="nk-box__body">--color-k--7: ;</div>
+          </div>
+          <div class="nk-box">
+            <div class="nk-box__image" style="background: var(--color-k--8)"></div>
+            <div class="nk-box__body">--color-k--8: ;</div>
+          </div>
+          <div class="nk-box">
+            <div class="nk-box__image" style="background: var(--color-k--9)"></div>
+            <div class="nk-box__body">--color-k--9: ;</div>
+          </div>
+          <div class="nk-box">
+            <div class="nk-box__image" style="background: var(--color-k--10)"></div>
+            <div class="nk-box__body">--color-k--10: ;</div>
+          </div>
+        </div>
+      </article>
       <article id="Typography" class="nk-container--content nk-section nk-height-fullpage">
-        <h2 class="nk-heading-2">Typography</h2>
+        <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">Typography</h2>
         <h3 class="nk-heading-3">.nk-font--light</h3>
         <p class="nk-font--light">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque animi
@@ -102,14 +233,14 @@
       </article>
       <article id="heading" class="nk-container--content">
         <h1 class="nk-heading-1">.nk-heading-1</h1>
-        <h2 class="nk-heading-2">.nk-heading-2</h2>
+        <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">.nk-heading-2</h2>
         <h3 class="nk-heading-3">.nk-heading-3</h3>
         <h4 class="nk-heading-4">.nk-heading-4</h4>
         <h5 class="nk-heading-5">.nk-heading-5</h5>
         <h6 class="nk-heading-6">.nk-heading-6</h6>
       </article>
       <article id="fonts" class="nk-section nk-container--content">
-        <h2 class="nk-heading-2">Variable fonts</h2>
+        <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">Variable fonts</h2>
         <p>Here some types (open source) you can import in your project to use with variable fonts:</p>
         <h3 class="nk-heading-3">Montserrat</h3>
         <input type="range" min="1" max="400" step="1">
@@ -119,8 +250,9 @@
         <a href="https://github.com/cosmicmocha/Montserrat">Github</a>
       </article>
       <article id="container" class="nk-section nk-height-fullpage">
+        <h2 class="nk-heading-2 nk-position--sticky nk-doc-bg nk-container">.nk-container</h2>
         <div class="nk-container nk-doc-bg">
-          <h2 class="nk-heading-2">.nk-container</h2>
+
           <p>
             p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
             reprehenderit vero iste explicabo? Dolorum dolores a architecto iure
@@ -135,7 +267,7 @@
           </p>
         </div>
         <div class="nk-container--content nk-mvl">
-          <h2 class="nk-heading-2">.nk-container--content</h2>
+          <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">.nk-container--content</h2>
           <p>
             p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
             reprehenderit vero iste explicabo? Dolorum dolores a architecto iure
@@ -150,7 +282,7 @@
           </p>
         </div>
         <div class="nk-container--text nk-mvl">
-          <h2 class="nk-heading-2">.nk-container--text</h2>
+          <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">.nk-container--text</h2>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
           reprehenderit vero iste explicabo? Dolorum dolores a architecto iure
           officia veritatis cupiditate, recusandae inventore! Explicabo officia
@@ -162,10 +294,10 @@
         </div>
       </article>
       <article id="fullpage" class="nk-container nk-height-fullpage nk-bg--image">
-        <h2 class="nk-heading-2">.nk-height-fullpage</h2>
+        <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">.nk-height-fullpage</h2>
       </article>
       <article id="grid" class="nk-section nk-container">
-        <h2 class="nk-heading-2">Grid</h2>
+        <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">Grid</h2>
         <div class="nk-mvx">
           <h3 class="nk-heading-3">.nk-grid .nk-grid-2</h3>
           <div class="nk-grid nk-grid-2">
@@ -279,13 +411,13 @@
         </code>
       </article>
       <article id="button" class="nk-container nk-section">
-        <h2 class="nk-heading-2">.nk-button</h2>
+        <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">.nk-button</h2>
         <button class="nk-button">Button</button>
         <button class="nk-button nk-button--color">Button</button>
         <button class="nk-button nk-button--disabled">Button</button>
       </article>
       <article id="icons" class="nk-container nk-section">
-        <h2 class="nk-heading-2">.nk-icon</h2>
+        <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">.nk-icon</h2>
         <h3 class="nk-heading-3">Handmade icons</h3>
         <div class="nk-grid nk-grid-6 nk-mvx">
           <svg class="nk-icon--large" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">

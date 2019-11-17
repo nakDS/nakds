@@ -15,28 +15,28 @@
   padding: var(--spacer-small) var(--spacer-medium);
 
   &:hover {
-    color: var(--color-bare);
+    color: var(--color-k--9);
     background: var(--color);
     transition: 0.5s;
   }
 }
 
 .nk-button--color {
-  color: var(--color-bare);
+  color: var(--color-k--9);
   background: var(--color);
 
   &:hover {
-    background: var(--color--hover);
+    background: var(--color--darker);
   }
 }
 
 .nk-button--disabled {
-  color: var(--color-neutral);
-  border: 1px solid var(--color-neutral);
+  color: var(--color-k--5);
+  border: 1px solid var(--color-k--5);
   cursor: default;
 
   &:hover {
-    background: var(--color--neutral);
+    background: var(--color-k-5);
   }
 }
 

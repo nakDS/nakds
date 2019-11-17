@@ -27,7 +27,7 @@
   }
 
   &.action, &.nk-button--action {
-    background: var(--color-secondary-color);
+    background: var(--color--complementary-color);
 
     @media (--small-viewport) {
       order: 0;

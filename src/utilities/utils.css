@@ -61,7 +61,7 @@
 }
 
 .nk-text-color--neutral {
-  color: var(--color-neutral);
+  color: var(--color-k--5);
 }
 
 .nk-text--strong {
@@ -77,7 +77,7 @@
   background: white;
   
   .nk-theme--dark & {
-    background-color: var(--color-mine-shaft);
+    background-color: var(--color-k--2);
   }
 }
 
@@ -169,7 +169,7 @@
 
   &:hover {
     &:before {
-      color: var(--color-secondary);
+      color: var(--color--complementary);
     }
   }
 }

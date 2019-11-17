@@ -90,7 +90,7 @@
   }
 
   &.nk-has-bgcolor {
-    background: var(--color-neutral);
+    background: var(--color-k--5);
 
     @media (--small-viewport) {
       background: none;
