@@ -1,3 +1,8 @@
+## [1.11.0] 
+- Add color palette
+- Add trial to distribute tokens
+- Add todos & ideas
+
 ## [1.10.0] 
 - Added content
 - Impreve grid docs
