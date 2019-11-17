@@ -16,6 +16,7 @@
 - Add code to the examples
 - Add range bar to fonts
 - Mobile view
+- Find a better reset? Make it myself? Removing default list styles in not a good approach for me.
 - Doc the tokens
 - Doc how to consume. Whole the page & individual components
 - Add color schema. Themes? Work nice in dark and light.

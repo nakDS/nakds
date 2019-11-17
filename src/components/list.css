@@ -1,25 +1,13 @@
-/*---------------list---------------*/
 @import "../variables/core-utils";
 
-/*----------------Custom variables---------------------*/
+.nk-list {
+}
 
-
-/*----------------@mixin---------------------*/
-
-
-/*----------------If you need OOCSS---------------------*/
-
-.nk-l-list{}
-
-.nk-l-list--dotted{
+.nk-list--dotted {
   list-style: inherit;
   list-style-position: inside;
 }
 
-.nk-l-list--horizontal{
+.nk-list--horizontal {
   display: flex;
 }
-
-.nk-l-list--board{}
-
-/*-------------------------------------*/
