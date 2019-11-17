@@ -6,11 +6,11 @@
 }
 
 .nk-doc-bg {
-  background: var(--color-k-2);
+  background: var(--color-k--8);
 }
 
 .nk-theme--dark .nk-doc-bg {
-  background: var(--color-k-8);
+  background: var(--color-k--2);
 }
 
 .nk-doc-border {
