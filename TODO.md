@@ -2,6 +2,7 @@
 
 ## TODO
 
+- Add flex system
 - Add circleCI to publish npm
 - Add correct badges. npm version and license
 - Find a font to use easily with variable fonts

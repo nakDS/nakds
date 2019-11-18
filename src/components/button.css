@@ -19,6 +19,10 @@
     background: var(--color);
     transition: 0.5s;
   }
+
+  .nk-toolbar & {
+    align-self: center;
+  }
 }
 
 .nk-button--color {

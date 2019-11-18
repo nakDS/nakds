@@ -2,5 +2,10 @@
 
 .nk-toolbar {
   display: flex;
-  justify-content: flex-end;
+  padding: 0 calc(var(--spacer) * 5); 
+  /* justify-content: flex-end; */
+}
+
+.nk-toolbar__item--right {
+  margin-left: auto;
 }

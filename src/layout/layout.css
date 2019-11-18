@@ -1,38 +1,40 @@
 @import "../variables/core-utils";
 
 :root {
-  --container--content: 1100px;  
-  --container--text: 680px; 
-}
-
-@define-mixin nk-container {
-  padding: 0 calc(var(--spacer) * 5); 
-  margin: auto;
+  --container--content: 1100px;
+  --container--text: 680px;
 }
 
 .nk-container {
-  @mixin nk-container;
+  width: 100%;
+  padding: 0 calc(var(--spacer) * 5);
+  margin: auto;
 }
 
 .nk-container--content {
-  @mixin nk-container;
+  width: 100%;
+  padding: 0 calc(var(--spacer) * 5);
+  margin: auto;
   max-width: var(--container--content);
 }
 
 .nk-container--text {
-  @mixin nk-container;
+  width: 100%;
+  padding: 0 calc(var(--spacer) * 5);
+  margin: auto;
   max-width: var(--container--text);
+}
+
+/* TODO: Is this approach good? It is a fullscreen option for an element inside the nk-container */
+.nk-fullscreen {
+  width: calc(100% + var(--spacer) * 5 + var(--spacer) * 5);
+  margin-left: calc(-1 * var(--spacer) * 5);
 }
 
 .nk-section {
   padding-top: var(--spacer-xlarge);
   padding-bottom: var(--spacer-xlarge);
 }
-
-.nk-d-flex {
-  display: flex;
-}
-
 
 .nk-page-wrapper {
   display: flex;
@@ -49,7 +51,6 @@
   justify-content: center;
   width: 15rem;
   height: 6rem;
-
 }
 
 .nk-site-main {
@@ -58,7 +59,8 @@
   margin-left: 15rem;
 }
 
-.nk-site-navigation {}
+.nk-site-navigation {
+}
 
 .nk-site-navigation--fixed {
   position: fixed;
@@ -69,12 +71,11 @@
   background: pink;
 }
 
-.nk-site-footer {}
+.nk-site-footer {
+}
 
-
-.nk-site-content{
+.nk-site-content {
   min-height: calc(100vh - 6rem);
-
 }
 
 .nk-page-container {
