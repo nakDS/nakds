@@ -3,6 +3,7 @@
 ## TODO
 
 - Add flex system
+- Use Vue to created docs?
 - Add circleCI to publish npm
 - Add correct badges. npm version and license
 - Find a font to use easily with variable fonts
@@ -24,10 +25,10 @@
 - Brand values, pursopes, objetives
 - Tecnical documentation
 - Decide to repeat the classes or use only the modifier. Pros and cons
+- Add utility classes for shadowing and styling? More utilities or more components?
 - Add accesibility 
 - Add instructions to install
 - Roudmap. Add it to the readme. Beta on February. March release. 2 months of promotion. Research the tracking. Present it on an event.
-- Use Vue to created docs?
 - Add a library to show code
 - Give a solution to the nav
 - Add philosophy: standard, simplicity, flexibility

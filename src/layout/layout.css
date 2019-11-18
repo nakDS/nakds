@@ -25,7 +25,7 @@
   max-width: var(--container--text);
 }
 
-/* TODO: Is this approach good? It is a fullscreen option for an element inside the nk-container */
+/* TODO: Is this approach good? It is a fullscreen option for an element inside the nk-container. Is it antipattern? */
 .nk-fullscreen {
   width: calc(100% + var(--spacer) * 5 + var(--spacer) * 5);
   margin-left: calc(-1 * var(--spacer) * 5);
