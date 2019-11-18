@@ -8,10 +8,12 @@
   <title>nakDS</title>
   <link rel="stylesheet" href="./css/nakDS.css" />
   <link rel="stylesheet" href="./css/nak-docs.css" />
+  <link rel="stylesheet" href="./css/default.css" />
+  <link rel="stylesheet" href="./css/atom-one-dark.css" />
+
 </head>
 
 <body>
-
   <section id="nakds" class="nk-smooth-scroll">
     <header class="nk-header nk-height-fullpage nk-text-align--center">
       <h1 class="nk-logo">
@@ -412,11 +414,19 @@ npm i nakds
             </div>
           </div>
         </div>
-        <code>
+   
+      </article>
+      <article>
           <pre>
-              code
-          </pre>
-        </code>
+              <code class="html">
+    &lt;div class="nk-box"&gt;
+      &lt;img class="nk-box__image" src="..." alt=""&gt;
+      &lt;div class="nk-box__body"&gt;
+        ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+              </code>
+            </pre>
       </article>
       <article id="list" class="nk-section nk-container">
         <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">List</h2>
@@ -497,6 +507,9 @@ npm i nakds
       </article>
     </main>
     <footer class="nk-footer nk-theme--y">
+      <h2>Attributions</h2>
+      <p>Icon</p>
+      <p><a href="https://github.com/highlightjs/highlight.js">highlight.js</a></p>
       <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="nofollow"><img
           src="https://camo.githubusercontent.com/60561947585c982aee67ed3e3b25388184cc0aa3/687474703a2f2f6d6972726f72732e6372656174697665636f6d6d6f6e732e6f72672f70726573736b69742f627574746f6e732f38387833312f7376672f63632d7a65726f2e737667"
           alt="CC0" data-canonical-src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg"
@@ -504,7 +517,10 @@ npm i nakds
       <p class="nk-text--small">Created by <a href="https://github.com/nabaroa"> Naiara Abaroa</a></p>
     </footer>
   </section>
-  <script src="js/main.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
 </body>
 
 </html>
