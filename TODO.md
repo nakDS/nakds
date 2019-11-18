@@ -23,6 +23,7 @@
 - Brand values, pursopes, objetives
 - Tecnical documentation
 - Decide to repeat the classes or use only the modifier. Pros and cons
+- Add accesibility 
 - Add instructions to install
 - Rebranding. Create your own reallity. ^^
 - Roudmap. Add it to the readme. Beta on February. March release. 2 months of promotion. Research the tracking. Present it on an event.
@@ -34,5 +35,5 @@
 
 ## IDEAS
 - Had to try all the circle to try to understand the concepts. Find challenges, find weak points.
-- Simplify all the components
+- Simplify all the components. Can I remove all the variables and use only the tokens?
 - Control what variables imports each component. How can I avoid repetitions? Sure that I can improve the performace. Undertand properly the custom properties and their duplication.
