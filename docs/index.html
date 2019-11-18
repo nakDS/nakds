@@ -24,7 +24,7 @@
       </h1>
       <h2 class="nk-heading-4"><span class="nk-text--strong">Simple</span> & <span class="nk-text--strong">easy</span>
         design system</h2>
-      <p>26KB</p>
+      <p>25KB</p>
       <button id="nk-theme-change" class="nk-button nk-button--color nk-mtx">Switch theme</button>
       <a class="nk-mtx nk-d-block" href="#nk-nav">
         <svg class="nk-icon--large nk-text-align--center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 62.5">
@@ -35,13 +35,13 @@
     </header>
     <main>
       <div class="nk-toolbar nk-doc--gototop">
-      <a href="#top" class="nk-button nk-button--icon nk-toolbar__item--right">
-        <svg class="nk-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" x="0px" y="0px">
-          <path
-            d="M5.1 38.9c4.4-3.8 8.4-7.8 12.2-12.2 3.4-4.1 6.3-9.8 10.8-12.8l-2.7.3c7.6 5.7 14.3 12.5 20 20.1.8 1.1 4.6-.2 3.6-1.6-6-7.8-12.9-14.6-20.7-20.5-.7-.5-2.1-.1-2.7.3-4.1 2.7-6.5 7.1-9.5 10.9C11.9 28.7 7.1 33.6 2 38c-1.8 1.6 2 1.8 3.1.9z" />
-        </svg>
-      </a>
-    </div>
+        <a href="#top" class="nk-button nk-button--icon nk-toolbar__item--right">
+          <svg class="nk-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" x="0px" y="0px">
+            <path
+              d="M5.1 38.9c4.4-3.8 8.4-7.8 12.2-12.2 3.4-4.1 6.3-9.8 10.8-12.8l-2.7.3c7.6 5.7 14.3 12.5 20 20.1.8 1.1 4.6-.2 3.6-1.6-6-7.8-12.9-14.6-20.7-20.5-.7-.5-2.1-.1-2.7.3-4.1 2.7-6.5 7.1-9.5 10.9C11.9 28.7 7.1 33.6 2 38c-1.8 1.6 2 1.8 3.1.9z" />
+          </svg>
+        </a>
+      </div>
       <nav id="nk-nav" class="nk-container--content nk-bg--opaque nk-pbl">
         <div class="nk-toolbar">
           <button id="nk-js-close" class="nk-button nk-button--icon">
@@ -57,7 +57,7 @@
         <ul class="nk-grid nk-grid-5 nk-gap">
           <li>How to use it
             <ul>
-              <li><a href="#instalation">Instalation</a></li>
+              <li><a href="#instalation">Getting Started</a></li>
             </ul>
           </li>
           <li>Tokens
@@ -85,6 +85,7 @@
           <li>
             Components
             <ul>
+              <li><a href="#avatar">Avatar</a><span class="nk-text--small">4 KB</span></li>
               <li><a href="#box">Box</a><span class="nk-text--small">4 KB</span></li>
               <li><a href="#list">List</a></li>
               <li><a href="#loader">Loader</a></li>
@@ -109,15 +110,16 @@
         </ul>
       </nav>
       <article id="instalation" class="nk-section nk-container">
-        <h2 class="nk-heading-2">
-          Instalation
+        <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">
+          Getting Started
         </h2>
-        <code>
-          <pre>
+        <a href="https://www.npmjs.com/package/nakds"><img src="assets/svg/nk-npm.svg" alt=""></a>
+        <pre class="nk-fullscreen">
+          <code class="javascript">
 npm i nakds
+          </code>
           </pre>
-        </code>
-        <a href="https://www.npmjs.com/package/nakds">npm</a>
+        <h3 class="nk-heading-3">CDN</h3>
       </article>
       <article id="color" class="nk-container nk-section nk-height-fullpage">
         <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">Color tokens</h2>
@@ -380,6 +382,13 @@ npm i nakds
             <div class="nk-doc-border nk-pal">Grid item</div>
             <div class="nk-doc-border nk-pal">Grid item</div>
           </div>
+        </div>
+      </article>
+      <article id="avatar" class="nk-container--content">
+        <h2 class="nk-heading-2">.nk-avatar</h2>
+        <div class="nk-grid nk-grid-4">
+          <img class="nk-avatar" src="assets/img/nk-avatar.jpg" alt="">
+          <img class="nk-avatar--monocrome" src="assets/img/nk-avatar.jpg" alt="">
         </div>
       </article>
       <article class="nk-section nk-height-fullpage" id="box">

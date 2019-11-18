@@ -31,6 +31,7 @@
 - Roudmap. Add it to the readme. Beta on February. March release. 2 months of promotion. Research the tracking. Present it on an event.
 - Add a library to show code
 - Give a solution to the nav
+- Doc browser support
 - Add philosophy: standard, simplicity, flexibility
 - Añadir el dist a un CDN
 
