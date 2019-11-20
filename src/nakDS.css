@@ -43,3 +43,15 @@
 @import "layout/layout";
 @import "layout/grid";
 @import "layout/flex";
+
+.nk-notify {
+  position: fixed;
+  top: 50px;
+  right: -50px;
+  background: var(--color);
+  color: white;
+  font-size: .8em;
+  z-index: 1;
+  transform: rotate(45deg);
+  padding: 0 var(--spacer-large);
+}

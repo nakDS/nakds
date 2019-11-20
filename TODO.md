@@ -5,6 +5,7 @@
 - Add flex system
 - Use Vue to created docs?
 - Add circleCI to publish npm
+- Add modal JS. Need to decide what to use for JS.
 - Add correct badges. npm version and license
 - Find a font to use easily with variable fonts
 - Distribute the fonts in independent files to not to import all off them?
