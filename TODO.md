@@ -8,6 +8,7 @@
 - Add correct badges. npm version and license
 - Find a font to use easily with variable fonts
 - Distribute the fonts in independent files to not to import all off them?
+- Add animation library
 - Add extra themes option. Add a switcher in the DS
 - Add copy option to hex color values: https://clipboardjs.com/
 - Add vue for nk-docs

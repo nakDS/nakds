@@ -1,14 +1,6 @@
 @import "../tokens/tokens--color";
 
-a {
-  color: var(--color);
-  text-decoration: underline;
-  cursor: pointer;
 
-  &:hover {
-    color: var(--color--darker);
-  }
-}
 
 .nk-link--naked {
   text-decoration: none;

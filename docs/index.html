@@ -13,6 +13,7 @@
 
 </head>
 
+<!-- <body class="nk-show-modal"> -->
 <body>
   <section id="nakds" class="nk-smooth-scroll">
     <header id="top" class="nk-header nk-height-fullpage nk-text-align--center">
@@ -90,6 +91,7 @@
               <li><a href="#box">Box</a><span class="nk-text--small">4 KB</span></li>
               <li><a href="#list">List</a></li>
               <li><a href="#loader">Loader</a></li>
+              <li><a href="#modal">Modal</a></li>
             </ul>
           </li>
 
@@ -482,6 +484,32 @@ npm i nakds
         <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">.nk-loader</h2>
         <div class="nk-loader nk-text--huge nk-mvx"></div>
         <a class="nk-text--small" href="https://codepen.io/vank0/pen/mARwLg">Attribution</a>
+      </article>
+      <article id="modal" class="nk-section nk-container">
+        <h2 class="nk-heading-2">Modal</h2>
+        <button class="nk-button">Open modal</button>
+        <div class="nk-modal">
+          <div class="nk-modal__header">
+            <button class="nk-button nk-button--icon">
+            <svg class="nk-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+              <title>Close</title>
+              <path
+                d="M5.936 9.11c4.01 6.15 9.822 10.435 15.783 14.566 5.788 4.012 14.842 8.7 16.884 15.933.465 1.647 6.252.065 5.795-1.553-1.773-6.283-8.475-10.403-13.527-13.927-6.901-4.812-14.447-9.378-19.139-16.573-1.077-1.649-6.482.503-5.796 1.554z" />
+              <path
+                d="M37.158 7.358c-5.19 6.268-11.474 11.478-16.922 17.507C14.6 31.103 10.918 38.91 7.281 46.408l5.783-1.185-.167-.667c-.451-1.805-6.255-.285-5.796 1.553l.167.667c.51 2.041 5.201.017 5.783-1.185 3.557-7.332 7.191-14.564 12.535-20.775 5.303-6.163 11.726-11.232 16.921-17.508 1.514-1.825-4.263-1.262-5.349.05z" />
+            </svg>
+          </button>
+          </div>
+          <img class="nk-modal__image" src="assets/img/randomMatches_142.jpg" alt="">
+          <div class="nk-modal__body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quia asperiores, accusantium,
+              exercitationem assumenda accusamus  sunt molestiae provident aspernatur est nobis nisi!</p>
+          </div>
+          <div class="nk-modal__footer">
+            <button class="nk-button">Cancel</button>
+            <button class="nk-button nk-button--color">Submit</button>
+          </div>
+        </div>
       </article>
       <article id="button" class="nk-container nk-section">
         <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">.nk-button</h2>

@@ -4,3 +4,17 @@ body {
   color: var(--text-color);
   line-height: 1.58;
 }
+
+a {
+  color: var(--color);
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color--darker);
+  }
+}
+
+img {
+  max-width: 100%;
+}
