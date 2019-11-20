@@ -34,6 +34,7 @@
 - Doc browser support
 - Add philosophy: standard, simplicity, flexibility
 - Añadir el dist a un CDN
+- use https://www.npmjs.com/package/gh-badges to create dinamic badges
 
 ## IDEAS
 - Had to try all the circle to try to understand the concepts. Find challenges, find weak points.

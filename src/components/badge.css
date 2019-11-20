@@ -1,0 +1,8 @@
+.nk-badge {
+  background: var(--color);
+  border-radius: 3px;
+  font-size: .6em;
+  color: var(--color-k--10);
+  display: inline;
+  padding: var(--xxx-small) var(--xx-small);
+}
