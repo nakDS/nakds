@@ -115,9 +115,9 @@ function svg() {
     .pipe(gulp.dest("./docs/assets/svg/"));
 }
 
-function watch() {
-  gulp.watch("./src/**/*.css", css);
-}
+// function watch() {
+//   gulp.watch("./src/**/*.css", css);
+// }
 
 function colorTokens() {
   return gulp
@@ -146,8 +146,8 @@ const build = gulp.series(
   components,
   colorTokens,
   fonts,
-  svg,
-  watch
+  svg
+  // watch
 );
 
 exports.css = css;
@@ -157,5 +157,5 @@ exports.components = components;
 exports.fonts = fonts;
 exports.svg = svg;
 exports.colorTokens = colorTokens;
-exports.watch = watch;
+// exports.watch = watch;
 exports.default = build;
