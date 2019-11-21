@@ -1,6 +1,30 @@
 /* TODO */
 /* Create textures? */
 
+.nk-bg--opaque {
+  background: white;
+
+  .nk-theme--dark & {
+    background-color: var(--color-k--2);
+  }
+}
+
+.nk-bg--c {
+  background: var(--color--c);
+  color: var(--color-k--10);
+}
+
+.nk-bg--m {
+  background: var(--color--m);
+  color: var(--color-k--10);
+}
+
+.nk-bg--y {
+  background: var(--color--y);
+  color: var(--color-k--10);
+}
+
 .nk-bg--color {
   background: var(--color);
+  color: var(--color-k--10);
 }

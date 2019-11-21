@@ -89,15 +89,15 @@
               <li><a href="#avatar">Avatar</a><span class="nk-text--small">4 KB</span></li>
               <li><a href="#badge">Badge</a><span class="nk-text--small">4 KB</span></li>
               <li><a href="#box">Box</a><span class="nk-text--small">4 KB</span></li>
+              <li><a href="#button">Button</a>5KB</li>
               <li><a href="#list">List</a></li>
               <li><a href="#loader">Loader</a></li>
               <li><a href="#modal">Modal</a></li>
             </ul>
           </li>
-
-          <li>Forms
+          <li>Styling
             <ul>
-              <li><a href="#button">Button</a>5KB</li>
+              <li><a href="#background">Background</a></li>
             </ul>
           </li>
           <li>Assets
@@ -110,19 +110,28 @@
               <li><a href="#spacing">Spacing</a></li>
             </ul>
           </li>
+          <li>Tools
+            <ul>
+              <li><a href="#slider">Slider</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
-      <article id="instalation" class="nk-section nk-container">
+      <article id="instalation" class="nk-section nk-container--content">
         <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">
           Getting Started
         </h2>
         <a href="https://www.npmjs.com/package/nakds"><img src="assets/svg/nk-npm.svg" alt=""></a>
-        <pre class="nk-fullscreen">
+        <pre>
           <code class="javascript">
 npm i nakds
           </code>
           </pre>
         <h3 class="nk-heading-3">CDN</h3>
+      </article>
+      <article class=" nk-height-fullpage nk-bg--color nk-container">
+        <h1 class="nk-heading-1 nk-position--sticky nk-color-k--1">Tokens</h1>
+        <img src="" alt="Some graph here">
       </article>
       <article id="color" class="nk-container nk-section nk-height-fullpage">
         <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">Color tokens</h2>
@@ -143,7 +152,7 @@ npm i nakds
             <div class="nk-box__body">--color--darker: #529393;</div>
           </div>
           <div class="nk-box">
-            <div class="nk-box__image" style="background: var(--color--complementary)"></div>
+            <div class="nk-box__image" style="background: var(--color--c)"></div>
             <div class="nk-box__body">--color--complementary: #d5ad26;</div>
           </div>
         </div>
@@ -231,9 +240,12 @@ npm i nakds
           </div>
         </div>
       </article>
-      <article id="Typography" class="nk-section nk-height-fullpage nk-bg--color nk-theme--y">
+      <article class="nk-height-fullpage nk-container nk-bg--c">
+        <h1 class="nk-heading-1 nk-position--sticky">Typography</h1>
+      </article>
+      <article id="Typography" class="nk-section nk-height-fullpage nk-theme--y">
         <div class="nk-container--content">
-          <h2 class="nk-heading-2 nk-position--sticky nk-bg--color">Typography</h2>
+          <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">Typography</h2>
           <h3 class="nk-heading-3">.nk-font--light</h3>
           <p class="nk-font--light">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque animi
@@ -272,6 +284,9 @@ npm i nakds
         <span class="nk-badge">376KB</span>
         <a href="https://github.com/cosmicmocha/Montserrat">Github</a>
       </article>
+      <article class="nk-height-fullpage nk-container nk-bg--y">
+          <h1 class="nk-heading-1 nk-position--sticky">Layout</h1>
+        </article>
       <article id="container" class="nk-section nk-container">
         <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">Containers</h2>
         <h3 class="nk-heading-3">.nk-container</h3>
@@ -316,9 +331,9 @@ npm i nakds
           </p>
         </div>
       </article>
-      <article id="flex" class="nk-container nk-height-fullpage">
+      <!-- <article id="flex" class="nk-container nk-position--sticky nk-height-fullpage">
         <h2 class="nk-heading-2 ">Flex</h2>
-      </article>
+      </article> -->
       <article id="fullpage" class="nk-container nk-height-fullpage nk-bg--image">
         <h2 class="nk-heading-2 ">.nk-height-fullpage</h2>
       </article>
@@ -387,6 +402,10 @@ npm i nakds
           </div>
         </div>
       </article>
+      <article class=" nk-height-fullpage nk-bg--color nk-container">
+          <h1 class="nk-heading-1 nk-position--sticky nk-color-k--1">Components</h1>
+          <img src="" alt="Some graph here">
+        </article>
       <article id="avatar" class="nk-container--content">
         <h2 class="nk-heading-2">.nk-avatar</h2>
         <div class="nk-grid nk-grid-4">
@@ -464,7 +483,7 @@ npm i nakds
 
       </article>
 
-      <article id="list" class="nk-section nk-container">
+      <article id="list" class="nk-section nk-container--content">
         <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">List</h2>
         <p>TODO style list components</p>
         <ul class="nk-list--dotted">
@@ -480,12 +499,12 @@ npm i nakds
           <li>List item</li>
         </ol>
       </article>
-      <article id="loader" class="nk-section nk-container">
+      <article id="loader" class="nk-section nk-container--content">
         <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">.nk-loader</h2>
         <div class="nk-loader nk-text--huge nk-mvx"></div>
         <a class="nk-text--small" href="https://codepen.io/vank0/pen/mARwLg">Attribution</a>
       </article>
-      <article id="modal" class="nk-section nk-container">
+      <article id="modal" class="nk-section nk-container--content">
         <h2 class="nk-heading-2">Modal</h2>
         <button class="nk-button">Open modal</button>
         <div class="nk-modal">
@@ -511,12 +530,16 @@ npm i nakds
           </div>
         </div>
       </article>
-      <article id="button" class="nk-container nk-section">
+      <article id="button" class="nk-container--content nk-section">
         <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">.nk-button</h2>
         <button class="nk-button">Button</button>
         <button class="nk-button nk-button--color">Button</button>
         <button class="nk-button nk-button--disabled">Button</button>
       </article>
+      <article class=" nk-height-fullpage nk-bg--c nk-container">
+          <h1 class="nk-heading-1 nk-position--sticky">Assets</h1>
+          <img src="" alt="Some graph here">
+        </article>
       <article id="icons" class="nk-container nk-section">
         <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">.nk-icon</h2>
         <h3 class="nk-heading-3">Handmade icons</h3>
@@ -568,6 +591,10 @@ npm i nakds
         </p>
       </article>
     </main>
+    <article class=" nk-height-fullpage nk-bg--y nk-container">
+        <h1 class="nk-heading-1 nk-position--sticky">Attributions</h1>
+        <img src="" alt="Some graph here">
+      </article>
     <footer class="nk-footer nk-theme--y">
       <h2>Attributions</h2>
       <p>Icon</p>

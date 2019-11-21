@@ -1,1 +1,1 @@
-.nk-bg--color{background:var(--color)}
+.nk-bg--opaque{background:#fff}.nk-theme--dark .nk-bg--opaque{background-color:var(--color-k--2)}.nk-bg--c{background:var(--color--c)}.nk-bg--c,.nk-bg--m{color:var(--color-k--10)}.nk-bg--m{background:var(--color--m)}.nk-bg--y{background:var(--color--y)}.nk-bg--color,.nk-bg--y{color:var(--color-k--10)}.nk-bg--color{background:var(--color)}

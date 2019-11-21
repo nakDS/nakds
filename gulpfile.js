@@ -115,39 +115,39 @@ function svg() {
     .pipe(gulp.dest("./docs/assets/svg/"));
 }
 
-// function watch() {
-//   gulp.watch("./src/**/*.css", css);
-// }
-
-function colorTokens() {
-  return gulp
-    .src("./src/tokens/tokens--color.css")
-    .pipe(postcss([cssnano()]))
-    .pipe(
-      inject.beforeEach("--color", '<span class="nk-box" style="background:')
-    )
-    .pipe(replace(/--\S+\:/g, ""))
-    .pipe(inject.afterEach(";", '"></span>'))
-    .pipe(replace(":root{", '<div class="nk-section">'))
-    .pipe(replace("}", "</div>"))
-    .pipe(rename("tokens--color.html"))
-    .pipe(gulp.dest("./docs/"))
-    .pipe(
-      notify({
-        message: "Your COLOR TOKEN HTML is ready ♡ "
-      })
-    );
+function watch() {
+  gulp.watch("./src/**/*.css", css);
 }
+
+// function colorTokens() {
+//   return gulp
+//     .src("./src/tokens/tokens--color.css")
+//     .pipe(postcss([cssnano()]))
+//     .pipe(
+//       inject.beforeEach("--color", '<span class="nk-box" style="background:')
+//     )
+//     .pipe(replace(/--\S+\:/g, ""))
+//     .pipe(inject.afterEach(";", '"></span>'))
+//     .pipe(replace(":root{", '<div class="nk-section">'))
+//     .pipe(replace("}", "</div>"))
+//     .pipe(rename("tokens--color.html"))
+//     .pipe(gulp.dest("./docs/"))
+//     .pipe(
+//       notify({
+//         message: "Your COLOR TOKEN HTML is ready ♡ "
+//       })
+//     );
+// }
 
 const build = gulp.series(
   css,
   utils,
   tokens,
   components,
-  colorTokens,
+  // colorTokens,
   fonts,
-  svg
-  // watch
+  svg,
+  watch
 );
 
 exports.css = css;
@@ -156,6 +156,6 @@ exports.tokens = tokens;
 exports.components = components;
 exports.fonts = fonts;
 exports.svg = svg;
-exports.colorTokens = colorTokens;
-// exports.watch = watch;
+// exports.colorTokens = colorTokens;
+exports.watch = watch;
 exports.default = build;

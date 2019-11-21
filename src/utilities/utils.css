@@ -74,16 +74,6 @@
   }
 }
 
-.nk-bg--opaque {
-  background: white;
-  
-  .nk-theme--dark & {
-    background-color: var(--color-k--2);
-  }
-}
-
-
-
 .nk-is-active {
 }
 

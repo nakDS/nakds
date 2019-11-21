@@ -9,6 +9,10 @@
 - Add correct badges. npm version and license
 - Find a font to use easily with variable fonts
 - Distribute the fonts in independent files to not to import all off them?
+- Define target. For visual landing pages. Marketing
+- visuals Call to actions. Some resources
+- Add shapes or artistic components
+- Create brand. Illustrations. Shapes
 - Add animation library
 - Add extra themes option. Add a switcher in the DS
 - Add copy option to hex color values: https://clipboardjs.com/
@@ -16,6 +20,7 @@
 - Add browsersync
 - Add property sorter
 - Add stylelint on commit
+- Add landing pages created by nakDS
 - Add a handwritten font
 - Add code to the examples: https://prismjs.com/ (use it for docs or add it on the system as well?)
 - Add range bar to fonts
