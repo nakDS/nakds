@@ -2,7 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/nakds?style=for-the-badge)](https://www.npmjs.com/package/nakds)
 ![Total output CSS file size in bytes](https://img.shields.io/github/size/nabaroa/nakDS/dist/css/nakDS.css?style=for-the-badge)
-![GitHub](https://img.shields.io/static/v1?label=LICENSE&message=CC0 1.0 Universal&style=for-the-badge)
+![GitHub](https://img.shields.io/static/v1?label=LICENSE&message=CC0_1.0_Universal&style=for-the-badge)
 
 ![nakDS cover](https://raw.githubusercontent.com/nabaroa/nakds-pages/master/docs/assets/cover.png)
 
