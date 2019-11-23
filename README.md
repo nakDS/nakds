@@ -1,6 +1,6 @@
 # nakDS
 
-[![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/nakds)
+[![npm](https://img.shields.io/npm/v/1.12.0?style=for-the-badge)](https://www.npmjs.com/package/nakds)
 
 
 ![nakDS cover](https://raw.githubusercontent.com/nabaroa/nakds-pages/master/docs/assets/cover.png)
