@@ -1,11 +1,13 @@
 {
   "name": "nakds",
-  "version": "1.11.1",
+  "version": "0.0.0-development",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "release-it",
-    "start": "gulp"
+    "start": "gulp",
+    "commit": "npx git-cz",
+    "semantic-release": "semantic-release"
   },
   "keywords": [],
   "author": "",
@@ -33,11 +35,12 @@
     "stylelint": "^11.1.1",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-standard": "^19.0.0",
-    "stylelint-order": "^3.1.1"
+    "stylelint-order": "^3.1.1",
+    "semantic-release": "^15.13.31"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/nabaroa/nakds"
+    "url": "https://github.com/nabaroa/nakds"
   },
   "homepage": "",
   "description": ""

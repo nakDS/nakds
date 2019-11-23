@@ -2,65 +2,12 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:latest
+      - image: 'circleci/node:latest'
     steps:
       - checkout
       - run:
-          name: Install dependencies
+          name: install
           command: npm install
-  release:
-      docker:
-        - image: circleci/node:latest
-      steps:
-        - checkout
-        - restore_cache:
-            key: dependency-cache-{{ checksum "package.json" }}
-        - attach_workspace:
-            at: .
-        - run:
-            name: Build
-            command: npm run build
-        - run:
-            name: Release to GitHub
-            command: npm run release-to-github
-        - run:
-            name: Publish on npm
-            command: |
-              echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-              npm publish --access=public
-    deploy-docs-to-root:
-      docker:
-        - image: circleci/node:latest
-      steps:
-        - checkout
-        - restore_cache:
-            key: dependency-cache-{{ checksum "package.json" }}
-        - attach_workspace:
-            at: .
-        - run:
-            name: Build docs
-            command: npm run build-docs
-        - run:
-            name: Deploy docs
-            command: |
-              git config --global user.email "naiara.abaroa@gmail.com"
-              git config --global user.name "Naiara Abaroa"
-              npm run deploy-docs-to-dir .
-    deploy-docs-for-branch:
-      docker:
-        - image: circleci/node:latest
-      steps:
-        - checkout
-        - restore_cache:
-            key: dependency-cache-{{ checksum "package.json" }}
-        - attach_workspace:
-            at: .
-        - run:
-            name: Build docs
-            command: npm run build-docs
-        - run:
-            name: Deploy docs
-            command: |
-              git config --global user.email "naiara.abaroa@gmail.com"
-              git config --global user.name "Naiara Abaroa"
-              npm run deploy-docs-for-branch
+      - run:
+          name: release
+          command: npm run semantic-release || true
