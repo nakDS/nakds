@@ -1,0 +1,51 @@
+@mixin nk-loader {
+  width: 0.8em;
+  height: 1em;
+  border: 0.1em currentcolor solid;
+  border-radius: 0 0 0.2em 0.2em;
+  position: relative;
+}
+
+@mixin nk-loader: before {
+  position: absolute;
+  content: "";
+  width: 0.1em;
+  height: 0.3em;
+  background-color: currentcolor;
+  top: -0.3em;
+  left: 0.05em;
+  box-shadow: 0.2em 0 0 0 currentcolor, 0.2em -0.2em 0 0 currentcolor,
+    0.4em 0 0 0 currentcolor;
+  -webkit-animation: smoke 1s linear infinite alternate;
+  animation: smoke 1s linear infinite alternate;
+}
+
+@mixin nk-loader: after {
+  position: absolute;
+  content: "";
+  width: 0.2em;
+  height: 50%;
+  border: 0.1em currentcolor solid;
+  border-left: none;
+  border-radius: 0 0.5em 0.5em 0;
+  left: calc(100% + 0.1em);
+  top: 0.1em;
+}
+
+@-webkit-keyframes smoke {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 6px;
+  }
+}
+
+@keyframes smoke {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 6px;
+  }
+}

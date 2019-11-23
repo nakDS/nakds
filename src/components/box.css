@@ -1,5 +1,4 @@
-@import "../variables/core-utils";
-@import "../variables/core-utils";
+@import "../tokens/tokens--color";
 
 .nk-box {
   min-width: 100px;

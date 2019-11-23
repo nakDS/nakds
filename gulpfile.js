@@ -14,6 +14,8 @@ const rename = require("gulp-rename");
 const inject = require("gulp-inject-string");
 const replace = require("gulp-string-replace");
 const insert = require("gulp-insert");
+const prettier = require("gulp-prettier");
+const del = require('del');
 
 function css() {
   return gulp
@@ -23,11 +25,15 @@ function css() {
         cssImport(),
         mixins(),
         nested(),
-        postcssPresetEnv(),
-        autoprefixer()
+        postcssPresetEnv({
+          autoprefixer: { grid: true },
+          postcssCustomProperties: { preserve: false }
+        })
       ])
     )
+    .pipe(gulp.dest("./dist/css/"))
     .pipe(postcss([cssnano()]))
+    .pipe(rename("nakDS.min.css"))
     .pipe(gulp.dest("./dist/css/"))
     .pipe(gulp.dest("./docs/css/"))
     .pipe(
@@ -45,10 +51,13 @@ function utils() {
         cssImport(),
         mixins(),
         nested(),
-        postcssPresetEnv(),
-        autoprefixer()
+        postcssPresetEnv({
+          autoprefixer: { grid: true },
+          postcssCustomProperties: { preserve: false }
+        })
       ])
     )
+    .pipe(gulp.dest("./dest/css/"))
     .pipe(postcss([cssnano()]))
     .pipe(gulp.dest("./dist/css/"))
     .pipe(
@@ -59,25 +68,25 @@ function utils() {
 }
 
 function tokens() {
-  return (
-    gulp
-      .src("./src/tokens/**.css")
-      .pipe(
-        postcss([
-          cssImport(),
-          mixins(),
-          nested(),
-          postcssPresetEnv(),
-          autoprefixer()
-        ])
-      )
-      .pipe(gulp.dest("./dist/css/tokens"))
-      .pipe(
-        notify({
-          message: "Your tokens are ready ♡"
+  return gulp
+    .src("./src/tokens/**.css")
+    .pipe(
+      postcss([
+        cssImport(),
+        mixins(),
+        nested(),
+        postcssPresetEnv({
+          autoprefixer: { grid: true },
+          postcssCustomProperties: { preserve: false }
         })
-      )
-  );
+      ])
+    )
+    .pipe(gulp.dest("./dist/css/tokens"))
+    .pipe(
+      notify({
+        message: "Your tokens are ready ♡"
+      })
+    );
 }
 
 function components() {
@@ -88,10 +97,13 @@ function components() {
         cssImport(),
         mixins(),
         nested(),
-        postcssPresetEnv(),
-        autoprefixer()
+        postcssPresetEnv({
+          autoprefixer: { grid: true },
+          postcssCustomProperties: { preserve: false }
+        })
       ])
     )
+    .pipe(gulp.dest("./dest/css/"))
     .pipe(postcss([cssnano()]))
     .pipe(gulp.dest("./dist/css/components/"))
     .pipe(
@@ -119,33 +131,38 @@ function watch() {
   gulp.watch("./src/**/*.css", css);
 }
 
-// function colorTokens() {
-//   return gulp
-//     .src("./src/tokens/tokens--color.css")
-//     .pipe(postcss([cssnano()]))
-//     .pipe(
-//       inject.beforeEach("--color", '<span class="nk-box" style="background:')
-//     )
-//     .pipe(replace(/--\S+\:/g, ""))
-//     .pipe(inject.afterEach(";", '"></span>'))
-//     .pipe(replace(":root{", '<div class="nk-section">'))
-//     .pipe(replace("}", "</div>"))
-//     .pipe(rename("tokens--color.html"))
-//     .pipe(gulp.dest("./docs/"))
-//     .pipe(
-//       notify({
-//         message: "Your COLOR TOKEN HTML is ready ♡ "
-//       })
-//     );
-// }
+function sassMixins() {
+  return gulp
+    .src("./dest/css/**.css")
+    .pipe(inject.beforeEach(".nk-", "@mixin "))
+    .pipe(replace("@mixin .nk-", "@mixin nk-"))
+    .pipe(prettier())
+    .pipe(gulp.dest("./dist/scss/mixins/"))
+    .pipe(
+      rename(function(path) {
+        path.extname = ".scss";
+      })
+    )
+    .pipe(gulp.dest("./dist/scss/mixins/"))
+    .pipe(
+      notify({
+        message: "Your Sass mixin is ready ♡ "
+      })
+    );
+}
+
+function clean() {
+  return del(["./dist/scss/mixins/*.css"]);
+}
 
 const build = gulp.series(
   css,
   utils,
   tokens,
   components,
-  // colorTokens,
   fonts,
+  sassMixins,
+  clean,
   svg
 );
 
@@ -154,7 +171,8 @@ exports.utils = utils;
 exports.tokens = tokens;
 exports.components = components;
 exports.fonts = fonts;
+exports.sassMixins = sassMixins;
 exports.svg = svg;
-// exports.colorTokens = colorTokens;
 exports.watch = watch;
+exports.clean = clean;
 exports.default = build;
