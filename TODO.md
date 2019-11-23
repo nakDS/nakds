@@ -3,6 +3,7 @@
 ## TODO
 
 - Add flex system
+- Distribute the CSS on mixins to consume with more flexibility. Users don´t have to use my naming convention, that can be a real limitation
 - Use Vue to created docs?
 - Add circleCI to publish npm
 - Add modal JS. Need to decide what to use for JS.

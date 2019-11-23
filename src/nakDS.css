@@ -44,6 +44,8 @@
 @import "layout/grid";
 @import "layout/flex";
 
+@import "styling/filters";
+
 .nk-notify {
   position: fixed;
   top: 50px;

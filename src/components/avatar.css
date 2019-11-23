@@ -7,13 +7,6 @@
   border-radius: 100%;
 }
 
-.nk-avatar--monocrome {
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
-  filter: grayscale(1);
-}
-
 /* Sizes */
 
 /* Filters */
