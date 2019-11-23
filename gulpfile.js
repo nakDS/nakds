@@ -146,8 +146,7 @@ const build = gulp.series(
   components,
   // colorTokens,
   fonts,
-  svg,
-  watch
+  svg
 );
 
 exports.css = css;
