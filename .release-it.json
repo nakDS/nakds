@@ -1,6 +1,0 @@
-{
-  "github": {
-    "release": true,
-    "releaseNotes": "generate-release-notes.sh ${latestVersion} ${version}"
-  }
-}
