@@ -11,18 +11,28 @@
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
-    ["@semantic-release/changelog", {
-      "changelogFile": "CHANGELOG.md"
-    }],
-    ["@semantic-release/git", {
-      "assets": ["CHANGELOG.md"]
-    }]
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "CHANGELOG.md"
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "CHANGELOG.md"
+        ]
+      }
+    ],
+    "@semantic-release/npm"
   ],
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@semantic-release/changelog": "^3.0.6",
+    "@semantic-release/npm": "^5.3.4",
     "autoprefixer": "^9.7.1",
     "cssnano": "^4.1.10",
     "cz-conventional-changelog": "^3.0.2",
