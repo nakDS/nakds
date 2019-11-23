@@ -1,13 +1,9 @@
-@import "../variables/core-utils";
+@import "../tokens/tokens--spacer";
 
 .nk-list {
-}
-
-.nk-list--dotted {
-  list-style: inherit;
-  list-style-position: inside;
-}
-
-.nk-list--horizontal {
-  display: flex;
+  list-style: none;
+  
+  ul {
+    list-style: none;
+  }
 }
