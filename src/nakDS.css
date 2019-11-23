@@ -8,12 +8,7 @@
 @import "base/typography";
 @import "base/default";
 
-@import "utilities/utils";
-@import "utilities/sizing";
-@import "utilities/spacing";
-
 @import "components/avatar";
-@import "components/background";
 @import "components/badge";
 @import "components/button";
 @import "components/header";
@@ -44,7 +39,13 @@
 @import "layout/grid";
 @import "layout/flex";
 
+@import "styling/background";
 @import "styling/filters";
+
+@import "utilities/utils";
+@import "utilities/sizing";
+@import "utilities/spacing";
+
 
 .nk-notify {
   position: fixed;
