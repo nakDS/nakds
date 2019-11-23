@@ -8,7 +8,7 @@
   position: absolute;
   top: 50px;
   left: calc(50% - 250px);
-  background: var(--color-k--10);
+  background: var(--color--k-10);
   pointer-events: all;
 
   &::before {

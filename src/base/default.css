@@ -13,6 +13,14 @@ a {
   &:hover {
     color: var(--color--darker);
   }
+
+  .nk-bg--color & {
+    color: var(--color--k-7);
+
+    &:hover {
+      color: var(--color--k-10);
+    }
+  }
 }
 
 img {

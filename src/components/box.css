@@ -3,10 +3,10 @@
 .nk-box {
   min-width: 100px;
   min-height: var(--spacer-large);
-  background: var(--color-k--9);
+  background: var(--color--k-9);
 
   .nk-theme--dark & {
-    background: var(--color-k--2);
+    background: var(--color--k-2);
   }
 }
 

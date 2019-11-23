@@ -68,6 +68,12 @@ s,m,l,n = small(var(--small)),medium(var(--medium)),large(var(--large)),none(var
   padding-right: var(--large) !important;
 }
 
+.nk-prx,
+.nk-phx,
+.nk-pax {
+  padding-right: var(--x-large) !important;
+}
+
 .nk-pbn,
 .nk-pvn,
 .nk-pan {
@@ -92,6 +98,12 @@ s,m,l,n = small(var(--small)),medium(var(--medium)),large(var(--large)),none(var
   padding-bottom: var(--large) !important;
 }
 
+.nk-pbx,
+.nk-pvx,
+.nk-pax {
+  padding-bottom: var(--x-large) !important;
+}
+
 .nk-pln,
 .nk-phn,
 .nk-pan {
@@ -114,6 +126,12 @@ s,m,l,n = small(var(--small)),medium(var(--medium)),large(var(--large)),none(var
 .nk-phl,
 .nk-pal {
   padding-left: var(--large) !important;
+}
+
+.nk-plx,
+.nk-phx,
+.nk-pax {
+  padding-left: var(--x-large) !important;
 }
 
 .nk-mtn,
