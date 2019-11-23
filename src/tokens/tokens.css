@@ -1,11 +1,6 @@
 @import "tokens--color";
 @import "tokens--sizing";
 @import "tokens--font";
+@import "tokens--spacer";
 
-:root {
-  --spacer: calc(1em / 2);
-  --spacer-small: .7rem;/*10px*/
-  --spacer-medium: 1.25rem;/*20px*/
-  --spacer-large: 2.5rem; /*40px*/
-  --spacer-xlarge: 3.75rem;/*60px*/
-}
+
