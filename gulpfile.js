@@ -156,6 +156,13 @@ function svg() {
     .pipe(gulp.dest("./docs/assets/svg/"));
 }
 
+function img() {
+  return gulp
+    .src("./assets/img/*.*")
+    .pipe(gulp.dest("./dist/assets/img/"))
+    .pipe(gulp.dest("./docs/assets/img/"));
+}
+
 function watch() {
   gulp.watch("./src/**/*.css", css);
 }
@@ -190,6 +197,7 @@ const build = gulp.series(
   layout,
   components,
   fonts,
+  img,
   sassMixins,
   clean,
   svg

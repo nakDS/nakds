@@ -17,6 +17,9 @@
 - Add shadows
 - Add tooltips
 - Add menu icon vs close icon animation
+- Add object fit utilities?
+- Add blending effects
+- Add background fix utilities for paralax effects
 
 ### Assets and resources
 - Add photos in assets. Add attribution. Add filters and demos to the images. Resources for landing pages. 
@@ -55,6 +58,8 @@
 - Distribute the CSS on mixins to consume with more flexibility. Users don´t have to use my naming convention, that can be a real limitation. The solution right now is not stable because it doesn´t understand the nesting... maybe better to add a flag to mixinable classes to target?
 - Distribute the fonts in independent files to not to import all off them?
 - Add dist to CDN
+- Gulp tasks to optimize the images to diff screens
+- Add the images for covers to CDN
 
 ### Technical decisions
 - Decide to repeat the classes or use only the modifier. Pros and cons

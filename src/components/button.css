@@ -20,6 +20,10 @@
     transition: 0.5s;
   }
 
+  &:focus {
+    outline: 0;
+  }
+
   .nk-toolbar & {
     align-self: center;
   }
