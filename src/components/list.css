@@ -1,8 +1,8 @@
-@import "../tokens/tokens--spacer";
 
 .nk-list {
   list-style: none;
-  
+  list-style-position: inside;
+
   ul {
     list-style: none;
   }

@@ -31,3 +31,7 @@ table {
   border-spacing: 0;
   border-collapse: collapse;
 }
+
+ul, ol {
+  list-style-position: inside;
+}

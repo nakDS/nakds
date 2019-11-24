@@ -1,36 +1,59 @@
-/* :root {
-  --heading-text-color-link: var(--text-color);
-  --heading-text-color-link--hover: var(--color-third);
-  --heading-border-color-link: var(--text-color);
-  --heading-border-color-link--hover: var(--color-third);
-} */
-
 .nk-heading-1 {
-  font-size: 3em;
-  line-height: 3em;
+  font-size: 2em;
+  line-height: 2em;
+
+  @media (--medium) {
+    font-size: 3em;
+    line-height: 3em;
+  }
 }
 
 .nk-heading-2 {
-  font-size: 2.5em;
-  font-size: 2.5em;
+  font-size: 1.5em;
+  font-size: 1.5em;
+
+  @media (--medium) {
+    font-size: 2.5em;
+    font-size: 2.5em;
+  }
 }
 
 .nk-heading-3 {
-  font-size: 2.2em;
-  line-height: 2.2em;
+  font-size: 1.2em;
+  line-height: 1.2em;
+
+  @media (--medium) {
+    font-size: 2.2em;
+    line-height: 2.2em;
+  }
 }
 
 .nk-heading-4 {
-  font-size: 1.8em;
-  line-height: 1.8em;
+  font-size: 1.1em;
+  line-height: 1.1em;
+
+  @media (--medium) {
+    font-size: 1.8em;
+    line-height: 1.8em;
+  }
 }
 
 .nk-heading-5 {
-  font-size: 1.6em;
-  line-height: 1.6em;
+  font-size: 1em;
+  line-height: 1em;
+
+  @media (--medium) {
+    font-size: 1.6em;
+    line-height: 1.6em;
+  }
 }
 
 .nk-heading-6 {
-  font-size: 1.4em;
-  line-height: 1.4em;
+  font-size: 1em;
+  line-height: 1em;
+
+  @media (--medium) {
+    font-size: 1.4em;
+    line-height: 1.4em;
+  }
 }

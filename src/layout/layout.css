@@ -1,4 +1,7 @@
-@import "../variables/core-utils";
+/* TODO */
+/* Better approach calc(var(--spacer) * 2) or var(--spacer-medium)? */
+
+@import "../tokens/tokens--sizing.css";
 
 :root {
   --container--content: 1100px;
@@ -7,22 +10,34 @@
 
 .nk-container {
   width: 100%;
-  padding: 0 calc(var(--spacer) * 5);
+  padding: 0 calc(var(--spacer) * 2);
   margin: auto;
+
+  @media (--medium) {
+    padding: 0 calc(var(--spacer) * 5);
+  }
 }
 
 .nk-container--content {
   width: 100%;
-  padding: 0 calc(var(--spacer) * 5);
+  padding: 0 calc(var(--spacer) * 2);
   margin: auto;
   max-width: var(--container--content);
+
+  @media (--medium) {
+    padding: 0 calc(var(--spacer) * 5);
+  }
 }
 
 .nk-container--text {
   width: 100%;
-  padding: 0 calc(var(--spacer) * 5);
+  padding: 0 calc(var(--spacer) * 2);
   margin: auto;
   max-width: var(--container--text);
+
+  @media (--medium) {
+    padding: 0 calc(var(--spacer) * 5);
+  }
 }
 
 /* TODO: Is this approach good? It is a fullscreen option for an element inside the nk-container. Is it antipattern? */
@@ -32,74 +47,11 @@
 }
 
 .nk-section {
-  padding-top: var(--spacer-xlarge);
-  padding-bottom: var(--spacer-xlarge);
-}
+  padding-top: var(--spacer-medium);
+  padding-bottom: var(--spacer-medium);
 
-.nk-page-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.nk-site-header {
-  position: fixed;
-  top: 0;
-  z-index: 8000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 15rem;
-  height: 6rem;
-}
-
-.nk-site-main {
-  flex: 1 1 auto;
-  min-height: 100vh;
-  margin-left: 15rem;
-}
-
-.nk-site-navigation {
-}
-
-.nk-site-navigation--fixed {
-  position: fixed;
-  top: 6rem;
-  bottom: 0;
-  width: 15rem;
-  padding-top: 0;
-  background: pink;
-}
-
-.nk-site-footer {
-}
-
-.nk-site-content {
-  min-height: calc(100vh - 6rem);
-}
-
-.nk-page-container {
-  /*@apply --spacing-page;*/
-}
-
-.nk-row {
-  display: flex;
-}
-
-.nk-row--center {
-  display: flex;
-  justify-content: center;
-}
-
-.nk-row--expanded {
-  /*@apply --row--expanded;*/
-}
-
-.nk-row--centered {
-  /*@apply --row--centered;*/
-}
-
-.nk-display--column {
-  display: flex;
-  flex-direction: column;
+  @media (--medium) {
+    padding-top: var(--spacer-xlarge);
+    padding-bottom: var(--spacer-xlarge);
+  }
 }

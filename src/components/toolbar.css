@@ -1,9 +1,12 @@
-@import "../variables/core-utils";
+@import "../tokens/tokens--spacer.css";
 
 .nk-toolbar {
   display: flex;
-  padding: 0 calc(var(--spacer) * 5); 
-  /* justify-content: flex-end; */
+  padding: 0 calc(var(--spacer) * 2); 
+
+  @media (--medium) {
+    padding: 0 calc(var(--spacer) * 5);
+  }
 }
 
 .nk-toolbar__item--right {
