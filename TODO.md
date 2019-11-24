@@ -3,6 +3,8 @@
 ## TODO
 
 - Add mixin to generate grid system breakpoints
+- Add semantic url
+- Improve SEO
 - Refactor the gulfile. Better approach to have postcss.config.js on root?
 - Add photos in assets. Add attribution. Add filters and demos to the images. Resources for landing pages. 
 - Add flex system
