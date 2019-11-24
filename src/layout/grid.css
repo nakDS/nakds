@@ -9,9 +9,9 @@
   --grid-item-bottom-space: var(--x-small);
 }
 
-  .nk-grid {
-    display: grid;
-  }
+.nk-grid {
+  display: grid;
+}
 
 @media (--medium) {
   .nk-grid\@md {
@@ -33,6 +33,12 @@
 
 .nk-grid-5 {
   grid-template-columns: repeat(5, 1fr);
+}
+
+@media (--medium) {
+  .nk-grid-5\@md {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 .nk-grid-6 {
