@@ -15,7 +15,7 @@ const inject = require("gulp-inject-string");
 const replace = require("gulp-string-replace");
 const insert = require("gulp-insert");
 const prettier = require("gulp-prettier");
-const del = require('del');
+const del = require("del");
 
 function css() {
   return gulp
@@ -63,6 +63,30 @@ function utils() {
     .pipe(
       notify({
         message: "Your utils are ready ♡"
+      })
+    );
+}
+
+function layout() {
+  return gulp
+    .src("./src/layout/**.css")
+    .pipe(
+      postcss([
+        cssImport(),
+        mixins(),
+        nested(),
+        postcssPresetEnv({
+          autoprefixer: { grid: true },
+          postcssCustomProperties: { preserve: false }
+        })
+      ])
+    )
+    .pipe(gulp.dest("./dest/css/"))
+    .pipe(postcss([cssnano()]))
+    .pipe(gulp.dest("./dist/css/layout/"))
+    .pipe(
+      notify({
+        message: "Your LAYOUT are ready ♡"
       })
     );
 }
@@ -159,6 +183,7 @@ const build = gulp.series(
   css,
   utils,
   tokens,
+  layout,
   components,
   fonts,
   sassMixins,
@@ -167,12 +192,5 @@ const build = gulp.series(
 );
 
 exports.css = css;
-exports.utils = utils;
-exports.tokens = tokens;
-exports.components = components;
-exports.fonts = fonts;
-exports.sassMixins = sassMixins;
-exports.svg = svg;
 exports.watch = watch;
-exports.clean = clean;
 exports.default = build;
