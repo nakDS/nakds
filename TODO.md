@@ -6,6 +6,7 @@
 - Distribute the CSS on mixins to consume with more flexibility. Users don´t have to use my naming convention, that can be a real limitation. The solution right now is not stable because it doesn´t understand the nesting... maybe better to add a flag to mixinable classes to target?
 - Use Vue to created docs?
 - Add responsive video
+- Add gradients to backgrounds
 - Add circleCI to publish npm
 - Add different types of navigation
 - Add modal JS. Need to decide what to use for JS.
