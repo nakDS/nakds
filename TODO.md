@@ -15,6 +15,8 @@
 - Add extra themes option. Add a switcher in the DS
 - Add range bar to fonts. Playground
 - Add shadows
+- Add tooltips
+- Add menu icon vs close icon animation
 
 ### Assets and resources
 - Add photos in assets. Add attribution. Add filters and demos to the images. Resources for landing pages. 
@@ -34,6 +36,9 @@
 - Roudmap. Add it to the readme. Beta on February. March release. 2 months of promotion. Research the tracking. Present it on an event.
 - Give a solution to the nav
 - Doc browser support
+
+### UX
+- Burguer menu on the right. There are more right handed users
 
 ### Brand
 - Create brand.
