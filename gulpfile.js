@@ -12,7 +12,8 @@ const cssnano = require("cssnano");
 const notify = require("gulp-notify");
 const rename = require("gulp-rename");
 const inject = require("gulp-inject-string");
-const replace = require("gulp-string-replace");
+const find = require("gulp-find");
+const replace = require("gulp-replace");
 const insert = require("gulp-insert");
 const prettier = require("gulp-prettier");
 const del = require("del");
@@ -27,8 +28,7 @@ function css() {
         customMedia(),
         nested(),
         postcssPresetEnv({
-          autoprefixer: { grid: true },
-          postcssCustomProperties: { preserve: false }
+          autoprefixer: { grid: true }
         })
       ])
     )
@@ -163,8 +163,7 @@ function watch() {
 function sassMixins() {
   return gulp
     .src("./dest/css/**.css")
-    .pipe(inject.beforeEach(".nk-", "@mixin "))
-    .pipe(replace("@mixin .nk-", "@mixin nk-"))
+    .pipe(replace("❤.nk-", "@mixin nk-"))
     .pipe(prettier())
     .pipe(gulp.dest("./dist/scss/mixins/"))
     .pipe(

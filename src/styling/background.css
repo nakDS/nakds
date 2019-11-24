@@ -1,7 +1,7 @@
 /* TODO */
 /* Create textures? */
 
-@import "../tokens/tokens--color";
+@import "../tokens/tokens--color.css";
 
 .nk-bg--opaque {
   background: white;

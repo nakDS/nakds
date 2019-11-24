@@ -1,8 +1,17 @@
-.nk-badge {
+/* TODO */
+/* The selected for mixing must have imported the mixins and the output without custom properties.
+Control this bit through the gulpfile */
+/* Document this in the contribution doc */
+
+@import "../tokens/tokens--color.css";
+@import "../tokens/tokens--sizing";
+
+❤.nk-badge {
   background: var(--color);
   border-radius: 3px;
-  font-size: .6em;
+  font-size: 0.6em;
   color: var(--color--k-10);
   display: inline;
   padding: var(--xxx-small) var(--xx-small);
+  color: pink;
 }

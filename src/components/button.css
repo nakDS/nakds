@@ -1,4 +1,4 @@
-@import "../tokens/tokens--color";
+@import "../tokens/tokens--color.css";
 
 .nk-button {
   display: inline-flex;
