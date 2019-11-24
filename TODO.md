@@ -7,6 +7,7 @@
 - Use Vue to created docs?
 - Add responsive video
 - Add circleCI to publish npm
+- Add different types of navigation
 - Add modal JS. Need to decide what to use for JS.
 - Add correct badges. npm version and license
 - Find a font to use easily with variable fonts

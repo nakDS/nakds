@@ -1,0 +1,40 @@
+:root {
+  --shape: 200px;
+}
+
+.nk-shape--circle {
+  width: var(--shape);
+  height: var(--shape);
+  background: var(--color--k-9);
+  border-radius: 50%;
+}
+
+.nk-shape--heart {
+  background: var(--color--k-9);
+  width: calc(var(--shape) / 2);
+  height: calc(var(--shape) / 2);
+  margin: calc(var(--shape) / 4) calc(var(--shape) / 4) 0;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: calc(var(--shape) / 2);
+    height: calc(var(--shape) / 2);
+    background: var(--color--k-9);
+    border-radius: 50%;
+  }
+
+  &::before {
+    top: calc(var(--shape) / -4);
+    left: 0;
+  }
+
+  &::after {
+    left: calc(var(--shape) / 4);
+    top: 0;
+  }
+}
