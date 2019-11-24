@@ -2,6 +2,8 @@
 
 ## TODO
 
+- Refactor the gulfile. Better approach to have postcss.config.js on root?
+- Add photos in assets. Add attribution. Add filters and demos to the images. Resources for landing pages. 
 - Add flex system
 - Distribute the CSS on mixins to consume with more flexibility. Users don´t have to use my naming convention, that can be a real limitation. The solution right now is not stable because it doesn´t understand the nesting... maybe better to add a flag to mixinable classes to target?
 - Use Vue to created docs?
