@@ -24,6 +24,7 @@ function css() {
       postcss([
         cssImport(),
         mixins(),
+        customMedia(),
         nested(),
         postcssPresetEnv({
           autoprefixer: { grid: true },
@@ -50,6 +51,7 @@ function utils() {
       postcss([
         cssImport(),
         mixins(),
+        customMedia(),
         nested(),
         postcssPresetEnv({
           autoprefixer: { grid: true },
@@ -74,6 +76,7 @@ function layout() {
       postcss([
         cssImport(),
         mixins(),
+        customMedia(),
         nested(),
         postcssPresetEnv({
           autoprefixer: { grid: true },
@@ -98,6 +101,7 @@ function tokens() {
       postcss([
         cssImport(),
         mixins(),
+        customMedia(),
         nested(),
         postcssPresetEnv({
           autoprefixer: { grid: true },
@@ -120,6 +124,7 @@ function components() {
       postcss([
         cssImport(),
         mixins(),
+        customMedia(),
         nested(),
         postcssPresetEnv({
           autoprefixer: { grid: true },

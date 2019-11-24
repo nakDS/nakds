@@ -1,16 +1,22 @@
-@import "../variables/core-utils";
+/* TODO */
+/* Add breakpoints logic to the system */
 
-/*---------------grid---------------*/
+@import "../tokens/tokens--sizing.css";
+@import "../variables/custom-media.css";
 
-:root{
-  --grid-item-top-space:var(--x-small);
-  --grid-item-bottom-space:var(--x-small);
+:root {
+  --grid-item-top-space: var(--x-small);
+  --grid-item-bottom-space: var(--x-small);
 }
 
+  .nk-grid {
+    display: grid;
+  }
 
-
-.nk-grid {
-  display: grid;
+@media (--medium) {
+  .nk-grid\@md {
+    display: grid;
+  }
 }
 
 .nk-grid-2 {
@@ -36,119 +42,4 @@
 .nk-gap {
   column-gap: var(--spacer-medium);
   row-gap: var(--spacer-medium);
-}
-
-.nk-grid--wrapped {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.nk-grid--has-spaces {
-  display: flex;
-  justify-content: space-between;
-
-  @media (--medium-viewport) {
-
-    .nk-is-stacable--medium {
-
-      .nk-box {
-        margin-right: 0;
-        margin-bottom: var(--large);
-      }
-    }
-  }
-  @media (--small-viewport) {
-
-    .nk-is-stacable--small {
-
-      .nk-box {
-        margin-right: 0;
-        margin-bottom: var(--large);
-      }
-    }
-  }
-
-  &.nk-grid--wrapped {
-
-    >* {
-      margin-bottom: var(--large);
-    }
-  }
-
-  .nk-size--1-of-2 {
-    width: 49%;
-  }
-
-  .nk-box {
-    margin-right: var(--large);
-    margin-bottom: var(--large);
-  }
-
-  .nk-col:last-child {
-
-    .nk-box {
-      margin-right: 0;
-    }
-  }
-}
-
-.nk-grid--has-v-space{
-
-  >*{
-    margin-top: var(--grid-item-top-space);
-    margin-bottom: var(--grid-item-bottom-space);
-  }
-}
-
-.nk-has-col--2{
-
-  >*{
-    width: 50%;
-  }
-}
-
-/*Automatic cols*/
-
-.nk-grid__item{
-  flex: 1 1 auto;
-
-  img{
-    width: 100%;
-  }
-}
-
-.nk-col {
-  flex: 1 1 auto;
-  width: 100%;
-}
-
-/* .nk-box {
-  display: flex;
-  align-items: center;
-  height: 100%;
-
-  &.nk-has-column {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  &.nk-has-column--stretch {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-  }
-} */
-
-.nk-box--small {
-  padding: var(--spacer-small);
-}
-
-.nk-box--medium {
-  padding: var(--spacer-medium);
-}
-
-.nk-box--large {
-  padding: var(--spacer-large);
 }
