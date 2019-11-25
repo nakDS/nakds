@@ -19,10 +19,7 @@
 @import "components/breadcrumb";
 @import "components/loading";
 @import "components/modal";
-@import "components/pill";
 @import "components/icon";
-@import "components/module";
-@import "components/search";
 @import "components/form";
 @import "components/link";
 @import "components/list";
@@ -34,7 +31,6 @@
 @import "components/tooltip";
 @import "components/tab";
 @import "components/theme";
-@import "components/wizard";
 
 @import "layout/layout";
 @import "layout/container";

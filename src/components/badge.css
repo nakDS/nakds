@@ -3,8 +3,8 @@
 Control this bit through the gulpfile */
 /* Document this in the contribution doc */
 
-@import "../tokens/tokens--color.css";
-@import "../tokens/tokens--sizing";
+/* @import "../tokens/tokens--color.css";
+@import "../tokens/tokens--sizing"; */
 
 .nk-badge {
   background: var(--color);

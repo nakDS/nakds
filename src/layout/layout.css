@@ -1,7 +1,7 @@
 /* TODO */
 /* Better approach calc(var(--spacer) * 2) or var(--spacer-medium)? */
 
-@import "../tokens/tokens--sizing.css";
+/* @import "../tokens/tokens--sizing.css"; */
 
 /* Better naming for this */
 

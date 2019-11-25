@@ -1,4 +1,4 @@
-@import "../variables/core-utils";
+/* @import "../variables/core-utils"; */
 
 .nk-navigation-list--vertical {
   padding: var(--medium);
