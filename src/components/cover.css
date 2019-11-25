@@ -3,16 +3,40 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
   background-attachment: fixed;
+  height: 100vh;
+  padding: 0 calc(var(--spacer) * 2);
+  text-align: center;
+
+  @media (--medium) {
+    padding: 0 calc(var(--spacer) * 5);
+  }
+}
+
+.nk-cover--dark-mode {
+  color: white;
+
+  .nk-cover__title {
+    text-shadow: 4px 4px 16px var(--color--k-2);
+  }
+
+  .nk-cover__subtitle {
+    text-shadow: 4px 4px 8px var(--color--k-2);
+  }
 }
 
 .nk-cover__title {
-  font-size: 6em;
-  text-shadow: 4px 4px 16px var(--color--k-2);
+  font-size: 3em;
+  
+  @media (--medium) {
+    font-size: 6em;
+  }
 }
 
 .nk-cover__subtitle {
-  font-size: 3em;
-  text-shadow: 4px 4px 8px var(--color--k-2);
+  font-size: 2em;
+
+  @media (--medium) {
+    font-size: 3em;
+  }
 }

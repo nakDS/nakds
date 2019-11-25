@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>nakDS</title>
+  <title>nakDS. Design System for a beautiful web</title>
   <link rel="stylesheet" href="./css/nakDS.min.css" />
   <link rel="stylesheet" href="./css/nak-docs.css" />
   <link rel="stylesheet" href="./css/default.css" />
@@ -18,7 +18,7 @@
 
 <body>
   <section id="nakds" class="nk-smooth-scroll">
-    <header id="top" class="nk-section nk-height-fullpage nk-text-align--center">
+    <header id="top" class="nk-section nk-cover nk-height-fullpage nk-text-align--center">
       <h1 class="nk-logo">
         <svg class="nk-logo__svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 342 358">
           <path
@@ -26,8 +26,8 @@
         </svg>
       </h1>
       <h2 class="nk-heading-4">
-        Design system for <strong class="nk-text--strong"> beatiful</strong> websites</h2>
-      <button id="nk-theme-change" class="nk-button nk-button--color nk-mtx">Switch theme</button>
+        Design system for a<strong class="nk-text--strong"> beatiful</strong> web</h2>
+      <button id="nk-theme-change" class="nk-button nk-button--color nk-mtx">Switch mode</button>
       <a class="nk-mtx nk-d-block" href="#nk-nav">
         <svg class="nk-icon--large nk-text-align--center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 62.5">
           <path
@@ -44,7 +44,7 @@
           </svg>
         </a>
       </div>
-      <nav id="nk-nav" class="nk-section nk-bg--color nk-pbl">
+      <nav id="nk-nav" class="nk-section nk-bg--color">
         <!-- <div class="nk-toolbar">
           <button id="nk-js-close" class="nk-button nk-button--icon">
             <svg class="nk-icon--small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
@@ -56,7 +56,7 @@
             </svg>
           </button>
         </div> -->
-        <ul class="nk-grid nk-grid-2 nk-grid-5@md nk-gap nk-container nk-list">
+        <ul class="nk-grid nk-grid-2 nk-grid-5@md nk-gap nk-container--content nk-list">
           <li>How to use it
             <ul>
               <li><a href="#instalation">Getting Started</a></li>
@@ -70,6 +70,7 @@
           </li>
           <li>Layout
             <ul>
+              <li><a href="#patterns">Patterns</a></li>
               <li><a href="#container">Container</a></li>
               <li><a href="#flex">Flex</a></li>
               <li><a href="#grid">Grid</a></li>
@@ -134,11 +135,9 @@
 npm i nakds
           </code>
           </pre>
-        <h3 class="nk-heading-3">CDN</h3>
       </article>
-      <article class=" nk-height-fullpage nk-bg--color nk-container">
-        <h1 class="nk-heading-1 nk-position--sticky nk-color--k-1">Tokens</h1>
-        <img src="" alt="Some graph here">
+      <article class="nk-cover nk-bg--color">
+        <h1 class="nk-cover__title nk-position--sticky nk-color--k-1">Tokens</h1>
       </article>
       <article id="color" class="nk-container nk-section nk-height-fullpage">
         <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">Color tokens</h2>
@@ -247,60 +246,47 @@ npm i nakds
           </div>
         </div>
       </article>
-      <article class="nk-height-fullpage nk-container nk-bg--c">
-        <h1 class="nk-heading-1 nk-position--sticky">Typography</h1>
+      <article class="nk-cover nk-bg--y">
+        <h1 class="nk-cover__title nk-position--sticky">Layout</h1>
       </article>
-      <article id="Typography" class="nk-section nk-height-fullpage nk-theme--y">
-        <div class="nk-container--content">
-          <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">Typography</h2>
-          <h3 class="nk-heading-3">.nk-font--light</h3>
-          <p class="nk-font--light">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque animi
-            earum totam similique ex maxime iure, pariatur repudiandae temporibus
-            voluptatem!
-          </p>
-          <h3 class="nk-heading-3">.nk-font--regular</h3>
-          <p class="nk-font--regular">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque animi
-            earum totam similique ex maxime iure, pariatur repudiandae temporibus
-            voluptatem!
-          </p>
-          <h3 class="nk-heading-3">.nk-font--bold</h3>
-          <p class="nk-font--bold">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque animi
-            earum totam similique ex maxime iure, pariatur repudiandae temporibus
-            voluptatem!
-          </p>
+      <article id="patterns" class="nk-cover nk-bg--k-7">
+        <h1 class="nk-cover__title nk-position--sticky">Patterns</h1>
+      </article>
+      <div>
+        <div class="nk-container nk-position--sticky nk-bg--opaque">
+          <h2 class="nk-heading-2 ">2 cols</h2>
         </div>
+        <article class="nk-l-2col">
+          <div class="nk-l-2col__sidebar"></div>
+          <div class="nk-l-2col__main"></div>
+        </article>
+      </div>
+      <div>
+        <div class="nk-container nk-position--sticky nk-bg--opaque">
+          <h2 class="nk-heading-2">3 cols</h2>
+        </div>
+        <article class="nk-l-3col">
+          <div class="nk-l-3col__sidebar"></div>
+          <div class="nk-l-3col__main"></div>
+          <aside class="nk-l-3col__aside"></aside>
+        </article>
+      </div>
+      <div>
+      <div class="nk-container nk-position--sticky nk-bg--opaque">
+        <h2 class="nk-heading-2">Double</h2>
+      </div>
+      <article class="nk-l-double">
+        <div class="nk-l-double__item"></div>
+        <div class="nk-bg--k-9"></div>
       </article>
-      <article id="heading" class="nk-container--content">
-        <h1 class="nk-heading-1">.nk-heading-1</h1>
-        <h2 class="nk-heading-2">.nk-heading-2</h2>
-        <h3 class="nk-heading-3">.nk-heading-3</h3>
-        <h4 class="nk-heading-4">.nk-heading-4</h4>
-        <h5 class="nk-heading-5">.nk-heading-5</h5>
-        <h6 class="nk-heading-6">.nk-heading-6</h6>
-      </article>
-      <article id="fonts" class="nk-section nk-container--content">
-        <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">Variable fonts</h2>
-        <p>Here some types (open source) you can import in your project to use with variable fonts:</p>
-        <h3 class="nk-heading-3">Montserrat</h3>
-        <input type="range" min="1" max="400" step="1">
-        <p class="nk-font--montserrat nk-heading-3">Ilargiak erakusten duen aurpegiaren aurrean
-          eskatzen diet oihukatuz izar galduei</p>
-        <span class="nk-badge">376KB</span>
-        <a href="https://github.com/cosmicmocha/Montserrat">Github</a>
-      </article>
-      <article class="nk-height-fullpage nk-container nk-bg--y">
-        <h1 class="nk-heading-1 nk-position--sticky">Layout</h1>
-      </article>
+      </div>
       <article id="container" class="nk-section">
         <div class="nk-container">
           <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">Containers</h2>
           <h3 class="nk-heading-3">.nk-section</h3>
           <p class="nk-mbl">Vertical padding for sections.</p>
         </div>
-        <div class="nk-section nk-bg--c">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, pariatur
+        <div class="nk-section nk-bg--k-9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, pariatur
           ipsa, sequi animi amet harum incidunt et quos nobis quidem veritatis ut placeat. Repellat ex quod iure
           adipisci. Quaerat earum optio expedita nihil? Vel ipsa pariatur aliquid, ad asperiores voluptate eaque
           necessitatibus hic ratione! Molestias ex iusto incidunt vero facere.</div>
@@ -308,7 +294,7 @@ npm i nakds
           <h3 class="nk-heading-3">.nk-container</h3>
           <p class="nk-mbl">Horizontal padding for fullpage sections.</p>
         </div>
-        <p class="nk-container nk-bg--c">
+        <p class="nk-container nk-bg--k-9">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
           reprehenderit vero iste explicabo? Dolorum dolores a architecto iure
           officia veritatis cupiditate, recusandae inventore! Explicabo
@@ -326,7 +312,7 @@ npm i nakds
             Horizontal padding for generic content.
           </p>
         </div>
-        <p class="nk-container--content nk-bg--c">
+        <p class="nk-container--content nk-bg--k-9">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
           reprehenderit vero iste explicabo? Dolorum dolores a architecto iure
           officia veritatis cupiditate, recusandae inventore! Explicabo
@@ -346,7 +332,7 @@ npm i nakds
           </p>
 
         </div>
-        <p class="nk-container--text nk-bg--c">
+        <p class="nk-container--text nk-bg--k-9">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
           reprehenderit vero iste explicabo? Dolorum dolores a architecto iure
           officia veritatis cupiditate, recusandae inventore! Explicabo officia
@@ -428,21 +414,18 @@ npm i nakds
       <article id="fullpage" class="nk-container nk-height-fullpage nk-bg--image">
         <h2 class="nk-heading-2 ">.nk-height-fullpage</h2>
       </article>
-      <article class=" nk-height-fullpage nk-bg--color nk-container">
-        <h1 class="nk-heading-1 nk-position--sticky nk-color--k-1">Components</h1>
-        <img src="" alt="Some graph here">
+      <article class="nk-cover nk-bg--color">
+        <h1 class="nk-cover__title nk-position--sticky nk-color--k-1">Components</h1>
       </article>
       <article id="avatar" class="nk-container--content">
-        <h2 class="nk-heading-2">.nk-avatar</h2>
+        <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">.nk-avatar</h2>
         <div class="nk-grid@md nk-grid-4">
           <img class="nk-avatar" src="assets/img/nk-avatar.jpg" alt="">
           <img class="nk-avatar nk-filter--greyscale" src="assets/img/nk-avatar.jpg" alt="">
         </div>
       </article>
       <article id="badge" class="nk-section nk-container--content">
-        <h2 class="nk-heading-2">
-          .nk-badge
-        </h2>
+        <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">.nk-badge</h2>
         <div class="nk-badge">badge</div>
         <div class="nk-badge">badge</div>
         <div class="nk-badge">badge</div>
@@ -511,12 +494,21 @@ npm i nakds
         <div class="nk-container">
           <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">Cover</h2>
         </div>
-        <div class="nk-cover nk-bg--images-1">
+        <div class="nk-cover nk-cover--dark-mode nk-bg--images-1">
           <h1 class="nk-cover__title"><span class="nk-font--bold">nak</span><span class="nk-font--light">DS</span></h1>
           <p class="nk-cover__subtitle">Easy and beautiful</p>
           <button class="nk-button nk-button--color nk-mtx">Try now</button>
         </div>
       </article>
+      <article id="heading" class="nk-container--content">
+          <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">Heading</h2>
+          <h1 class="nk-heading-1">.nk-heading-1</h1>
+          <h2 class="nk-heading-2">.nk-heading-2</h2>
+          <h3 class="nk-heading-3">.nk-heading-3</h3>
+          <h4 class="nk-heading-4">.nk-heading-4</h4>
+          <h5 class="nk-heading-5">.nk-heading-5</h5>
+          <h6 class="nk-heading-6">.nk-heading-6</h6>
+        </article>
       <article id="list" class="nk-section nk-container--content">
         <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">List</h2>
         <ul class="nk-list">
@@ -569,12 +561,46 @@ npm i nakds
         <button class="nk-button nk-button--color">Button</button>
         <button class="nk-button nk-button--disabled">Button</button>
       </article>
-      <article class="nk-height-fullpage nk-bg--y nk-container">
-        <h1 class="nk-heading-1 nk-position--sticky">Styles</h1>
-        <img src="" alt="Some graph here">
+      <article class="nk-cover nk-bg--y">
+        <h1 class="nk-cover__title nk-position--sticky">Styles</h1>
       </article>
+      <article id="typography" class="nk-section nk-theme--y">
+        <div class="nk-container--content">
+          <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">Typography</h2>
+          <h3 class="nk-heading-3">.nk-font--light</h3>
+          <p class="nk-font--light">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque animi
+            earum totam similique ex maxime iure, pariatur repudiandae temporibus
+            voluptatem!
+          </p>
+          <h3 class="nk-heading-3">.nk-font--regular</h3>
+          <p class="nk-font--regular">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque animi
+            earum totam similique ex maxime iure, pariatur repudiandae temporibus
+            voluptatem!
+          </p>
+          <h3 class="nk-heading-3">.nk-font--bold</h3>
+          <p class="nk-font--bold">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque animi
+            earum totam similique ex maxime iure, pariatur repudiandae temporibus
+            voluptatem!
+          </p>
+        </div>
+      </article>
+      <article id="fonts" class="nk-section nk-container--content">
+          <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">Variable fonts</h2>
+          <p>Here some types (open source) you can import in your project to use with variable fonts:</p>
+          <h3 class="nk-heading-3">Montserrat</h3>
+          <input type="range" min="1" max="400" step="1">
+          <p class="nk-font--montserrat nk-heading-3">Ilargiak erakusten duen aurpegiaren aurrean
+            eskatzen diet oihukatuz izar galduei</p>
+          <span class="nk-badge">376KB</span>
+          <a href="https://github.com/cosmicmocha/Montserrat">Github</a>
+        </article>
       <article id="background" class="nk-height-fullpage">
-        <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque nk-container">Background</h2>
+        <div class="nk-container">
+          <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">Background</h2>
+        </div>
         <div class="nk-grid@md nk-grid-6">
           <div class="nk-pax nk-bg--k-1">.nk-bg--k-1</div>
           <div class="nk-pax nk-bg--k-2">.nk-bg--k-2</div>
@@ -606,7 +632,6 @@ npm i nakds
       </article>
       <article id="motion" class="nk-height-fullpage nk-container">
         <h1 class="nk-heading-1 nk-position--sticky">Motion</h1>
-        <img src="" alt="Some graph here">
       </article>
       <article id="shapes" class="nk-height-fullpage nk-section nk-container">
         <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">Shapes</h2>
@@ -621,9 +646,8 @@ npm i nakds
           </div>
         </div>
       </article>
-      <article class=" nk-height-fullpage nk-bg--c nk-container">
-        <h1 class="nk-heading-1 nk-position--sticky">Assets</h1>
-        <img src="" alt="Some graph here">
+      <article class="nk-cover nk-bg--c">
+        <h1 class="nk-cover__title nk-position--sticky">Assets</h1>
       </article>
       <article id="icons" class="nk-container nk-section">
         <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">.nk-icon</h2>
@@ -680,14 +704,12 @@ npm i nakds
           <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">Images</h2>
         </div>
         <div class="nk-cover nk-bg--images-1">
-          <h1 class="nk-cover__title">nakDS</h1>
-          <p>Easy and beautiful</p>
           <!-- <img src="assets/img/rikki-chan-9FfJW5Tu_qk-unsplash.jpg" alt=""> -->
         </div>
       </article>
     </main>
-    <article class="nk-height-fullpage nk-container nk-bg--c">
-      <h1 class="nk-heading-1 nk-position--sticky">Attributions</h1>
+    <article class="nk-cover nk-bg--c">
+      <h1 class="nk-cover__title nk-position--sticky">Attributions</h1>
     </article>
     <article class=" nk-height-fullpage nk-container--content">
       <h2 class="nk-heading-2 nk-bg--opaque">Attributions</h2>

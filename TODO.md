@@ -20,6 +20,7 @@
 - Add object fit utilities?
 - Add blending effects
 - Add background fix utilities for paralax effects
+- Add layout modes. 2 cols, 3 cols, patterns
 
 ### Assets and resources
 - Add photos in assets. Add attribution. Add filters and demos to the images. Resources for landing pages. 
@@ -29,6 +30,7 @@
 - Add a handwritten font
 
 ### Docs
+- Add principles
 - Use Vue to created docs?
 - Add modal JS. Need to decide what to use for JS.
 - Add copy option to hex color values: https://clipboardjs.com/
@@ -46,6 +48,7 @@
 ### Brand
 - Create brand.
 - Brand values, pursopes, objetives
+- Principles: simplicity, consistency, beauty, flexible, scalable
 
 ### Compilation, release, tools
 - Refactor the gulfile. Better approach to have postcss.config.js on root?
@@ -63,12 +66,16 @@
 
 ### Technical decisions
 - Decide to repeat the classes or use only the modifier. Pros and cons
+- Tool to build the docs
+- How to export scss mixins
+- Is it a good desition not to use sass?
+- Decide browser support level. 
+- How to work with "add only what you need CSS"
 
 ### Other
 - Add semantic url
 - Improve SEO
 - Add accesibility 
-
 
 ## IDEAS
 - Reproduce all the circle to try to understand the concepts. Find challenges, find weak points.
