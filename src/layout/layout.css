@@ -3,55 +3,54 @@
 
 @import "../tokens/tokens--sizing.css";
 
-:root {
-  --container--content: 1100px;
-  --container--text: 680px;
+/* Better naming for this */
+
+.nk-l-2col {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  height: 100vh;
 }
 
-.nk-container {
-  width: 100%;
-  padding: 0 calc(var(--spacer) * 2);
-  margin: auto;
+/* Colors to docs */
 
-  @media (--medium) {
-    padding: 0 calc(var(--spacer) * 5);
-  }
+.nk-l-2col__sidebar{
+  background: var(--color--k-6);
+}
+.nk-l-2col__main{
+  background: var(--color--k-8);
 }
 
-.nk-container--content {
-  width: 100%;
-  padding: 0 calc(var(--spacer) * 2);
-  margin: auto;
-  max-width: var(--container--content);
-
-  @media (--medium) {
-    padding: 0 calc(var(--spacer) * 5);
-  }
+.nk-l-3col {
+  display: grid;
+  grid-template-columns: 300px 1fr 300px;
+  height: 100vh;
 }
 
-.nk-container--text {
-  width: 100%;
-  padding: 0 calc(var(--spacer) * 2);
-  margin: auto;
-  max-width: var(--container--text);
-
-  @media (--medium) {
-    padding: 0 calc(var(--spacer) * 5);
-  }
+.nk-l-3col__sidebar{
+  background: var(--color--k-6);
 }
+
+.nk-l-3col__main{
+  background: var(--color--k-8);
+}
+
+.nk-l-3col__aside{
+  background: var(--color--k-6);
+}
+
+.nk-l-double {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.nk-l-double__item{
+  background: var(--color--k-6);
+}
+
 
 /* TODO: Is this approach good? It is a fullscreen option for an element inside the nk-container. Is it antipattern? */
 .nk-fullscreen {
   width: calc(100% + var(--spacer) * 5 + var(--spacer) * 5);
   margin-left: calc(-1 * var(--spacer) * 5);
-}
-
-.nk-section {
-  padding-top: var(--spacer-medium);
-  padding-bottom: var(--spacer-medium);
-
-  @media (--medium) {
-    padding-top: var(--spacer-xlarge);
-    padding-bottom: var(--spacer-xlarge);
-  }
 }

@@ -37,6 +37,7 @@
 @import "components/wizard";
 
 @import "layout/layout";
+@import "layout/container";
 @import "layout/grid";
 @import "layout/flex";
 

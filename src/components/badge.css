@@ -6,7 +6,7 @@ Control this bit through the gulpfile */
 @import "../tokens/tokens--color.css";
 @import "../tokens/tokens--sizing";
 
-❤.nk-badge {
+.nk-badge {
   background: var(--color);
   border-radius: 3px;
   font-size: 0.6em;
