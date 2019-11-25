@@ -37,6 +37,7 @@
 @import "layout/grid";
 @import "layout/flex";
 
+@import "styling/blend";
 @import "styling/filters";
 @import "styling/shapes";
 @import "styling/background";
