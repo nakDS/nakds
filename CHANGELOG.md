@@ -1,3 +1,6 @@
+## [1.13.1] 
+- fix: fix layout on mobile
+
 ## [1.12.0] 
 - fix: update badge version
 - feat: add styling section
