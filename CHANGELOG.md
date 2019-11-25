@@ -1,3 +1,9 @@
+## [1.14.0] 
+- feat: add blend modes
+
+## [1.13.2] 
+- fix: remove useless code
+
 ## [1.13.1] 
 - fix: fix layout on mobile
 
