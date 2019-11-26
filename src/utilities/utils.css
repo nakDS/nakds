@@ -37,6 +37,10 @@
   height: 100vh;
 }
 
+.nk-overflow--hidden {
+  overflow: hidden; 
+}
+
 .nk-height-fullpage {
   min-height: 100vh;
 }

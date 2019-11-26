@@ -3,6 +3,7 @@
 .nk-toolbar {
   display: flex;
   padding: 0 calc(var(--spacer) * 2); 
+  overflow: hidden;
 
   @media (--medium) {
     padding: 0 calc(var(--spacer) * 5);

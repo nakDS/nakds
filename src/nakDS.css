@@ -57,4 +57,5 @@
   z-index: 1;
   transform: rotate(45deg);
   padding: 0 var(--spacer-large);
+  pointer-events: none;
 }

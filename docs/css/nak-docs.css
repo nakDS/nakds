@@ -33,3 +33,16 @@
     margin-right: 50px;
   }
 }
+
+.nk-doc--code {
+  height: 0;
+  transition: .2s;
+  opacity: 0;
+  transform: translateY(-200px);
+}
+
+.nk-doc--code.show {
+  height: inherit;
+  transform: translateY(0);
+  opacity: 1;
+}

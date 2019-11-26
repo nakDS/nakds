@@ -36,14 +36,14 @@
       </a>
     </header>
     <main>
-      <div class="nk-toolbar nk-doc--gototop">
+      <!-- <div class="nk-toolbar nk-doc--gototop">
         <a href="#top" class="nk-button nk-button--icon nk-toolbar__item--right">
           <svg class="nk-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" x="0px" y="0px">
             <path
               d="M5.1 38.9c4.4-3.8 8.4-7.8 12.2-12.2 3.4-4.1 6.3-9.8 10.8-12.8l-2.7.3c7.6 5.7 14.3 12.5 20 20.1.8 1.1 4.6-.2 3.6-1.6-6-7.8-12.9-14.6-20.7-20.5-.7-.5-2.1-.1-2.7.3-4.1 2.7-6.5 7.1-9.5 10.9C11.9 28.7 7.1 33.6 2 38c-1.8 1.6 2 1.8 3.1.9z" />
           </svg>
         </a>
-      </div>
+      </div> -->
       <nav id="nk-nav" class="nk-section nk-bg--color">
         <!-- <div class="nk-toolbar">
           <button id="nk-js-close" class="nk-button nk-button--icon">
@@ -418,9 +418,19 @@ npm i nakds
       <article class="nk-cover nk-bg--color">
         <h1 class="nk-cover__title nk-position--sticky nk-color--k-1">Components</h1>
       </article>
-      <article id="avatar" class="nk-container--content">
-        <h2 class="nk-heading-2 nk-position--sticky nk-bg--opaque">.nk-avatar</h2>
-        <div class="nk-grid@md nk-grid-4">
+      <article id="avatar" class="">
+        <div class="nk-toolbar nk-container--content">
+          <h2 class="nk-heading-2">.nk-avatar</h2>
+          <button class="nk-js-button--avatar nk-button nk-toolbar__item--right">Code</button>
+        </div>
+        <div class="nk-overflow--hidden">
+        <pre class="nk-js--avatar nk-doc--code"><code>
+          &lt;img class="nk-avatar" src="..." alt=""&gt;
+  
+        </code>
+        </pre>
+      </div>
+        <div class="nk-grid@md nk-grid-2 nk-container--content">
           <img class="nk-avatar" src="assets/img/nk-avatar.jpg" alt="">
           <img class="nk-avatar nk-filter--greyscale" src="assets/img/nk-avatar.jpg" alt="">
         </div>
@@ -435,9 +445,9 @@ npm i nakds
       <article class="nk-section nk-height-fullpage" id="box">
         <div class="nk-toolbar nk-position--sticky nk-bg--opaque">
           <h3 class="nk-heading-2 ">Box</h3>
-          <button id="nk-js-code-button-box" class="nk-button nk-toolbar__item--right">code</button>
+          <button class="nk-js-button--box nk-button nk-toolbar__item--right">code</button>
         </div>
-        <div id="nk-js-code--box" class="">
+        <div class="nk-js--box nk-doc--code">
           <pre>
             <code class="html">
   &lt;div class="nk-box"&gt;
@@ -721,8 +731,8 @@ npm i nakds
               <title>unsplash-logo</title>
               <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
             </svg></span>
-            <span style="display:inline-block;padding:2px 3px">Hải Bùi</span>
-          </a>
+          <span style="display:inline-block;padding:2px 3px">Hải Bùi</span>
+        </a>
       </div>
       </article>
       <article id="shapes" class="nk-height-fullpage nk-section nk-container">
