@@ -1,3 +1,6 @@
+## [1.14.1] 
+- fix: remove large images
+
 ## [1.14.0] 
 - feat: add blend modes
 
