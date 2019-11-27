@@ -1,3 +1,6 @@
+## [1.15.0] 
+- feat: Add new header cover
+
 ## [1.14.5] 
 - fix: update readme
 

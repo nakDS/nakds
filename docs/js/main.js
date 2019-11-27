@@ -1,17 +1,13 @@
 // Show code
 
-const buttonAvatar = document.querySelector('.nk-js-button--avatar');
-const codeAvatar = document.querySelector('.nk-js--avatar');
-const handleToggleAvatar = () => codeAvatar.classList.toggle('show');
-buttonAvatar.onclick = () => handleToggleAvatar();
+const buttonAvatar = document.querySelector(".nk-js-button--avatar");
+const codeAvatar = document.querySelector(".nk-js--avatar");
+buttonAvatar.onclick = () => codeAvatar.classList.toggle("show");
 
-const buttonBox = document.querySelector('.nk-js-button--box');
-const codeBox = document.querySelector('.nk-js--box');
-const handleToggleBox = () => codeBox.classList.toggle('show');
-buttonBox.onclick = () => handleToggleBox();
+const buttonBox = document.querySelector(".nk-js-button--box");
+const codeBox = document.querySelector(".nk-js--box");
+buttonBox.onclick = () => codeBox.classList.toggle("show");
 
-const buttonBadge = document.querySelector('.nk-js-button--badge');
-const codeBadge = document.querySelector('.nk-js--badge');
-const handleToggleBadge = () => codeBadge.classList.toggle('show');
-buttonBadge.onclick = () => handleToggleBadge();
-
+const buttonDarkMode = document.querySelector(".nk-js-button--dark-mode");
+const darkMode = document.getElementById("nakds");
+buttonDarkMode.onclick = () => darkMode.classList.toggle("nk-theme--dark");
