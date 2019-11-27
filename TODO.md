@@ -58,6 +58,7 @@
 - Add stylelint on commit
 
 ### Distribution
+- Add the fonts to the CDN
 - Distribute the CSS on mixins to consume with more flexibility. Users don´t have to use my naming convention, that can be a real limitation. The solution right now is not stable because it doesn´t understand the nesting... maybe better to add a flag to mixinable classes to target?
 - Distribute the fonts in independent files to not to import all off them?
 - Add dist to CDN
@@ -71,6 +72,11 @@
 - Is it a good desition not to use sass?
 - Decide browser support level. 
 - How to work with "add only what you need CSS"
+
+### Testing
+- Try the CDN version in a third party project
+- Try the dist CSS through a third party project
+- Add syntax verifier. Thought that prettifier was doing this but catched an error by a third party.
 
 ### Other
 - Add semantic url
