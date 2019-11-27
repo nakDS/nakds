@@ -1,20 +1,18 @@
-# nakDS
-
 [![npm](https://img.shields.io/npm/v/nakds?style=for-the-badge)](https://www.npmjs.com/package/nakds)
 ![Total output CSS file size in bytes](https://img.shields.io/github/size/nabaroa/nakDS/dist/css/nakDS.css?style=for-the-badge)
 ![GitHub](https://img.shields.io/static/v1?label=LICENSE&message=CC0_1.0_Universal&style=for-the-badge)
-
 ![nakDS cover](https://raw.githubusercontent.com/nabaroa/nakds-pages/master/docs/assets/cover.png)
 
+<p align="center"><img src="https://raw.githubusercontent.com/nabaroa/nak-scaffold/master/docs/assets/img/nakDS.png" alt=""></p>
 
-Is it possible to create a custom Design System from scratch, maintain it alive, involve the team on it's development and live happy with it?
+# nakDS
 
-I'm trying it.
-
-Let's see if it works.
-
-nakDS is work in progress. Use it carefully.
+## Design system for a beatiful web
 
 
-##Credits:
-[Icon attribution](https://thenounproject.com/search/?q=connect&i=139022)
+nakDS is work in progress. Use it carefully. Beta release on Feb 2020.
+
+
+
+## License
+[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
