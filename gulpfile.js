@@ -167,24 +167,24 @@ function watch() {
   gulp.watch("./src/**/*.css", css);
 }
 
-function sassMixins() {
-  return gulp
-    .src("./dest/css/**.css")
-    .pipe(replace("❤.nk-", "@mixin nk-"))
-    .pipe(prettier())
-    .pipe(gulp.dest("./dist/scss/mixins/"))
-    .pipe(
-      rename(function(path) {
-        path.extname = ".scss";
-      })
-    )
-    .pipe(gulp.dest("./dist/scss/mixins/"))
-    .pipe(
-      notify({
-        message: "Your Sass mixin is ready ♡ "
-      })
-    );
-}
+// function sassMixins() {
+//   return gulp
+//     .src("./dest/css/**.css")
+//     .pipe(replace("❤.nk-", "@mixin nk-"))
+//     .pipe(prettier())
+//     .pipe(gulp.dest("./dist/scss/mixins/"))
+//     .pipe(
+//       rename(function(path) {
+//         path.extname = ".scss";
+//       })
+//     )
+//     .pipe(gulp.dest("./dist/scss/mixins/"))
+//     .pipe(
+//       notify({
+//         message: "Your Sass mixin is ready ♡ "
+//       })
+//     );
+// }
 
 function clean() {
   return del(["./dist/scss/mixins/*.css"]);
@@ -198,7 +198,7 @@ const build = gulp.series(
   components,
   fonts,
   img,
-  sassMixins,
+  // sassMixins,
   clean,
   svg
 );

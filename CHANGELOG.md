@@ -1,3 +1,9 @@
+## [1.14.3] 
+- fix: remove scss mixins from dist
+
+## [1.14.2] 
+- fix: add dist
+
 ## [1.14.1] 
 - fix: remove large images
 
