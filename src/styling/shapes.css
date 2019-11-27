@@ -29,7 +29,7 @@
   }
 
   &::before {
-    top: calc(var(--shape) / -4);
+    top: calc(-1 * (var(--shape) / 4)); 
     left: 0;
   }
 

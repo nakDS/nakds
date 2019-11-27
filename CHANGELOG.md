@@ -1,3 +1,6 @@
+## [1.14.4] 
+- fix: fix syntax on calc. Failing in third parties.
+
 ## [1.14.3] 
 - fix: remove scss mixins from dist
 
