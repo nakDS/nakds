@@ -1,20 +1,20 @@
-## [1.15.0] 
+## [1.16.1] 
+- fix: split the docs html into convenient partials
+
+## [1.16.0] 
 - feat: Add new header cover
 
-## [1.14.5] 
+## [1.15.1] 
 - fix: update readme
 
-## [1.14.4] 
-- fix: fix syntax on calc. Failing in third parties.
-
-## [1.14.3] 
-- fix: remove scss mixins from dist
+## [1.15.0] 
+- feat: add CDN information
 
 ## [1.14.2] 
-- fix: add dist
+fix: remove large images
 
 ## [1.14.1] 
-- fix: remove large images
+- fix: button to show code
 
 ## [1.14.0] 
 - feat: add blend modes
