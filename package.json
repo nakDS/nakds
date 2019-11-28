@@ -1,6 +1,6 @@
 {
   "name": "nakds",
-  "version": "1.15.0",
+  "version": "1.15.1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -37,6 +37,7 @@
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-cssnano": "^2.1.1",
+    "gulp-file-include": "^2.1.1",
     "gulp-find": "0.0.10",
     "gulp-inject-string": "^1.1.2",
     "gulp-insert": "0.5.0",

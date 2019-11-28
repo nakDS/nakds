@@ -17,6 +17,18 @@ const replace = require("gulp-replace");
 const insert = require("gulp-insert");
 const prettier = require("gulp-prettier");
 const del = require("del");
+const fileinclude = require('gulp-file-include');
+
+function docs() {
+  return gulp
+  .src("./docs/src/index.html")
+  .pipe(
+    fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+  .pipe(gulp.dest('./docs/'));
+};
 
 function css() {
   return gulp
@@ -191,6 +203,7 @@ function clean() {
 }
 
 const build = gulp.series(
+  docs,
   css,
   utils,
   tokens,
@@ -203,6 +216,7 @@ const build = gulp.series(
   svg
 );
 
+exports.docs = docs;
 exports.css = css;
 exports.watch = watch;
 exports.default = build;

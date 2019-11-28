@@ -1,3 +1,6 @@
+## [1.15.1] 
+- fix: split the docs html into convenient partials
+
 ## [1.15.0] 
 - feat: Add new header cover
 
