@@ -1,3 +1,6 @@
+## [1.16.2] 
+- fix: improve avatar and badge
+
 ## [1.16.1] 
 - fix: split the docs html into convenient partials
 
