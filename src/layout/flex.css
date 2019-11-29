@@ -19,3 +19,7 @@
 .nk-justify-content--end {
   justify-content: end;
 }
+
+.nk-align-items--center {
+  align-items: center;
+}

@@ -435,13 +435,21 @@ ul, ol {
   list-style-position: inside;
 }
 
-/* TODO */
-
-/* Modifier, version 2 */
-
 .nk-avatar {
   width: 200px;
   height: 200px;
+  border-radius: 100%;
+}
+
+.nk-avatar--small {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.nk-avatar--large {
+  width: 300px;
+  height: 300px;
   border-radius: 100%;
 }
 
@@ -466,14 +474,13 @@ Control this bit through the gulpfile */
 .nk-badge {
   background: #c44f7a;
   background: var(--color);
-  border-radius: 3px;
-  font-size: 0.6em;
+  /* border-radius: 3px; */
+  font-size: 0.8em;
   color: #fff;
   color: var(--color--k-10);
   display: inline;
-  padding: .125rem .25rem;
-  padding: var(--xxx-small) var(--xx-small);
-  color: pink;
+  padding: .25rem .5rem;
+  padding: var(--xx-small) var(--x-small);
 }
 
 /* @import "../tokens/tokens--color.css"; */
@@ -1419,6 +1426,11 @@ Control this bit through the gulpfile */
 .nk-justify-content--end {
   -webkit-box-pack: end;
           justify-content: end;
+}
+
+.nk-align-items--center {
+  -webkit-box-align: center;
+          align-items: center;
 }
 
 .nk-blend--multiply {

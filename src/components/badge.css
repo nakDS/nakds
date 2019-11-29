@@ -8,10 +8,9 @@ Control this bit through the gulpfile */
 
 .nk-badge {
   background: var(--color);
-  border-radius: 3px;
-  font-size: 0.6em;
+  /* border-radius: 3px; */
+  font-size: 0.8em;
   color: var(--color--k-10);
   display: inline;
-  padding: var(--xxx-small) var(--xx-small);
-  color: pink;
+  padding: var(--xx-small) var(--x-small);
 }
