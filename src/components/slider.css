@@ -1,2 +1,25 @@
-/*---------------slider---------------*/
-/* @import "../variables/core-utils"; */
+.nk-slider {
+  display: grid;
+  grid-template-columns: repeat(100, 100vw);
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+}
+
+.nk-slide {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+}
+
+.nk-slider__next {
+  position: absolute;
+  right: 40px;
+  top: 50vh;
+}
+
+.nk-slider__back {
+  position: absolute;
+  left: 40px;
+  top: 50vh;
+}
