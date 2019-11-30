@@ -1,3 +1,6 @@
+## [1.18.1] 
+- fix: flex naming and media queries
+
 ## [1.18.0] 
 - feat: add timeline component
 
