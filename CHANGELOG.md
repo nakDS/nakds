@@ -1,3 +1,6 @@
+## [1.17.0] 
+- feat: add slider
+
 ## [1.16.2] 
 - fix: improve avatar and badge
 
