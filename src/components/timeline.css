@@ -1,0 +1,48 @@
+.nk-timeline {
+  position: relative;
+  padding-left: var(--xx-large);
+  padding-right: var(--xx-large);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: var(--large);
+    width: 1px;
+    height: 100%;
+    border-left: 1px dashed var(--color--k-4);
+    /* background: var(--color--k-4); */
+  }
+}
+
+.nk-timeline__item {
+  position: relative;
+  margin-bottom: var(--xxx-large);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: calc(-1 * var(--xxx-large) - 4px);
+    width: 16px;
+    height: 16px;
+    background: var(--color--k-4);
+    border-radius: 50%;
+  }
+}
+
+.nk-timeline__date {
+  font-size: var(--font-size--medium);
+}
+
+.nk-timeline__title {
+  font-size: var(--font-size--x-large);
+}
+
+.nk-timeline__description {
+  /* font-size: var(--font-size--medium); */
+}
+
+.nk-timeline__assets {
+  margin-top: var(--medium);
+}

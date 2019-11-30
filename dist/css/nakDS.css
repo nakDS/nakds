@@ -1099,6 +1099,65 @@ Control this bit through the gulpfile */
       background: var(--color-colspan-bg);
     }
 
+.nk-timeline {
+  position: relative;
+  padding-left: 1.75rem;
+  padding-left: var(--xx-large);
+  padding-right: 1.75rem;
+  padding-right: var(--xx-large);
+}
+
+.nk-timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 1.25rem;
+    left: var(--large);
+    width: 1px;
+    height: 100%;
+    border-left: 1px dashed #6f6f6f;
+    border-left: 1px dashed var(--color--k-4);
+    /* background: var(--color--k-4); */
+  }
+
+.nk-timeline__item {
+  position: relative;
+  margin-bottom: 2rem;
+  margin-bottom: var(--xxx-large);
+}
+
+.nk-timeline__item::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: calc(-1 * 2rem - 4px);
+    left: calc(-1 * var(--xxx-large) - 4px);
+    width: 16px;
+    height: 16px;
+    background: #6f6f6f;
+    background: var(--color--k-4);
+    border-radius: 50%;
+  }
+
+.nk-timeline__date {
+  font-size: 1rem;
+  font-size: var(--font-size--medium);
+}
+
+.nk-timeline__title {
+  font-size: 1.5rem;
+  font-size: var(--font-size--x-large);
+}
+
+.nk-timeline__description {
+  /* font-size: var(--font-size--medium); */
+}
+
+.nk-timeline__assets {
+  margin-top: 1rem;
+  margin-top: var(--medium);
+}
+
 /* @import "../variables/core-utils"; */
 
 .nk-tooltip {
