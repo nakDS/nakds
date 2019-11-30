@@ -2418,15 +2418,15 @@ ul.nk-mrl li {
 
 .nk-notify {
   position: fixed;
-  top: 38px;
+  bottom: 38px;
   right: -50px;
   background: #c44f7a;
   background: var(--color);
   color: white;
   font-size: .8em;
   z-index: 1;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   padding: 0 2.5rem;
   padding: 0 var(--spacer-large);
   pointer-events: none;
