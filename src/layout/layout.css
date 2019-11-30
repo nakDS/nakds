@@ -5,7 +5,7 @@
 
 /* Better naming for this */
 
-.nk-l-2col {
+.nk-layout--2col {
   height: 100vh;
 
   @media (--medium) {
@@ -14,43 +14,38 @@
   }
 }
 
-/* Colors to docs */
-
-.nk-l-2col__sidebar {
+.nk-layout--2col__sidebar {
   background: var(--color--k-6);
 }
-.nk-l-2col__main {
+.nk-layout--2col__main {
   background: var(--color--k-8);
 }
 
-.nk-l-3col {
+.nk-layout--3col {
   height: 100vh;
+
   @media (--medium) {
     display: grid;
     grid-template-columns: 300px 1fr 300px;
   }
 }
 
-.nk-l-3col__sidebar {
-  background: var(--color--k-6);
+.nk-layout--3col__sidebar {
 }
 
-.nk-l-3col__main {
-  background: var(--color--k-8);
+.nk-layout--3col__main {
 }
 
-.nk-l-3col__aside {
-  background: var(--color--k-6);
+.nk-layout--3col__aside {
 }
 
-.nk-l-double {
+.nk-layout--double {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
 }
 
-.nk-l-double__item {
-  background: var(--color--k-6);
+.nk-layout--double__item {
 }
 
 /* TODO: Is this approach good? It is a fullscreen option for an element inside the nk-container. Is it antipattern? */

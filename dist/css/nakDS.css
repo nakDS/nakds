@@ -1197,13 +1197,13 @@ Control this bit through the gulpfile */
 
 /* Better naming for this */
 
-.nk-l-2col {
+.nk-layout--2col {
   height: 100vh;
 }
 
 @media (min-width: 800px) {
 
-.nk-l-2col {
+.nk-layout--2col {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 300px 1fr;
@@ -1211,25 +1211,23 @@ Control this bit through the gulpfile */
 }
   }
 
-/* Colors to docs */
-
-.nk-l-2col__sidebar {
+.nk-layout--2col__sidebar {
   background: #d6d6d6;
   background: var(--color--k-6);
 }
 
-.nk-l-2col__main {
+.nk-layout--2col__main {
   background: #eee;
   background: var(--color--k-8);
 }
 
-.nk-l-3col {
+.nk-layout--3col {
   height: 100vh;
 }
 
 @media (min-width: 800px) {
 
-.nk-l-3col {
+.nk-layout--3col {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 300px 1fr 300px;
@@ -1237,22 +1235,16 @@ Control this bit through the gulpfile */
 }
   }
 
-.nk-l-3col__sidebar {
-  background: #d6d6d6;
-  background: var(--color--k-6);
+.nk-layout--3col__sidebar {
 }
 
-.nk-l-3col__main {
-  background: #eee;
-  background: var(--color--k-8);
+.nk-layout--3col__main {
 }
 
-.nk-l-3col__aside {
-  background: #d6d6d6;
-  background: var(--color--k-6);
+.nk-layout--3col__aside {
 }
 
-.nk-l-double {
+.nk-layout--double {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -1260,9 +1252,7 @@ Control this bit through the gulpfile */
   height: 100vh;
 }
 
-.nk-l-double__item {
-  background: #d6d6d6;
-  background: var(--color--k-6);
+.nk-layout--double__item {
 }
 
 /* TODO: Is this approach good? It is a fullscreen option for an element inside the nk-container. Is it antipattern? */
