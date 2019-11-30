@@ -1,3 +1,9 @@
+## [1.17.2] 
+- fix: change heading naming
+
+## [1.17.1] 
+- fix: change postition to beta notification
+
 ## [1.17.0] 
 - feat: add slider
 
