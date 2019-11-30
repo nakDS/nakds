@@ -180,7 +180,7 @@
       rgba(235, 235, 235, 1) 44%,
       rgba(235, 235, 235, 0) 100%
     ),
-    url(http://localhost-axabienestar:8888/skin/frontend/rwd/default/images/specialty/odontologia.jpg);
+    url();
   background-repeat: no-repeat;
   background-position: right top;
   background-size: cover;
