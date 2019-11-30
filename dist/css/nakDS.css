@@ -1476,13 +1476,27 @@ Control this bit through the gulpfile */
   row-gap: var(--spacer-medium);
 }
 
-.nk-d-flex {
+.nk-flex {
   display: -webkit-box;
   display: flex;
 }
 
-@media --small {
-  .nk-d-flex--sm {
+@media (min-width: 500px) {
+  .nk-flex\@sm {
+    display: -webkit-box;
+    display: flex; 
+  } 
+}
+
+@media (min-width: 800px) {
+  .nk-flex\@md {
+    display: -webkit-box;
+    display: flex;
+  }
+}
+
+@media (min-width: 1170px) {
+  .nk-flex\@lg {
     display: -webkit-box;
     display: flex;
   }
