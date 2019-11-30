@@ -1,3 +1,6 @@
+## [1.18.0] 
+- feat: add timeline component
+
 ## [1.17.2] 
 - fix: change heading naming
 
