@@ -1,4 +1,4 @@
-.nk-heading-1 {
+.nk-heading--1 {
   font-size: 2em;
   line-height: 2em;
 
@@ -8,7 +8,7 @@
   }
 }
 
-.nk-heading-2 {
+.nk-heading--2 {
   font-size: 1.5em;
   font-size: 1.5em;
 
@@ -18,7 +18,7 @@
   }
 }
 
-.nk-heading-3 {
+.nk-heading--3 {
   font-size: 1.2em;
   line-height: 1.2em;
 
@@ -28,7 +28,7 @@
   }
 }
 
-.nk-heading-4 {
+.nk-heading--4 {
   font-size: 1.1em;
   line-height: 1.1em;
 
@@ -38,7 +38,7 @@
   }
 }
 
-.nk-heading-5 {
+.nk-heading--5 {
   font-size: 1em;
   line-height: 1em;
 
@@ -48,7 +48,7 @@
   }
 }
 
-.nk-heading-6 {
+.nk-heading--6 {
   font-size: 1em;
   line-height: 1em;
 
