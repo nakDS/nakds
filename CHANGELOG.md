@@ -1,3 +1,6 @@
+## [1.19.0] 
+- feat: add gallery component
+
 ## [1.18.1] 
 - fix: flex naming and media queries
 
