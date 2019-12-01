@@ -1,3 +1,6 @@
+## [1.19.1] 
+- fix: add .npmignore
+
 ## [1.19.0] 
 - feat: add gallery component
 
