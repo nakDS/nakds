@@ -218,5 +218,6 @@ const build = gulp.series(
 
 exports.docs = docs;
 exports.css = css;
+exports.img = img;
 exports.watch = watch;
 exports.default = build;

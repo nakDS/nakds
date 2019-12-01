@@ -17,6 +17,7 @@
 @import "components/box";
 @import "components/nav";
 @import "components/breadcrumb";
+@import "components/gallery"; 
 @import "components/loading";
 @import "components/modal";
 @import "components/icon";
@@ -32,6 +33,7 @@
 @import "components/tooltip";
 @import "components/tab";
 @import "components/theme";
+
 
 @import "layout/layout";
 @import "layout/container";

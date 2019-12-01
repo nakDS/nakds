@@ -102,6 +102,19 @@ video {
   --color--complementary: #5ca9ad;
 }
 
+.nk-theme--dark {
+  --color--k-10: #000;
+  --color--k-9: #222;
+  --color--k-8: #333;
+  --color--k-7: #6f6f6f;
+  --color--k-6: #b0b0b0;
+  --color--k-5: #d6d6d6;
+  --color--k-4: #e5e5e5;
+  --color--k-3: #eee;
+  --color--k-2: #f5f5f5;
+  --color--k-1: #fff;
+}
+
 /* TODO */
 
 /* Do I need this? */
@@ -812,6 +825,91 @@ Control this bit through the gulpfile */
 
 /* @import "../variables/core-utils"; */
 
+.nk-gallery {
+  padding: .75rem;
+  padding: var(--small);
+}
+
+@media (min-width: 500px) {
+
+.nk-gallery {
+    -webkit-columns: 2;
+       -moz-columns: 2;
+            columns: 2;
+    grid-column-gap: .75rem;
+    -webkit-column-gap: .75rem;
+       -moz-column-gap: .75rem;
+            column-gap: .75rem;
+    grid-column-gap: var(--small);
+    -webkit-column-gap: var(--small);
+       -moz-column-gap: var(--small);
+            column-gap: var(--small)
+}
+  }
+
+@media (min-width: 800px) {
+
+.nk-gallery {
+    -webkit-columns: 3;
+       -moz-columns: 3;
+            columns: 3
+}
+  }
+
+@media (min-width: 1170px) {
+
+.nk-gallery {
+    -webkit-columns: 4;
+       -moz-columns: 4;
+            columns: 4
+}
+  }
+
+.nk-gallery__item {
+  position: relative;
+  margin-bottom: .75rem;
+  margin-bottom: var(--small);
+  line-height: 0;
+}
+
+.nk-gallery__item:hover .nk-gallery__description {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+              align-items: center;
+    }
+
+.nk-gallery__item img {
+    width: 100%;
+  }
+
+.nk-gallery__description {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  padding: .75rem;
+  padding: var(--small);
+}
+
+.nk-gallery__description::before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    background: var(--color--k-10);
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+
 .nk-loader {
   width: .8em;
   height: 1em;
@@ -1242,8 +1340,8 @@ Control this bit through the gulpfile */
   }
 
 .nk-theme--dark {
-  background-color: #222;
-  background-color: var(--color--k-2);
+  background-color: #f5f5f5;
+  background-color: var(--color--k-9);
   color: #b0b0b0;
   color: var(--color--k-5);
 }

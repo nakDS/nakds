@@ -39,3 +39,16 @@
   --color--darker: #c19a2b;
   --color--complementary: #5ca9ad;
 }
+
+.nk-theme--dark {
+  --color--k-10: #000;
+  --color--k-9: #222;
+  --color--k-8: #333;
+  --color--k-7: #6f6f6f;
+  --color--k-6: #b0b0b0;
+  --color--k-5: #d6d6d6;
+  --color--k-4: #e5e5e5;
+  --color--k-3: #eee;
+  --color--k-2: #f5f5f5;
+  --color--k-1: #fff;
+}

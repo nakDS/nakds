@@ -3,6 +3,7 @@
 ## TODO
 
 ### Building CSS
+- Add gallery with srcset for different sizes
 - Add mixin to generate grid system breakpoints
 - Add flex system
 - Add responsive video
