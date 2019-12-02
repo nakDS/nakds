@@ -15,7 +15,7 @@ a {
   }
 
   .nk-bg--color & {
-    color: var(--color--k-7);
+    color: var(--color--k-8);
 
     &:hover {
       color: var(--color--k-10);

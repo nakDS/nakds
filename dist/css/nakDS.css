@@ -426,8 +426,8 @@ a:hover {
   }
 
 .nk-bg--color a {
-    color: #e5e5e5;
-    color: var(--color--k-7);
+    color: #eee;
+    color: var(--color--k-8);
   }
 
 .nk-bg--color a:hover {
@@ -730,12 +730,11 @@ Control this bit through the gulpfile */
   min-height: var(--spacer-large);
   background: #f5f5f5;
   background: var(--color--k-9);
-}
 
-.nk-theme--dark .nk-box {
-    background: #222;
+  /* .nk-theme--dark & {
     background: var(--color--k-2);
-  }
+  } */
+}
 
 .nk-box__image {
   width: 100%;
@@ -1746,12 +1745,13 @@ Control this bit through the gulpfile */
 /* @import "../tokens/tokens--color.css"; */
 
 .nk-bg--opaque {
-  background: white;
+  background: #fff;
+  background: var(--color--k-10);
 }
 
 .nk-theme--dark .nk-bg--opaque {
-    background-color: #222;
-    background-color: var(--color--k-2);
+    background-color: #f5f5f5;
+    background-color: var(--color--k-9);
   }
 
 .nk-bg--color {

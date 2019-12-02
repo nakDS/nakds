@@ -5,9 +5,9 @@
   min-height: var(--spacer-large);
   background: var(--color--k-9);
 
-  .nk-theme--dark & {
+  /* .nk-theme--dark & {
     background: var(--color--k-2);
-  }
+  } */
 }
 
 .nk-box__image {
