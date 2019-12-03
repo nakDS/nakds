@@ -176,7 +176,7 @@ function img() {
 }
 
 function watch() {
-  gulp.watch("./src/**/*.css", css, layout);
+  gulp.watch("./src/**/*.css", css, docs);
 }
 
 // function sassMixins() {

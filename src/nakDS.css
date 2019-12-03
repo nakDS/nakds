@@ -12,6 +12,8 @@
 @import "components/badge";
 @import "components/button";
 @import "components/cover";
+@import "components/dimmer";
+@import "components/drawer";
 @import "components/header";
 @import "components/heading";
 @import "components/box";

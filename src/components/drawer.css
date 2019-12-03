@@ -1,0 +1,26 @@
+.nk-drawer {
+  position: fixed;
+  width: 75vw;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  padding: var(--xxx-large);
+  background: var(--color--k-10);
+  z-index: 2;
+  transform: translateX(75vw);
+  transition: 0.3s;
+
+  &.nk-is-open {
+    transform: translateX(0);
+  }
+}
+
+.nk-drawer__header {
+}
+
+.nk-drawer__footer {
+  margin-top: auto;
+}
+

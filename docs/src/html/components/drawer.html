@@ -1,0 +1,57 @@
+<article id="drawer" class="nk-height-fullpage">
+  <div class="nk-position--sticky nk-bg--opaque">
+    <div class="nk-toolbar nk-container--content">
+      <h2 class="nk-heading--2">Drawer</h2>
+      <button class="nk-js-button--drawer nk-button nk-toolbar__item--right">Code</button>
+    </div>
+  </div>
+  <div class="nk-overflow--hidden">
+    <pre class="nk-js--drawer nk-doc--code"><code>
+      &lt;img class="nk-drawer--small" src="..." alt=""&gt;
+
+    </code>
+    </pre>
+  </div>
+  <div class="nk-container--content">
+    <p>Use the drawer to show sidebar menus, or aside information.</p>
+    <button class="nk-js-button--drawer-open nk-button nk-mtl">Open Drawer</button>
+  </div>
+  <div class="nk-drawer">
+    <header class="nk-drawer__header">
+        <button class="nk-button nk-js-button--drawer-close nk-toolbar__item--right">Close</button>
+    </header>
+    <ul>
+      <li><a href="">Item</a></li>
+      <li><a href="">Item</a></li>
+      <li><a href="">Item</a></li>
+      <li><a href="">Item</a></li>
+      <li><a href="">Item</a></li>
+      <li><a href="">Item</a></li>
+    </ul>
+    <footer class="nk-drawer__footer">
+      Footer
+    </footer>
+  </div>
+</article>
+
+<script>
+  const buttondrawer = document.querySelector(".nk-js-button--drawer");
+  const codedrawer = document.querySelector(".nk-js--drawer");
+  buttondrawer.onclick = () => codedrawer.classList.toggle("show");
+
+  const buttondrawerOpen = document.querySelector(".nk-js-button--drawer-open");
+  const drawerOpen = document.querySelector('.nk-drawer');
+  const dimmerOpen = document.querySelector('.nk-dimmer');
+  buttondrawerOpen.onclick = () => 
+    drawerOpen.classList.toggle("nk-is-open") + 
+    dimmerOpen.classList.toggle("nk-is-open");
+  
+    const buttondrawerClose = document.querySelector(".nk-js-button--drawer-close");
+  const drawerClose = document.querySelector('.nk-drawer');
+  const dimmerClose = document.querySelector('.nk-dimmer');
+  buttondrawerClose.onclick = () => 
+    drawerClose.classList.toggle("nk-is-open") + 
+    dimmerClose.classList.toggle("nk-is-open");
+ 
+
+</script>

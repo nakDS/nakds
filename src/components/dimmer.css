@@ -1,0 +1,17 @@
+.nk-dimmer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--color--k-2);
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none;
+  z-index: 2;
+
+  &.nk-is-open {
+    opacity: 0.9;
+    pointer-events: inherit;
+  }
+}
