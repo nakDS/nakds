@@ -778,7 +778,7 @@ Control this bit through the gulpfile */
 
 /* @import "../tokens/tokens--color.css"; */
 
-.nk-box {
+.nk-card {
   min-width: 100px;
   min-height: 2.5rem;
   min-height: var(--spacer-large);
@@ -790,14 +790,14 @@ Control this bit through the gulpfile */
   } */
 }
 
-.nk-box__image {
+.nk-card__image {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.nk-box__body {
+.nk-card__body {
   padding: 1.25rem;
   padding: var(--spacer-medium);
 }
