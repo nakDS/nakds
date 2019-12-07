@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>nakDS. Styles</title>
+<title>nakDS. Components</title>
 <link rel="stylesheet" href="../css/nakDS.min.css" />
 <link rel="stylesheet" href="../css/nak-docs.css" />
 <link rel="stylesheet" href="../css/default.css" />
@@ -121,141 +121,179 @@
     dimmerOpen.classList.toggle("nk-is-open");
 </script>
 
-  <article class="nk-cover nk-bg--color">
-  <h1 class="nk-cover__title nk-position--sticky nk-color--k-1">Tokens</h1>
+  <article class="nk-cover nk-bg--y">
+  <h1 class="nk-cover__title nk-position--sticky">Styles</h1>
 </article>
-  <article id="color" class="nk-container nk-section nk-height-fullpage">
-  <h2 class="nk-heading--2 nk-position--sticky nk-bg--opaque">Color tokens</h2>
-  <p>Color palettes</p>
-  <h3 class="nk-heading--3">Theme C</h3>
-  <h4 class="nk-heading--4">.nk-theme--c</h4>
-  <div class="nk-grid@md nk-grid-4 nk-theme--c">
-    <div class="nk-card">
-      <div class="nk-card__image" style="background: var(--color--lighter)"></div>
-      <div class="nk-card__body">--color--lighter: #6db5ba;</div>
-    </div>
-    <div class="nk-card">
-      <div class="nk-card__image" style="background: var(--color)"></div>
-      <div class="nk-card__body">--color: #5ca9ad;</div>
-    </div>
-    <div class="nk-card">
-      <div class="nk-card__image" style="background: var(--color--darker)"></div>
-      <div class="nk-card__body">--color--darker: #529393;</div>
-    </div>
-    <div class="nk-card">
-      <div class="nk-card__image" style="background: var(--color--c)"></div>
-      <div class="nk-card__body">--color--complementary: #d5ad26;</div>
-    </div>
+  <article id="typography" class="nk-section nk-theme--y">
+  <div class="nk-container--content">
+    <h2 class="nk-heading--2 nk-position--sticky nk-bg--opaque">Typography</h2>
+    <h3 class="nk-heading--3">.nk-font--light</h3>
+    <p class="nk-font--light">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque animi
+      earum totam similique ex maxime iure, pariatur repudiandae temporibus
+      voluptatem!
+    </p>
+    <h3 class="nk-heading--3">.nk-font--regular</h3>
+    <p class="nk-font--regular">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque animi
+      earum totam similique ex maxime iure, pariatur repudiandae temporibus
+      voluptatem!
+    </p>
+    <h3 class="nk-heading--3">.nk-font--bold</h3>
+    <p class="nk-font--bold">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque animi
+      earum totam similique ex maxime iure, pariatur repudiandae temporibus
+      voluptatem!
+    </p>
   </div>
-  <h3 class="nk-heading--3">Theme M</h3>
-  <h4 class="nk-heading--4">.nk-theme--m</h4>
-  <div class="nk-grid@md nk-grid-4 nk-theme--m">
-    <div class="nk-card">
-      <div class="nk-card__image" style="background: var(--color--lighter)"></div>
-      <div class="nk-card__body">--color--lighter: #d17a9c;</div>
-    </div>
-    <div class="nk-card">
-      <div class="nk-card__image" style="background: var(--color)"></div>
-      <div class="nk-card__body">--color: #c44f7a;</div>
-    </div>
-    <div class="nk-card">
-      <div class="nk-card__image" style="background: var(--color--darker)"></div>
-      <div class="nk-card__body">--color--darker: #bb2a5c;</div>
-    </div>
-    <div class="nk-card">
-      <div class="nk-card__image" style="background: var(--color--complementary)"></div>
-      <div class="nk-card__body">--color--complementary: #5ca9ad;</div>
-    </div>
+</article>
+  <article id="fonts" class="nk-section nk-container--content">
+  <h2 class="nk-heading--2 nk-position--sticky nk-bg--opaque">Variable fonts</h2>
+  <p>Here some types (open source) you can import in your project to use with variable fonts:</p>
+  <h3 class="nk-heading--3">Montserrat</h3>
+  <input type="range" min="1" max="400" step="1">
+  <p class="nk-font--montserrat nk-heading--3">Ilargiak erakusten duen aurpegiaren aurrean
+    eskatzen diet oihukatuz izar galduei</p>
+  <span class="nk-badge">376KB</span>
+  <a href="https://github.com/cosmicmocha/Montserrat">Github</a>
+</article>
+  <article id="background" class="nk-height-fullpage">
+  <div class="nk-container">
+    <h2 class="nk-heading--2 nk-position--sticky nk-bg--opaque">Background</h2>
   </div>
-  <h3 class="nk-heading--3">Theme Y</h3>
-  <h4 class="nk-heading--4">.nk-theme--y</h4>
-  <div class="nk-grid@md nk-grid-4 nk-theme--y">
-    <div class="nk-card">
-      <div class="nk-card__image" style="background: var(--color--lighter)"></div>
-      <div class="nk-card__body">--color--lighter: #e5cc70;</div>
-    </div>
-    <div class="nk-card">
-      <div class="nk-card__image" style="background: var(--color)"></div>
-      <div class="nk-card__body">--color: #d5ad26;</div>
-    </div>
-    <div class="nk-card">
-      <div class="nk-card__image" style="background: var(--color--darker)"></div>
-      <div class="nk-card__body">--color--darker: #c19a2b;</div>
-    </div>
-    <div class="nk-card">
-      <div class="nk-card__image" style="background: var(--color--complementary)"></div>
-      <div class="nk-card__body">--color--complementary: #5ca9ad;</div>
-    </div>
+  <div class="nk-grid@md nk-grid-6">
+    <div class="nk-pax nk-bg--k-1">.nk-bg--k-1</div>
+    <div class="nk-pax nk-bg--k-2">.nk-bg--k-2</div>
+    <div class="nk-pax nk-bg--k-3">.nk-bg--k-3</div>
+    <div class="nk-pax nk-bg--k-4">.nk-bg--k-4</div>
+    <div class="nk-pax nk-bg--k-5">.nk-bg--k-5</div>
+    <div class="nk-pax nk-bg--k-6">.nk-bg--k-6</div>
+    <div class="nk-pax nk-bg--k-7">.nk-bg--k-7</div>
+    <div class="nk-pax nk-bg--k-8">.nk-bg--k-8</div>
+    <div class="nk-pax nk-bg--k-9">.nk-bg--k-9</div>
+    <div class="nk-pax nk-bg--k-10">.nk-bg--k-10</div>
+    <div class="nk-pax nk-bg--color">.nk-bg--color</div>
+    <div class="nk-pax nk-bg--c">.nk-bg--c</div>
+    <div class="nk-pax nk-bg--c-lighter">.nk-bg--c-lighter</div>
+    <div class="nk-pax nk-bg--m">.nk-bg--m</div>
+    <div class="nk-pax nk-bg--y">.nk-bg--y</div>
   </div>
-  <h3 class="nk-heading--3">Scale k</h3>
-  <div class="nk-grid@md nk-grid-5">
+</article>
+  <article id="filters" class="nk-height-fullpage nk-container">
+  <h2 class="nk-heading--2 nk-position--sticky nk-bg--opaque">Filters</h2>
+  <div class="nk-grid@md nk-grid-4">
     <div class="nk-card">
-      <div class="nk-card__image" style="background: var(--color--k-1)"></div>
-      <div class="nk-card__body">--color--k-1: ;</div>
-    </div>
-    <div class="nk-card">
-      <div class="nk-card__image" style="background: var(--color--k-2)"></div>
-      <div class="nk-card__body">--color--k-2: ;</div>
-    </div>
-    <div class="nk-card">
-      <div class="nk-card__image" style="background: var(--color--k-3)"></div>
-      <div class="nk-card__body">--color--k-3: ;</div>
-    </div>
-    <div class="nk-card">
-      <div class="nk-card__image" style="background: var(--color--k-4)"></div>
-      <div class="nk-card__body">--color--k-4: ;</div>
-    </div>
-    <div class="nk-card">
-      <div class="nk-card__image" style="background: var(--color--k-5)"></div>
-      <div class="nk-card__body">--color--k-5: ;</div>
-    </div>
-    <div class="nk-card">
-      <div class="nk-card__image" style="background: var(--color--k-6)"></div>
-      <div class="nk-card__body">--color--k-6: ;</div>
-    </div>
-    <div class="nk-card">
-      <div class="nk-card__image" style="background: var(--color--k-7)"></div>
-      <div class="nk-card__body">--color--k-7: ;</div>
-    </div>
-    <div class="nk-card">
-      <div class="nk-card__image" style="background: var(--color--k-8)"></div>
-      <div class="nk-card__body">--color--k-8: ;</div>
-    </div>
-    <div class="nk-card">
-      <div class="nk-card__image" style="background: var(--color--k-9)"></div>
-      <div class="nk-card__body">--color--k-9: ;</div>
-    </div>
-    <div class="nk-card">
-      <div class="nk-card__image" style="background: var(--color--k-10)"></div>
-      <div class="nk-card__body">--color--k-10: ;</div>
+      <img class="nk-filter--greyscale" src="assets/img/nk-avatar.jpg" alt="">
+      <div class="nk-card__body">
+        <p>Greyscale</p>
+      </div>
     </div>
   </div>
 </article>
-  <article id="sizing" class="nk-container--content nk-section nk-height-fullpage">
-  <h2 class="nk-heading--2 nk-position--sticky nk-bg--opaque">Sizing tokens</h2>
-  <div class="nk-grid nk-grid-2 nk-gap">
-    <div class="nk-doc-border" style="width:var(--none)"></div>
-    <div>--none: 0;</div>
-    <div class="nk-doc-border" style="width:var(--xxx-small)"></div>
+  <article id="blend" class="nk-container">
+  <h2 class="nk-heading--2 nk-position--sticky nk-bg--opaque">Blend mode</h2>
+  <p>The <span class="nk-font--bold">blend mode</span> defines the formula that must be used to <span
+      class="nk-font--bold">mix the colors with the backdrop</span>.</p>
+  <p class="nk-mvx">
+    mix-blend-mode: normal | multiply | screen | overlay | darken | lighten | color-dodge |color-burn | hard-light
+    | soft-light | difference | exclusion | hue |
+    saturation | color | luminosity
+  </p>
+</article>
+<div class="nk-grid@md nk-grid-4 nk-gap nk-pvx nk-bg--c nk-container">
+  <div>
+    <img src="assets/img/h-i-bui-VOVHK3dKYj0-400-unsplash.jpg" alt="">
+    Normal
+  </div>
+  <div>
+    <img class="nk-blend--multiply" src="assets/img/h-i-bui-VOVHK3dKYj0-400-unsplash.jpg" alt="">
+    .nk-blend--multiply
+  </div>
+  <div>
+    <img class="nk-blend--screen" src="assets/img/h-i-bui-VOVHK3dKYj0-400-unsplash.jpg" alt="">
+    .nk-blend--screen
+  </div>
+  <div>
+    <img class="nk-blend--overlay" src="assets/img/h-i-bui-VOVHK3dKYj0-400-unsplash.jpg" alt="">
+    .nk-blend--overlay
+  </div>
+  <div>
+    <img class="nk-blend--darken" src="assets/img/h-i-bui-VOVHK3dKYj0-400-unsplash.jpg" alt="">
+    .nk-blend--darken
+  </div>
+  <div>
+    <img class="nk-blend--lighten" src="assets/img/h-i-bui-VOVHK3dKYj0-400-unsplash.jpg" alt="">
+    .nk-blend--lighten
+  </div>
+  <div>
+    <img class="nk-blend--color-dodge" src="assets/img/h-i-bui-VOVHK3dKYj0-400-unsplash.jpg" alt="">
+    .nk-blend--color-dodge
+  </div>
+  <div>
+    <img class="nk-blend--color-burn" src="assets/img/h-i-bui-VOVHK3dKYj0-400-unsplash.jpg" alt="">
+    .nk-blend--color-burn
+  </div>
+  <div>
+    <img class="nk-blend--hard-light" src="assets/img/h-i-bui-VOVHK3dKYj0-400-unsplash.jpg" alt="">
+    .nk-blend--hard-light
+  </div>
+  <div>
+    <img class="nk-blend--soft-light" src="assets/img/h-i-bui-VOVHK3dKYj0-400-unsplash.jpg" alt="">
+    .nk-blend--soft-light
+  </div>
+  <div>
+    <img class="nk-blend--difference" src="assets/img/h-i-bui-VOVHK3dKYj0-400-unsplash.jpg" alt="">
+    .nk-blend--difference
+  </div>
+  <div>
+    <img class="nk-blend--exclusion" src="assets/img/h-i-bui-VOVHK3dKYj0-400-unsplash.jpg" alt="">
+    .nk-blend--exclusion
+  </div>
+  <div>
+    <img class="nk-blend--hue" src="assets/img/h-i-bui-VOVHK3dKYj0-400-unsplash.jpg" alt="">
+    .nk-blend--hue
+  </div>
+  <div>
+    <img class="nk-blend--saturation" src="assets/img/h-i-bui-VOVHK3dKYj0-400-unsplash.jpg" alt="">
+    .nk-blend--saturation
+  </div>
+  <div>
+    <img class="nk-blend--color" src="assets/img/h-i-bui-VOVHK3dKYj0-400-unsplash.jpg" alt="">
+    .nk-blend--color
+  </div>
+  <div>
+    <img class="nk-blend--luminosity" src="assets/img/h-i-bui-VOVHK3dKYj0-400-unsplash.jpg" alt="">
+    .nk-blend--luminosity
+  </div>
+</div>
+
+<div class="nk-container">
+  <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+    href="https://unsplash.com/@thanhhai4555?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+    target="_blank" rel="noopener noreferrer"
+    title="Download free do whatever you want high-resolution photos from Hải Bùi"><span
+      style="display:inline-block;padding:2px 3px"><svg xmlns="https://www.w3.org/2000/svg"
+        style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32">
+        <title>unsplash-logo</title>
+        <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+      </svg></span>
+    <span style="display:inline-block;padding:2px 3px">Hải Bùi</span>
+  </a>
+</div>
+  <article id="motion" class="nk-height-fullpage nk-container">
+  <h1 class="nk-heading--1 nk-position--sticky">Motion</h1>
+</article>
+  <article id="shapes" class="nk-height-fullpage nk-section nk-container">
+  <h2 class="nk-heading--2 nk-position--sticky nk-bg--opaque">Shapes</h2>
+  <div class="nk-grid@md nk-grid-4 nk-text-align--center">
     <div>
-      <div>--xxx-small: 0.125rem; /*!2px;*/</div>
+      <h3>Circle</h3>
+      <div class="nk-shape--circle nk-bg--y"></div>
     </div>
-    <div class="nk-doc-border" style="width:var(--xx-small)"></div>
-    <div>--xx-small: 0.25rem; /*!4px*/</div>
-    <div class="nk-doc-border" style="width:var(--x-small)"></div>
-    <div>--x-small: 0.5rem; /*!8px*/</div>
-    <div class="nk-doc-border" style="width:var(--small)"></div>
-    <div>--small: 0.75rem; /*!12px*/</div>
-    <div class="nk-doc-border" style="width:var(--large)"></div>
-    <div>--medium: 1rem; /*!16px*/</div>
-    <div class="nk-doc-border" style="width:var(--x-large)"></div>
-    <div>--x-large: 1.5rem; /*!24px*/</div>
-    <div class="nk-doc-border" style="width:var(--xx-large)"></div>
-    <div>--xx-large: 1.75rem; /*!28px*/</div>
-    <div class="nk-doc-border" style="width:var(--xxx-large)"></div>
-    <div>--xxx-large: 2rem; /*!32px*/</div>
-    <div class="nk-doc-border" style="width:var(--xxxx-large)"></div>
-    <div>--xxxx-large: 3rem; /*!48px*/ </div>
+    <div>
+      <h3>Heart</h3>
+      <div class="nk-shape--heart nk-bg--y"></div>
+    </div>
   </div>
 </article>
 

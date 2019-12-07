@@ -124,7 +124,7 @@ function img() {
 // }
 
 function watch() {
-  gulp.watch("./docs/src/**/**/*.html", docsTokens);
+  gulp.watch("./src/html/**/*.html", docs);
 }
 
 // function sassMixins() {

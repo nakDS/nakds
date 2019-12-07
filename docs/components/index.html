@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>nakDS. Components</title>
+<link rel="stylesheet" href="../css/nakDS.min.css" />
+<link rel="stylesheet" href="../css/nak-docs.css" />
+<link rel="stylesheet" href="../css/default.css" />
+<link rel="stylesheet" href="../css/atom-one-dark.css" />
+<link rel='shortcut icon' type='image/x-icon' href='../assets/favicon.ico' />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-32740256-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'UA-32740256-5');
+</script>
+</head>
+
+<body>
+  <div class="nk-toolbar nk-nav__button nk-flex nk-flex--column">
+  <button class="nk-button nk-button--icon  nk-js--nav-open">
+    <svg class="nk-icon" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 50 50">
+      <title>Menu</title>
+      <path
+        d="M7.061 10.688c11.654-1.822 23.457.164 35.166-1 2.968-.295 4.698-3.943.701-3.546-11.712 1.164-23.49-.825-35.166 1-2.901.453-4.682 4.169-.701 3.546zM6.106 25.999c7.635.141 15.129-1.374 22.745-1.534 4.658-.098 9.73.559 14.279-.81 1.131-.34 2.521-.994 2.476-2.351l-.006-.165c-.044-1.313-2.486-1.266-4.187-.429-4.141.949-8.845.097-13.016.319-6.713.358-13.358 1.592-20.096 1.467-2.32-.042-6.122 3.43-2.195 3.503zM41.549 37.726c-4.651 2.286-10.269 2.103-15.327 1.842-6.049-.312-12.073-.74-18.052-1.742-2.831-.474-5.9 3.527-2.016 4.178 7.162 1.199 14.527 1.806 21.791 1.88 5.508.057 11.144-.314 16.161-2.78 3.558-1.75.37-4.817-2.557-3.378z">
+      </path>
+    </svg>
+  </button>
+  <a href="../#top">
+    <img width="48" src="https://raw.githubusercontent.com/nabaroa/nak-scaffold/master/docs/assets/img/nakDS.png"
+      alt="Home">
+  </a>
+</div>
+<div class="nk-drawer nk-bg--k-3 nk-js--nav nk-pan">
+  <nav id="nk-nav" class="">
+    <ul class="nk-grid nk-grid-3@md nk-list">
+      <!-- <li class="nk-bg--k-10">How to use it
+        <ul>
+          <li><a hre../utilities/instalation">Getting Started</a></li>
+        </ul>
+      </li> -->
+      <li class="nk-pax nk-grid nk-grid-2">
+        <div>
+          <span class="nk-heading--3">Tokens</span>
+          <ul>
+            <li><a href="../tokens/#color">Color</a></li>
+            <li><a href="../tokens/#sizing">Sizing</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nk-pax">
+        <span class="nk-heading--3">Layout</span>
+        <ul>
+          <li><a href="../layout/#patterns">Patterns</a></li>
+          <li><a href="../layout/#container">Container</a></li>
+          <li><a href="../layout/#flex">Flex</a></li>
+          <li><a href="../layout/#grid">Grid</a></li>
+          <li><a href="../layout/#fullpage">Fullpage</a></li>
+          <li><a href="../layout/#navigation">Navigation</a></li>
+        </ul>
+      </li>
+      <li class="nk-pax">
+        <span class="nk-heading--3">Components</span>
+        <ul class="nk-grid nk-grid-2">
+          <li><a href="../components/#avatar">Avatar</a><span class="nk-text--small"></span></li>
+          <li><a href="../components/#badge">Badge</a><span class="nk-text--small"></span></li>
+          <li><a href="../components/#card">Card</a><span class="nk-text--small"></span></li>
+          <li><a href="../components/#button">Button</a></li>
+          <li><a href="../components/#cover">Cover</a></li>
+          <li><a href="../components/#dimmer">Dimmer</a></li>
+          <li><a href="../components/#drawer">Drawer</a></li>
+          <li><a href="../components/#gallery">Gallery</a></li>
+          <li><a href="../components/#heading">Headings</a></li>
+          <li><a href="../components/#list">List</a></li>
+          <li><a href="../components/#loader">Loader</a></li>
+          <li><a href="../components/#modal">Modal</a></li>
+          <li><a href="../components/#timeline">Timeline</a></li>
+          <li><a href="../components/#slider">Slider</a></li>
+        </ul>
+      </li>
+      <li class="nk-pax">
+        <span class="nk-heading--3">Styling</span>
+        <ul>
+          <li><a href="../styling/#background">Background</a></li>
+          <li><a href="../styling/#filters">Filters</a></li>
+          <li><a href="../styling/#motion">Motion</a></li>
+          <li><a href="../styling/#blend">Blend mode</a></li>
+          <li><a href="../styling/#shapes">Shapes</a></li>
+          <li><a href="../styling/#typograpy">Typography</a></li>
+          <li><a href="../styling/#fonts">Variable fonts</a></li>
+        </ul>
+      </li>
+      <li class="nk-pax">
+        <span class="nk-heading--3">Assets</span>
+        <ul>
+          <li><a href="../assets/#icons">Icons</a></li>
+          <li><a href="../assets/#images">Images</a></li>
+        </ul>
+      </li>
+      <li class="nk-pax">
+        <span class="nk-heading--3">Utilities</span>
+        <ul>
+          <li><a href="../utilities/#spacing">Spacing</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
+<div class="nk-dimmer"></div>
+
+<script>
+  const buttonnavOpen = document.querySelector(".nk-js--nav-open");
+  const navOpen = document.querySelector('.nk-js--nav');
+  const dimmerOpen = document.querySelector('.nk-dimmer');
+  buttonnavOpen.onclick = () =>
+    navOpen.classList.toggle("nk-is-open") +
+    dimmerOpen.classList.toggle("nk-is-open");
+</script>
+
+  <article class="nk-cover nk-bg--color">
+  <h1 class="nk-cover__title nk-position--sticky nk-color--k-1">Components</h1>
+</article>
+  <article id="avatar" class="">
+  <div class="nk-position--sticky nk-bg--opaque">
+    <div class="nk-toolbar nk-container--content">
+      <h2 class="nk-heading--2">Avatar</h2>
+      <button class="nk-js-button--avatar nk-button nk-toolbar__item--right">Code</button>
+    </div>
+  </div>
+  <div class="nk-overflow--hidden">
+    <pre class="nk-js--avatar nk-doc--code"><code>
+      &lt;img class="nk-avatar--small" src="..." alt=""&gt;
+      &lt;img class="nk-avatar" src="..." alt=""&gt;
+      &lt;img class="nk-avatar--large" src="..." alt=""&gt;
+      
+    </code>
+    </pre>
+  </div>
+  <div class="nk-flex@md nk-justify-content--center nk-align-items--center nk-container--content">
+    <img class="nk-avatar--small" src="../assets/img/nk-avatar.jpg" alt="">
+    <img class="nk-avatar" src="../assets/img/nk-avatar.jpg" alt="">
+    <img class="nk-avatar--large" src="../assets/img/nk-avatar.jpg" alt="">
+  </div>
+</article>
+  <article id="badge" class="nk-section">
+    <div class="nk-toolbar nk-container--content nk-position--sticky nk-bg--opaque">
+        <h2 class="nk-heading--2">Badge</h2>
+        <button class="nk-js-button--avatar nk-button nk-toolbar__item--right">Code</button>
+      </div>
+  <!-- <h2 class="nk-heading--2 nk-position--sticky nk-bg--opaque">.nk-badge</h2> -->
+  <div class="nk-badge">badge</div>
+  <div class="nk-badge nk-bg--c">badge</div>
+  <div class="nk-badge nk-bg--y">badge</div>
+  <div class="nk-badge nk-bg--k-3">badge</div>
+</article>
+  <article class="nk-section nk-height-fullpage" id="card">
+  <div class="nk-toolbar nk-position--sticky nk-bg--opaque">
+    <h3 class="nk-heading--2 ">Card</h3>
+    <button class="nk-js-button--card nk-button nk-toolbar__item--right">code</button>
+  </div>
+  <div class="nk-js--card nk-doc--code">
+    <pre>
+        <code class="html">
+&lt;div class="nk-card"&gt;
+&lt;img class="nk-card__image" src="..." alt=""&gt;
+&lt;div class="nk-card__body"&gt;
+  ...
+&lt;/div&gt;
+&lt;/div&gt;
+        </code>
+      </pre>
+  </div>
+  <div class="nk-container nk-grid@md nk-grid-3 nk-gap">
+    <div class="nk-card">
+      <img class="nk-card__image" src="../assets/img/randomMatches_142.jpg" alt="">
+      <div class="nk-card__body">
+        <h4 class="nk-heading--4">.nk-card</h4>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+          dolorem debitis soluta vero cum! Tenetur voluptas fugit rem
+          corporis ut dolores, itaque ea fuga minus facere deleniti.
+          Recusandae, quis natus explicabo laboriosam earum officia in
+          veritatis dignissimos exercitationem ab perspiciatis!
+        </p>
+      </div>
+    </div>
+    <div class="nk-card">
+      <img class="nk-card__image" src="../assets/img/randomMatches.jpg" alt="">
+      <div class="nk-card__body">
+        <h4 class="nk-heading--4">.nk-card</h4>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+          dolorem debitis soluta vero cum! Tenetur voluptas fugit rem
+          corporis ut dolores, itaque ea fuga minus facere deleniti.
+          Recusandae, quis natus explicabo laboriosam earum officia in
+          veritatis dignissimos exercitationem ab perspiciatis!
+        </p>
+      </div>
+    </div>
+    <div class="nk-card">
+      <img class="nk-card__image" src="../assets/img/randomMatches.jpg" alt="">
+      <div class="nk-card__body">
+        <h4 class="nk-heading--4">.nk-card</h4>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+          dolorem debitis soluta vero cum! Tenetur voluptas fugit rem
+          corporis ut dolores, itaque ea fuga minus facere deleniti.
+          Recusandae, quis natus explicabo laboriosam earum officia in
+          veritatis dignissimos exercitationem ab perspiciatis!
+        </p>
+      </div>
+    </div>
+  </div>
+</article>
+  <article id="cover" class="">
+  <div class="nk-container">
+    <h2 class="nk-heading--2 nk-position--sticky nk-bg--opaque">Cover</h2>
+  </div>
+  <div class="nk-cover nk-cover--dark-mode nk-bg--images-1">
+    <h1 class="nk-cover__title"><span class="nk-font--bold">nak</span><span class="nk-font--light">DS</span></h1>
+    <p class="nk-cover__subtitle">Easy and beautiful</p>
+    <button class="nk-button nk-button--color nk-mtx">Try now</button>
+  </div>
+</article>
+  <article id="dimmer" class="nk-height-fullpage">
+  <div class="nk-position--sticky nk-bg--opaque">
+    <div class="nk-toolbar nk-container--content">
+      <h2 class="nk-heading--2">Dimmer</h2>
+      <button class="nk-js-button--dimmer nk-button nk-toolbar__item--right">Code</button>
+    </div>
+  </div>
+  <div class="nk-overflow--hidden">
+    <pre class="nk-js--dimmer nk-doc--code"><code>
+      &lt;img class="nk-dimmer--small" src="..." alt=""&gt;
+
+    </code>
+    </pre>
+  </div>
+ <div class="nk-dimmer"></div>
+</article>
+
+<script>
+const buttondimmer = document.querySelector(".nk-js-button--dimmer");
+const codedimmer = document.querySelector(".nk-js--dimmer");
+buttondimmer.onclick = () => codedimmer.classList.toggle("show");
+</script>
+  <article id="drawer" class="nk-height-fullpage">
+  <div class="nk-position--sticky nk-bg--opaque">
+    <div class="nk-toolbar nk-container--content">
+      <h2 class="nk-heading--2">Drawer</h2>
+      <button class="nk-js-button--drawer nk-button nk-toolbar__item--right">Code</button>
+    </div>
+  </div>
+  <div class="nk-overflow--hidden">
+    <pre class="nk-js--drawer nk-doc--code"><code>
+      &lt;img class="nk-drawer--small" src="..." alt=""&gt;
+
+    </code>
+    </pre>
+  </div>
+  <div class="nk-container--content">
+    <p>Use the drawer to show sidebar menus, or aside information.</p>
+    <button class="nk-js-button--drawer-open nk-button nk-mtl">Open Drawer</button>
+  </div>
+  <div class="nk-drawer">
+    <header class="nk-drawer__header">
+        <button class="nk-button nk-button--icon nk-js-button--drawer-close nk-toolbar__item--right">
+            <svg class="nk-icon" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 50 50">
+              <title>Close</title>
+              <path d="M5.936 9.11c4.01 6.15 9.822 10.435 15.783 14.566 5.788 4.012 14.842 8.7 16.884 15.933.465 1.647 6.252.065 5.795-1.553-1.773-6.283-8.475-10.403-13.527-13.927-6.901-4.812-14.447-9.378-19.139-16.573-1.077-1.649-6.482.503-5.796 1.554z"></path>
+              <path d="M37.158 7.358c-5.19 6.268-11.474 11.478-16.922 17.507C14.6 31.103 10.918 38.91 7.281 46.408l5.783-1.185-.167-.667c-.451-1.805-6.255-.285-5.796 1.553l.167.667c.51 2.041 5.201.017 5.783-1.185 3.557-7.332 7.191-14.564 12.535-20.775 5.303-6.163 11.726-11.232 16.921-17.508 1.514-1.825-4.263-1.262-5.349.05z"></path>
+            </svg>
+        </button>
+    </header>
+    <div class="nk-card nk-mtx">
+        <img class="nk-card__image" src="assets/img/randomMatches_142.jpg" alt="">
+        <div class="nk-card__body">
+          <h4 class="nk-heading--4">.nk-card</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+            dolorem debitis.
+          </p>
+        </div>
+      </div>
+    <footer class="nk-drawer__footer">
+      <button class="nk-button nk-button--color">Submit</button>
+    </footer>
+  </div>
+</article>
+
+<!-- <script>
+  const buttondrawer = document.querySelector(".nk-js-button--drawer");
+  const codedrawer = document.querySelector(".nk-js--drawer");
+  buttondrawer.onclick = () => codedrawer.classList.toggle("show");
+
+  const buttondrawerOpen = document.querySelector(".nk-js-button--drawer-open");
+  const drawerOpen = document.querySelector('.nk-drawer');
+  const dimmerOpen = document.querySelector('.nk-dimmer');
+  buttondrawerOpen.onclick = () => 
+    drawerOpen.classList.toggle("nk-is-open") + 
+    dimmerOpen.classList.toggle("nk-is-open");
+  
+    const buttondrawerClose = document.querySelector(".nk-js-button--drawer-close");
+  const drawerClose = document.querySelector('.nk-drawer');
+  const dimmerClose = document.querySelector('.nk-dimmer');
+  buttondrawerClose.onclick = () => 
+    drawerClose.classList.toggle("nk-is-open") + 
+    dimmerClose.classList.toggle("nk-is-open");
+</script> -->
+  <article id="gallery" class="">
+  <div class="nk-position--sticky nk-bg--opaque">
+    <div class="nk-toolbar nk-container--content">
+      <h2 class="nk-heading--2">gallery</h2>
+      <button class="nk-js-button--gallery nk-button nk-toolbar__item--right">Code</button>
+    </div>
+  </div>
+  <div class="nk-overflow--hidden">
+    <pre class="nk-js--gallery nk-doc--code"><code>
+      &lt;img class="nk-gallery--small" src="..." alt=""&gt;
+
+    </code>
+    </pre>
+  </div>
+  <div class="nk-gallery nk-theme--dark">
+    <figure class="nk-gallery__item">
+      <img src="../assets/img/ryoji-iwata-X53e51WfjlE-400-unsplash.jpg" alt="">
+      <figcaption class="nk-gallery__description">
+        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+          href="https://unsplash.com/@ryoji__iwata?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+          target="_blank" rel="noopener noreferrer"
+          title="Download free do whatever you want high-resolution photos from Ryoji Iwata"><span
+            style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+              style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+              viewBox="0 0 32 32">
+              <title>unsplash-logo</title>
+              <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+            </svg></span><span style="display:inline-block;padding:2px 3px">Ryoji Iwata</span></a>
+      </figcaption>
+    </figure>
+    <figure class="nk-gallery__item">
+      <img src="../assets/img/ewan-yap-aZhXAR7T_Eo-400-unsplash.jpg" alt="">
+      <figcaption class="nk-gallery__description">
+        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+          href="https://unsplash.com/@ewanyap?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+          target="_blank" rel="noopener noreferrer"
+          title="Download free do whatever you want high-resolution photos from Ewan Yap"><span
+            style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+              style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+              viewBox="0 0 32 32">
+              <title>unsplash-logo</title>
+              <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+            </svg></span><span style="display:inline-block;padding:2px 3px">Ewan Yap</span></a>
+      </figcaption>
+    </figure>
+    <figure class="nk-gallery__item">
+      <img src="../assets/img/jason-leem-mopZf0QhPGw-400-unsplash.jpg" alt="">
+      <figcaption class="nk-gallery__description">
+        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+          href="https://unsplash.com/@jleeems?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+          target="_blank" rel="noopener noreferrer"
+          title="Download free do whatever you want high-resolution photos from Jason Leem"><span
+            style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+              style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+              viewBox="0 0 32 32">
+              <title>unsplash-logo</title>
+              <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+            </svg></span><span style="display:inline-block;padding:2px 3px">Jason Leem</span></a>
+      </figcaption>
+    </figure>
+    <figure class="nk-gallery__item">
+      <img src="../assets/img/h-i-bui-VOVHK3dKYj0-400-unsplash.jpg" alt="">
+      <figcaption class="nk-gallery__description"><a
+          style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+          href="https://unsplash.com/@thanhhai4555?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+          target="_blank" rel="noopener noreferrer"
+          title="Download free do whatever you want high-resolution photos from Hải Bùi"><span
+            style="display:inline-block;padding:2px 3px"><svg xmlns="https://www.w3.org/2000/svg"
+              style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+              viewBox="0 0 32 32">
+              <title>unsplash-logo</title>
+              <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+            </svg></span>
+          <span style="display:inline-block;padding:2px 3px">Hải Bùi</span>
+        </a></figcaption>
+    </figure>
+    <figure class="nk-gallery__item">
+      <img src="../assets/img/josh-withers-76YjW4gEAsI-400-unsplash.jpg" alt="">
+      <figcaption class="nk-gallery__description">
+        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+          href="https://unsplash.com/@joshwithers?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+          target="_blank" rel="noopener noreferrer"
+          title="Download free do whatever you want high-resolution photos from Josh Withers"><span
+            style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+              style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+              viewBox="0 0 32 32">
+              <title>unsplash-logo</title>
+              <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+            </svg></span><span style="display:inline-block;padding:2px 3px">Josh Withers</span></a>
+      </figcaption>
+    </figure>
+    <figure class="nk-gallery__item">
+      <img src="../assets/img/israel-sundseth-BYu8ITUWMfc-400-unsplash.jpg" alt="">
+      <figcaption class="nk-gallery__description">
+        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+          href="https://unsplash.com/@kappuru?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+          target="_blank" rel="noopener noreferrer"
+          title="Download free do whatever you want high-resolution photos from Israel Sundseth"><span
+            style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+              style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+              viewBox="0 0 32 32">
+              <title>unsplash-logo</title>
+              <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+            </svg></span><span style="display:inline-block;padding:2px 3px">Israel Sundseth</span></a>
+      </figcaption>
+    </figure>
+    <figure class="nk-gallery__item">
+      <img src="../assets/img/andrea-cau-nV7GJmSq3zc-unsplash.jpg" alt="">
+      <figcaption class="nk-gallery__description">
+        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+          href="https://unsplash.com/@andreacau?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+          target="_blank" rel="noopener noreferrer"
+          title="Download free do whatever you want high-resolution photos from Andrea Cau"><span
+            style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+              style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+              viewBox="0 0 32 32">
+              <title>unsplash-logo</title>
+              <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+            </svg></span><span style="display:inline-block;padding:2px 3px">Andrea Cau</span></a>
+      </figcaption>
+    </figure>
+    <figure class="nk-gallery__item">
+      <img src="../assets/img/blake-carpenter-PIARySUTNmY-unsplash.jpg" alt="">
+      <figcaption class="nk-gallery__description">
+        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+          href="https://unsplash.com/@blakepnw?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+          target="_blank" rel="noopener noreferrer"
+          title="Download free do whatever you want high-resolution photos from Blake Carpenter"><span
+            style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+              style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+              viewBox="0 0 32 32">
+              <title>unsplash-logo</title>
+              <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+            </svg></span><span style="display:inline-block;padding:2px 3px">Blake Carpenter</span></a>
+      </figcaption>
+    </figure>
+    <figure class="nk-gallery__item">
+      <img src="../assets/img/eduardo-dutra--PSiseolyDM-unsplash.jpg" alt="">
+      <figcaption class="nk-gallery__description">
+        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+          href="https://unsplash.com/@edwardutra?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+          target="_blank" rel="noopener noreferrer"
+          title="Download free do whatever you want high-resolution photos from Eduardo Dutra"><span
+            style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+              style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+              viewBox="0 0 32 32">
+              <title>unsplash-logo</title>
+              <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+            </svg></span><span style="display:inline-block;padding:2px 3px">Eduardo Dutra</span></a>
+      </figcaption>
+    </figure>
+    <figure class="nk-gallery__item">
+      <img src="../assets/img/filipa-campos-u-ntRC9Q82g-unsplash.jpg" alt="">
+      <figcaption class="nk-gallery__description">
+        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+          href="https://unsplash.com/@filipanoscampos?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+          target="_blank" rel="noopener noreferrer"
+          title="Download free do whatever you want high-resolution photos from Filipa Campos"><span
+            style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+              style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+              viewBox="0 0 32 32">
+              <title>unsplash-logo</title>
+              <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+            </svg></span><span style="display:inline-block;padding:2px 3px">Filipa Campos</span></a>
+      </figcaption>
+    </figure>
+    <figure class="nk-gallery__item">
+      <img src="../assets/img/luke-porter-7-_3JB0npA8-unsplash.jpg" alt="">
+      <figcaption class="nk-gallery__description">
+        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+          href="https://unsplash.com/@lukeporter?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+          target="_blank" rel="noopener noreferrer"
+          title="Download free do whatever you want high-resolution photos from Luke Porter"><span
+            style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+              style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+              viewBox="0 0 32 32">
+              <title>unsplash-logo</title>
+              <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+            </svg></span><span style="display:inline-block;padding:2px 3px">Luke Porter</span></a>
+      </figcaption>
+    </figure>
+    <figure class="nk-gallery__item">
+      <img src="../assets/img/osman-rana-iYzwb0JcnWE-unsplash.jpg" alt="">
+      <figcaption class="nk-gallery__description">
+        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+          href="https://unsplash.com/@osmanrana?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+          target="_blank" rel="noopener noreferrer"
+          title="Download free do whatever you want high-resolution photos from Osman Rana"><span
+            style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+              style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+              viewBox="0 0 32 32">
+              <title>unsplash-logo</title>
+              <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+            </svg></span><span style="display:inline-block;padding:2px 3px">Osman Rana</span></a>
+      </figcaption>
+    </figure>
+
+  </div>
+</article>
+
+<script>
+  const buttongallery = document.querySelector(".nk-js-button--gallery");
+  const codegallery = document.querySelector(".nk-js--gallery");
+  buttongallery.onclick = () => codegallery.classList.toggle("show");
+</script>
+  <article id="heading" class="nk-container--content">
+  <h2 class="nk-heading--2 nk-position--sticky nk-bg--opaque">Heading</h2>
+  <h1 class="nk-heading--1">.nk-heading--1</h1>
+  <h2 class="nk-heading--2">.nk-heading--2</h2>
+  <h3 class="nk-heading--3">.nk-heading--3</h3>
+  <h4 class="nk-heading--4">.nk-heading--4</h4>
+  <h5 class="nk-heading--5">.nk-heading--5</h5>
+  <h6 class="nk-heading--6">.nk-heading--6</h6>
+</article>
+  <article id="list" class="nk-section nk-container--content">
+  <h2 class="nk-heading--2 nk-position--sticky nk-bg--opaque">List</h2>
+  <ul class="nk-list">
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+  </ul>
+  <ol>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+  </ol>
+</article>
+  <article id="loader" class="nk-section nk-container--content">
+  <h2 class="nk-heading--2 nk-position--sticky nk-bg--opaque">.nk-loader</h2>
+  <div class="nk-loader nk-text--huge nk-mvx"></div>
+  <a class="nk-text--small" href="https://codepen.io/vank0/pen/mARwLg">Attribution</a>
+</article>
+  <article id="modal" class="nk-section nk-container--content">
+  <h2 class="nk-heading--2">Modal</h2>
+  <button class="nk-button nk-js-button--show-modal">Open modal</button>
+  <div class="nk-modal">
+    <div class="nk-modal__header">
+      <button class="nk-button nk-button--icon">
+        <svg class="nk-icon" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 50 50">
+          <title>Close</title>
+          <path
+            d="M5.936 9.11c4.01 6.15 9.822 10.435 15.783 14.566 5.788 4.012 14.842 8.7 16.884 15.933.465 1.647 6.252.065 5.795-1.553-1.773-6.283-8.475-10.403-13.527-13.927-6.901-4.812-14.447-9.378-19.139-16.573-1.077-1.649-6.482.503-5.796 1.554z" />
+          <path
+            d="M37.158 7.358c-5.19 6.268-11.474 11.478-16.922 17.507C14.6 31.103 10.918 38.91 7.281 46.408l5.783-1.185-.167-.667c-.451-1.805-6.255-.285-5.796 1.553l.167.667c.51 2.041 5.201.017 5.783-1.185 3.557-7.332 7.191-14.564 12.535-20.775 5.303-6.163 11.726-11.232 16.921-17.508 1.514-1.825-4.263-1.262-5.349.05z" />
+        </svg>
+      </button>
+    </div>
+    <img class="nk-modal__image" src="assets/img/randomMatches_142.jpg" alt="">
+    <div class="nk-modal__body">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quia asperiores, accusantium,
+        exercitationem assumenda accusamus sunt molestiae provident aspernatur est nobis nisi!</p>
+    </div>
+    <div class="nk-modal__footer">
+      <button class="nk-button">Cancel</button>
+      <button class="nk-button nk-button--color">Submit</button>
+    </div>
+  </div>
+</article>
+  <article id="button" class="nk-container--content nk-section">
+  <h2 class="nk-heading--2 nk-position--sticky nk-bg--opaque">.nk-button</h2>
+  <button class="nk-button">Button</button>
+  <button class="nk-button nk-button--color">Button</button>
+  <button class="nk-button nk-button--disabled">Button</button>
+</article>
+  <article id="timeline" class="">
+  <div class="nk-position--sticky nk-bg--opaque">
+    <div class="nk-toolbar nk-container--content">
+      <h2 class="nk-heading--2">Timeline</h2>
+      <button class="nk-js-button--timeline nk-button nk-toolbar__item--right">Code</button>
+    </div>
+  </div>
+  <div class="nk-overflow--hidden">
+    <pre class="nk-js--timeline nk-doc--code"><code>
+      &lt;img class="nk-timeline--small" src="..." alt=""&gt;
+
+    </code>
+    </pre>
+  </div>
+  <div class="nk-timeline nk-container--text nk-section">
+      <div class="nk-timeline__item">
+        <h3 class="nk-timeline__title">
+          HTML/CSS
+        </h3>
+        <div class="nk-timeline__description">
+          Lorem ipsum dolor sit amet consectetur.
+        </div>
+        <div class="nk-timeline__date">
+          28/10/2016-12/11/2016
+        </div>
+        <div class="nk-timeline__assets">
+          <a href="">
+            <svg class="nk-icon--small" xmlns="http://www.w3.org/2000/svg" viewBox="-15.86 404.945 32 32">
+              <path
+                d="M13.465 404.945h-26.65c-1.475 0-2.675 1.309-2.675 2.918v26.164c0 1.609 1.2 2.918 2.675 2.918h26.65c1.475 0 2.675-1.309 2.675-2.918v-26.164c0-1.609-1.201-2.918-2.675-2.918zm-26.65 2.502h26.65c.21 0 .382.188.382.417v5.212h-27.415v-5.212c0-.23.172-.417.383-.417zm-.383 26.58v-18.45h5.971v18.866h-5.588c-.211 0-.383-.187-.383-.416zm27.033.416h-18.77v-18.866h19.153v18.45c-.001.229-.172.416-.383.416z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="nk-timeline__item">
+        <h3 class="nk-timeline__title">
+          PostCSS
+        </h3>
+        <div class="nk-timeline__description">
+          Workshop online for...
+        </div>
+        <div class="nk-timeline__date">
+          18/04/2016-22/04/2016
+        </div>
+        <div class="nk-timeline__assets">
+          <a href="">
+            <svg class="nk-icon--small" xmlns="http://www.w3.org/2000/svg" viewBox="-15.86 404.945 32 32">
+              <title>Web</title>
+              <path
+                d="M13.465 404.945h-26.65c-1.475 0-2.675 1.309-2.675 2.918v26.164c0 1.609 1.2 2.918 2.675 2.918h26.65c1.475 0 2.675-1.309 2.675-2.918v-26.164c0-1.609-1.201-2.918-2.675-2.918zm-26.65 2.502h26.65c.21 0 .382.188.382.417v5.212h-27.415v-5.212c0-.23.172-.417.383-.417zm-.383 26.58v-18.45h5.971v18.866h-5.588c-.211 0-.383-.187-.383-.416zm27.033.416h-18.77v-18.866h19.153v18.45c-.001.229-.172.416-.383.416z" />
+            </svg></a>
+          <a href="">
+            <svg class="nk-icon--small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+              <title>Github</title>
+              <path
+                d="M45.673 11.367c2.807-2.021 1.771-6.011 1.438-8.758-.079-.666-2.096-.304-2.452-.206-3.095.848-6.146 2.095-8.465 4.052-4.903-1.862-11.144-2.491-15.973-.66-2.011-1.966-4.716-3.513-7.36-4.698-1.275-.57-3.575-.085-3.991 1.222-.812 2.552-1.136 6.048.177 8.559a1.22 1.22 0 00-.323.373c-3 5.919-4.605 10.649-.934 16.706 2.546 4.199 7.122 7.004 12.464 7.58-1.131 1.854-1.156 4.135-1.042 6.184l.006.08-.16-.018c-.56-.131-1.078-.396-1.568-.654-1.014-.535-1.908-1.248-2.78-1.939-1.619-1.283-3.083-2.705-4.718-3.977-2.307-1.793-5.904-2.32-8.137-.027-.749.768 1.067.811 2.544.504.369.182.705.424 1.037.65.713.49 1.358 1.061 2.005 1.613 1.472 1.256 2.893 2.547 4.48 3.697 2.269 1.646 4.798 2.336 7.433 1.854.12 1.662.159 3.754-.603 4.525l.271-.064c-.509.287-.712.562-.205.691l.138.037c1.066.271 3.113-.148 3.852-.895 1.035-1.049.835-3.223.905-4.512.157-2.916-.706-6.1 1.152-8.732.129-.182-.213-.279-.755-.299.34-.539.126-1.047-1.204-1.119-5.771-.312-9.692-4.064-11.872-8.418-2.373-4.737-.326-8.827 1.897-13.214.032-.063.043-.119.064-.177.579-.322.908-.759.64-1.217-.894-1.523-1.08-3.403-.895-5.216 1.553.927 2.987 2.005 4.113 3.289.859.981 3.748.281 4.254-.766a5.72 5.72 0 00.707-.345c3.089-1.784 10.085.503 12.903 2.015 1.213.651 5.113-.914 4.171-1.42-.008-.004-.018-.008-.025-.013.98-1.241 2.393-2.239 3.955-2.961.363 2.109.947 5.343-.786 6.507-.613.313-1.006.739-.82 1.194 3.665 8.999 3.522 16.769-6.492 21.964-1.438-.574-4.816.666-3.733 1.795 2.33 2.434 1.174 4.906.913 7.707-.075.807.246 2.145.188 3.154-.583.311-.928.721-.689 1.131.684 1.178 2.167 1.172 3.469.682 1.529-.574 1.502-1.598 1.502-2.859.001-3.293 1.361-6.795-.146-9.795a2.72 2.72 0 00.534-.176c4.846-2.33 8.811-5.246 10.74-9.853 1.98-4.722 0-10.294-1.824-14.777z">
+              </path>
+            </svg></a>
+        </div>
+      </div>
+      <div class="nk-timeline__item">
+        <h3 class="nk-timeline__title">
+          CSS
+        </h3>
+        <div class="nk-timeline__description">
+          Workshop online ...
+        </div>
+        <div class="nk-timeline__date">
+          18/04/2016-22/04/2016
+        </div>
+        <div class="nk-timeline__assets">
+          <a href="">
+            <svg class="nk-icon--small" xmlns="http://www.w3.org/2000/svg" viewBox="-15.86 404.945 32 32">
+              <title>Web</title>
+              <path
+                d="M13.465 404.945h-26.65c-1.475 0-2.675 1.309-2.675 2.918v26.164c0 1.609 1.2 2.918 2.675 2.918h26.65c1.475 0 2.675-1.309 2.675-2.918v-26.164c0-1.609-1.201-2.918-2.675-2.918zm-26.65 2.502h26.65c.21 0 .382.188.382.417v5.212h-27.415v-5.212c0-.23.172-.417.383-.417zm-.383 26.58v-18.45h5.971v18.866h-5.588c-.211 0-.383-.187-.383-.416zm27.033.416h-18.77v-18.866h19.153v18.45c-.001.229-.172.416-.383.416z" />
+            </svg></a>
+          <a href="">
+            <svg class="nk-icon--small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+              <title>Github</title>
+              <path
+                d="M45.673 11.367c2.807-2.021 1.771-6.011 1.438-8.758-.079-.666-2.096-.304-2.452-.206-3.095.848-6.146 2.095-8.465 4.052-4.903-1.862-11.144-2.491-15.973-.66-2.011-1.966-4.716-3.513-7.36-4.698-1.275-.57-3.575-.085-3.991 1.222-.812 2.552-1.136 6.048.177 8.559a1.22 1.22 0 00-.323.373c-3 5.919-4.605 10.649-.934 16.706 2.546 4.199 7.122 7.004 12.464 7.58-1.131 1.854-1.156 4.135-1.042 6.184l.006.08-.16-.018c-.56-.131-1.078-.396-1.568-.654-1.014-.535-1.908-1.248-2.78-1.939-1.619-1.283-3.083-2.705-4.718-3.977-2.307-1.793-5.904-2.32-8.137-.027-.749.768 1.067.811 2.544.504.369.182.705.424 1.037.65.713.49 1.358 1.061 2.005 1.613 1.472 1.256 2.893 2.547 4.48 3.697 2.269 1.646 4.798 2.336 7.433 1.854.12 1.662.159 3.754-.603 4.525l.271-.064c-.509.287-.712.562-.205.691l.138.037c1.066.271 3.113-.148 3.852-.895 1.035-1.049.835-3.223.905-4.512.157-2.916-.706-6.1 1.152-8.732.129-.182-.213-.279-.755-.299.34-.539.126-1.047-1.204-1.119-5.771-.312-9.692-4.064-11.872-8.418-2.373-4.737-.326-8.827 1.897-13.214.032-.063.043-.119.064-.177.579-.322.908-.759.64-1.217-.894-1.523-1.08-3.403-.895-5.216 1.553.927 2.987 2.005 4.113 3.289.859.981 3.748.281 4.254-.766a5.72 5.72 0 00.707-.345c3.089-1.784 10.085.503 12.903 2.015 1.213.651 5.113-.914 4.171-1.42-.008-.004-.018-.008-.025-.013.98-1.241 2.393-2.239 3.955-2.961.363 2.109.947 5.343-.786 6.507-.613.313-1.006.739-.82 1.194 3.665 8.999 3.522 16.769-6.492 21.964-1.438-.574-4.816.666-3.733 1.795 2.33 2.434 1.174 4.906.913 7.707-.075.807.246 2.145.188 3.154-.583.311-.928.721-.689 1.131.684 1.178 2.167 1.172 3.469.682 1.529-.574 1.502-1.598 1.502-2.859.001-3.293 1.361-6.795-.146-9.795a2.72 2.72 0 00.534-.176c4.846-2.33 8.811-5.246 10.74-9.853 1.98-4.722 0-10.294-1.824-14.777z">
+              </path>
+            </svg></a>
+        </div>
+      </div>
+    </div>
+</article>
+
+<script>
+const buttontimeline = document.querySelector(".nk-js-button--timeline");
+const codetimeline = document.querySelector(".nk-js--timeline");
+buttontimeline.onclick = () => codetimeline.classList.toggle("show");
+</script>
+  <article id="slider" class="">
+  <div class="nk-position--sticky nk-bg--opaque">
+    <div class="nk-toolbar nk-container--content">
+      <h2 class="nk-heading--2">slider</h2>
+      <button class="nk-js-button--slider nk-button nk-toolbar__item--right">Code</button>
+    </div>
+  </div>
+  <div class="nk-overflow--hidden">
+    <pre class="nk-js--slider nk-doc--code"><code>
+          &lt:section class="nk-slider"&gt;
+            &lt:article class="nk-slider"&gt;
+              ...
+              &lt:a class="nk-slider__back" href="#0"&gt;Back&lt:/a&gt;
+              &lt:a class="nk-slider__next" href="#1"&gt;Next&lt:/a&gt;
+            &lt:/article&gt;
+          &lt:/section&gt;
+  
+      </code>
+      </pre>
+  </div>
+  <div class="nk-slider nk-theme--dark">
+    <header id="0" class="nk-slide">
+      <div class="nk-cover">
+          <img src="https://raw.githubusercontent.com/nabaroa/nak-scaffold/master/docs/assets/img/nakDS.png" alt="">
+        <h1 class="nk-cover__title">
+          <span class="nk-font--bold">nak</span>
+          <span class="nk-font--light"></span>Slider</h1>
+      </div>
+      <a class="nk-slider__next" href="#1">Next</a>
+    </header>
+    <article id="1" class="nk-slide">
+      <div class="nk-slide nk-grid nk-grid-3 nk-grid-row-3">
+        <img class="nk-object-fit--cover nk-object-position--top" src="assets/img/naiara_abaroa.jpg" alt="">
+        <img class="nk-object-fit--cover" src="assets/img/lekitto.jpg" alt="">
+        <img class="nk-object-fit--cover" src="assets/img/london.jpg" alt="">
+        <img class="nk-object-fit--cover" src="assets/img/rm2.jpg" alt="">
+        <img class="nk-object-fit--cover" src="assets/img/swan.jpg" alt="">
+        <img class="nk-object-fit--cover" src="assets/img/naiara-abaroa.jpg" alt="">
+        <img class="nk-object-fit--cover" src="assets/img/40.jpg" alt="">
+        <img class="nk-object-fit--cover" src="assets/img/studio.jpg" alt="">
+        <img class="nk-object-fit--cover" src="assets/img/studio-chair.jpg" alt="">
+      </div>
+      <a class="nk-slider__back" href="#0">Back</a>
+      <a class="nk-slider__next" href="#2">Next</a>
+    </article>
+    <article id="2" class="nk-slide">
+      <div class="nk-cover">
+        <h1 class="nk-cover__title">I am a <span class="nk-font--bold"> slide</span></h1>
+      </div>
+      <a class="nk-slider__back" href="#1">Back</a>
+      <a class="nk-slider__next" href="#3">Next</a>
+    </article>
+    <article id="3" class="nk-slide">
+      <ul>
+        <li>List items.</li>
+        <li>List items.</li>
+        <li>List items.</li>
+        <li>List items.</li>
+      </ul>
+      <a class="nk-slider__back" href="#1">Back</a>
+      <a class="nk-slider__next" href="#4">Next</a>
+    </article>
+
+    <article id="4" class="nk-slide">
+      <div class="nk-cover nk-cover--dark-mode nk-bg--images-1">
+        <h1 class="nk-cover__title"><span class="nk-font--bold">nak</span><span class="nk-font--light">DS</span></h1>
+        <p class="nk-cover__subtitle">Easy and beautiful</p>
+        <button class="nk-button nk-button--color nk-mtx">Try now</button>
+      </div>
+      <a class="nk-slider__back" href="#3">Back</a>
+      <a class="nk-slider__next" href="#5">Next</a>
+    </article>
+    <article id="5" class="nk-slide">
+      <div class="nk-shape--heart nk-bg--c"></div>
+      <a class="nk-slider__back" href="#4">Back</a>
+    </article>
+  </div>
+</article>
+
+<script>
+  const buttonslider = document.querySelector(".nk-js-button--slider");
+  const codeslider = document.querySelector(".nk-js--slider");
+  buttonslider.onclick = () => codeslider.classList.toggle("show");
+</script>
+
+  <footer id="bottom" class="nk-footer nk-theme--y nk-grid nk-grid-3 nk-text-align--center">
+  <div>
+    <p class="nk-text--small">Builted with ❤ by <a href="https://github.com/nabaroa"> Naiara Abaroa</a></p>
+  </div>
+  <div>
+    <a href="https://github.com/nabaroa/nakDS">
+      <svg class="nk-icon" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 50 50">
+        <path
+          d="M45.673 11.367c2.807-2.021 1.771-6.011 1.438-8.758-.079-.666-2.096-.304-2.452-.206-3.095.848-6.146 2.095-8.465 4.052-4.903-1.862-11.144-2.491-15.973-.66-2.011-1.966-4.716-3.513-7.36-4.698-1.275-.57-3.575-.085-3.991 1.222-.812 2.552-1.136 6.048.177 8.559a1.22 1.22 0 00-.323.373c-3 5.919-4.605 10.649-.934 16.706 2.546 4.199 7.122 7.004 12.464 7.58-1.131 1.854-1.156 4.135-1.042 6.184l.006.08-.16-.018c-.56-.131-1.078-.396-1.568-.654-1.014-.535-1.908-1.248-2.78-1.939-1.619-1.283-3.083-2.705-4.718-3.977-2.307-1.793-5.904-2.32-8.137-.027-.749.768 1.067.811 2.544.504.369.182.705.424 1.037.65.713.49 1.358 1.061 2.005 1.613 1.472 1.256 2.893 2.547 4.48 3.697 2.269 1.646 4.798 2.336 7.433 1.854.12 1.662.159 3.754-.603 4.525l.271-.064c-.509.287-.712.562-.205.691l.138.037c1.066.271 3.113-.148 3.852-.895 1.035-1.049.835-3.223.905-4.512.157-2.916-.706-6.1 1.152-8.732.129-.182-.213-.279-.755-.299.34-.539.126-1.047-1.204-1.119-5.771-.312-9.692-4.064-11.872-8.418-2.373-4.737-.326-8.827 1.897-13.214.032-.063.043-.119.064-.177.579-.322.908-.759.64-1.217-.894-1.523-1.08-3.403-.895-5.216 1.553.927 2.987 2.005 4.113 3.289.859.981 3.748.281 4.254-.766a5.72 5.72 0 00.707-.345c3.089-1.784 10.085.503 12.903 2.015 1.213.651 5.113-.914 4.171-1.42-.008-.004-.018-.008-.025-.013.98-1.241 2.393-2.239 3.955-2.961.363 2.109.947 5.343-.786 6.507-.613.313-1.006.739-.82 1.194 3.665 8.999 3.522 16.769-6.492 21.964-1.438-.574-4.816.666-3.733 1.795 2.33 2.434 1.174 4.906.913 7.707-.075.807.246 2.145.188 3.154-.583.311-.928.721-.689 1.131.684 1.178 2.167 1.172 3.469.682 1.529-.574 1.502-1.598 1.502-2.859.001-3.293 1.361-6.795-.146-9.795a2.72 2.72 0 00.534-.176c4.846-2.33 8.811-5.246 10.74-9.853 1.98-4.722 0-10.294-1.824-14.777z" />
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="nofollow"><img
+        src="https://camo.githubusercontent.com/60561947585c982aee67ed3e3b25388184cc0aa3/687474703a2f2f6d6972726f72732e6372656174697665636f6d6d6f6e732e6f72672f70726573736b69742f627574746f6e732f38387833312f7376672f63632d7a65726f2e737667"
+        alt="CC0" data-canonical-src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg"
+        style="max-width:100%;"></a>
+  </div>
+</footer>
+</body>
+
+</html>
