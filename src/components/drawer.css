@@ -8,7 +8,8 @@
   flex-direction: column;
   padding: var(--xxx-large);
   background: var(--color--k-10);
-  z-index: 2;
+  overflow-y: auto; 
+  z-index: 3;
   transform: translateX(75vw);
   transition: 0.3s;
 

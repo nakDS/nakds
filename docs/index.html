@@ -35,13 +35,16 @@
   <h2 class="nk-heading--4">
     Design system for a<strong class="nk-text--strong"> beatiful</strong> web</h2>
   <button class="nk-js-button--dark-mode theme-change nk-button nk-button--color nk-mtx">Switch mode</button>
-  <a class="nk-mtx nk-d-block" href="#nk-nav">
-    <svg class="nk-icon--large nk-text-align--center" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 50 62.5">
-      <path
-        d="M1.5 14.8c4.7 2.6 8.3 6.6 12.1 10.2l12 11.7c.9.9 2.9 0 3.6-.7 6.3-7 12.6-14.1 18.9-21.1 1.1-1.2-2.8-.9-3.6 0-6.3 7-12.6 14.1-18.9 21.1 1.2-.2 2.4-.5 3.6-.7C21.5 27.8 14 18.2 4.5 13c-1-.6-4.6.9-3 1.8z" />
-    </svg>
-  </a>
 </header>
+<button class="nk-button nk-button--icon nk-nav__button nk-js--nav-open">
+    <svg class="nk-icon--large" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 50 50">
+      <title>Close</title>
+      <path
+        d="M5.936 9.11c4.01 6.15 9.822 10.435 15.783 14.566 5.788 4.012 14.842 8.7 16.884 15.933.465 1.647 6.252.065 5.795-1.553-1.773-6.283-8.475-10.403-13.527-13.927-6.901-4.812-14.447-9.378-19.139-16.573-1.077-1.649-6.482.503-5.796 1.554z" />
+      <path
+        d="M37.158 7.358c-5.19 6.268-11.474 11.478-16.922 17.507C14.6 31.103 10.918 38.91 7.281 46.408l5.783-1.185-.167-.667c-.451-1.805-6.255-.285-5.796 1.553l.167.667c.51 2.041 5.201.017 5.783-1.185 3.557-7.332 7.191-14.564 12.535-20.775 5.303-6.163 11.726-11.232 16.921-17.508 1.514-1.825-4.263-1.262-5.349.05z" />
+    </svg>
+</button>
     <main>
 
       <div class="nk-toolbar nk-doc--gototop">
@@ -52,31 +55,22 @@
     </svg>
   </a>
 </div>
-      <nav id="nk-nav" class="nk-section nk-bg--color">
-    <!-- <div class="nk-toolbar">
-      <button id="nk-js-close" class="nk-button nk-button--icon">
-        <svg class="nk-icon--small" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 50 50">
-          <title>Close</title>
-          <path
-            d="M5.936 9.11c4.01 6.15 9.822 10.435 15.783 14.566 5.788 4.012 14.842 8.7 16.884 15.933.465 1.647 6.252.065 5.795-1.553-1.773-6.283-8.475-10.403-13.527-13.927-6.901-4.812-14.447-9.378-19.139-16.573-1.077-1.649-6.482.503-5.796 1.554z" />
-          <path
-            d="M37.158 7.358c-5.19 6.268-11.474 11.478-16.922 17.507C14.6 31.103 10.918 38.91 7.281 46.408l5.783-1.185-.167-.667c-.451-1.805-6.255-.285-5.796 1.553l.167.667c.51 2.041 5.201.017 5.783-1.185 3.557-7.332 7.191-14.564 12.535-20.775 5.303-6.163 11.726-11.232 16.921-17.508 1.514-1.825-4.263-1.262-5.349.05z" />
-        </svg>
-      </button>
-    </div> -->
-    <ul class="nk-grid nk-grid-2 nk-grid-5@md nk-gap nk-container--content nk-list">
-      <li>How to use it
+      <div class="nk-drawer nk-js--nav nk-pan">
+  <nav id="nk-nav" class="">
+    <ul class="nk-grid nk-grid-2 nk-grid-3@md nk-grid-rows-3 nk-list">
+      <!-- <li class="nk-bg--k-10">How to use it
         <ul>
           <li><a href="#instalation">Getting Started</a></li>
         </ul>
-      </li>
-      <li>Tokens
+      </li> -->
+      <li class="nk-bg--c nk-pax">
+        <span class="nk-heading--3">Tokens</span>  
         <ul>
-          <li><a href="#color">Color</a></li>
+          <li><a href="tokens/#color">Color</a></li>
           <li><a href="#sizing">Sizing</a></li>
         </ul>
       </li>
-      <li>Layout
+      <li class="nk-bg--c--lighter">Layout
         <ul>
           <li><a href="#patterns">Patterns</a></li>
           <li><a href="#container">Container</a></li>
@@ -86,9 +80,9 @@
           <li><a href="#navigation">Navigation</a></li>
         </ul>
       </li>
-      <li>
+      <li class="nk-bg--m">
         Components
-        <ul>
+        <ul class="nk-grid nk-grid-2">
           <li><a href="#avatar">Avatar</a><span class="nk-text--small"></span></li>
           <li><a href="#badge">Badge</a><span class="nk-text--small"></span></li>
           <li><a href="#card">Card</a><span class="nk-text--small"></span></li>
@@ -129,6 +123,17 @@
       </li>
     </ul>
   </nav>
+</div>
+<div class="nk-dimmer"></div>
+
+<script>
+  const buttonnavOpen = document.querySelector(".nk-js--nav-open");
+  const navOpen = document.querySelector('.nk-js--nav');
+  const dimmerOpen = document.querySelector('.nk-dimmer');
+  buttonnavOpen.onclick = () =>
+    navOpen.classList.toggle("nk-is-open") +
+    dimmerOpen.classList.toggle("nk-is-open");
+</script>
       <article id="instalation" class="nk-section nk-container--content">
   <h2 class="nk-heading--2 nk-position--sticky nk-bg--opaque">
     Getting Started
@@ -160,117 +165,6 @@ npm i nakds
       </code>
       </pre>
 </article>
-
-      <article class="nk-cover nk-bg--color">
-  <h1 class="nk-cover__title nk-position--sticky nk-color--k-1">Tokens</h1>
-</article>
-      <article id="color" class="nk-container nk-section nk-height-fullpage">
-    <h2 class="nk-heading--2 nk-position--sticky nk-bg--opaque">Color tokens</h2>
-    <p>Color palettes</p>
-    <h3 class="nk-heading--3">Theme C</h3>
-    <h4 class="nk-heading--4">.nk-theme--c</h4>
-    <div class="nk-grid@md nk-grid-4 nk-theme--c">
-      <div class="nk-card">
-        <div class="nk-card__image" style="background: var(--color--lighter)"></div>
-        <div class="nk-card__body">--color--lighter: #6db5ba;</div>
-      </div>
-      <div class="nk-card">
-        <div class="nk-card__image" style="background: var(--color)"></div>
-        <div class="nk-card__body">--color: #5ca9ad;</div>
-      </div>
-      <div class="nk-card">
-        <div class="nk-card__image" style="background: var(--color--darker)"></div>
-        <div class="nk-card__body">--color--darker: #529393;</div>
-      </div>
-      <div class="nk-card">
-        <div class="nk-card__image" style="background: var(--color--c)"></div>
-        <div class="nk-card__body">--color--complementary: #d5ad26;</div>
-      </div>
-    </div>
-    <h3 class="nk-heading--3">Theme M</h3>
-    <h4 class="nk-heading--4">.nk-theme--m</h4>
-    <div class="nk-grid@md nk-grid-4 nk-theme--m">
-      <div class="nk-card">
-        <div class="nk-card__image" style="background: var(--color--lighter)"></div>
-        <div class="nk-card__body">--color--lighter: #d17a9c;</div>
-      </div>
-      <div class="nk-card">
-        <div class="nk-card__image" style="background: var(--color)"></div>
-        <div class="nk-card__body">--color: #c44f7a;</div>
-      </div>
-      <div class="nk-card">
-        <div class="nk-card__image" style="background: var(--color--darker)"></div>
-        <div class="nk-card__body">--color--darker: #bb2a5c;</div>
-      </div>
-      <div class="nk-card">
-        <div class="nk-card__image" style="background: var(--color--complementary)"></div>
-        <div class="nk-card__body">--color--complementary: #5ca9ad;</div>
-      </div>
-    </div>
-    <h3 class="nk-heading--3">Theme Y</h3>
-    <h4 class="nk-heading--4">.nk-theme--y</h4>
-    <div class="nk-grid@md nk-grid-4 nk-theme--y">
-      <div class="nk-card">
-        <div class="nk-card__image" style="background: var(--color--lighter)"></div>
-        <div class="nk-card__body">--color--lighter: #e5cc70;</div>
-      </div>
-      <div class="nk-card">
-        <div class="nk-card__image" style="background: var(--color)"></div>
-        <div class="nk-card__body">--color: #d5ad26;</div>
-      </div>
-      <div class="nk-card">
-        <div class="nk-card__image" style="background: var(--color--darker)"></div>
-        <div class="nk-card__body">--color--darker: #c19a2b;</div>
-      </div>
-      <div class="nk-card">
-        <div class="nk-card__image" style="background: var(--color--complementary)"></div>
-        <div class="nk-card__body">--color--complementary: #5ca9ad;</div>
-      </div>
-    </div>
-    <h3 class="nk-heading--3">Scale k</h3>
-    <div class="nk-grid@md nk-grid-5">
-      <div class="nk-card">
-        <div class="nk-card__image" style="background: var(--color--k-1)"></div>
-        <div class="nk-card__body">--color--k-1: ;</div>
-      </div>
-      <div class="nk-card">
-        <div class="nk-card__image" style="background: var(--color--k-2)"></div>
-        <div class="nk-card__body">--color--k-2: ;</div>
-      </div>
-      <div class="nk-card">
-        <div class="nk-card__image" style="background: var(--color--k-3)"></div>
-        <div class="nk-card__body">--color--k-3: ;</div>
-      </div>
-      <div class="nk-card">
-        <div class="nk-card__image" style="background: var(--color--k-4)"></div>
-        <div class="nk-card__body">--color--k-4: ;</div>
-      </div>
-      <div class="nk-card">
-        <div class="nk-card__image" style="background: var(--color--k-5)"></div>
-        <div class="nk-card__body">--color--k-5: ;</div>
-      </div>
-      <div class="nk-card">
-        <div class="nk-card__image" style="background: var(--color--k-6)"></div>
-        <div class="nk-card__body">--color--k-6: ;</div>
-      </div>
-      <div class="nk-card">
-        <div class="nk-card__image" style="background: var(--color--k-7)"></div>
-        <div class="nk-card__body">--color--k-7: ;</div>
-      </div>
-      <div class="nk-card">
-        <div class="nk-card__image" style="background: var(--color--k-8)"></div>
-        <div class="nk-card__body">--color--k-8: ;</div>
-      </div>
-      <div class="nk-card">
-        <div class="nk-card__image" style="background: var(--color--k-9)"></div>
-        <div class="nk-card__body">--color--k-9: ;</div>
-      </div>
-      <div class="nk-card">
-        <div class="nk-card__image" style="background: var(--color--k-10)"></div>
-        <div class="nk-card__body">--color--k-10: ;</div>
-      </div>
-    </div>
-  </article>
 
       <article class="nk-cover nk-bg--y">
   <h1 class="nk-cover__title nk-position--sticky">Layout</h1>
@@ -609,7 +503,7 @@ buttondimmer.onclick = () => codedimmer.classList.toggle("show");
   </div>
 </article>
 
-<script>
+<!-- <script>
   const buttondrawer = document.querySelector(".nk-js-button--drawer");
   const codedrawer = document.querySelector(".nk-js--drawer");
   buttondrawer.onclick = () => codedrawer.classList.toggle("show");
@@ -627,9 +521,7 @@ buttondimmer.onclick = () => codedimmer.classList.toggle("show");
   buttondrawerClose.onclick = () => 
     drawerClose.classList.toggle("nk-is-open") + 
     dimmerClose.classList.toggle("nk-is-open");
- 
-
-</script>
+</script> -->
       <article id="gallery" class="">
   <div class="nk-position--sticky nk-bg--opaque">
     <div class="nk-toolbar nk-container--content">

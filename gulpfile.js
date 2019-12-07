@@ -30,6 +30,18 @@ function docs() {
   .pipe(gulp.dest('./docs/'));
 };
 
+
+function docsTokens() {
+  return gulp
+  .src("./docs/src/html/tokens/index.html")
+  .pipe(
+    fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+  .pipe(gulp.dest('./docs/tokens/'));
+};
+
 function css() {
   return gulp
     .src("./src/nakDS.css")
@@ -204,6 +216,7 @@ function clean() {
 
 const build = gulp.series(
   docs,
+  docsTokens,
   css,
   utils,
   tokens,
@@ -217,6 +230,7 @@ const build = gulp.series(
 );
 
 exports.docs = docs;
+exports.docsTokens = docsTokens;
 exports.css = css;
 exports.img = img;
 exports.watch = watch;

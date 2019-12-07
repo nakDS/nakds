@@ -27,6 +27,10 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+.nk-grid-rows-3 {
+  grid-template-rows: repeat(3, 1fr);
+}
+
 .nk-grid-4 {
   grid-template-columns: repeat(4, 1fr);
 }
