@@ -20,6 +20,10 @@
   }
 }
 
+.nk-flex--column {
+  flex-direction: column;
+}
+
 .nk-justify-content--start {
   justify-content: start;
 }

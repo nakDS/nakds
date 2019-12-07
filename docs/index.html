@@ -36,41 +36,42 @@
     Design system for a<strong class="nk-text--strong"> beatiful</strong> web</h2>
   <button class="nk-js-button--dark-mode theme-change nk-button nk-button--color nk-mtx">Switch mode</button>
 </header>
-<button class="nk-button nk-button--icon nk-nav__button nk-js--nav-open">
-    <svg class="nk-icon--large" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 50 50">
-      <title>Close</title>
-      <path
-        d="M5.936 9.11c4.01 6.15 9.822 10.435 15.783 14.566 5.788 4.012 14.842 8.7 16.884 15.933.465 1.647 6.252.065 5.795-1.553-1.773-6.283-8.475-10.403-13.527-13.927-6.901-4.812-14.447-9.378-19.139-16.573-1.077-1.649-6.482.503-5.796 1.554z" />
-      <path
-        d="M37.158 7.358c-5.19 6.268-11.474 11.478-16.922 17.507C14.6 31.103 10.918 38.91 7.281 46.408l5.783-1.185-.167-.667c-.451-1.805-6.255-.285-5.796 1.553l.167.667c.51 2.041 5.201.017 5.783-1.185 3.557-7.332 7.191-14.564 12.535-20.775 5.303-6.163 11.726-11.232 16.921-17.508 1.514-1.825-4.263-1.262-5.349.05z" />
-    </svg>
-</button>
+
     <main>
 
-      <div class="nk-toolbar nk-doc--gototop">
-  <a href="#top" class="nk-button nk-button--icon nk-toolbar__item--right">
-    <svg class="nk-icon" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 50 50" x="0px" y="0px">
+      <div class="nk-toolbar nk-nav__button nk-flex nk-flex--column">
+  <button class="nk-button nk-button--icon  nk-js--nav-open">
+    <svg class="nk-icon" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 50 50">
+      <title>Menu</title>
       <path
-        d="M5.1 38.9c4.4-3.8 8.4-7.8 12.2-12.2 3.4-4.1 6.3-9.8 10.8-12.8l-2.7.3c7.6 5.7 14.3 12.5 20 20.1.8 1.1 4.6-.2 3.6-1.6-6-7.8-12.9-14.6-20.7-20.5-.7-.5-2.1-.1-2.7.3-4.1 2.7-6.5 7.1-9.5 10.9C11.9 28.7 7.1 33.6 2 38c-1.8 1.6 2 1.8 3.1.9z" />
+        d="M7.061 10.688c11.654-1.822 23.457.164 35.166-1 2.968-.295 4.698-3.943.701-3.546-11.712 1.164-23.49-.825-35.166 1-2.901.453-4.682 4.169-.701 3.546zM6.106 25.999c7.635.141 15.129-1.374 22.745-1.534 4.658-.098 9.73.559 14.279-.81 1.131-.34 2.521-.994 2.476-2.351l-.006-.165c-.044-1.313-2.486-1.266-4.187-.429-4.141.949-8.845.097-13.016.319-6.713.358-13.358 1.592-20.096 1.467-2.32-.042-6.122 3.43-2.195 3.503zM41.549 37.726c-4.651 2.286-10.269 2.103-15.327 1.842-6.049-.312-12.073-.74-18.052-1.742-2.831-.474-5.9 3.527-2.016 4.178 7.162 1.199 14.527 1.806 21.791 1.88 5.508.057 11.144-.314 16.161-2.78 3.558-1.75.37-4.817-2.557-3.378z">
+      </path>
     </svg>
+  </button>
+  <a href="#top">
+    <img width="48" src="https://raw.githubusercontent.com/nabaroa/nak-scaffold/master/docs/assets/img/nakDS.png"
+      alt="Home">
   </a>
 </div>
-      <div class="nk-drawer nk-js--nav nk-pan">
+<div class="nk-drawer nk-js--nav nk-pan">
   <nav id="nk-nav" class="">
-    <ul class="nk-grid nk-grid-2 nk-grid-3@md nk-grid-rows-3 nk-list">
+    <ul class="nk-grid nk-grid-2 nk-grid-3@md nk-list">
       <!-- <li class="nk-bg--k-10">How to use it
         <ul>
           <li><a href="#instalation">Getting Started</a></li>
         </ul>
       </li> -->
-      <li class="nk-bg--c nk-pax">
-        <span class="nk-heading--3">Tokens</span>  
-        <ul>
-          <li><a href="tokens/#color">Color</a></li>
-          <li><a href="#sizing">Sizing</a></li>
-        </ul>
+      <li class="nk-bg--c nk-pax nk-grid nk-grid-2">
+        <div>
+          <span class="nk-heading--3">Tokens</span>
+          <ul>
+            <li><a href="./tokens/#color">Color</a></li>
+            <li><a href="./tokens/#sizing">Sizing</a></li>
+          </ul>
+        </div>
       </li>
-      <li class="nk-bg--c--lighter">Layout
+      <li class="nk-bg--y nk-pax">
+          <span class="nk-heading--3">Layout</span>
         <ul>
           <li><a href="#patterns">Patterns</a></li>
           <li><a href="#container">Container</a></li>
@@ -80,8 +81,8 @@
           <li><a href="#navigation">Navigation</a></li>
         </ul>
       </li>
-      <li class="nk-bg--m">
-        Components
+      <li class="nk-bg--m nk-pax">
+          <span class="nk-heading--3">Components</span>
         <ul class="nk-grid nk-grid-2">
           <li><a href="#avatar">Avatar</a><span class="nk-text--small"></span></li>
           <li><a href="#badge">Badge</a><span class="nk-text--small"></span></li>
@@ -99,7 +100,8 @@
           <li><a href="#slider">Slider</a></li>
         </ul>
       </li>
-      <li>Styling
+      <li class="nk-bg--c nk-pax">
+          <span class="nk-heading--3">Styling</span>
         <ul>
           <li><a href="#background">Background</a></li>
           <li><a href="#filters">Filters</a></li>
@@ -110,13 +112,15 @@
           <li><a href="#fonts">Variable fonts</a></li>
         </ul>
       </li>
-      <li>Assets
+      <li class="nk-bg--y nk-pax">
+          <span class="nk-heading--3">Assets</span>
         <ul>
           <li><a href="#icons">Icons</a></li>
           <li><a href="#images">Images</a></li>
         </ul>
       </li>
-      <li>Utilities
+      <li class="nk-bg--m nk-pax">
+          <span class="nk-heading--3">Utilities</span>
         <ul>
           <li><a href="#spacing">Spacing</a></li>
         </ul>

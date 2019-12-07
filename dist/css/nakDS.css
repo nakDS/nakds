@@ -1594,6 +1594,12 @@ Control this bit through the gulpfile */
   }
 }
 
+.nk-flex--column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
 .nk-justify-content--start {
   -webkit-box-pack: start;
           justify-content: start;

@@ -24,7 +24,7 @@
 
 .nk-doc--gototop {
   position: sticky;
-  top: 0px;
+  top: 80px;
   z-index: 2;
 }
 

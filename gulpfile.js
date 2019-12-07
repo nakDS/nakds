@@ -25,9 +25,14 @@ function docs() {
   .pipe(
     fileinclude({
       prefix: '@@',
-      basepath: '@file'
+      basepath: './docs/src/'
     }))
-  .pipe(gulp.dest('./docs/'));
+  .pipe(gulp.dest('./docs/'))
+  .pipe(
+    notify({
+      message: "Your docs are ready ♡"
+    })
+  );
 };
 
 
@@ -37,7 +42,7 @@ function docsTokens() {
   .pipe(
     fileinclude({
       prefix: '@@',
-      basepath: '@file'
+      basepath: './docs/src/html/tokens/'
     }))
   .pipe(gulp.dest('./docs/tokens/'));
 };
@@ -187,8 +192,12 @@ function img() {
     .pipe(gulp.dest("./docs/assets/img/"));
 }
 
+// function watch() {
+//   gulp.watch("./src/**/*.css", css, docs);
+// }
+
 function watch() {
-  gulp.watch("./src/**/*.css", css, docs);
+  gulp.watch("./docs/src/**/*.html", docs, docsTokens);
 }
 
 // function sassMixins() {
