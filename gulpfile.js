@@ -1,22 +1,13 @@
 const gulp = require("gulp");
 const postcss = require("gulp-postcss");
-const autoprefixer = require("autoprefixer");
 const postcssPresetEnv = require("postcss-preset-env");
 const cssImport = require("postcss-import");
-const customProperties = require("postcss-custom-properties");
-const apply = require("postcss-apply");
 const mixins = require("postcss-mixins");
 const nested = require("postcss-nested");
 const customMedia = require("postcss-custom-media");
 const cssnano = require("cssnano");
 const notify = require("gulp-notify");
 const rename = require("gulp-rename");
-const inject = require("gulp-inject-string");
-const find = require("gulp-find");
-const replace = require("gulp-replace");
-const insert = require("gulp-insert");
-const prettier = require("gulp-prettier");
-const del = require("del");
 const fileinclude = require("gulp-file-include");
 
 function docs() {
@@ -67,61 +58,13 @@ function cssMin() {
   .pipe(gulp.dest("./docs/css/"));
 }
 
-// function cssMin() {
-//   return gulp
-//     .src("./src/css/nakDS.css")
-//     .pipe(
-//       postcss([
-//         cssImport(),
-//         mixins(),
-//         customMedia(),
-//         nested(),
-//         postcssPresetEnv({
-//           autoprefixer: { grid: true }
-//         })
-//       ])
-//     )
 
-//     .pipe(postcss([cssnano()]))
-//     .pipe(gulp.dest("./dist/css/"))
-//     .pipe(rename("nakDS.min.css"))
-//     .pipe(gulp.dest("./dist/css/"))
-//     .pipe(gulp.dest("./docs/css/"))
-//     .pipe(
-//       notify({
-//         message: "Your nakDS CSS is ready ♡"
-//       })
-//     );
-// }
-
-function fonts() {
+function assets() {
   return gulp
-    .src("./assets/fonts/*.*")
-    .pipe(gulp.dest("./dist/assets/fonts/"))
-    .pipe(gulp.dest("./docs/assets/fonts/"));
+    .src("./assets/**/*.*")
+    .pipe(gulp.dest("./dist/assets/"))
+    .pipe(gulp.dest("./docs/assets/"));
 }
-
-function svg() {
-  return gulp
-    .src("./assets/svg/*.*")
-    .pipe(gulp.dest("./dist/assets/svg/"))
-    .pipe(gulp.dest("./docs/assets/svg/"));
-}
-
-function img() {
-  return gulp
-    .src("./assets/img/*.*")
-    .pipe(gulp.dest("./dist/assets/img/"))
-    .pipe(gulp.dest("./docs/assets/img/"));
-}
-
-// function watch() {
-//   gulp.watch("./src/**/*.css", css, docs);
-// }
-
-// function watch() {
-//   gulp.watch("./docs/src/**/*.html", docs);
-// }
 
 function watch() {
   gulp.watch("./src/html/**/*.html", docs);
@@ -154,16 +97,14 @@ const build = gulp.series(
   docs,
   css,
   cssMin,
-  fonts,
-  img,
+  assets
   // sassMixins,
-  // clean,
-  svg
+  // clean
 );
 
 exports.docs = docs;
 exports.css = css;
 exports.cssMin = cssMin;
-exports.img = img;
+exports.assets = assets;
 exports.watch = watch;
 exports.default = build;
