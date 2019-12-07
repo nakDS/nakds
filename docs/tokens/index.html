@@ -10,8 +10,8 @@
 
 </head>
 <body>
-    <div class="nk-toolbar">
-  <button class="nk-button nk-button--icon nk-nav__button nk-js--nav-open nk-mam">
+    <div class="nk-toolbar nk-nav__button nk-flex nk-flex--column">
+  <button class="nk-button nk-button--icon  nk-js--nav-open">
     <svg class="nk-icon" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 50 50">
       <title>Menu</title>
       <path
@@ -19,36 +19,30 @@
       </path>
     </svg>
   </button>
-
-  <a href="#top" class="">
-    <img width="40" src="https://raw.githubusercontent.com/nabaroa/nak-scaffold/master/docs/assets/img/nakDS.png"
+  <a href="#top">
+    <img width="48" src="https://raw.githubusercontent.com/nabaroa/nak-scaffold/master/docs/assets/img/nakDS.png"
       alt="Home">
   </a>
-
 </div>
 <div class="nk-drawer nk-js--nav nk-pan">
   <nav id="nk-nav" class="">
-    <ul class="nk-grid nk-grid-2 nk-grid-3@md nk-grid-rows-3 nk-list">
+    <ul class="nk-grid nk-grid-2 nk-grid-3@md nk-list">
       <!-- <li class="nk-bg--k-10">How to use it
         <ul>
           <li><a href="#instalation">Getting Started</a></li>
         </ul>
       </li> -->
       <li class="nk-bg--c nk-pax nk-grid nk-grid-2">
-        <a href=".">
-          <img width="100" src="https://raw.githubusercontent.com/nabaroa/nak-scaffold/master/docs/assets/img/nakDS.png"
-            alt="">
-        </a>
         <div>
           <span class="nk-heading--3">Tokens</span>
           <ul>
-            <li><a href=".">nak</a></li>
             <li><a href="./tokens/#color">Color</a></li>
             <li><a href="./tokens/#sizing">Sizing</a></li>
           </ul>
         </div>
       </li>
-      <li class="nk-bg--c--lighter">Layout
+      <li class="nk-bg--y nk-pax">
+          <span class="nk-heading--3">Layout</span>
         <ul>
           <li><a href="#patterns">Patterns</a></li>
           <li><a href="#container">Container</a></li>
@@ -58,8 +52,8 @@
           <li><a href="#navigation">Navigation</a></li>
         </ul>
       </li>
-      <li class="nk-bg--m">
-        Components
+      <li class="nk-bg--m nk-pax">
+          <span class="nk-heading--3">Components</span>
         <ul class="nk-grid nk-grid-2">
           <li><a href="#avatar">Avatar</a><span class="nk-text--small"></span></li>
           <li><a href="#badge">Badge</a><span class="nk-text--small"></span></li>
@@ -77,7 +71,8 @@
           <li><a href="#slider">Slider</a></li>
         </ul>
       </li>
-      <li>Styling
+      <li class="nk-bg--c nk-pax">
+          <span class="nk-heading--3">Styling</span>
         <ul>
           <li><a href="#background">Background</a></li>
           <li><a href="#filters">Filters</a></li>
@@ -88,13 +83,15 @@
           <li><a href="#fonts">Variable fonts</a></li>
         </ul>
       </li>
-      <li>Assets
+      <li class="nk-bg--y nk-pax">
+          <span class="nk-heading--3">Assets</span>
         <ul>
           <li><a href="#icons">Icons</a></li>
           <li><a href="#images">Images</a></li>
         </ul>
       </li>
-      <li>Utilities
+      <li class="nk-bg--m nk-pax">
+          <span class="nk-heading--3">Utilities</span>
         <ul>
           <li><a href="#spacing">Spacing</a></li>
         </ul>
