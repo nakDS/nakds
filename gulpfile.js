@@ -196,8 +196,12 @@ function img() {
 //   gulp.watch("./src/**/*.css", css, docs);
 // }
 
+// function watch() {
+//   gulp.watch("./docs/src/**/*.html", docs);
+// }
+
 function watch() {
-  gulp.watch("./docs/src/**/*.html", docs, docsTokens);
+  gulp.watch("./docs/src/**/**/*.html", docsTokens);
 }
 
 // function sassMixins() {

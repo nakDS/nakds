@@ -115,22 +115,18 @@ video {
   --color--k-1: #fff;
 }
 
-/* TODO */
-
-/* Do I need this? */
-
 :root {
   --none: 0;
-  --xxx-small: .125rem;  /*!2px;*/
-  --xx-small: .25rem;    /*!4px*/
-  --x-small: .5rem;    /*!8px*/
-  --small: .75rem;    /*!12px*/
-  --medium: 1rem;    /*!16px*/
-  --large: 1.25rem;    /*!20px*/
-  --x-large: 1.5rem;    /*!24px*/
-  --xx-large: 1.75rem;    /*!28px*/
-  --xxx-large: 2rem;    /*!32px*/
-  --xxxx-large: 3rem;    /*!48px*/
+  --xxx-small: 0.125rem; /*!2px;*/
+  --xx-small: 0.25rem; /*!4px*/
+  --x-small: 0.5rem; /*!8px*/
+  --small: 0.75rem; /*!12px*/
+  --medium: 1rem; /*!16px*/
+  --large: 1.25rem; /*!20px*/
+  --x-large: 1.5rem; /*!24px*/
+  --xx-large: 1.75rem; /*!28px*/
+  --xxx-large: 2rem; /*!32px*/
+  --xxxx-large: 3rem; /*!48px*/
 }
 
 :root {
@@ -492,7 +488,7 @@ Control this bit through the gulpfile */
   color: #fff;
   color: var(--color--k-10);
   display: inline;
-  padding: .25rem .5rem;
+  padding: 0.25rem 0.5rem;
   padding: var(--xx-small) var(--x-small);
 }
 
@@ -815,7 +811,7 @@ Control this bit through the gulpfile */
 /* @import "../variables/core-utils"; */
 
 .nk-gallery {
-  padding: .75rem;
+  padding: 0.75rem;
   padding: var(--small);
 }
 
@@ -825,10 +821,10 @@ Control this bit through the gulpfile */
     -webkit-columns: 2;
        -moz-columns: 2;
             columns: 2;
-    grid-column-gap: .75rem;
-    -webkit-column-gap: .75rem;
-       -moz-column-gap: .75rem;
-            column-gap: .75rem;
+    grid-column-gap: 0.75rem;
+    -webkit-column-gap: 0.75rem;
+       -moz-column-gap: 0.75rem;
+            column-gap: 0.75rem;
     grid-column-gap: var(--small);
     -webkit-column-gap: var(--small);
        -moz-column-gap: var(--small);
@@ -856,7 +852,7 @@ Control this bit through the gulpfile */
 
 .nk-gallery__item {
   position: relative;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
   margin-bottom: var(--small);
   line-height: 0;
 }
@@ -882,7 +878,7 @@ Control this bit through the gulpfile */
   z-index: 0;
   bottom: 0;
   left: 0;
-  padding: .75rem;
+  padding: 0.75rem;
   padding: var(--small);
 }
 
@@ -2310,7 +2306,7 @@ s,m,l,n = small(var(--small)),medium(var(--medium)),large(var(--large)),none(var
 .nk-pts,
 .nk-pvs,
 .nk-pas {
-  padding-top:.75rem !important;
+  padding-top:0.75rem !important;
   padding-top:var(--small) !important;
 }
 
@@ -2352,7 +2348,7 @@ s,m,l,n = small(var(--small)),medium(var(--medium)),large(var(--large)),none(var
 .nk-prs,
 .nk-phs,
 .nk-pas {
-  padding-right:.75rem !important;
+  padding-right:0.75rem !important;
   padding-right:var(--small) !important;
 }
 
@@ -2387,7 +2383,7 @@ s,m,l,n = small(var(--small)),medium(var(--medium)),large(var(--large)),none(var
 .nk-pbs,
 .nk-pvs,
 .nk-pas {
-  padding-bottom:.75rem !important;
+  padding-bottom:0.75rem !important;
   padding-bottom:var(--small) !important;
 }
 
@@ -2422,7 +2418,7 @@ s,m,l,n = small(var(--small)),medium(var(--medium)),large(var(--large)),none(var
 .nk-pls,
 .nk-phs,
 .nk-pas {
-  padding-left: .75rem !important;
+  padding-left: 0.75rem !important;
   padding-left: var(--small) !important;
 }
 
@@ -2457,7 +2453,7 @@ s,m,l,n = small(var(--small)),medium(var(--medium)),large(var(--large)),none(var
 .nk-mts,
 .nk-mvs,
 .nk-mas {
-  margin-top:.75rem !important;
+  margin-top:0.75rem !important;
   margin-top:var(--small) !important;
 }
 
@@ -2493,7 +2489,7 @@ s,m,l,n = small(var(--small)),medium(var(--medium)),large(var(--large)),none(var
 .nk-mhs,
 .nk-mas,
 ul.nk-mrs li {
-  margin-right:.75rem !important;
+  margin-right:0.75rem !important;
   margin-right:var(--small) !important;
 }
 
@@ -2522,7 +2518,7 @@ ul.nk-mrl li {
 .nk-mbs,
 .nk-mvs,
 .nk-mas {
-  margin-bottom:.75rem !important;
+  margin-bottom:0.75rem !important;
   margin-bottom:var(--small) !important;
 }
 
@@ -2557,7 +2553,7 @@ ul.nk-mrl li {
 .nk-mls,
 .nk-mhs,
 .nk-mas {
-  margin-left:.75rem !important;
+  margin-left:0.75rem !important;
   margin-left:var(--small) !important;
 }
 
