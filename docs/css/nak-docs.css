@@ -1,0 +1,43 @@
+@import "../../src/tokens/tokens--color";
+
+.nk-logo__svg {
+  /* width: 100px;
+  height: 100px; */
+}
+
+.nk-doc-bg {
+  background: var(--color--k-8);
+}
+
+.nk-theme--dark .nk-doc-bg {
+  background: var(--color--k-2);
+}
+
+.nk-doc-border {
+  border: 1px dashed var(--color--k-5);
+  min-height: 1em;
+}
+
+.nk-bg--image {
+  background-image: url(../assets/img/randomMatches_142.jpg);
+  background-size: cover;
+}
+
+.nk-doc--gototop {
+  position: sticky;
+  top: 80px;
+  z-index: 2;
+}
+
+.nk-doc--code {
+  height: 0;
+  transition: .2s;
+  opacity: 0;
+  transform: translateY(-200px);
+}
+
+.nk-doc--code.show {
+  height: inherit;
+  transform: translateY(0);
+  opacity: 1;
+}
