@@ -2,27 +2,23 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>nakDS. Design System for a beautiful web</title>
-  <link rel="stylesheet" href="./css/nakDS.min.css" />
-  <link rel="stylesheet" href="./css/nak-docs.css" />
-  <link rel="stylesheet" href="./css/default.css" />
-  <link rel="stylesheet" href="./css/atom-one-dark.css" />
-  <link rel='shortcut icon' type='image/x-icon' href='assets/favicon.ico' />
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-32740256-5"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-32740256-5');
-  </script>
-
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>nakDS. Design System for a beautiful web</title>
+<link rel="stylesheet" href="css/nakDS.min.css" />
+<link rel="stylesheet" href="./css/nak-docs.css" />
+<link rel="stylesheet" href="./css/default.css" />
+<link rel="stylesheet" href="./css/atom-one-dark.css" />
+<link rel='shortcut icon' type='image/x-icon' href='./assets/favicon.ico' />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-32740256-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'UA-32740256-5');
+</script>
 </head>
-
-<!-- <body class="nk-show-modal"> -->
 
 <body>
 
@@ -48,20 +44,20 @@
       </path>
     </svg>
   </button>
-  <a href="#top">
+  <a href="./#top">
     <img width="48" src="https://raw.githubusercontent.com/nabaroa/nak-scaffold/master/docs/assets/img/nakDS.png"
       alt="Home">
   </a>
 </div>
-<div class="nk-drawer nk-js--nav nk-pan">
+<div class="nk-drawer nk-bg--k-3 nk-js--nav nk-pan">
   <nav id="nk-nav" class="">
-    <ul class="nk-grid nk-grid-2 nk-grid-3@md nk-list">
+    <ul class="nk-grid nk-grid-3@md nk-list">
       <!-- <li class="nk-bg--k-10">How to use it
         <ul>
           <li><a href="#instalation">Getting Started</a></li>
         </ul>
       </li> -->
-      <li class="nk-bg--c nk-pax nk-grid nk-grid-2">
+      <li class="nk-pax nk-grid nk-grid-2">
         <div>
           <span class="nk-heading--3">Tokens</span>
           <ul>
@@ -70,18 +66,18 @@
           </ul>
         </div>
       </li>
-      <li class="nk-bg--y nk-pax">
+      <li class="nk-pax">
           <span class="nk-heading--3">Layout</span>
         <ul>
-          <li><a href="#patterns">Patterns</a></li>
-          <li><a href="#container">Container</a></li>
-          <li><a href="#flex">Flex</a></li>
-          <li><a href="#grid">Grid</a></li>
-          <li><a href="#fullpage">Fullpage</a></li>
-          <li><a href="#navigation">Navigation</a></li>
+          <li><a href="./layout/#patterns">Patterns</a></li>
+          <li><a href="./layout/#container">Container</a></li>
+          <li><a href="./layout/#flex">Flex</a></li>
+          <li><a href="./layout/#grid">Grid</a></li>
+          <li><a href="./layout/#fullpage">Fullpage</a></li>
+          <li><a href="./layout/#navigation">Navigation</a></li>
         </ul>
       </li>
-      <li class="nk-bg--m nk-pax">
+      <li class="nk-pax">
           <span class="nk-heading--3">Components</span>
         <ul class="nk-grid nk-grid-2">
           <li><a href="#avatar">Avatar</a><span class="nk-text--small"></span></li>
@@ -100,7 +96,7 @@
           <li><a href="#slider">Slider</a></li>
         </ul>
       </li>
-      <li class="nk-bg--c nk-pax">
+      <li class="nk-pax">
           <span class="nk-heading--3">Styling</span>
         <ul>
           <li><a href="#background">Background</a></li>
@@ -112,14 +108,14 @@
           <li><a href="#fonts">Variable fonts</a></li>
         </ul>
       </li>
-      <li class="nk-bg--y nk-pax">
+      <li class="nk-pax">
           <span class="nk-heading--3">Assets</span>
         <ul>
           <li><a href="#icons">Icons</a></li>
           <li><a href="#images">Images</a></li>
         </ul>
       </li>
-      <li class="nk-bg--m nk-pax">
+      <li class="nk-pax">
           <span class="nk-heading--3">Utilities</span>
         <ul>
           <li><a href="#spacing">Spacing</a></li>
@@ -169,172 +165,6 @@ npm i nakds
       </code>
       </pre>
 </article>
-
-      <article class="nk-cover nk-bg--y">
-  <h1 class="nk-cover__title nk-position--sticky">Layout</h1>
-</article>
-      <article id="patterns" class="nk-cover nk-bg--k-7">
-  <h1 class="nk-cover__title nk-position--sticky">Patterns</h1>
-</article>
-<div>
-  <div class="nk-container nk-position--sticky nk-bg--opaque">
-    <h2 class="nk-heading--2 ">2 cols</h2>
-  </div>
-  <article class="nk-layout--2col">
-    <div class="nk-layout--2col__sidebar"></div>
-    <div class="nk-layout--2col__main"></div>
-  </article>
-</div>
-<div>
-  <div class="nk-container nk-position--sticky nk-bg--opaque">
-    <h2 class="nk-heading--2">3 cols</h2>
-  </div>
-  <article class="nk-layout--3col">
-    <div class="nk-layout--3col__sidebar"></div>
-    <div class="nk-layout--3col__main"></div>
-    <aside class="nk-layout--3col__aside"></aside>
-  </article>
-</div>
-<div>
-  <div class="nk-container nk-position--sticky nk-bg--opaque">
-    <h2 class="nk-heading--2">Double</h2>
-  </div>
-  <article class="nk-layout--double">
-    <div class="nk-layout--double__item"></div>
-    <div class="nk-bg--k-9"></div>
-  </article>
-</div>
-      <article id="container" class="nk-section">
-  <div class="nk-container">
-    <h2 class="nk-heading--2 nk-position--sticky nk-bg--opaque">Containers</h2>
-    <h3 class="nk-heading--3">.nk-section</h3>
-    <p class="nk-mbl">Vertical padding for sections.</p>
-  </div>
-  <div class="nk-section nk-bg--k-9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, pariatur
-    ipsa, sequi animi amet harum incidunt et quos nobis quidem veritatis ut placeat. Repellat ex quod iure
-    adipisci. Quaerat earum optio expedita nihil? Vel ipsa pariatur aliquid, ad asperiores voluptate eaque
-    necessitatibus hic ratione! Molestias ex iusto incidunt vero facere.</div>
-  <div class="nk-container nk-mtx">
-    <h3 class="nk-heading--3">.nk-container</h3>
-    <p class="nk-mbl">Horizontal padding for fullpage sections.</p>
-  </div>
-  <p class="nk-container nk-bg--k-9">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-    reprehenderit vero iste explicabo? Dolorum dolores a architecto iure
-    officia veritatis cupiditate, recusandae inventore! Explicabo
-    officia rem dolorem, aut quae ipsam excepturi corporis perspiciatis.
-    Incidunt architecto necessitatibus libero atque obcaecati porro
-    alias nihil sint, tenetur repellendus iste enim impedit expedita
-    numquam deleniti ipsam recusandae corrupti odio ad, velit laboriosam
-    exercitationem. Expedita officia quibusdam atque fugit minima nulla
-    quisquam voluptatum ut, ipsa nihil. Ipsum ea porro, totam ipsam
-    officia fugit
-  </p>
-  <div class="nk-container--content nk-mtx">
-    <h3 class="nk-heading--3">.nk-container--content</h3>
-    <p class="nk-mbl">
-      Horizontal padding for generic content.
-    </p>
-  </div>
-  <p class="nk-container--content nk-bg--k-9">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-    reprehenderit vero iste explicabo? Dolorum dolores a architecto iure
-    officia veritatis cupiditate, recusandae inventore! Explicabo
-    officia rem dolorem, aut quae ipsam excepturi corporis perspiciatis.
-    Incidunt architecto necessitatibus libero atque obcaecati porro
-    alias nihil sint, tenetur repellendus iste enim impedit expedita
-    numquam deleniti ipsam recusandae corrupti odio ad, velit laboriosam
-    exercitationem. Expedita officia quibusdam atque fugit minima nulla
-    quisquam voluptatum ut, ipsa nihil. Ipsum ea porro, totam ipsam
-    officia fugit
-  </p>
-  </div>
-  <div class="nk-container--text nk-mtx">
-    <h3 class="nk-heading--3">.nk-container--text</h3>
-    <p class="nk-mbl">
-      Horizontal padding for readable column width. Use it for you blog posts, for example.
-    </p>
-
-  </div>
-  <p class="nk-container--text nk-bg--k-9">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-    reprehenderit vero iste explicabo? Dolorum dolores a architecto iure
-    officia veritatis cupiditate, recusandae inventore! Explicabo officia
-    rem dolorem, aut quae ipsam excepturi corporis perspiciatis. Incidunt
-    architecto necessitatibus libero atque obcaecati porro alias nihil
-    sint, tenetur repellendus iste enim impedit expedita numquam deleniti
-    ipsam recusandae corrupti odio ad, velit laboriosam exercitationem.
-    Expedita
-  </p>
-</article>
-      <article id="flex" class="nk-container">
-  <h2 class="nk-heading--2 ">Flex</h2>
-</article>
-      <article id="grid" class="nk-section nk-container">
-    <h2 class="nk-heading--2 nk-position--sticky nk-bg--opaque">Grid</h2>
-    <div class="nk-mvx">
-      <h3 class="nk-heading--3">.nk-grid .nk-grid-2</h3>
-      <div class="nk-grid@md nk-grid-2">
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-      </div>
-    </div>
-    <div class="nk-mvx">
-      <h3 class="nk-heading--3">.nk-grid .nk-grid-3</h3>
-      <div class="nk-grid@md nk-grid-3">
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-      </div>
-    </div>
-    <div class="nk-mvx">
-      <h3 class="nk-heading--3">.nk-grid .nk-grid-4</h3>
-      <div class="nk-grid@md nk-grid-4">
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-      </div>
-    </div>
-    <div class="nk-mvx">
-      <h3 class="nk-heading--3">.nk-grid .nk-grid-5</h3>
-      <div class="nk-grid@md nk-grid-5">
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-      </div>
-    </div>
-    <div class="nk-mvx">
-      <h3 class="nk-heading--3">.nk-grid .nk-grid-6</h3>
-      <div class="nk-grid@md nk-grid-6">
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-      </div>
-    </div>
-    <div class="nk-mvx">
-      <h3 class="nk-heading--3">.nk-grid .nk-gap</h3>
-      <div class="nk-grid@md nk-grid-4 nk-gap">
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-        <div class="nk-doc-border nk-pal">Grid item</div>
-      </div>
-    </div>
-  </article>
 
       <article class="nk-cover nk-bg--color">
   <h1 class="nk-cover__title nk-position--sticky nk-color--k-1">Components</h1>

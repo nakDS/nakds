@@ -17,39 +17,28 @@ const replace = require("gulp-replace");
 const insert = require("gulp-insert");
 const prettier = require("gulp-prettier");
 const del = require("del");
-const fileinclude = require('gulp-file-include');
+const fileinclude = require("gulp-file-include");
 
 function docs() {
   return gulp
-  .src("./docs/src/index.html")
-  .pipe(
-    fileinclude({
-      prefix: '@@',
-      basepath: './docs/src/'
-    }))
-  .pipe(gulp.dest('./docs/'))
-  .pipe(
-    notify({
-      message: "Your docs are ready ♡"
-    })
-  );
-};
-
-
-function docsTokens() {
-  return gulp
-  .src("./docs/src/html/tokens/index.html")
-  .pipe(
-    fileinclude({
-      prefix: '@@',
-      basepath: './docs/src/html/tokens/'
-    }))
-  .pipe(gulp.dest('./docs/tokens/'));
-};
+    .src("./src/html/**/index.html")
+    .pipe(
+      fileinclude({
+        prefix: "@@",
+        basepath: "@file"
+      })
+    )
+    .pipe(gulp.dest("./docs/"))
+    .pipe(
+      notify({
+        message: "Your docs are ready ♡"
+      })
+    );
+}
 
 function css() {
   return gulp
-    .src("./src/nakDS.css")
+    .src("./src/css/**/*.css")
     .pipe(
       postcss([
         cssImport(),
@@ -61,115 +50,49 @@ function css() {
         })
       ])
     )
-    .pipe(gulp.dest("./dist/css/"))
     .pipe(postcss([cssnano()]))
-    .pipe(rename("nakDS.min.css"))
     .pipe(gulp.dest("./dist/css/"))
-    .pipe(gulp.dest("./docs/css/"))
     .pipe(
       notify({
         message: "Your nakDS CSS is ready ♡"
       })
-    );
+    )
 }
 
-function utils() {
+function cssMin() {
   return gulp
-    .src("./src/variables/core-utils.css")
-    .pipe(
-      postcss([
-        cssImport(),
-        mixins(),
-        customMedia(),
-        nested(),
-        postcssPresetEnv({
-          autoprefixer: { grid: true },
-          postcssCustomProperties: { preserve: false }
-        })
-      ])
-    )
-    .pipe(gulp.dest("./dest/css/"))
-    .pipe(postcss([cssnano()]))
-    .pipe(gulp.dest("./dist/css/"))
-    .pipe(
-      notify({
-        message: "Your utils are ready ♡"
-      })
-    );
+  .src("./dist/css/nakDS.css")
+  .pipe(rename("nakDS.min.css"))
+  .pipe(gulp.dest("./dist/css/"))
+  .pipe(gulp.dest("./docs/css/"));
 }
 
-function layout() {
-  return gulp
-    .src("./src/layout/**.css")
-    .pipe(
-      postcss([
-        cssImport(),
-        mixins(),
-        customMedia(),
-        nested(),
-        postcssPresetEnv({
-          autoprefixer: { grid: true },
-          postcssCustomProperties: { preserve: false }
-        })
-      ])
-    )
-    .pipe(gulp.dest("./dest/css/"))
-    .pipe(postcss([cssnano()]))
-    .pipe(gulp.dest("./dist/css/layout/"))
-    .pipe(
-      notify({
-        message: "Your LAYOUT are ready ♡"
-      })
-    );
-}
+// function cssMin() {
+//   return gulp
+//     .src("./src/css/nakDS.css")
+//     .pipe(
+//       postcss([
+//         cssImport(),
+//         mixins(),
+//         customMedia(),
+//         nested(),
+//         postcssPresetEnv({
+//           autoprefixer: { grid: true }
+//         })
+//       ])
+//     )
 
-function tokens() {
-  return gulp
-    .src("./src/tokens/**.css")
-    .pipe(
-      postcss([
-        cssImport(),
-        mixins(),
-        customMedia(),
-        nested(),
-        postcssPresetEnv({
-          autoprefixer: { grid: true },
-          postcssCustomProperties: { preserve: false }
-        })
-      ])
-    )
-    .pipe(gulp.dest("./dist/css/tokens"))
-    .pipe(
-      notify({
-        message: "Your tokens are ready ♡"
-      })
-    );
-}
-
-function components() {
-  return gulp
-    .src("./src/components/**.css")
-    .pipe(
-      postcss([
-        cssImport(),
-        mixins(),
-        customMedia(),
-        nested(),
-        postcssPresetEnv({
-          autoprefixer: { grid: true },
-          postcssCustomProperties: { preserve: false }
-        })
-      ])
-    )
-    .pipe(gulp.dest("./dest/css/"))
-    .pipe(postcss([cssnano()]))
-    .pipe(gulp.dest("./dist/css/components/"))
-    .pipe(
-      notify({
-        message: "Your components are ready ♡"
-      })
-    );
-}
+//     .pipe(postcss([cssnano()]))
+//     .pipe(gulp.dest("./dist/css/"))
+//     .pipe(rename("nakDS.min.css"))
+//     .pipe(gulp.dest("./dist/css/"))
+//     .pipe(gulp.dest("./docs/css/"))
+//     .pipe(
+//       notify({
+//         message: "Your nakDS CSS is ready ♡"
+//       })
+//     );
+// }
 
 function fonts() {
   return gulp
@@ -223,28 +146,24 @@ function watch() {
 //     );
 // }
 
-function clean() {
-  return del(["./dist/scss/mixins/*.css"]);
-}
+// function clean() {
+//   return del(["./dist/scss/mixins/*.css"]);
+// }
 
 const build = gulp.series(
   docs,
-  docsTokens,
   css,
-  utils,
-  tokens,
-  layout,
-  components,
+  cssMin,
   fonts,
   img,
   // sassMixins,
-  clean,
+  // clean,
   svg
 );
 
 exports.docs = docs;
-exports.docsTokens = docsTokens;
 exports.css = css;
+exports.cssMin = cssMin;
 exports.img = img;
 exports.watch = watch;
 exports.default = build;
