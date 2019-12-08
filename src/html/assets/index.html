@@ -14,7 +14,14 @@
   "webRoot": ".."
   })
 
-  @@include('cover.html')
+  @@include('../../templates/cover.html',
+  {
+  "title":"Assets",
+  "id":"assets",
+  "bgColor":"nk-bg--color"
+  }
+  )
+  
   @@include('icons.html')
   @@include('images.html')
 

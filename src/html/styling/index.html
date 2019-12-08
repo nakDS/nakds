@@ -14,7 +14,14 @@
   "webRoot": ".."
   })
 
-  @@include('cover.html')
+  @@include('../../templates/cover.html',
+  {
+  "title":"Styling",
+  "id":"styling",
+  "bgColor":"nk-bg--c"
+  }
+  )
+
   @@include('typography.html')
   @@include('fonts.html')
   @@include('background.html')

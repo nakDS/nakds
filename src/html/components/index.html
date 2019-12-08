@@ -14,7 +14,14 @@
   "webRoot": ".."
   })
 
-  @@include('coverr.html')
+  @@include('../../templates/cover.html',
+  {
+  "title":"Components",
+  "id":"components",
+  "bgColor":"nk-bg--color"
+  }
+  )
+
   @@include('avatar.html')
   @@include('badge.html')
   @@include('card.html')
