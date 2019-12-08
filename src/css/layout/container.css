@@ -6,9 +6,7 @@
   @media (--medium) {
     --container--padding: calc(var(--spacer) * 5);
   }
-}
 
-.nk-container {
   width: 100%;
   margin: auto;
   padding-left: var(--container--padding);
@@ -16,19 +14,11 @@
 }
 
 .nk-container--content {
-  width: 100%;
   max-width: var(--container--content);
-  margin: auto;
-  padding-left: var(--container--padding);
-  padding-right: var(--container--padding);
 }
 
 .nk-container--text {
-  width: 100%;
   max-width: var(--container--text);
-  margin: auto;
-  padding-left: var(--container--padding);
-  padding-right: var(--container--padding);
 }
 
 /* TODO */
