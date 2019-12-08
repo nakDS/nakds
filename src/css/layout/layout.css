@@ -1,28 +1,39 @@
 /* TODO */
 /* Better approach calc(var(--spacer) * 2) or var(--spacer-medium)? */
-
-/* @import "../tokens/tokens--sizing.css"; */
-
 /* Better naming for this */
 
-.nk-layout--2col {
-  height: 100vh;
+[class^="nk-layout--sidebar"] {
+  --sidebar-width: 300px;
+  --layout-height: 100vh;
+}
+
+.nk-layout--sidebar {
+  height: var(--layout-height);
+  display: grid;
 
   @media (--medium) {
-    display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: var(--sidebar-width) 1fr;
+  }
+
+  .nk-layout--sidebar__aside {
+    order: 1;
+  }
+  .nk-layout--sidebar__main {
+    order: 2;
   }
 }
 
-.nk-layout--2col__sidebar {
-  background: var(--color--k-6);
-}
-.nk-layout--2col__main {
-  background: var(--color--k-8);
+.nk-layout--sidebar-right {
+  height: var(--layout-height);
+  display: grid;
+
+  @media (--medium) {
+    grid-template-columns: 1fr var(--sidebar-width);
+  }
 }
 
 .nk-layout--3col {
-  height: 100vh;
+  height: var(--layout-height);
 
   @media (--medium) {
     display: grid;
@@ -42,7 +53,7 @@
 .nk-layout--double {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 100vh;
+  height: var(--layout-height);
 }
 
 .nk-layout--double__item {

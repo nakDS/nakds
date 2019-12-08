@@ -67,8 +67,11 @@ function assets() {
 }
 
 function watch() {
-  gulp.watch("./src/html/**/*.html", docs);
+  gulp.watch("./src/css/**/*.css", css);
 }
+// function watch() {
+//   gulp.watch("./src/html/**/*.html", docs);
+// }
 
 // function sassMixins() {
 //   return gulp

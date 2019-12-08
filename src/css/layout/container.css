@@ -1,45 +1,38 @@
-:root {
+.nk-container {
   --container--content: 1100px;
   --container--text: 680px;
-}
-  
-.nk-container {
-  width: 100%;
-  padding-left: calc(var(--spacer) * 2);
-  padding-right: calc(var(--spacer) * 2);
-  margin: auto;
+  --container--padding: calc(var(--spacer) * 2);
 
   @media (--medium) {
-    padding-left: calc(var(--spacer) * 5);
-    padding-right: calc(var(--spacer) * 5);
+    --container--padding: calc(var(--spacer) * 5);
   }
+}
+
+.nk-container {
+  width: 100%;
+  margin: auto;
+  padding-left: var(--container--padding);
+  padding-right: var(--container--padding);
 }
 
 .nk-container--content {
   width: 100%;
-  padding-right: calc(var(--spacer) * 2);
-  padding-left: calc(var(--spacer) * 2);
-  margin: auto;
   max-width: var(--container--content);
-
-  @media (--medium) {
-    padding-right: calc(var(--spacer) * 5);
-    padding-left: calc(var(--spacer) * 5);
-  }
+  margin: auto;
+  padding-left: var(--container--padding);
+  padding-right: var(--container--padding);
 }
 
 .nk-container--text {
   width: 100%;
-  padding-right: calc(var(--spacer) * 2);
-  padding-left: calc(var(--spacer) * 2);
-  margin: auto;
   max-width: var(--container--text);
-
-  @media (--medium) {
-    padding-right: calc(var(--spacer) * 5);
-    padding-left: calc(var(--spacer) * 5);
-  }
+  margin: auto;
+  padding-left: var(--container--padding);
+  padding-right: var(--container--padding);
 }
+
+/* TODO */
+/* Fix section custom properties */
 
 .nk-section {
   padding-top: var(--spacer-medium);
