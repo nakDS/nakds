@@ -21,15 +21,13 @@
   max-width: var(--container--text);
 }
 
-/* TODO */
-/* Fix section custom properties */
-
 .nk-section {
-  padding-top: var(--spacer-medium);
-  padding-bottom: var(--spacer-medium);
+  --section-padding: calc(var(--spacer) * 3);
 
   @media (--medium) {
-    padding-top: var(--spacer-xlarge);
-    padding-bottom: var(--spacer-xlarge);
+    --section-padding: calc(var(--spacer) * 5);
   }
+
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
 }
