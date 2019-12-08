@@ -9,10 +9,10 @@
     <h3 class="nk-heading--3">Default</h3>
   </div>
   <article class="nk-layout--sidebar">
-    <div class="nk-layout--sidebar__main nk-bg--k-8">
+    <div class="nk-layout__main nk-bg--k-8">
       @@include('../../templates/lorem.html')
     </div>
-    <div class="nk-layout--sidebar__aside nk-bg--k-6">
+    <div class="nk-layout__aside nk-bg--k-6">
       @@include('../../templates/dummy-list.html')
     </div>
 
@@ -21,19 +21,19 @@
     <h3 class="nk-heading--3">Inside a container</h3>
   </div>
   <article class="nk-layout--sidebar nk-container--content">
-    <div class="nk-layout--sidebar__main nk-bg--k-8">
+    <div class="nk-layout__main nk-bg--k-8">
       @@include('../../templates/lorem.html')
     </div>
-    <div class="nk-layout--sidebar__aside nk-bg--k-6">
+    <div class="nk-layout__aside nk-bg--k-6">
       @@include('../../templates/dummy-list.html')
     </div>
   </article>
   <h3 class="nk-heading--3">Right</h3>
   <article class="nk-layout--sidebar-right">
-    <div class="nk-layout--sidebar__main nk-bg--k-8">
+    <div class="nk-layout__main nk-bg--k-8">
       @@include('../../templates/lorem.html')
     </div>
-    <div class="nk-layout--sidebar__aside nk-bg--k-6">
+    <div class="nk-layout__aside nk-bg--k-6">
       @@include('../../templates/dummy-list.html')
     </div>
   </article>
@@ -42,10 +42,16 @@
   <div class="nk-container nk-position--sticky nk-bg--opaque">
     <h2 class="nk-heading--2">3 cols</h2>
   </div>
-  <article class="nk-layout--3col">
-    <div class="nk-layout--3col__sidebar"></div>
-    <div class="nk-layout--3col__main"></div>
-    <aside class="nk-layout--3col__aside"></aside>
+  <article class="nk-layout--sidebar-double">
+    <div class="nk-layout__main nk-bg--k-8">
+        @@include('../../templates/lorem.html')
+    </div>
+    <div class="nk-layout__aside nk-bg--k-6">
+      @@include('../../templates/dummy-list.html')
+    </div>
+    <aside class="nk-layout__aside nk-bg--k-6">
+      @@include('../../templates/dummy-list.html')
+    </aside>
   </article>
 </div>
 <div>

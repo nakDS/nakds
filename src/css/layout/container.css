@@ -6,9 +6,7 @@
   @media (--medium) {
     --container--padding: calc(var(--spacer) * 5);
   }
-}
 
-[class*="nk-container"] {
   width: 100%;
   margin: auto;
   padding-left: var(--container--padding);

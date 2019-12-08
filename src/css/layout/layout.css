@@ -1,53 +1,62 @@
-/* TODO */
-/* Better approach calc(var(--spacer) * 2) or var(--spacer-medium)? */
-/* Better naming for this */
+[class*="nk-layout"] {
+  --sidebar-width: 100vw;
 
-[class^="nk-layout--sidebar"] {
-  --sidebar-width: 300px;
-  --layout-height: 100vh;
+  @media (--medium) {
+    --sidebar-width: 18.75em; /* 300px */
+    --layout-height: 100vh;
+  }
+}
+
+.nk-layout, [class*="nk-layout--"] {
+  display: grid;
+  height: var(--layout-height);
 }
 
 .nk-layout--sidebar {
-  height: var(--layout-height);
-  display: grid;
-
   @media (--medium) {
     grid-template-columns: var(--sidebar-width) 1fr;
   }
 
-  .nk-layout--sidebar__aside {
+  .nk-layout__aside {
     order: 1;
   }
-  .nk-layout--sidebar__main {
+
+  .nk-layout__main {
     order: 2;
   }
 }
 
 .nk-layout--sidebar-right {
-  height: var(--layout-height);
-  display: grid;
-
   @media (--medium) {
     grid-template-columns: 1fr var(--sidebar-width);
   }
 }
 
-.nk-layout--3col {
-  height: var(--layout-height);
-
+.nk-layout--sidebar-double {
   @media (--medium) {
-    display: grid;
-    grid-template-columns: 300px 1fr 300px;
+    grid-template-columns: var(--sidebar-width) 1fr var(--sidebar-width);
+  }
+
+  .nk-layout__aside:first-of-type {
+    order: 1;
+  }
+
+  .nk-layout__main {
+    order: 2;
+  }
+
+  .nk-layout__aside {
+    order: 3;
   }
 }
 
-.nk-layout--3col__sidebar {
+.nk-layout--sidebar-double__sidebar {
 }
 
-.nk-layout--3col__main {
+.nk-layout--sidebar-double__main {
 }
 
-.nk-layout--3col__aside {
+.nk-layout--sidebar-double__aside {
 }
 
 .nk-layout--double {
@@ -57,10 +66,4 @@
 }
 
 .nk-layout--double__item {
-}
-
-/* TODO: Is this approach good? It is a fullscreen option for an element inside the nk-container. Is it antipattern? */
-.nk-fullscreen {
-  width: calc(100% + var(--spacer) * 5 + var(--spacer) * 5);
-  margin-left: calc(-1 * var(--spacer) * 5);
 }
