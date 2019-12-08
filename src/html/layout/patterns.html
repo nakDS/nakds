@@ -40,17 +40,17 @@
 </div>
 <div>
   <div class="nk-container nk-position--sticky nk-bg--opaque">
-    <h2 class="nk-heading--2">3 cols</h2>
+    <h2 class="nk-heading--2">Sidebar double</h2>
   </div>
   <article class="nk-layout--sidebar-double">
     <div class="nk-layout__main nk-bg--k-8">
-        @@include('../../templates/lorem.html')
+      @@include('../../templates/lorem.html')
     </div>
     <div class="nk-layout__aside nk-bg--k-6">
       @@include('../../templates/dummy-list.html')
     </div>
     <aside class="nk-layout__aside nk-bg--k-6">
-      @@include('../../templates/dummy-list.html')
+      @@include('../../templates/lorem.html')
     </aside>
   </article>
 </div>
@@ -59,7 +59,11 @@
     <h2 class="nk-heading--2">Double</h2>
   </div>
   <article class="nk-layout--double">
-    <div class="nk-layout--double__item"></div>
-    <div class="nk-bg--k-9"></div>
+    <div class="nk-layout__main nk-bg--k-8">
+      @@include('../../templates/lorem.html')
+    </div>
+    <div class="nk-layout__main nk-bg--k-6">
+      @@include('../../templates/lorem.html')
+    </div>
   </article>
 </div>
