@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-  @@include('../head.html',
+  @@include('../../templates/head.html',
   {
-  "title": "Tokens"
+  "title": "Tokens" 
   })
 </head>
 
 <body>
-  @@include('../navigation.html',
+  @@include('../..templates/navigation.html',
   {
   "webRoot": ".."
   })
@@ -22,11 +22,10 @@
   }
   )
 
-  @@include('cover.html')
   @@include('color.html')
   @@include('sizing.html')
 
-  @@include('../footer.html')
+  @@include('../../templates/footer.html')
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  @@include('head.html',
+  @@include('../templates/head.html',
   {
   "title": "Design System for a beautiful web",
   "webRoot": "."
@@ -15,15 +15,13 @@
     @@include('./header.html')
     <main>
 
-      @@include('./navigation.html')
+      @@include('../templates/navigation.html')
       @@include('./instalation.html')
-
-    
 
     </main>
 
     <!-- @@include('./attributions.html') -->
-    @@include('./footer.html')
+    @@include('../templates/footer.html')
 
   </section>
   <div class="nk-notify">Beta on FEB 2020</div>
