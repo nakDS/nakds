@@ -1,4 +1,4 @@
-.nk-container {
+[class*="nk-container"] {
   --container--content: 1100px;
   --container--text: 680px;
   --container--padding: calc(var(--spacer) * 2);
@@ -6,7 +6,9 @@
   @media (--medium) {
     --container--padding: calc(var(--spacer) * 5);
   }
+}
 
+[class*="nk-container"] {
   width: 100%;
   margin: auto;
   padding-left: var(--container--padding);
