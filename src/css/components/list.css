@@ -7,3 +7,11 @@
     list-style: none;
   }
 }
+
+.nk-list--horizontal {
+  list-style: none;
+  list-style-position: inside;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

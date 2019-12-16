@@ -1,1 +1,1 @@
-.nk-list{list-style:none;list-style-position:inside}.nk-list ul{list-style:none}
+.nk-list{list-style:none;list-style-position:inside}.nk-list ul{list-style:none}.nk-list--horizontal{list-style:none;list-style-position:inside;display:-webkit-box;display:flex;flex-wrap:wrap;-webkit-box-pack:justify;justify-content:space-between}
