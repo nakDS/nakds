@@ -21,6 +21,7 @@
 @import "components/breadcrumb";
 @import "components/gallery"; 
 @import "components/loading";
+@import "components/menu";
 @import "components/modal";
 @import "components/icon";
 @import "components/form";
