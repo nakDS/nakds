@@ -1,6 +1,6 @@
 {
   "name": "nakds",
-  "version": "1.20.0",
+  "version": "1.20.1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -31,7 +31,6 @@
   "devDependencies": {
     "@semantic-release/changelog": "^3.0.6",
     "@semantic-release/npm": "^5.3.4",
-    "autoprefixer": "^9.7.1",
     "cssnano": "^4.1.10",
     "cz-conventional-changelog": "^3.0.2",
     "del": "^5.1.0",
@@ -47,12 +46,9 @@
     "gulp-rename": "^1.4.0",
     "gulp-replace": "^1.0.0",
     "postcss-apply": "^0.12.0",
-    "postcss-custom-media": "^7.0.8",
-    "postcss-custom-properties": "^9.0.2",
     "postcss-import": "^12.0.1",
     "postcss-media-variables": "^2.0.0",
     "postcss-mixins": "^6.2.3",
-    "postcss-nested": "^4.1.2",
     "postcss-preset-env": "^6.7.0",
     "semantic-release": "^15.13.31",
     "stylelint": "^11.1.1",
@@ -62,7 +58,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nabaroa/nakds"
+    "url": "https://github.com/nakDS/nakds"
   },
   "homepage": "",
   "description": "",
