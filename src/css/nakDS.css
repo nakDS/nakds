@@ -44,6 +44,7 @@
 @import "layout/flex";
 
 @import "styling/blend";
+@import "styling/color";
 @import "styling/filters";
 @import "styling/shapes";
 @import "styling/background";

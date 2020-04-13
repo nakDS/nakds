@@ -1,0 +1,87 @@
+.nk-color--color {
+  color: var(--color);
+
+  &::after,
+  &::before {
+    color: var(--color);
+  }
+}
+
+.nk-color--c-lighter {
+  color: var(--color--lighter);
+}
+
+.nk-color--c {
+  color: var(--color--c);
+
+  a {
+    color: var(--color--k-10);
+  }
+
+  &::after,
+  &::before {
+    color: var(--color--c);
+  }
+}
+
+.nk-color--m {
+  color: var(--color--m);
+
+  a {
+    color: var(--color--k-10);
+  }
+
+  &::after,
+  &::before {
+    color: var(--color--m);
+  }
+}
+
+.nk-color--y {
+  color: var(--color--y);
+
+  &::after,
+  &::before {
+    color: var(--color--y);
+  }
+}
+
+.nk-color--k-1 {
+  color: var(--color--k-1);
+}
+
+.nk-color--k-2 {
+  color: var(--color--k-2);
+}
+
+.nk-color--k-3 {
+  color: var(--color--k-3);
+}
+
+.nk-color--k-4 {
+  color: var(--color--k-4);
+}
+
+.nk-color--k-5 {
+  color: var(--color--k-5);
+}
+
+.nk-color--k-6 {
+  color: var(--color--k-6);
+}
+
+.nk-color--k-7 {
+  color: var(--color--k-7);
+}
+
+.nk-color--k-8 {
+  color: var(--color--k-8);
+}
+
+.nk-color--k-9 {
+  color: var(--color--k-9);
+}
+
+.nk-color--k-10 {
+  color: var(--color--k-10);
+}
