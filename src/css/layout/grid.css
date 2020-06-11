@@ -52,6 +52,18 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
+@media (--small) {
+  .nk-grid-4\@sm {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (--medium) {
+  .nk-grid-4\@md {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .nk-grid-5 {
   grid-template-columns: repeat(5, 1fr);
 }

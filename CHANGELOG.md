@@ -1,3 +1,9 @@
+## [1.20.1] 
+- fix: remove unnecessary dependencies
+
+## [1.20.0] 
+- feat: add color styling utility
+
 ## [1.19.1] 
 - fix: add .npmignore
 

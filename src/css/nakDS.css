@@ -21,6 +21,7 @@
 @import "components/breadcrumb";
 @import "components/gallery"; 
 @import "components/loading";
+@import "components/menu";
 @import "components/modal";
 @import "components/icon";
 @import "components/form";
@@ -43,6 +44,7 @@
 @import "layout/flex";
 
 @import "styling/blend";
+@import "styling/color";
 @import "styling/filters";
 @import "styling/shapes";
 @import "styling/background";
