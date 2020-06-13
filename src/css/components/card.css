@@ -24,6 +24,10 @@
   justify-items: center;
 }
 
+.nk-card--block-center {
+  grid-template-rows: auto;
+}
+
 .nk-card__image--full {
   width: 100%;
   height: 200px;
