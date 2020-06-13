@@ -4,6 +4,7 @@
 
 ### Building CSS
 - Translate all the system from physical to flow relative properties: block-size and inline-size
+- Work on relative units
 - Add gallery with srcset for different sizes
 - Add mixin to generate grid system breakpoints
 - Add flex system
