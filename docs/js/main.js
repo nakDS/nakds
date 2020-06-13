@@ -4,6 +4,10 @@ const buttonAvatar = document.querySelector(".nk-js-button--avatar");
 const codeAvatar = document.querySelector(".nk-js--avatar");
 buttonAvatar.onclick = () => codeAvatar.classList.toggle("show");
 
+const buttonBadge = document.querySelector(".nk-js-button--badge");
+const codeBadge = document.querySelector(".nk-js--badge");
+buttonBadge.onclick = () => codeBadge.classList.toggle("show");
+
 const buttonCard = document.querySelector(".nk-js-button--card");
 const codeCard = document.querySelector(".nk-js--card");
 buttonCard.onclick = () => codeCard.classList.toggle("show");

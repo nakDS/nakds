@@ -1,1 +1,1 @@
-.nk-badge{background:var(--color);font-size:.8em;color:var(--color--k-10);display:inline;padding:var(--xx-small) var(--x-small)}
+.nk-badge{--badge-border-radius:0;--badge-background:var(--color);--badge-padding:var(--xx-small) var(--x-small);--badge-font-size:var(--font-size--small);--badge-color:var(--color--k-10);display:inline;padding:var(--badge-padding);font-size:var(--badge-font-size);color:var(--badge-color);background:var(--badge-background);border-radius:var(--badge-border-radius)}
