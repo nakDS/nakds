@@ -71,6 +71,10 @@
   justify-content: center;
 }
 
+.nk-justify-items--center {
+  justify-items: center;
+}
+
 @media (--small) {
   .nk-justify-content--center\@sm {
     justify-content: center;

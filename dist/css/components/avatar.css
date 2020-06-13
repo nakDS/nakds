@@ -1,1 +1,1 @@
-.nk-avatar{width:200px;height:200px;border-radius:100%}.nk-avatar--small{width:100px;height:100px;border-radius:100%}.nk-avatar--large{width:300px;height:300px;border-radius:100%}
+.nk-avatar,[class^=nk-avatar--]{border-radius:100%}.nk-avatar,.nk-avatar--medium{width:6em;height:6em}.nk-avatar--small{width:3em;height:3em}.nk-avatar--large{width:12em;height:12em}
