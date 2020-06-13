@@ -15,3 +15,16 @@ buttonCard.onclick = () => codeCard.classList.toggle("show");
 const buttonDarkMode = document.querySelector(".nk-js-button--dark-mode");
 const darkMode = document.getElementById("nakds");
 buttonDarkMode.onclick = () => darkMode.classList.toggle("nk-theme--dark");
+
+// const buttonNavOpen = document.querySelector(".nk-js-button--nav-open");
+// const navOpen = document.querySelector(".nk-js--nav");
+// const dimmerOpen = document.querySelector(".nk-dimmer");
+// buttonNavOpen.onclick = () =>
+//   navOpen.classList.toggle(".nk-is-open") +
+//   dimmerOpen.classList.toggle(".nk-is-open");
+
+const buttonNavOpen = document.querySelector(".nk-js-button--nav-open");
+const navOpen = document.querySelector(".nk-js--nav");
+
+buttonNavOpen.onclick = () =>
+  navOpen.classList.toggle("nk-is-open");
