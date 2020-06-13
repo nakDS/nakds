@@ -4,6 +4,7 @@
 
 ### Building CSS
 - Translate all the system from physical to flow relative properties: block-size and inline-size
+- Remove alignments from flex, and create an agnostic aligment file. Grid uses thouse alignments as well
 - Work on relative units
 - Add gallery with srcset for different sizes
 - Add mixin to generate grid system breakpoints
@@ -57,6 +58,8 @@
 - Principles: simplicity, consistency, beauty, flexible, scalable
 
 ### Compilation, release, tools
+- Replace nmp with yarn
+- Review postCSS configuration. I'm sure it could be better
 - Refactor the gulfile. Better approach to have postcss.config.js on root?
 - Add circleCI to publish npm
 - Add browsersync
