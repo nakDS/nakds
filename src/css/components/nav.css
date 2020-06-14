@@ -13,8 +13,12 @@
   justify-content: center;
   inline-size: 3em;
   block-size: 100vh;
+  white-space: nowrap;
+  cursor: pointer;
   border-right: 1px dashed grey;
   writing-mode: vertical-rl;
-  cursor: pointer;
-  white-space: nowrap;
+}
+
+.nk-main {
+  margin-left: 3em;
 }

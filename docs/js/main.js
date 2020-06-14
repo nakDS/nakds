@@ -22,13 +22,3 @@ const dimmerOpen = document.querySelector(".nk-dimmer");
 buttonNavOpen.onmouseover = () =>
   navOpen.classList.toggle("nk-is-open") +
   dimmerOpen.classList.toggle("nk-is-open");
-
-const closeNav = document.querySelector(".nk-js--nav");
-closeNav.onclick = () =>
-  navOpen.classList.toggle("nk-is-open") +
-  dimmerOpen.classList.toggle("nk-is-open");
-
-const closeDimmer = document.querySelector(".nk-dimmer");
-closeDimmer.onclick = () =>
-  navOpen.classList.toggle("nk-is-open") +
-  dimmerOpen.classList.toggle("nk-is-open");
