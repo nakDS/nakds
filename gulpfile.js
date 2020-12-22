@@ -3,8 +3,6 @@ const postcss = require("gulp-postcss");
 const postcssPresetEnv = require("postcss-preset-env");
 const cssImport = require("postcss-import");
 const mixins = require("postcss-mixins");
-const nested = require("postcss-nested");
-const customMedia = require("postcss-custom-media");
 const cssnano = require("cssnano");
 const notify = require("gulp-notify");
 const rename = require("gulp-rename");
@@ -16,13 +14,13 @@ function docs() {
     .pipe(
       fileinclude({
         prefix: "@@",
-        basepath: "@file"
+        basepath: "@file",
       })
     )
     .pipe(gulp.dest("./docs/"))
     .pipe(
       notify({
-        message: "Your docs are ready ♡"
+        message: "Your docs are ready ♡",
       })
     );
 }
@@ -34,30 +32,30 @@ function css() {
       postcss([
         cssImport(),
         mixins(),
-        customMedia(),
-        nested(),
         postcssPresetEnv({
-          autoprefixer: { grid: true }
-        })
+          autoprefixer: { grid: true },
+          features: {
+            "nesting-rules": true,
+          },
+        }),
       ])
     )
     .pipe(postcss([cssnano()]))
     .pipe(gulp.dest("./dist/css/"))
     .pipe(
       notify({
-        message: "Your nakDS CSS is ready ♡"
+        message: "Your nakDS CSS is ready ♡",
       })
-    )
+    );
 }
 
 function cssMin() {
   return gulp
-  .src("./dist/css/nakDS.css")
-  .pipe(rename("nakDS.min.css"))
-  .pipe(gulp.dest("./dist/css/"))
-  .pipe(gulp.dest("./docs/css/"));
+    .src("./dist/css/nakDS.css")
+    .pipe(rename("nakDS.min.css"))
+    .pipe(gulp.dest("./dist/css/"))
+    .pipe(gulp.dest("./docs/css/"));
 }
-
 
 function assets() {
   return gulp
