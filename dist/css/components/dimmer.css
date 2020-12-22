@@ -1,0 +1,1 @@
+.nk-dimmer{position:fixed;top:0;left:0;width:100vw;height:100vh;background:var(--color--k-2);opacity:0;-webkit-transition:.3s;transition:.3s;pointer-events:none;z-index:2}.nk-dimmer.nk-is-open{opacity:.9;pointer-events:inherit}

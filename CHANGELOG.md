@@ -1,4 +1,7 @@
-## [1.20.1] 
+## [1.20.2] 
+- fix: fix custom media
+
+## [1.20.1]  
 - fix: remove unnecessary dependencies
 
 ## [1.20.0] 
