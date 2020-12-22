@@ -1,16 +1,34 @@
 /* @import "../tokens/tokens--color.css"; */
 
-.nk-card {
-  min-width: 100px;
+.nk-card,
+[class^="nk-card--"] {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-width: 6em;
   min-height: var(--spacer-large);
-  background: var(--color--k-9);
-
-  /* .nk-theme--dark & {
-    background: var(--color--k-2);
-  } */
+  block-size: 100%;
 }
 
+/* .nk-theme--dark & {
+    background: var(--color--k-2);
+  } */
+/* } */
+
 .nk-card__image {
+  /* width: 100%;
+  height: 200px;
+  object-fit: cover; */
+}
+
+.nk-card--center {
+  justify-items: center;
+}
+
+.nk-card--block-center {
+  grid-template-rows: auto;
+}
+
+.nk-card__image--full {
   width: 100%;
   height: 200px;
   object-fit: cover;

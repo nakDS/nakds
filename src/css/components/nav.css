@@ -1,6 +1,24 @@
 .nk-nav__button {
   position: fixed;
-  right: 0;
   top: 0;
+  right: 0;
   z-index: 4;
+}
+
+.nk-navigation--fixed-horizontal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  inline-size: 3em;
+  block-size: 100vh;
+  white-space: nowrap;
+  cursor: pointer;
+  border-right: 1px dashed grey;
+  writing-mode: vertical-rl;
+}
+
+.nk-main {
+  margin-left: 3em;
 }

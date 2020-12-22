@@ -1,11 +1,11 @@
-.nk-flex {
+[class*="nk-flex"] {
   display: flex;
 }
 
 @media (--small) {
   .nk-flex\@sm {
-    display: flex; 
-  } 
+    display: flex;
+  }
 }
 
 @media (--medium) {
@@ -24,18 +24,159 @@
   flex-direction: column;
 }
 
+@media (--small) {
+  .nk-flex--column\@sm {
+    flex-direction: column;
+  }
+}
+
+@media (--medium) {
+  .nk-flex--column\@md {
+    flex-direction: column;
+  }
+}
+
+@media (--large) {
+  .nk-flex--column\@lg {
+    flex-direction: column;
+  }
+}
+
+/* TOD0 */
+/* Can I use this rules for grid as well */
+
 .nk-justify-content--start {
   justify-content: start;
+}
+
+@media (--small) {
+  .nk-justify-content--start\@sm {
+    justify-content: start;
+  }
+}
+
+@media (--medium) {
+  .nk-justify-content--start\@md {
+    justify-content: start;
+  }
+}
+
+@media (--large) {
+  .nk-justify-content--start\@lg {
+    justify-content: start;
+  }
 }
 
 .nk-justify-content--center {
   justify-content: center;
 }
 
+.nk-justify-items--center {
+  justify-items: center;
+}
+
+@media (--small) {
+  .nk-justify-content--center\@sm {
+    justify-content: center;
+  }
+}
+
+@media (--medium) {
+  .nk-justify-content--center\@md {
+    justify-content: center;
+  }
+}
+
+@media (--large) {
+  .nk-justify-content--center\@lg {
+    justify-content: center;
+  }
+}
+
 .nk-justify-content--end {
   justify-content: end;
 }
 
+@media (--small) {
+  .nk-justify-content--end\@sm {
+    justify-content: end;
+  }
+}
+
+@media (--medium) {
+  .nk-justify-content--end\@md {
+    justify-content: end;
+  }
+}
+
+@media (--large) {
+  .nk-justify-content--end\@lg {
+    justify-content: end;
+  }
+}
+
+.nk-align-items--start {
+  align-items: flex-start;
+}
+
+@media (--small) {
+  .nk-align-items--start\@sm {
+    align-items: flex-start;
+  }
+}
+
+@media (--medium) {
+  .nk-align-items--start\@md {
+    align-items: flex-start;
+  }
+}
+
+@media (--large) {
+  .nk-align-items--start\@lg {
+    align-items: flex-start;
+  }
+}
+
 .nk-align-items--center {
   align-items: center;
+}
+
+@media (--small) {
+  .nk-align-items--center\@sm {
+    align-items: center;
+  }
+}
+
+@media (--medium) {
+  .nk-align-items--center\@md {
+    align-items: center;
+  }
+}
+
+@media (--large) {
+  .nk-align-items--center\@lg {
+    align-items: center;
+  }
+}
+
+.nk-align-items--end {
+  align-items: flex-end;
+}
+
+@media (--small) {
+  .nk-align-items--end\@sm {
+    align-items: flex-end;
+  }
+}
+
+@media (--medium) {
+  .nk-align-items--end\@md {
+    align-items: flex-end;
+  }
+}
+
+@media (--large) {
+  .nk-align-items--end\@lg {
+    align-items: flex-end;
+  }
 }

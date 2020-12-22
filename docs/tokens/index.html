@@ -21,8 +21,9 @@
 </head>
 
 <body>
-  <div class="nk-toolbar nk-nav__button nk-flex nk-flex--column nk-align-items--center">
-  <button class="nk-button nk-button--icon  nk-js--nav-open">
+  <div class="nk-navigation--fixed-horizontal nk-js-button--nav-open">
+  <button class="nk-button nk-button--icon">
+    Show me the menu
     <svg class="nk-icon" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 50 50">
       <title>Menu</title>
       <path
@@ -30,7 +31,7 @@
       </path>
     </svg>
   </button>
-  <a href="../#top">
+  <a class="top-logo" href="../#top">
     <img width="24" src="https://raw.githubusercontent.com/nabaroa/nak-scaffold/master/docs/assets/img/nakDS.png"
       alt="Home">
   </a>
@@ -128,12 +129,14 @@
   </nav>
 </div>
 <div class="nk-dimmer"></div>
-
 <script>
-  const buttonnavOpen = document.querySelector(".nk-js--nav-open");
-  const navOpen = document.querySelector('.nk-js--nav');
-  const dimmerOpen = document.querySelector('.nk-dimmer');
-  buttonnavOpen.onclick = () =>
+  const closeNav = document.querySelector(".nk-js--nav");
+  closeNav.onclick = () =>
+    navOpen.classList.toggle("nk-is-open") +
+    dimmerOpen.classList.toggle("nk-is-open");
+
+  const closeDimmer = document.querySelector(".nk-dimmer");
+  closeDimmer.onclick = () =>
     navOpen.classList.toggle("nk-is-open") +
     dimmerOpen.classList.toggle("nk-is-open");
 </script>
@@ -279,7 +282,7 @@
 
   <footer id="bottom" class="nk-footer nk-bg--k-7 nk-grid nk-grid-3@md nk-text-align--center">
   <div>
-    <p class="nk-text--small">Builted with ❤ by <a href="https://github.com/nabaroa"> Naiara Abaroa</a></p>
+    <p class="nk-text--small">Made with ❤ by <a href="https://github.com/nabaroa"> Naiara Abaroa</a></p>
   </div>
   <div>
     <a href="https://github.com/nabaroa/nakDS">

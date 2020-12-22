@@ -3,14 +3,16 @@
 Control this bit through the gulpfile */
 /* Document this in the contribution doc */
 
-/* @import "../tokens/tokens--color.css";
-@import "../tokens/tokens--sizing"; */
-
 .nk-badge {
-  background: var(--color);
-  /* border-radius: 3px; */
-  font-size: 0.8em;
-  color: var(--color--k-10);
+  --badge-border-radius: 0;
+  --badge-background: var(--color);
+  --badge-padding: var(--xx-small) var(--x-small);
+  --badge-font-size: var(--font-size--small);
+  --badge-color: var(--color--k-10);
   display: inline;
-  padding: var(--xx-small) var(--x-small);
+  padding: var(--badge-padding);
+  font-size: var(--badge-font-size);
+  color: var(--badge-color);
+  background: var(--badge-background);
+  border-radius: var(--badge-border-radius);
 }

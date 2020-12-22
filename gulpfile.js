@@ -66,7 +66,11 @@ function assets() {
 
 function watch() {
   gulp.watch("./src/css/**/*.css", css);
+  gulp.watch("./dist/css/nakDS.css", cssMin);
+  gulp.watch("./src/html/**/*.html", docs);
+  gulp.watch("./src/templates/*.html", docs);
 }
+
 // function watch() {
 //   gulp.watch("./src/html/**/*.html", docs);
 // }

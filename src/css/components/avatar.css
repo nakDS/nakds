@@ -1,22 +1,22 @@
-.nk-avatar {
-  width: 200px;
-  height: 200px;
+.nk-avatar,
+[class^="nk-avatar--"] {
   border-radius: 100%;
+}
+.nk-avatar,
+.nk-avatar--medium {
+  inline-size: 6em;
+  block-size: 6em;
 }
 
 .nk-avatar--small {
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
+  inline-size: 3em;
+  block-size: 3em;
 }
 
 .nk-avatar--large {
-  width: 300px;
-  height: 300px;
-  border-radius: 100%;
+  inline-size: 12em;
+  block-size: 12em;
 }
-
-
 
 /* Sizes */
 

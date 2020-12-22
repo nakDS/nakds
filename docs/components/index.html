@@ -21,122 +21,7 @@
 </head>
 
 <body>
-  <div class="nk-toolbar nk-nav__button nk-flex nk-flex--column nk-align-items--center">
-  <button class="nk-button nk-button--icon  nk-js--nav-open">
-    <svg class="nk-icon" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 50 50">
-      <title>Menu</title>
-      <path
-        d="M7.061 10.688c11.654-1.822 23.457.164 35.166-1 2.968-.295 4.698-3.943.701-3.546-11.712 1.164-23.49-.825-35.166 1-2.901.453-4.682 4.169-.701 3.546zM6.106 25.999c7.635.141 15.129-1.374 22.745-1.534 4.658-.098 9.73.559 14.279-.81 1.131-.34 2.521-.994 2.476-2.351l-.006-.165c-.044-1.313-2.486-1.266-4.187-.429-4.141.949-8.845.097-13.016.319-6.713.358-13.358 1.592-20.096 1.467-2.32-.042-6.122 3.43-2.195 3.503zM41.549 37.726c-4.651 2.286-10.269 2.103-15.327 1.842-6.049-.312-12.073-.74-18.052-1.742-2.831-.474-5.9 3.527-2.016 4.178 7.162 1.199 14.527 1.806 21.791 1.88 5.508.057 11.144-.314 16.161-2.78 3.558-1.75.37-4.817-2.557-3.378z">
-      </path>
-    </svg>
-  </button>
-  <a href="../#top">
-    <img width="24" src="https://raw.githubusercontent.com/nabaroa/nak-scaffold/master/docs/assets/img/nakDS.png"
-      alt="Home">
-  </a>
-</div>
-<div class="nk-drawer nk-js--nav nk-pan">
-  <nav id="nk-nav" class="">
-    <ul class="nk-pax">
-      <li><a href="../#principles">Principles</a></li>
-      <li><a href="../#accesibility">Accesibility</a></li>
-    </ul>
-    <ul class="nk-grid nk-grid-3@md nk-list">
-      <!-- <li class="nk-bg--k-10">How to use it
-        <ul>
-          <li><a hre../utilities/instalation">Getting Started</a></li>
-        </ul>
-      </li> -->
-      <li class="nk-pax nk-grid nk-grid-2">
-        <div>
-          <a href="../tokens/#tokens">
-            <span class="nk-heading--3">Tokens</span>
-          </a>
-          <ul>
-            <li><a href="../tokens/#color">Color</a></li>
-            <li><a href="../tokens/#sizing">Sizing</a></li>
-          </ul>
-        </div>
-      </li>
-      <li class="nk-pax">
-        <a href="../layout/#layout">
-          <span class="nk-heading--3">Layout</span>
-        </a>
-        <ul>
-          <li><a href="../layout/#patterns">Patterns</a></li>
-          <li><a href="../layout/#container">Container</a></li>
-          <li><a href="../layout/#flex">Flex</a></li>
-          <li><a href="../layout/#grid">Grid</a></li>
-          <li><a href="../layout/#fullpage">Fullpage</a></li>
-        </ul>
-      </li>
-      <li class="nk-pax">
-        <a href="../components/#components">
-          <span class="nk-heading--3">Components</span>
-        </a>
-        <ul class="nk-grid nk-grid-2">
-          <li><a href="../components/#avatar">Avatar</a><span class="nk-text--small"></span></li>
-          <li><a href="../components/#badge">Badge</a><span class="nk-text--small"></span></li>
-          <li><a href="../components/#card">Card</a><span class="nk-text--small"></span></li>
-          <li><a href="../components/#button">Button</a></li>
-          <li><a href="../components/#cover">Cover</a></li>
-          <li><a href="../components/#dimmer">Dimmer</a></li>
-          <li><a href="../components/#drawer">Drawer</a></li>
-          <li><a href="../components/#gallery">Gallery</a></li>
-          <li><a href="../components/#heading">Headings</a></li>
-          <li><a href="../components/#list">List</a></li>
-          <li><a href="../components/#loader">Loader</a></li>
-          <li><a href="../components/#menu">Menu</a></li>
-          <li><a href="../components/#modal">Modal</a></li>
-          <li><a href="../layout/#navigation">Navigation</a></li>
-          <li><a href="../components/#timeline">Timeline</a></li>
-          <li><a href="../components/#slider">Slider</a></li>
-        </ul>
-      </li>
-      <li class="nk-pax">
-        <a href="../styling/#styling">
-          <span class="nk-heading--3">Styling</span>
-        </a>
-        <ul>
-          <li><a href="../styling/#background">Background</a></li>
-          <li><a href="../styling/#filters">Filters</a></li>
-          <li><a href="../styling/#motion">Motion</a></li>
-          <li><a href="../styling/#blend">Blend mode</a></li>
-          <li><a href="../styling/#shapes">Shapes</a></li>
-          <li><a href="../styling/#typograpy">Typography</a></li>
-          <li><a href="../styling/#fonts">Variable fonts</a></li>
-        </ul>
-      </li>
-      <li class="nk-pax">
-        <a href="../assets/#assets">
-          <span class="nk-heading--3">Assets</span>
-        </a>
-        <ul>
-          <li><a href="../assets/#icons">Icons</a></li>
-          <li><a href="../assets/#images">Images</a></li>
-        </ul>
-      </li>
-      <li class="nk-pax">
-        <a href="../utilities/#utilities">
-          <span class="nk-heading--3">Utilities</span>
-        </a>
-        <ul>
-          <li><a href="../utilities/#spacing">Spacing</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-</div>
-<div class="nk-dimmer"></div>
-
-<script>
-  const buttonnavOpen = document.querySelector(".nk-js--nav-open");
-  const navOpen = document.querySelector('.nk-js--nav');
-  const dimmerOpen = document.querySelector('.nk-dimmer');
-  buttonnavOpen.onclick = () =>
-    navOpen.classList.toggle("nk-is-open") +
-    dimmerOpen.classList.toggle("nk-is-open");
-</script>
+  
 
   <article id="componentsName" class="nk-cover nk-bg--color">
   <h1 class="nk-cover__title nk-position--sticky nk-color--k-1">Components</h1>
@@ -158,22 +43,39 @@
     </code>
     </pre>
   </div>
-  <div class="nk-flex@md nk-justify-content--center nk-align-items--center nk-container--content">
-    <img class="nk-avatar--small" src="../assets/img/nk-avatar.jpg" alt="">
-    <img class="nk-avatar" src="../assets/img/nk-avatar.jpg" alt="">
-    <img class="nk-avatar--large" src="../assets/img/nk-avatar.jpg" alt="">
+  <div class="nk-grid@md nk-grid-3 nk-align-items--center nk-container--content">
+    <div class="nk-card--center nk-card--block-center nk-align-items--end">
+      <img class="nk-avatar--small nk-card__image" src="../assets/img/nk-avatar.jpg" alt="">
+      <span>.nk-avatar--small</span>
+    </div>
+    <div class="nk-card--center nk-card--block-center nk-align-items--end">
+      <img class="nk-avatar nk-card__image" src="../assets/img/nk-avatar.jpg" alt="">
+      <span>.nk-avatar, .nk-avatar--medium</span>
+    </div>
+    <div class="nk-card--center nk-card--block-center nk-align-items--end">
+      <img class="nk-avatar--large nk-card__image" src="../assets/img/nk-avatar.jpg" alt="">
+      <span>.nk-avatar--large</span>
+    </div>
   </div>
 </article>
   <article id="badge" class="nk-section">
-    <div class="nk-toolbar nk-container--content nk-position--sticky nk-bg--opaque">
-        <h2 class="nk-heading--2">Badge</h2>
-        <button class="nk-js-button--avatar nk-button nk-toolbar__item--right">Code</button>
-      </div>
-  <!-- <h2 class="nk-heading--2 nk-position--sticky nk-bg--opaque">.nk-badge</h2> -->
-  <div class="nk-badge">badge</div>
-  <div class="nk-badge nk-bg--c">badge</div>
-  <div class="nk-badge nk-bg--y">badge</div>
-  <div class="nk-badge nk-bg--k-3">badge</div>
+  <div class="nk-toolbar nk-container--content nk-position--sticky nk-bg--opaque">
+    <h2 class="nk-heading--2">Badge</h2>
+    <button class="nk-js-button--badge nk-button nk-toolbar__item--right">Code</button>
+  </div>
+  <div class="nk-js--badge nk-doc--code">
+    <pre>
+        <code class="html">
+&lt;div class="nk-badge"&gt;badge&lt;/div&gt;
+        </code>
+      </pre>
+  </div>
+  <div class="nk-container--content">
+    <div class="nk-badge">badge</div>
+    <div class="nk-badge nk-bg--c">badge</div>
+    <div class="nk-badge nk-bg--y">badge</div>
+    <div class="nk-badge nk-bg--k-3">badge</div>
+  </div>
 </article>
   <article class="nk-section nk-height-fullpage" id="card">
   <div class="nk-toolbar nk-position--sticky nk-bg--opaque">
@@ -184,7 +86,7 @@
     <pre>
         <code class="html">
 &lt;div class="nk-card"&gt;
-&lt;img class="nk-card__image" src="..." alt=""&gt;
+&lt;img class="nk-card__image--full" src="..." alt=""&gt;
 &lt;div class="nk-card__body"&gt;
   ...
 &lt;/div&gt;
@@ -194,7 +96,18 @@
   </div>
   <div class="nk-container nk-grid@md nk-grid-3 nk-gap">
     <div class="nk-card">
-      <img class="nk-card__image" src="../assets/img/randomMatches_142.jpg" alt="">
+      <img class="nk-card__image--full" src="../assets/img/randomMatches_142.jpg" alt="">
+      <div class="nk-card__body">
+        <h4 class="nk-heading--4">.nk-card</h4>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+          dolorem debitis soluta vero cum! Tenetur voluptas fugit rem
+          corporis ut dolores.
+        </p>
+      </div>
+    </div>
+    <div class="nk-card">
+      <img class="nk-card__image--full" src="../assets/img/randomMatches.jpg" alt="">
       <div class="nk-card__body">
         <h4 class="nk-heading--4">.nk-card</h4>
         <p>
@@ -207,20 +120,7 @@
       </div>
     </div>
     <div class="nk-card">
-      <img class="nk-card__image" src="../assets/img/randomMatches.jpg" alt="">
-      <div class="nk-card__body">
-        <h4 class="nk-heading--4">.nk-card</h4>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
-          dolorem debitis soluta vero cum! Tenetur voluptas fugit rem
-          corporis ut dolores, itaque ea fuga minus facere deleniti.
-          Recusandae, quis natus explicabo laboriosam earum officia in
-          veritatis dignissimos exercitationem ab perspiciatis!
-        </p>
-      </div>
-    </div>
-    <div class="nk-card">
-      <img class="nk-card__image" src="../assets/img/randomMatches.jpg" alt="">
+      <img class="nk-card__image--full" src="../assets/img/randomMatches.jpg" alt="">
       <div class="nk-card__body">
         <h4 class="nk-heading--4">.nk-card</h4>
         <p>
@@ -260,12 +160,12 @@
   </div>
  <div class="nk-dimmer"></div>
 </article>
-
+<!-- 
 <script>
 const buttondimmer = document.querySelector(".nk-js-button--dimmer");
 const codedimmer = document.querySelector(".nk-js--dimmer");
 buttondimmer.onclick = () => codedimmer.classList.toggle("show");
-</script>
+</script> -->
   <article id="drawer" class="nk-height-fullpage">
   <div class="nk-position--sticky nk-bg--opaque">
     <div class="nk-toolbar nk-container--content">
@@ -798,7 +698,7 @@ buttontimeline.onclick = () => codetimeline.classList.toggle("show");
 
   <footer id="bottom" class="nk-footer nk-bg--k-7 nk-grid nk-grid-3@md nk-text-align--center">
   <div>
-    <p class="nk-text--small">Builted with ❤ by <a href="https://github.com/nabaroa"> Naiara Abaroa</a></p>
+    <p class="nk-text--small">Made with ❤ by <a href="https://github.com/nabaroa"> Naiara Abaroa</a></p>
   </div>
   <div>
     <a href="https://github.com/nabaroa/nakDS">

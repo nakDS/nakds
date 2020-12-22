@@ -3,6 +3,9 @@
 ## TODO
 
 ### Building CSS
+- Translate all the system from physical to flow relative properties: block-size and inline-size
+- Remove alignments from flex, and create an agnostic aligment file. Grid uses thouse alignments as well
+- Work on relative units
 - Add gallery with srcset for different sizes
 - Add mixin to generate grid system breakpoints
 - Add flex system
@@ -33,6 +36,7 @@
 
 ### Docs
 - Add principles
+- Still not very happy with current documentation system. It's not scalable. What about creating it in React and export the whole components, not only the CSS? In this case, am I going to use nextJS? Which are the advantages?
 - Use Vue to created docs?
 - Add modal JS. Need to decide what to use for JS.
 - Add copy option to hex color values: https://clipboardjs.com/
@@ -45,7 +49,8 @@
 - Doc browser support
 
 ### UX
-- Burguer menu on the right. There are more right handed users
+- Burguer menu on the right. There are more right handed users. But in desktop is kind of antipattern?
+- The current navigation isn't convenient. A fast sidebar could be useful. 
 
 ### Brand
 - Create brand.
@@ -53,6 +58,8 @@
 - Principles: simplicity, consistency, beauty, flexible, scalable
 
 ### Compilation, release, tools
+- Replace nmp with yarn
+- Review postCSS configuration. I'm sure it could be better
 - Refactor the gulfile. Better approach to have postcss.config.js on root?
 - Add circleCI to publish npm
 - Add browsersync
@@ -90,7 +97,6 @@
 - Simplify all the components. Can I remove all the variables and use only the tokens?
 - Control what variables imports each component. How can I avoid repetitions? Sure that I can improve the performace. Understand properly the custom properties and their duplication and its impact.
 - Rebranding. Create your own reallity. ^^
-- Stickers
 - Goal: work the fullpage, modern layouts, 
 - Define target. For visual landing pages. Marketing
 - Easy to extend & scale

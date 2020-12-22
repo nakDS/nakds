@@ -17,7 +17,7 @@ s,m,l,n = small(var(--small)),medium(var(--medium)),large(var(--large)),none(var
 .nk-pts,
 .nk-pvs,
 .nk-pas {
-  padding-top:var(--small) !important;
+  padding-top: var(--small) !important;
 }
 
 .nk-ptm,
@@ -53,7 +53,7 @@ s,m,l,n = small(var(--small)),medium(var(--medium)),large(var(--large)),none(var
 .nk-prs,
 .nk-phs,
 .nk-pas {
-  padding-right:var(--small) !important;
+  padding-right: var(--small) !important;
 }
 
 .nk-prm,
@@ -83,7 +83,7 @@ s,m,l,n = small(var(--small)),medium(var(--medium)),large(var(--large)),none(var
 .nk-pbs,
 .nk-pvs,
 .nk-pas {
-  padding-bottom:var(--small) !important;
+  padding-bottom: var(--small) !important;
 }
 
 .nk-pbm,
@@ -143,7 +143,7 @@ s,m,l,n = small(var(--small)),medium(var(--medium)),large(var(--large)),none(var
 .nk-mts,
 .nk-mvs,
 .nk-mas {
-  margin-top:var(--small) !important;
+  margin-top: var(--small) !important;
 }
 
 .nk-mtm,
@@ -174,7 +174,7 @@ s,m,l,n = small(var(--small)),medium(var(--medium)),large(var(--large)),none(var
 .nk-mhs,
 .nk-mas,
 ul.nk-mrs li {
-  margin-right:var(--small) !important;
+  margin-right: var(--small) !important;
 }
 
 .nk-mrm,
@@ -199,7 +199,7 @@ ul.nk-mrl li {
 .nk-mbs,
 .nk-mvs,
 .nk-mas {
-  margin-bottom:var(--small) !important;
+  margin-bottom: var(--small) !important;
 }
 
 .nk-mbm,
@@ -229,7 +229,7 @@ ul.nk-mrl li {
 .nk-mls,
 .nk-mhs,
 .nk-mas {
-  margin-left:var(--small) !important;
+  margin-left: var(--small) !important;
 }
 
 .nk-mlm,
@@ -251,5 +251,5 @@ ul.nk-mrl li {
 
 .nk-mtxxl,
 .nk-maxxl {
-  margin-top: 8var(--none) !important;
+  margin-top: 8var (--none) !important;
 }

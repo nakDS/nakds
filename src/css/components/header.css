@@ -6,3 +6,9 @@
     fill: #ffffff;
   }
 }
+
+.top-logo {
+  position: absolute;
+  top: 1em;
+  left: 4em;
+}
