@@ -1,3 +1,6 @@
+## [1.20.3] 
+- fix: switch gallery display to grid
+
 ## [1.20.2] 
 - fix: fix custom media
 

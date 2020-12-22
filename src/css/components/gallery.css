@@ -1,17 +1,18 @@
 .nk-gallery {
+  display: grid;
   padding: var(--small);
 
   @media (--small) {
-    columns: 2;
-    column-gap: var(--small);
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--small);
   }
 
   @media (--medium) {
-    columns: 3;
+    grid-template-columns: repeat(3, 1fr);
   }
   
   @media (--large) {
-    columns: 4;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
