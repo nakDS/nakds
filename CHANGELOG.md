@@ -1,3 +1,6 @@
+## [1.20.5] 
+- fix: gallery figcaption inline height
+
 ## [1.20.4] 
 - fix: gallery back to multi column system & fix custom media
 
