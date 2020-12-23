@@ -1,18 +1,17 @@
 .nk-gallery {
-  display: grid;
   padding: var(--small);
 
   @media (--small) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--small);
+    columns: 2;
+    column-gap: var(--small);
   }
 
   @media (--medium) {
-    grid-template-columns: repeat(3, 1fr);
+    columns: 3;
   }
-  
+
   @media (--large) {
-    grid-template-columns: repeat(4, 1fr);
+    columns: 4;
   }
 }
 
@@ -22,7 +21,7 @@
   line-height: 0;
 
   &:hover {
-    .nk-gallery__description {
+    & .nk-gallery__description {
       display: flex;
       justify-content: center;
       align-items: center;

@@ -1,3 +1,6 @@
+## [1.20.4] 
+- fix: gallery back to multi column system & fix custom media
+
 ## [1.20.3] 
 - fix: switch gallery display to grid
 

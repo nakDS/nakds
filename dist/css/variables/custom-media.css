@@ -1,1 +1,1 @@
-:root{--bp-small:500px;--bp-medium:800px;--bp-large:1170px;--bp-page:1170px}@custom-media --small (min-width: 500px);@custom-media --small--max (max-width: 799px);@custom-media --medium (min-width: 800px);@custom-media --medium--max (max-width: 1169px);@custom-media --large (min-width: 1170px);@custom-media --large--max (max-width: 1439px);@custom-media --xlarge (min-width: 1440px);
+:root{--bp-small:500px;--bp-medium:800px;--bp-large:1170px;--bp-page:1170px}

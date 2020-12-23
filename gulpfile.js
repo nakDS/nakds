@@ -33,7 +33,8 @@ function css() {
         cssImport(),
         mixins(),
         postcssPresetEnv({
-          autoprefixer: { grid: true },
+          stage: 1,
+          importFrom: ["./src/css/variables/custom-media.css"],
           features: {
             "nesting-rules": true,
           },

@@ -2,7 +2,6 @@
 
 @import "tokens/tokens";
 @import "variables/custom-properties";
-@import "variables/custom-media";
 @import "variables/mixin";
 
 @import "base/typography";
