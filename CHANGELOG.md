@@ -1,3 +1,5 @@
+## [1.20.7] 
+- fix: distribute custom media
 ## [1.20.5] 
 - fix: gallery figcaption inline height
 

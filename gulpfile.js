@@ -50,6 +50,17 @@ function css() {
     );
 }
 
+function copyCustomMedia() {
+  return gulp
+    .src("./src/css/variables/custom-media.css")
+    .pipe(
+      notify({
+        message: "Your nakDS custom media are ready ♡",
+      })
+    )
+    .pipe(gulp.dest("./dist/css/variables/"))
+}
+
 function cssMin() {
   return gulp
     .src("./dist/css/nakDS.css")
@@ -102,6 +113,7 @@ function watch() {
 const build = gulp.series(
   docs,
   css,
+  copyCustomMedia,
   cssMin,
   assets
   // sassMixins,
@@ -110,6 +122,7 @@ const build = gulp.series(
 
 exports.docs = docs;
 exports.css = css;
+exports.copyCustomMedia = copyCustomMedia;
 exports.cssMin = cssMin;
 exports.assets = assets;
 exports.watch = watch;
