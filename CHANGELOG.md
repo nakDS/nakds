@@ -1,3 +1,5 @@
+## [1.20.9] 
+- refactor: bump all dependencies
 ## [1.20.8] 
 - fix: typo in filter css
 ## [1.20.7] 
