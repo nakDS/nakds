@@ -4,7 +4,7 @@
 
 ### Building CSS
 - Translate all the system from physical to flow relative properties: block-size and inline-size
-- Remove alignments from flex, and create an agnostic aligment file. Grid uses thouse alignments as well
+- Remove alignments from flex, and create an agnostic aligment file. Grid uses those alignments as well
 - Work on relative units
 - Add gallery with srcset for different sizes
 - Add mixin to generate grid system breakpoints
@@ -61,12 +61,13 @@
 - Replace nmp with yarn
 - Review postCSS configuration. I'm sure it could be better
 - Refactor the gulfile. Better approach to have postcss.config.js on root?
-- Add circleCI to publish npm
+- Add github actions to publish npm
 - Add browsersync
 - Add property sorter
 - Add stylelint on commit
 
 ### Distribution
+- Is it the package being published to CDN?
 - Add the fonts to the CDN
 - Distribute the CSS on mixins to consume with more flexibility. Users don´t have to use my naming convention, that can be a real limitation. The solution right now is not stable because it doesn´t understand the nesting... maybe better to add a flag to mixinable classes to target?
 - Distribute the fonts in independent files to not to import all off them?
@@ -78,7 +79,7 @@
 - Decide to repeat the classes or use only the modifier. Pros and cons
 - Tool to build the docs
 - How to export scss mixins
-- Is it a good desition not to use sass?
+- Is it a good decision not to use sass? Yes.
 - Decide browser support level. 
 - How to work with "add only what you need CSS"
 
@@ -96,7 +97,7 @@
 - Reproduce all the circle to try to understand the concepts. Find challenges, find weak points.
 - Simplify all the components. Can I remove all the variables and use only the tokens?
 - Control what variables imports each component. How can I avoid repetitions? Sure that I can improve the performace. Understand properly the custom properties and their duplication and its impact.
-- Rebranding. Create your own reallity. ^^
+- Rebranding. Create your own reality. ^^
 - Goal: work the fullpage, modern layouts, 
 - Define target. For visual landing pages. Marketing
 - Easy to extend & scale
