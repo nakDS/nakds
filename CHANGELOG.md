@@ -1,3 +1,5 @@
+## [1.20.8] 
+- fix: typo in filter css
 ## [1.20.7] 
 - fix: distribute custom media
 ## [1.20.5] 
