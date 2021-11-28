@@ -1,3 +1,5 @@
+## [1.20.10] 
+- core: bump hightlight package
 ## [1.20.9] 
 - refactor: bump all dependencies
 ## [1.20.8] 
