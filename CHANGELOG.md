@@ -1,3 +1,5 @@
+## [1.20.11] 
+- fix: Add breakpoint logic to grid-2
 ## [1.20.10] 
 - core: bump hightlight package
 ## [1.20.9] 
