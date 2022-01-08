@@ -1,6 +1,6 @@
 {
   "name": "nakds",
-  "version": "1.20.14",
+  "version": "1.20.15",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
