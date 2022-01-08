@@ -1,5 +1,6 @@
 :root {
   --shape: 200px;
+  --minus-one: var(-1); /* Workaround to fix negative calculation compilation issue with postcss-calc */
 }
 
 .nk-shape--circle {
@@ -29,7 +30,7 @@
   }
 
   &::before {
-    top: calc((var(--shape) / -4)); 
+    top: calc((var(--shape) / 4) * var(--minus-one)); 
     left: 0;
   }
 
