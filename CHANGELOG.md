@@ -1,3 +1,5 @@
+## [1.20.14] 
+- chore: publish min version
 ## [1.20.13] 
 - fix: remove calc giving issue in compilation
 ## [1.20.12] 
