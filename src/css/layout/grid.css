@@ -28,6 +28,12 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+@media (--small) {
+  .nk-grid-2\@sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .nk-grid-3 {
   grid-template-columns: repeat(3, 1fr);
 }
