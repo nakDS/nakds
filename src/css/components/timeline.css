@@ -23,7 +23,7 @@
     content: "";
     position: absolute;
     top: 8px;
-    left: calc(-1 * var(--xxx-large) - 4px);
+    left: -28px;
     width: 16px;
     height: 16px;
     background: var(--color--k-4);
