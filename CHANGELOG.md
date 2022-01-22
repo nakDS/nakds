@@ -1,3 +1,5 @@
+## [1.20.17] 
+- fix:  Heading line-heights
 ## [1.20.16] 
 - fix:  workaround to fix negative calculation compilation issue with postcss-calc
 ## [1.20.15] 
