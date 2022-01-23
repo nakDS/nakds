@@ -1,25 +1,30 @@
+
 .nk-slider {
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
   display: grid;
-  grid-template-columns: repeat(100, 100vw);
-  scroll-behavior: smooth;
-  overflow-x: scroll;
+  grid-auto-flow: column;
 }
 
 .nk-slide {
-  display: grid;
-  justify-items: center;
-  align-items: center;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
+  height: 100vh;
+  min-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
-.nk-slider__next {
-  position: absolute;
-  right: 40px;
-  top: 50vh;
-}
+.nk-slide__container {
+  width: 90vw;
 
-.nk-slider__back {
-  position: absolute;
-  left: 40px;
-  top: 50vh;
+  @media (--small) {
+    width: 800px;
+  }
 }

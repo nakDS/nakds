@@ -1,3 +1,5 @@
+## [1.21.0] 
+- feat:  Update slider using scroll snap
 ## [1.20.17] 
 - fix:  Heading line-heights
 ## [1.20.16] 
