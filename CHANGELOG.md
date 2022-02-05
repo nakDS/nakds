@@ -1,6 +1,7 @@
+## [1.21.2] 
+- fix: add margin bottom to headings
 ## [1.21.1] 
 - fix: slide centering
-
 ## [1.21.0] 
 - feat:  Update slider using scroll snap
 ## [1.20.17] 

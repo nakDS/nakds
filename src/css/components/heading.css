@@ -1,53 +1,65 @@
 .nk-heading--1 {
   font-size: 2em;
   line-height: 1.2;
+  margin-bottom: var(--x-large);
 
   @media (--medium) {
     font-size: 3em;
+    margin-bottom: var(--xxx-large);
   }
 }
 
 .nk-heading--2 {
   font-size: 1.5em;
   line-height: 1.2;
+  margin-bottom: var(--large);
 
   @media (--medium) {
     font-size: 2.5em;
+    margin-bottom: var(--xx-large);
   }
 }
 
 .nk-heading--3 {
   font-size: 1.2em;
   line-height: 1.2;
+  margin-bottom: var(--medium);
 
   @media (--medium) {
     font-size: 2.2em;
+    margin-bottom: var(--large);
   }
 }
 
 .nk-heading--4 {
   font-size: 1.1em;
   line-height: 1.2;
+  margin-bottom: var(--small);
 
   @media (--medium) {
     font-size: 1.8em;
+    margin-bottom: var(--medium);
   }
 }
 
 .nk-heading--5 {
   font-size: 1em;
   line-height: 1.2;
+  margin-bottom: var(--x-small);
 
   @media (--medium) {
     font-size: 1.6em;
+    margin-bottom: var(--small);
   }
 }
 
 .nk-heading--6 {
   font-size: 1em;
   line-height: 1.2;
+  margin-bottom: var(--xx-small);
 
   @media (--medium) {
     font-size: 1.4em;
+    margin-bottom: var(--x-small);
   }
 }
