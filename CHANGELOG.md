@@ -1,3 +1,6 @@
+## [1.21.3] 
+- fix: complete grid responsive 
+
 ## [1.21.2] 
 - fix: add margin bottom to headings
 ## [1.21.1] 

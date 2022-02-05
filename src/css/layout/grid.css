@@ -34,6 +34,18 @@
   }
 }
 
+@media (--medium) {
+  .nk-grid-2\@md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (--large) {
+  .nk-grid-2\@lg {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .nk-grid-3 {
   grid-template-columns: repeat(3, 1fr);
 }
@@ -46,6 +58,12 @@
 
 @media (--medium) {
   .nk-grid-3\@md {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (--large) {
+  .nk-grid-3\@lg {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -70,8 +88,20 @@
   }
 }
 
+@media (--large) {
+  .nk-grid-4\@lg {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .nk-grid-5 {
   grid-template-columns: repeat(5, 1fr);
+}
+
+@media (--small) {
+  .nk-grid-5\@sm {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 @media (--medium) {
@@ -80,8 +110,32 @@
   }
 }
 
+@media (--large) {
+  .nk-grid-5\@lg {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
 .nk-grid-6 {
   grid-template-columns: repeat(6, 1fr);
+}
+
+@media (--small) {
+  .nk-grid-6\@sm {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (--medium) {
+  .nk-grid-6\@md {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (--large) {
+  .nk-grid-6\@lg {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 
 .nk-gap {
