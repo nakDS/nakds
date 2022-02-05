@@ -3,7 +3,6 @@
 ## TODO
 
 ### Compilation, release, tools
-- SSL certificate
 - Replace nmp with yarn
 - Review postCSS configuration. I'm sure it could be better
 - Refactor the gulfile. Better approach to have postcss.config.js on root?
