@@ -2,7 +2,7 @@
 
 @import "tokens/tokens";
 @import "variables/custom-properties";
-@import "variables/mixin";
+/* @import "variables/mixin"; */
 
 @import "base/typography";
 @import "base/default";
