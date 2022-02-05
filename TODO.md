@@ -2,6 +2,17 @@
 
 ## TODO
 
+### Compilation, release, tools
+- SSL certificate
+- Replace nmp with yarn
+- Review postCSS configuration. I'm sure it could be better
+- Refactor the gulfile. Better approach to have postcss.config.js on root?
+- Add github actions to publish npm
+- Add browsersync
+- Add property sorter
+- Add stylelint on commit
+
+
 ### Building CSS
 - Translate all the system from physical to flow relative properties: block-size and inline-size
 - Remove alignments from flex, and create an agnostic aligment file. Grid uses those alignments as well
@@ -56,16 +67,6 @@
 - Create brand.
 - Brand values, pursopes, objetives
 - Principles: simplicity, consistency, beauty, flexible, scalable
-
-### Compilation, release, tools
-- Replace nmp with yarn
-- Review postCSS configuration. I'm sure it could be better
-- Refactor the gulfile. Better approach to have postcss.config.js on root?
-- Add github actions to publish npm
-- Add browsersync
-- Add property sorter
-- Add stylelint on commit
-
 ### Distribution
 - Is it the package being published to CDN?
 - Add the fonts to the CDN
