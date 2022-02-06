@@ -7,7 +7,7 @@
     "start": "gulp",
     "commit": "npx git-cz",
     "semantic-release": "semantic-release",
-    "css": "postcss src/css/nakDS.css -o docs/css/nakDS.min.css & npm run tokens",
+    "css": "postcss src/css/nakDS.css -o docs/css/nakDS.min.css && npm run tokens",
     "tokens": "postcss src/css/tokens/tokens.css -o docs/css/nakDS.tokens.css",
     "css:watch": "postcss src/css/nakDS.css -o docs/css/nakDS.min.css --watch"
   },
