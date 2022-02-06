@@ -2,7 +2,7 @@
   --sidebar-width: 100vw;
 
   @media (--medium) {
-    --sidebar-width: 18.75em; /* 300px */
+    --sidebar-width: 15em; /* 240px */
     --layout-height: 100vh;
   }
 }

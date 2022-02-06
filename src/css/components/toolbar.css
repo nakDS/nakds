@@ -2,11 +2,11 @@
 
 .nk-toolbar {
   display: flex;
-  padding: 0 calc(var(--spacer) * 2); 
+  padding: 0 var(--medium); 
   overflow: hidden;
 
   @media (--medium) {
-    padding: 0 calc(var(--spacer) * 5);
+    padding: 0 var(--large);
   }
 }
 

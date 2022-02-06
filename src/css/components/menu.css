@@ -6,7 +6,7 @@
   --menu-color--hover: var(--color--k-1);
   --menu-background-color: var(--color--k-10);
   --menu-background-color--hover: var(--color--k-8);
-  --menu-padding: calc(var(--spacer) * 4);
+  --menu-padding: var(--large);
 
   list-style: none;
   background: pink;

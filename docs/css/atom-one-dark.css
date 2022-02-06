@@ -22,7 +22,7 @@ hue-6-2: #e6c07b
 .hljs {
   display: block;
   overflow-x: auto;
-  padding: 0.5em calc(var(--spacer) * 5); 
+  padding: 0.5em var(--large); 
   color: #abb2bf;
   background: #282c34;
 }

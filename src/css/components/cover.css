@@ -5,11 +5,11 @@
   align-items: center;
   background-attachment: fixed;
   height: 100vh;
-  padding: 0 calc(var(--spacer) * 2);
+  padding: 0 var(--medium);
   text-align: center;
 
   @media (--medium) {
-    padding: 0 calc(var(--spacer) * 5);
+    padding: 0 var(--large);
   }
 }
 
