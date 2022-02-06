@@ -12,7 +12,7 @@
 - Remove alignments from flex, and create an agnostic aligment file. Grid uses those alignments as well
 - Work on relative units
 - Add gallery with srcset for different sizes
-- Add mixin to generate grid system breakpoints
+- Add mixin to generate grid system breakpoints. Is this necessary?
 - Add flex system
 - Add responsive video
 - Add gradients to backgrounds
@@ -49,7 +49,7 @@
 - Doc how to consume. Whole the page & individual components
 - Tecnical documentation
 - Add instructions to install
-- Roudmap. Add it to the readme. Beta on February. March release. 2 months of promotion. Research the tracking. Present it on an event.
+- Roadmap. Add it to the readme. Beta data?. Release. 2 months of promotion. Research the tracking. Present it on an event.
 - Give a solution to the nav
 - Doc browser support
 

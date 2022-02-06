@@ -2,10 +2,12 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 4;
+  z-index: 4; 
 }
 
-.nk-navigation--fixed-horizontal {
+/* Not really useful navigation pattern. One principe is that it has to be EASY, and that is not */
+
+/* .nk-navigation--fixed-horizontal { 
   position: fixed;
   top: 0;
   left: 0;
@@ -21,4 +23,4 @@
 
 .nk-main {
   margin-left: 3em;
-}
+} */
