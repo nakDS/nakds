@@ -56,7 +56,7 @@
 .nk-notify {
   position: fixed;
   bottom: 38px;
-  right: -50px;
+  right: -34px;
   background: var(--color);
   color: white;
   font-size: .8em;
