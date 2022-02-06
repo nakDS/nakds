@@ -1,7 +1,9 @@
 .nk-avatar,
 [class^="nk-avatar--"] {
   border-radius: 100%;
+  object-fit: cover;
 }
+
 .nk-avatar,
 .nk-avatar--medium {
   inline-size: 6em;
