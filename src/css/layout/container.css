@@ -1,10 +1,10 @@
 [class*="nk-container"] {
   --container--content: 1100px;
   --container--text: 680px;
-  --container--padding: calc(var(--spacer) * 2);
+  --container--padding: var(--medium); 
 
   @media (--medium) {
-    --container--padding: calc(var(--spacer) * 5);
+    --container--padding: var(--x-large);
   }
 
   width: 100%;
@@ -22,10 +22,10 @@
 }
 
 .nk-section {
-  --section-padding: calc(var(--spacer) * 3);
+  --section-padding: var(--large);
 
   @media (--medium) {
-    --section-padding: calc(var(--spacer) * 5);
+    --section-padding: var(--x-large);
   }
 
   padding-top: var(--section-padding);

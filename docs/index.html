@@ -51,18 +51,19 @@
         </a>
       </div>
       <div class="nk-drawer nk-js--nav nk-pan">
-        <nav id="nk-nav" class="">
-          <ul class="nk-pax">
-            <li><a href="#principles">Principles</a></li>
-            <li><a href="#accesibility">Accesibility</a></li>
-          </ul>
-          <ul class="nk-grid nk-grid-4@md nk-list">
-            <!-- <li class="nk-bg--k-10">How to use it
-              <ul>
-                <li><a hre/utilities/instalation">Getting Started</a></li>
-              </ul>
-            </li> -->
-            <li class="nk-pax nk-grid nk-grid-2">
+        <nav id="nk-nav" class="nk-pax">
+          <ul class="nk-grid nk-gap nk-grid-4@md nk-list nk-text--small">
+            <li>
+              <a href="#instalation">
+                <span class="nk-heading--3">Getting Started</span>
+              </a>
+            <ul>
+              <li><a href="#instalation">Instalation</a></li>
+              <li><a href="#principles">Principles</a></li>
+              <li><a href="#accesibility">Accesibility</a></li>
+            </ul>
+          </li>
+            <li class="nk-grid nk-grid-2">
               <div>
                 <a href="#tokens">
                   <span class="nk-heading--3">Tokens</span>
@@ -73,7 +74,7 @@
                 </ul>
               </div>
             </li>
-            <li class="nk-pax">
+            <li>
               <a href="#layout">
                 <span class="nk-heading--3">Layout</span>
               </a>
@@ -85,11 +86,11 @@
                 <li><a href="#fullpage">Fullpage</a></li>
               </ul>
             </li>
-            <li class="nk-pax">
+            <li>
               <a href="#components">
                 <span class="nk-heading--3">Components</span>
               </a>
-              <ul class="nk-grid nk-grid-2">
+              <ul class="nk-grid nk-grid-2@md">
                 <li><a href="#avatar">Avatar</a><span class="nk-text--small"></span></li>
                 <li><a href="#badge">Badge</a><span class="nk-text--small"></span></li>
                 <li><a href="#card">Card</a><span class="nk-text--small"></span></li>
@@ -108,7 +109,7 @@
                 <li><a href="#slider">Slider</a></li>
               </ul>
             </li>
-            <li class="nk-pax">
+            <li>
               <a href="#styling">
                 <span class="nk-heading--3">Styling</span>
               </a>
@@ -122,7 +123,7 @@
                 <li><a href="#fonts">Variable fonts</a></li>
               </ul>
             </li>
-            <li class="nk-pax">
+            <li>
               <a href="#assets">
                 <span class="nk-heading--3">Assets</span>
               </a>
@@ -131,7 +132,7 @@
                 <li><a href="#images">Images</a></li>
               </ul>
             </li>
-            <li class="nk-pax">
+            <li>
               <a href="#utilities">
                 <span class="nk-heading--3">Utilities</span>
               </a>
@@ -313,29 +314,23 @@
 
       <article id="sizing" class="nk-container nk-section nk-height-fullpage">
         <h2 class="nk-heading--2 nk-position--sticky nk-bg--opaque nk-pbs">Sizing tokens</h2>
-        <div class="nk-grid nk-grid-2 nk-gap">
-          <div class="nk-doc-border" style="width:var(--none)"></div>
+        <div class="nk-container--content nk-grid nk-grid-2 nk-gap">
+          <div class="nk-doc-border nk-bg--k-9" style="width:var(--none)"></div>
           <div>--none: 0;</div>
-          <div class="nk-doc-border" style="width:var(--xxx-small)"></div>
-          <div>
-            <div>--xxx-small: 0.125rem; /*!2px;*/</div>
-          </div>
-          <div class="nk-doc-border" style="width:var(--xx-small)"></div>
-          <div>--xx-small: 0.25rem; /*!4px*/</div>
-          <div class="nk-doc-border" style="width:var(--x-small)"></div>
-          <div>--x-small: 0.5rem; /*!8px*/</div>
-          <div class="nk-doc-border" style="width:var(--small)"></div>
-          <div>--small: 0.75rem; /*!12px*/</div>
-          <div class="nk-doc-border" style="width:var(--large)"></div>
-          <div>--medium: 1rem; /*!16px*/</div>
-          <div class="nk-doc-border" style="width:var(--x-large)"></div>
-          <div>--x-large: 1.5rem; /*!24px*/</div>
-          <div class="nk-doc-border" style="width:var(--xx-large)"></div>
-          <div>--xx-large: 1.75rem; /*!28px*/</div>
-          <div class="nk-doc-border" style="width:var(--xxx-large)"></div>
-          <div>--xxx-large: 2rem; /*!32px*/</div>
-          <div class="nk-doc-border" style="width:var(--xxxx-large)"></div>
-          <div>--xxxx-large: 3rem; /*!48px*/ </div>
+          <div class="nk-doc-border nk-bg--k-9" style="width:var(--x-small)"></div>
+          <div>--x-small: 0.25rem; /* 4px */</div>
+          <div class="nk-doc-border nk-bg--k-9" style="width:var(--small)"></div>
+          <div>--small: 0.5rem; /* 8px */</div>
+          <div class="nk-doc-border nk-bg--k-9" style="width:var(--medium)"></div>
+          <div>--medium: 1rem; /* 16px */</div>
+          <div class="nk-doc-border nk-bg--k-9" style="width:var(--large)"></div>
+          <div>--large: 2rem; /* 32px */</div>
+          <div class="nk-doc-border nk-bg--k-9" style="width:var(--x-large)"></div>
+          <div>--x-large: 3rem; /* 48px */</div>
+          <div class="nk-doc-border nk-bg--k-9" style="width:var(--huge)"></div>
+          <div>--huge: 4rem; /* 64px */</div>
+          <div class="nk-doc-border nk-bg--k-9" style="width:var(--x-huge)"></div>
+          <div>--x-huge: 6rem; /* 96px */</div>
         </div>
       </article>
 

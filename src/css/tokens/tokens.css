@@ -1,6 +1,3 @@
-@import "tokens--color";
-@import "tokens--sizing";
 @import "tokens--font";
-@import "tokens--spacer";
-
-
+@import "tokens--sizing";
+@import "tokens--color";

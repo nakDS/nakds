@@ -6,7 +6,7 @@
   top: 0;
   display: flex;
   flex-direction: column;
-  padding: var(--xxx-large);
+  padding: var(--huge);
   background: var(--color--k-10);
   overflow-y: auto; 
   z-index: 3;

@@ -139,6 +139,6 @@
 }
 
 .nk-gap {
-  column-gap: var(--spacer-medium);
-  row-gap: var(--spacer-medium);
+  column-gap: var(--medium);
+  row-gap: var(--medium);
 }

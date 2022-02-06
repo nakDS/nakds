@@ -17,7 +17,7 @@
 
 .nk-timeline__item {
   position: relative;
-  margin-bottom: var(--xxx-large);
+  margin-bottom: var(--huge);
 
   &::before {
     content: "";

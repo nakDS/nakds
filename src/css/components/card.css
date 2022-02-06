@@ -5,7 +5,7 @@
   display: grid;
   grid-template-rows: auto 1fr;
   min-width: 6em;
-  min-height: var(--spacer-large);
+  min-height: var(--large);
   block-size: 100%;
 }
 
@@ -35,5 +35,5 @@
 }
 
 .nk-card__body {
-  padding: var(--spacer-medium);
+  padding: var(--medium);
 }

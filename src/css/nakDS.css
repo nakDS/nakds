@@ -55,13 +55,13 @@
 
 .nk-notify {
   position: fixed;
-  bottom: 38px;
-  right: -34px;
+  bottom: var(--large);
+  right: calc(-1 * var(--large));
   background: var(--color);
   color: white;
   font-size: .8em;
   z-index: 1;
   transform: rotate(-45deg);
-  padding: 0 var(--spacer-large);
+  padding: 0 var(--large);
   pointer-events: none;
 }

@@ -1,3 +1,8 @@
+## [2.0.0] 
+- feat!: Change sizing tokens, the scale is too small
+
+BREAKING CHANGE
+Sizing tokens have been changed. Be aware that your design might have changed some dimensions.
 ## [1.21.6] 
 - fix: avatar object fit
 ## [1.21.5] 

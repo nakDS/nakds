@@ -30,7 +30,7 @@
 .nk-modal__header {
   display: flex;
   justify-content: flex-end;
-  padding: var(--spacer-medium);
+  padding: var(--medium);
 }
 
 .nk-modal__image {
@@ -40,14 +40,14 @@
 }
 
 .nk-modal__body {
-  padding: var(--spacer-medium) var(--spacer-large);
+  padding: var(--medium) var(--large);
 }
 
 .nk-modal__footer {
   display: flex;
   justify-content: flex-end;
-  padding: 0 var(--spacer-medium) var(--spacer-medium);
-  column-gap: var(--spacer-medium);
+  padding: 0 var(--medium) var(--medium);
+  column-gap: var(--medium);
 }
 
 .nk-show-modal {

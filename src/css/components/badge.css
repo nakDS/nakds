@@ -6,9 +6,10 @@ Control this bit through the gulpfile */
 .nk-badge {
   --badge-border-radius: 0;
   --badge-background: var(--color);
-  --badge-padding: var(--xx-small) var(--x-small);
+  --badge-padding: var(--x-small) var(--small);
   --badge-font-size: var(--font-size--small);
   --badge-color: var(--color--k-10);
+
   display: inline;
   padding: var(--badge-padding);
   font-size: var(--badge-font-size);

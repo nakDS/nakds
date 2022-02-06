@@ -1,6 +1,6 @@
 {
   "name": "nakds",
-  "version": "1.21.6",
+  "version": "2.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -8,8 +8,8 @@
     "commit": "npx git-cz",
     "semantic-release": "semantic-release",
     "css": "postcss src/css/nakDS.css -o docs/css/nakDS.min.css && yarn css-dist",
-    "css-dist": "postcss docs/css/nakDS.min.css -o dist/css/nakDS.min.css",
-    "css:watch": "postcss src/css/*.css -o docs/css/nakDS.min.css  && yarn css-dist -w"
+    "css:watch": "postcss src/css/nakDS.css -o docs/css/nakDS.min.css && yarn css-dist -w",
+    "css-dist": "postcss docs/css/nakDS.min.css -o dist/css/nakDS.min.css"
   },
   "plugins": [
     "@semantic-release/commit-analyzer",

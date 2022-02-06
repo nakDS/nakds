@@ -31,7 +31,6 @@
 - Add blending effects
 - Add background fix utilities for paralax effects
 - Add layout modes. 2 cols, 3 cols, patterns
-- Change sizing tokens, the scale is too small
 
 ### Assets and resources
 - Add photos in assets. Add attribution. Add filters and demos to the images. Resources for landing pages. 
