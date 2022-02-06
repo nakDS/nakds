@@ -1,3 +1,5 @@
+## [1.21.5] 
+- chore: distribute nakds.min.css in dist folder
 ## [1.21.4] 
 - chore: replace gulp postcss
 

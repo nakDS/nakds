@@ -1,15 +1,15 @@
 {
   "name": "nakds",
-  "version": "1.21.4",
+  "version": "1.21.5",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp",
     "commit": "npx git-cz",
     "semantic-release": "semantic-release",
-    "css": "postcss src/css/nakDS.css -o docs/css/nakDS.min.css & npm run tokens",
-    "tokens": "postcss src/css/tokens/tokens.css -o docs/css/nakDS.tokens.css",
-    "css:watch": "postcss src/css/nakDS.css -o docs/css/nakDS.min.css —watch"
+    "css": "postcss src/css/nakDS.css -o docs/css/nakDS.min.css && yarn css-dist",
+    "css-dist": "postcss docs/css/nakDS.min.css -o dist/css/nakDS.min.css",
+    "css:watch": "postcss src/css/nakDS.css -o docs/css/nakDS.min.css  && yarn css-dist —watch"
   },
   "plugins": [
     "@semantic-release/commit-analyzer",

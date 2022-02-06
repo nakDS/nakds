@@ -1,1 +1,0 @@
-.nk-drawer{background:var(--color--k-10);display:flex;flex-direction:column;height:100vh;overflow-y:auto;padding:var(--xxx-large);position:fixed;right:0;top:0;transform:translateX(75vw);transition:.3s;width:75vw;z-index:3}.nk-drawer.nk-is-open{transform:translateX(0)}.nk-drawer__footer{margin-top:auto}
