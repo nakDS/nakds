@@ -42,6 +42,11 @@
   opacity: 1;
 }
 
+.nk-doc--code-class {
+  padding: var(--x-small) var(--small);
+background: var(--color--k-9);
+}
+
 .nk-doc--height {
   min-height: calc(var(--x-huge) * 2);
 }

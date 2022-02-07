@@ -1,15 +1,14 @@
-/* TODO */
-/* Add breakpoints logic to the system */
 
-@import "../variables/custom-media.css";
-
-.nk-grid {
-  --grid-item-top-space: var(--x-small);
-  --grid-item-bottom-space: var(--x-small);
+.nk-grid,
+[class^="nk-grid-"],
+[class*=" nk-grid-"] {
+  display: grid;
 }
 
-.nk-grid {
-  display: grid;
+@media (--small) {
+  .nk-grid\@sm {
+    display: grid;
+  }
 }
 
 @media (--medium) {
@@ -18,8 +17,8 @@
   }
 }
 
-@media (--small) {
-  .nk-grid\@sm {
+@media (--large) {
+  .nk-grid\@lg {
     display: grid;
   }
 }
@@ -138,7 +137,17 @@
   }
 }
 
+.nk-gap--small {
+  column-gap: var(--small);
+  row-gap: var(--small);
+}
+
 .nk-gap {
   column-gap: var(--medium);
   row-gap: var(--medium);
+}
+
+.nk-gap--large {
+  column-gap: var(--large);
+  row-gap: var(--large);
 }

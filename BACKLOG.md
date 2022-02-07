@@ -13,7 +13,6 @@
 - Remove alignments from flex, and create an agnostic aligment file. Grid uses those alignments as well
 - Work on relative units
 - Add gallery with srcset for different sizes
-- Add mixin to generate grid system breakpoints. Is this necessary?
 - Add flex system
 - Add responsive video
 - Add gradients to backgrounds

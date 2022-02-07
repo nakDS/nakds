@@ -1,3 +1,5 @@
+## [2.0.1] 
+- fix: Improve grid layout system
 ## [2.0.0] 
 - feat!: Change sizing tokens, the scale is too small
 
