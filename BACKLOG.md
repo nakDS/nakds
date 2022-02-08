@@ -15,7 +15,6 @@
 - Add gallery with srcset for different sizes
 - Add flex system
 - Add responsive video
-- Add gradients to backgrounds. Create nakDS gradients
 - Add different types of navigation
 - visuals Call to actions. Some resources
 - Make the badge more visual

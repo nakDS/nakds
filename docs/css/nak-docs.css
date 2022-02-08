@@ -44,7 +44,7 @@
 
 .nk-doc--code-class {
   padding: var(--x-small) var(--small);
-background: var(--color--k-9);
+  background: var(--color--k-9);
 }
 
 .nk-doc--height {

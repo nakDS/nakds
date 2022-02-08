@@ -47,6 +47,7 @@
 @import "styling/filters";
 @import "styling/shapes";
 @import "styling/background";
+@import "styling/gradients"; 
 
 @import "utilities/utils";
 @import "utilities/sizing";
