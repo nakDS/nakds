@@ -9,12 +9,16 @@
   --menu-padding: var(--large);
 
   list-style: none;
-  background: pink;
 }
 
 .nk-menu--row {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+
+  @media (--small) {
+    flex-direction: row;
+  }
 }
 
 .nk-menu__item {

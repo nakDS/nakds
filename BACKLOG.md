@@ -15,7 +15,7 @@
 - Add gallery with srcset for different sizes
 - Add flex system
 - Add responsive video
-- Add gradients to backgrounds
+- Add gradients to backgrounds. Create nakDS gradients
 - Add different types of navigation
 - visuals Call to actions. Some resources
 - Make the badge more visual
@@ -32,6 +32,7 @@
 - Add layout modes. 2 cols, 3 cols, patterns
 
 ### Assets and resources
+- Create artistic assets mixing blending and gradients
 - Add photos in assets. Add attribution. Add filters and demos to the images. Resources for landing pages. 
 - Find a font to use easily with variable fonts. Elana is helping with this.
 - Illustrations. Shapes (brand)
