@@ -1,3 +1,5 @@
+## [2.1.0] 
+- feat: Add gradients
 ## [2.0.1] 
 - fix: Improve grid layout system
 ## [2.0.0] 
