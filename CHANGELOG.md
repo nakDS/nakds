@@ -1,3 +1,5 @@
+## [2.2.0] 
+- feat: Add experiments
 ## [2.1.0] 
 - feat: Add gradients
 ## [2.0.1] 

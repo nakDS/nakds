@@ -1,4 +1,6 @@
 .nk-theme--dark {
+  --color--k-10: var(--color--k-9);
+  
   background-color: var(--color--k-9);
   color: var(--color--k-5);
 }
