@@ -7,7 +7,11 @@
 - Add browsersync
 - Add property sorter
 - Add stylelint on commit
+- Export a file without prefix
 ### Building CSS
+- Animation to use with grafients and filters
+- Add nak icons
+- Create random system to create art. Make this CSS bundle appart. nakds.art.min.css
 - Translate all the system from physical to flow relative properties: block-size and inline-size
 - Start preparing @layer in code
 - Remove alignments from flex, and create an agnostic aligment file. Grid uses those alignments as well

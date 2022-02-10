@@ -1,6 +1,7 @@
 require('postcss-import');
 require('postcss-mixins');
 require('postcss-preset-env');
+// require('postcss-selector-replace');
 require('cssnano');
 
 module.exports = {
@@ -13,6 +14,10 @@ module.exports = {
         'custom-media-queries': true,
       }
     },
+    // 'postcss-selector-replace':{
+    //   "before": [".nk-"],
+    //   "after": [".",]
+    // },
     cssnano: {
       preset: 'default',
     },
