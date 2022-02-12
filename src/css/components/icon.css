@@ -1,4 +1,7 @@
 /* @import "../variables/core-utils"; */
+:root {
+--icon-color: var(--color--k-10);
+} 
 
 .nk-icon--small {
   width: 24px;

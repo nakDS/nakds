@@ -1,3 +1,6 @@
+## [2.3.0] 
+- feat: Add art section
+
 ## [2.2.0] 
 - feat: Add experiments
 ## [2.1.0] 

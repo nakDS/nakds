@@ -10,7 +10,6 @@
 - Export a file without prefix
 ### Building CSS
 - Animation to use with grafients and filters
-- Add nak icons
 - Create random system to create art. Make this CSS bundle appart. nakds.art.min.css
 - Translate all the system from physical to flow relative properties: block-size and inline-size
 - Start preparing @layer in code
@@ -32,7 +31,6 @@
 - Add object fit utilities?
 - Add blending effects
 - Add background fix utilities for paralax effects
-- Add layout modes. 2 cols, 3 cols, patterns
 
 ### Assets and resources
 - Create artistic assets mixing blending and gradients
@@ -57,8 +55,6 @@
 - Doc browser support
 
 ### UX
-- Burguer menu on the right. There are more right handed users. But in desktop is kind of antipattern?
-- The current navigation isn't convenient. A fast sidebar could be useful. 
 
 ### Brand
 - Create brand.
@@ -70,8 +66,7 @@
 - Distribute the CSS on mixins to consume with more flexibility. Users don´t have to use my naming convention, that can be a real limitation. The solution right now is not stable because it doesn´t understand the nesting... maybe better to add a flag to mixinable classes to target?
 - Distribute the fonts in independent files to not to import all off them?
 - Add dist to CDN
-- Gulp tasks to optimize the images to diff screens
-- Add the images for covers to CDN
+- Add the images for covers to CDN. How to work with different sizes? Use a platform. Croudflare?
 
 ### Technical decisions
 - Decide to repeat the classes or use only the modifier. Pros and cons
@@ -79,7 +74,7 @@
 - How to export scss mixins
 - Is it a good decision not to use sass? Yes.
 - Decide browser support level. 
-- How to work with "add only what you need CSS"
+- How to work with "add only what you need CSS". Propose to use purge?
 
 ### Testing
 - Try the CDN version in a third party project
@@ -89,7 +84,7 @@
 ### Other
 - Add semantic url
 - Improve SEO
-- Add accesibility 
+- Improve accesibility 
 
 ## IDEAS
 - Reproduce all the circle to try to understand the concepts. Find challenges, find weak points.

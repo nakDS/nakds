@@ -1,0 +1,47 @@
+.nk-size-100 {
+  width: 100vw;
+  height: 100vw;
+}
+
+.nk-size-150 {
+  width: 150vw;
+  height: 150vw;
+}
+
+.nk-size-200 {
+  width: 200vw;
+  height: 200vw;
+}
+
+.nk-size-300 {
+  width: 300vw;
+  height: 300vw;
+}
+
+.nk-translate-top-50 {
+  transform: translateY(-50vw);
+}
+
+.nk-translate-top-100 {
+  transform: translateY(-100vw);
+  margin-bottom: -100vw;
+}
+
+.nk-translate-top-150 {
+  transform: translateY(-150vw);
+  margin-bottom: -150vw;
+}
+
+.nk-translate-start-50 {
+  transform: translateX(-50vw);
+  
+}
+
+.nk-translate-start-100 {
+  transform: translateX(-100vw);
+}
+
+
+.mask {
+
+}
