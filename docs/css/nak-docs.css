@@ -1,5 +1,9 @@
 @import "../../src/tokens/tokens--color";
 
+article {
+  overflow: hidden;
+}
+
 .nk-logo__svg {
   /* width: 100px;
   height: 100px; */
