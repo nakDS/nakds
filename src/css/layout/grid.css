@@ -150,3 +150,11 @@
   column-gap: var(--large);
   row-gap: var(--large);
 }
+
+.nk-gap--column {
+  column-gap: var(--medium);
+}
+
+.nk-gap--row {
+  row-gap: var(--medium);
+}

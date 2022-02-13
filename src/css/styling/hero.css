@@ -1,0 +1,14 @@
+.nk-hero--1 {
+  background: radial-gradient(ellipse at top, var(--color--m), transparent),
+    radial-gradient(ellipse at bottom, var(--color--y), transparent);
+}
+
+.nk-hero--2 {
+  background: radial-gradient(ellipse at top, var(--color--c), transparent),
+    radial-gradient(ellipse at bottom, var(--color--y), var(--color--secondary));
+}
+
+.nk-hero__button {
+  border:1px solid var(--color--k-1);
+  color: var(--color--k-1);
+}

@@ -9,6 +9,7 @@
 - Add stylelint on commit
 - Export a file without prefix
 ### Building CSS
+- Create heroes. SVG backgrounds with animation. Configurables with easily with custom properties. 
 - Animation to use with grafients and filters
 - Create random system to create art. Make this CSS bundle appart. nakds.art.min.css
 - Translate all the system from physical to flow relative properties: block-size and inline-size

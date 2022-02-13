@@ -1,3 +1,5 @@
+## [2.4.0] 
+- feat: Create hero section
 ## [2.3.0] 
 - feat: Add art section
 

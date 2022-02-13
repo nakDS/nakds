@@ -42,6 +42,7 @@
 @import "layout/grid";
 @import "layout/flex";
 
+@import "styling/hero";
 @import "styling/blend";
 @import "styling/color";
 @import "styling/filters";

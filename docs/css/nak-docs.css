@@ -1,7 +1,7 @@
 @import "../../src/tokens/tokens--color";
 
 article {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .nk-logo__svg {
