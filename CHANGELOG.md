@@ -1,3 +1,5 @@
+## [2.4.1] 
+- fix: Add font-display
 ## [2.4.0] 
 - feat: Create hero section
 ## [2.3.0] 
