@@ -1,3 +1,5 @@
+## [2.4.2] 
+- fix: timeline styles
 ## [2.4.1] 
 - fix: Add font-display
 ## [2.4.0] 
