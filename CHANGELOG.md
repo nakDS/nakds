@@ -1,3 +1,6 @@
+## [2.4.3] 
+- fix: fix variable to avoid compilation issues
+  Error throwing in https://cssstats.com
 ## [2.4.2] 
 - fix: timeline styles
 ## [2.4.1] 

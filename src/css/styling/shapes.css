@@ -1,6 +1,6 @@
 :root {
   --shape: 200px;
-  --minus-one: var(-1); /* Workaround to fix negative calculation compilation issue with postcss-calc */
+  --minus-one: -1;
 }
 
 .nk-shape--circle {
